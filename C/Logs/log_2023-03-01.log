@@ -1,0 +1,12 @@
+root - INFO - 2023-03-01 23:35:19.954752 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [10682]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fa35bd35850>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [10682]

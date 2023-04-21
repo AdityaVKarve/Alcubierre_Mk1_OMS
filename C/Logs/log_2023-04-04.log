@@ -1,0 +1,36 @@
+root - INFO - 2023-04-04 17:18:59.641782 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [67389]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fef5b5f4340>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-04-04 17:21:18.138021 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-04 17:21:18.267519 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-04 17:26:43.030603 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-04 17:26:43.172264 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-04 22:47:56.944825 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-04 22:47:57.091179 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-04 22:51:20.450216 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-04 22:51:20.587410 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-04 22:58:23.207962 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-04 22:58:23.338650 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-04 23:00:34.208252 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-04 23:00:34.334329 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [67389]
+root - INFO - 2023-04-04 23:27:58.158110 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [71214]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fa5e05332e0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [71214]

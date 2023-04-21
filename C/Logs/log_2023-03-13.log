@@ -1,0 +1,1107 @@
+root - INFO - 2023-03-13 08:59:56.947514 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [42048]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x13f74a6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-13 11:25:18.104580 - Order placed for FINVANT_LIVE QUASAR_5M BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0 0.5
+root - INFO - 2023-03-13 11:25:18.229993 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 2 0 0.5
+root - INFO - 2023-03-13 11:25:18.332739 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-03-13 11:30:15.940561 - Order placement successful for users: []
+root - INFO - 2023-03-13 11:35:15.975917 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-13 11:35:16.104679 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 11:35:16.223610 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 11:35:16.321468 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-13 13:40:16.975678 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 13:40:18.594690 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 13:45:15.906869 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 13:45:17.204047 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 13:50:15.931668 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 13:50:17.260863 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 13:55:15.915914 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 13:55:17.207493 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:00:15.958061 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:00:17.269391 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:05:15.917022 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:05:17.257639 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:10:15.897094 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:10:17.201148 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:15:15.917496 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:15:17.234973 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:20:15.918178 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:20:17.213269 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:25:15.919306 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:25:17.174907 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:30:15.977550 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:30:17.379955 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:35:15.960815 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 14:35:17.235968 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Documents/dev/CloudAccess/CloudDownloads/OMS/C/RUN/./main.py", line 1037, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-03-13 15:20:16.380435 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-03-13 15:20:16.530233 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-13 15:20:16.685701 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-13 15:20:16.826050 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [42048]
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - ERROR - Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 638, in lifespan
+    await receive()
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/queues.py", line 166, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+root - INFO - 2023-03-13 23:04:01.017088 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [8161]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x12750a6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [8161]
+root - INFO - 2023-03-13 23:12:43.146009 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [9231]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x1175ce6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-13 23:13:54.147182 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-13 23:13:54.788299 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:13:55.195409 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:13:55.537332 - Order placed for BPWealth_1 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:13:55.929974 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_1', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-13 23:16:51.479343 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-03-13 23:16:51.830776 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-13 23:16:52.193380 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-13 23:16:52.572497 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [9231]
+root - INFO - 2023-03-13 23:24:15.979136 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [10107]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x12d74a6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-13 23:24:37.078714 - Order placement successful for users: []
+root - INFO - 2023-03-13 23:24:54.568025 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-13 23:24:55.194725 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:24:55.866099 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:24:56.286155 - Order placed for BPWealth_1 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:24:56.655162 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_1', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [10107]
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - ERROR - Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 638, in lifespan
+    await receive()
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/queues.py", line 166, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+root - INFO - 2023-03-13 23:25:56.294546 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [10333]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x11828e6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-13 23:26:59.622745 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-13 23:27:00.034735 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:27:00.395882 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:27:00.789591 - Order placed for BPWealth_1 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:27:01.239436 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_1', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [10333]
+root - INFO - 2023-03-13 23:30:11.967276 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [10731]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x128dce6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-13 23:30:23.033716 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-13 23:30:23.157271 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:30:23.256392 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:30:23.356488 - Order placed for BPWealth_1 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:30:23.454269 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_1', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [10731]
+root - INFO - 2023-03-13 23:36:38.557670 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [11470]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x1172c66a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-13 23:36:53.364511 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-13 23:36:54.568783 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:36:55.216292 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:36:56.474083 - Order placed for BPWealth_1 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:36:57.121282 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_1', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [11470]
+root - INFO - 2023-03-13 23:38:51.862716 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [11714]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x119cba6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-13 23:41:29.457497 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-13 23:41:29.808098 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:41:30.205456 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:41:30.807605 - Order placed for BPWealth_1 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:41:31.155403 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_1', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [11714]
+root - INFO - 2023-03-13 23:44:19.160715 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [12218]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x1198fe6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-13 23:45:30.108392 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-13 23:45:30.230503 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:45:31.376986 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:45:31.492815 - Order placed for BPWealth_1 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:45:31.602772 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_1', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [12218]
+root - INFO - 2023-03-13 23:50:32.663413 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [12824]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x117dc26a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-13 23:52:54.674403 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-13 23:52:54.774132 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:52:54.887576 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:52:54.986277 - Order placed for BPWealth_1 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-13 23:52:55.098603 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_1', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-13 23:56:54.287079 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-03-13 23:56:54.404248 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-13 23:56:54.504609 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-13 23:56:54.602691 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [12824]

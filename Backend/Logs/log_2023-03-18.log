@@ -1,0 +1,4 @@
+root - INFO - 2023-03-18 16:34:27.217491 - Attempting XTS login.
+root - INFO - 2023-03-18 16:34:44.189119 - Attempting XTS login.
+root - INFO - 2023-03-18 16:34:44.381264 - attempting XTS order. Token:37834, Position:BUY, Quantity:50.
+root - INFO - 2023-03-18 16:34:44.734565 - XTS order placed. Token:37834, Position:BUY, Quantity:50.

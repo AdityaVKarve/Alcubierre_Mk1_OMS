@@ -1,0 +1,20 @@
+root - INFO - 2023-04-03 10:19:15.218011 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [54674]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fb3943f62b0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-04-03 10:19:54.439345 - Order placed for TEST NOVA NIFTY BUY 1 0 0
+root - INFO - 2023-04-03 10:19:54.563359 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-03 11:03:00.520794 - Order placed for TEST NOVA NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0 0
+root - INFO - 2023-04-03 11:03:00.648017 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-03 11:04:21.096842 - Order placed for TEST NOVA NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0 0
+root - INFO - 2023-04-03 11:04:21.220981 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-03 11:06:33.718890 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-03 11:06:33.843124 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [54674]

@@ -1,0 +1,51 @@
+root - INFO - 2023-04-16 12:33:34.312219 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [4962]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fac0eb35610>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-04-16 12:41:59.933502 - Order placed for TEST NOVA BANKNIFTY_SYNTHETIC_INTRADAY_LONG BUY 1 0.001 0
+root - INFO - 2023-04-16 12:42:00.002218 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_LONG', 'position': 'BUY', 'target': 0, 'stoploss': 0.001, 'quantity': 1}]
+root - INFO - 2023-04-16 12:45:30.581292 - Order placed for TEST NOVA BANKNIFTY_SYNTHETIC_INTRADAY_LONG BUY 1 0.001 0
+root - INFO - 2023-04-16 12:45:30.660712 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_LONG', 'position': 'BUY', 'target': 0, 'stoploss': 0.001, 'quantity': 1}]
+root - INFO - 2023-04-16 12:47:00.618060 - Order placed for TEST NOVA BANKNIFTY_SYNTHETIC_INTRADAY_LONG BUY 1 0.001 0
+root - INFO - 2023-04-16 12:47:00.705121 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_LONG', 'position': 'BUY', 'target': 0, 'stoploss': 0.001, 'quantity': 1}]
+root - INFO - 2023-04-16 13:00:37.305779 - Order placed for TEST NOVA BANKNIFTY_SYNTHETIC_INTRADAY_LONG BUY 1 0.001 0
+root - INFO - 2023-04-16 13:00:37.424919 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_LONG', 'position': 'BUY', 'target': 0, 'stoploss': 0.001, 'quantity': 1}]
+root - INFO - 2023-04-16 13:04:39.974549 - Order placed for TEST NOVA BANKNIFTY_SYNTHETIC_INTRADAY_LONG BUY 1 0.001 0
+root - INFO - 2023-04-16 13:04:40.052442 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_LONG', 'position': 'BUY', 'target': 0, 'stoploss': 0.001, 'quantity': 1}]
+root - INFO - 2023-04-16 13:05:00.336070 - Order placed for TEST NOVA BANKNIFTY_SYNTHETIC_INTRADAY_LONG BUY 1 0.001 0
+root - INFO - 2023-04-16 13:05:00.421880 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_LONG', 'position': 'BUY', 'target': 0, 'stoploss': 0.001, 'quantity': 1}]
+root - INFO - 2023-04-16 13:05:45.608937 - Order placement successful for users: []
+root - INFO - 2023-04-16 13:09:21.793211 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-16 13:09:21.865776 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-16 13:12:12.070362 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-16 13:12:12.137715 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-16 13:20:13.154684 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-16 13:20:13.222436 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-16 13:24:00.968765 - Order placement successful for users: []
+root - INFO - 2023-04-16 13:24:19.107644 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-16 13:24:19.191477 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-16 13:24:35.471750 - Order placed for TEST NOVA SPREAD_TEST SELL 1 0 0
+root - INFO - 2023-04-16 13:24:35.562990 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-16 13:39:18.973175 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-16 13:39:19.083692 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-16 13:39:48.444200 - Order placed for TEST NOVA SPREAD_TEST SELL 1 0 0
+root - INFO - 2023-04-16 13:39:48.530362 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-16 13:42:25.499736 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-16 13:42:25.573319 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-16 13:42:51.989771 - Order placed for TEST NOVA SPREAD_TEST SELL 1 0 0
+root - INFO - 2023-04-16 13:42:52.055582 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [4962]
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - ERROR - Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 624, in lifespan
+    await receive()
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/Users/vishaljha/anaconda3/lib/python3.8/asyncio/queues.py", line 163, in get
+    await getter
+asyncio.exceptions.CancelledError
+

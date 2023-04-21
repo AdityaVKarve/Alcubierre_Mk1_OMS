@@ -1,0 +1,274 @@
+root - INFO - 2023-04-19 09:58:58.243887 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [36374]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f8f022f5610>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-04-19 10:00:23.389642 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 10:00:24.070231 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 10:57:47.527421 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 10:57:47.972298 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 11:00:48.784328 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 11:00:49.198157 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [36374]
+root - INFO - 2023-04-19 11:29:42.667871 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [40357]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7ff0e7af8610>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-04-19 11:30:22.996891 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 11:30:23.365360 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 11:36:39.402958 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [41112]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7ff18daf8610>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-04-19 11:45:20.695619 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 11:45:21.107948 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 11:53:42.186224 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 11:53:42.572916 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 12:11:26.909821 - Order placed for TEST NOVA SPREAD_TEST SELL 1 0 0
+root - INFO - 2023-04-19 12:11:27.283142 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-19 12:18:51.515238 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 12:18:51.922837 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 12:19:34.628345 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 12:19:35.022075 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 12:25:39.439636 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 12:25:39.809212 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 12:34:24.900807 - Order placed for TEST NOVA SPREAD_TEST SELL 1 0 0
+root - INFO - 2023-04-19 12:34:25.286897 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-19 17:49:58.779757 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 17:49:58.933237 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 17:50:16.601707 - Order placed for TEST NOVA SPREAD_TEST SELL 1 0 0
+root - INFO - 2023-04-19 17:50:16.748263 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-19 17:51:08.325832 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 17:51:08.480525 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 17:51:23.372639 - Order placed for TEST NOVA SPREAD_TEST SELL 1 0 0
+root - INFO - 2023-04-19 17:51:23.499018 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-19 17:55:30.148204 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-04-19 17:55:30.275022 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-19 17:57:31.639538 - Order placed for TEST NOVA SPREAD_TEST SELL 1 0 0
+root - INFO - 2023-04-19 17:57:31.764501 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [41112]
+root - INFO - 2023-04-19 18:09:49.508148 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [2183]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f322ac11f40>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9093 (Press CTRL+C to quit)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [2183]
+root - INFO - 2023-04-19 18:21:56.240826 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [3066]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f5b3b1f1f40>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9093 (Press CTRL+C to quit)
+root - INFO - 2023-04-19 18:22:05.147231 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/ubuntu/C/RUN/./main.py", line 1085, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-04-19 18:22:06.516111 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/ubuntu/C/RUN/./main.py", line 1085, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [3066]
+root - INFO - 2023-04-19 18:24:50.497639 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [3080]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f3580f82f40>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9093 (Press CTRL+C to quit)
+root - INFO - 2023-04-19 18:25:42.750814 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-04-19 18:25:42.871174 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-19 18:25:42.938500 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-19 18:25:43.004251 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-19 18:25:43.069364 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-19 18:25:43.134221 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -2 0 0
+root - INFO - 2023-04-19 18:25:43.199405 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}]
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 443, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 425, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_readers.py", line 68, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 443, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 425, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_readers.py", line 68, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 685, in __call__
+    await self.default(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 579, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 443, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 425, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_readers.py", line 72, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_util.py", line 88, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+root - INFO - 2023-04-20 09:35:24.432810 - Order placement successful for users: []
+root - INFO - 2023-04-20 09:40:19.118514 - Order placement successful for users: []
+root - INFO - 2023-04-20 09:45:19.059587 - Order placement successful for users: []
+root - INFO - 2023-04-20 09:50:19.113500 - Order placement successful for users: []
+root - INFO - 2023-04-20 10:05:24.410684 - Order placement successful for users: []
+root - INFO - 2023-04-20 10:15:19.071524 - Order placed for FINVANT_LIVE ALTAIR BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.5
+root - INFO - 2023-04-20 10:15:19.396797 - Order placed for AIRAN ALTAIR_FUTURES BANKNIFTY OPEN SHORT -3 0.5 2
+root - INFO - 2023-04-20 10:15:19.708090 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES BANKNIFTY OPEN SHORT -1 0.5 2
+root - INFO - 2023-04-20 10:15:20.051158 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 2, 'quantity': 1}, {'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 1}]
+root - INFO - 2023-04-20 10:20:19.093836 - Order placed for FINVANT_LIVE ALTAIR NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.5
+root - INFO - 2023-04-20 10:20:19.423579 - Order placed for AIRAN ALTAIR_FUTURES NIFTY OPEN SHORT -3 0.5 2
+root - INFO - 2023-04-20 10:20:19.758928 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY OPEN SHORT -2 0.5 2
+root - INFO - 2023-04-20 10:20:20.099923 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 2, 'quantity': 1}, {'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 2}]
+root - INFO - 2023-04-20 10:30:19.061245 - Order placement successful for users: []
+root - INFO - 2023-04-20 10:35:19.241442 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 2 0 0.5
+root - INFO - 2023-04-20 10:35:19.581452 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 2}]
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 443, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_util.py", line 76, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 425, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_connection.py", line 367, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/h11/_readers.py", line 68, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [3080]
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - ERROR - Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 624, in lifespan
+    await receive()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/usr/lib/python3.8/asyncio/queues.py", line 163, in get
+    await getter
+asyncio.exceptions.CancelledError
+

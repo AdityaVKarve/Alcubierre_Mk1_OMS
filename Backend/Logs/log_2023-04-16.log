@@ -1,0 +1,301 @@
+root - INFO - 2023-04-16 12:34:04.192900 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 12:34:04.273070 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 12:34:04.406967 - OMSB: Logging in for backend kite ticker.
+root - CRITICAL - CRITICAL ERROR:2023-04-16 12:34:17.009125 - OMSB: Failed auto login to kite ticker.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginKiteTicker.py", line 126, in auto_login_zerodha_ticker', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 255, in generate_session', '    h = hashlib.sha256(self.api_key.encode("utf-8") + request_token.encode("utf-8") + api_secret.encode("utf-8"))', "AttributeError: 'int' object has no attribute 'encode'"]
+root - CRITICAL - CRITICAL ERROR:2023-04-16 12:34:17.377159 - Failed to start KWS thread.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/GatherLTP.py", line 71, in start', '    self.kws.on_ticks = self.on_ticks', "AttributeError: 'NoneType' object has no attribute 'on_ticks'"]
+root - INFO - 2023-04-16 12:36:00.474080 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 12:36:00.545789 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 12:36:00.699438 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 12:36:08.500867 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 12:36:59.029833 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 12:36:59.103347 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 12:36:59.220117 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 12:37:06.311635 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 12:38:38.525736 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 12:38:38.598244 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 12:38:38.716183 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 12:38:45.758715 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 12:39:37.093333 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 12:39:37.209836 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 12:39:37.369007 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 12:39:44.737716 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 12:39:45.067007 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 12:39:52.615696 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 12:42:00.510251 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2341341000CE, qty:25, transaction type:BUY, placed price:1135.0, id:450.
+root - INFO - 2023-04-16 12:42:00.583333 - 579.4520378112793
+root - INFO - 2023-04-16 12:42:01.438085 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2341341000PE, qty:-25, transaction type:SELL, placed price:0.1, id:244.
+root - INFO - 2023-04-16 12:42:01.512678 - 579.564094543457
+root - INFO - 2023-04-16 12:45:31.163498 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2341341000CE, qty:25, transaction type:BUY, placed price:1135.0, id:523.
+root - INFO - 2023-04-16 12:45:31.250813 - 588.6831283569336
+root - INFO - 2023-04-16 12:45:32.120564 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2341341000PE, qty:-25, transaction type:SELL, placed price:0.1, id:334.
+root - INFO - 2023-04-16 12:45:32.216501 - 601.0799407958984
+root - INFO - 2023-04-16 12:46:19.066134 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 12:46:19.136409 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 12:46:19.256438 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 12:46:27.010728 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 12:46:27.351433 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 12:46:34.193382 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 12:47:01.207674 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2341341000CE, qty:25, transaction type:BUY, placed price:1135.0, id:374.
+root - INFO - 2023-04-16 12:47:01.280559 - 574.8782157897949
+root - INFO - 2023-04-16 12:47:02.153129 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2341341000PE, qty:-25, transaction type:SELL, placed price:0.1, id:711.
+root - INFO - 2023-04-16 12:47:02.248194 - 598.7730026245117
+root - INFO - 2023-04-16 12:48:51.326890 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2341341000CE, qty:-25, transaction type:SELL, placed price:1135.0, id:674.
+root - INFO - 2023-04-16 12:48:51.397750 - 575.7498741149902
+root - INFO - 2023-04-16 12:48:52.253907 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2342042100CE, qty:25, transaction type:BUY, placed price:286.95, id:829.
+root - INFO - 2023-04-16 12:48:52.341241 - 592.5602912902832
+root - INFO - 2023-04-16 12:48:53.214553 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2341341000PE, qty:25, transaction type:BUY, placed price:0.1, id:132.
+root - INFO - 2023-04-16 12:48:53.328671 - 620.0220584869385
+root - INFO - 2023-04-16 12:48:54.185315 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2342042100PE, qty:-25, transaction type:SELL, placed price:251.65, id:118.
+root - INFO - 2023-04-16 12:48:54.403984 - 724.5969772338867
+root - INFO - 2023-04-16 13:04:31.169767 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:04:31.316326 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:04:31.494386 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:04:39.692647 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:04:40.442139 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:04:47.349600 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:05:00.925871 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2342042100CE, qty:25, transaction type:BUY, placed price:286.95, id:446.
+root - CRITICAL - CRITICAL ERROR:2023-04-16 13:05:01.007105 - Failed to update order placement in DB. User: TEST. Tradingsymbol:BANKNIFTY2342042100CE. QTY:25.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 528, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 417, in update_orderbuffer', "    cur.execute('SELECT total_qty from order_buffer WHERE position_id = {};'.format(position_id))", 'sqlite3.OperationalError: no such table: order_buffer']
+root - INFO - 2023-04-16 13:05:23.024180 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:05:23.109638 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:05:23.225088 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:05:31.105923 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:05:31.423492 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:05:38.076924 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:05:38.654866 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2342042100CE, qty:25, transaction type:BUY, placed price:286.95, id:205.
+root - INFO - 2023-04-16 13:05:38.725504 - 575.4833221435547
+root - INFO - 2023-04-16 13:05:39.599504 - Placed Zerodha Kite options order for:TEST, instrument:BANKNIFTY2342042100PE, qty:-25, transaction type:SELL, placed price:251.65, id:49.
+root - INFO - 2023-04-16 13:05:41.450423 - 2356.755256652832
+root - CRITICAL - CRITICAL ERROR:2023-04-16 13:08:45.841608 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderHandler.py", line 53, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderHandler.py", line 67, in place_pending_orders', '    pending_orders = DBManager.get_pending_orders(username)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 260, in get_pending_orders', "    cur.execute('SELECT tradingsymbol, exchange_token, lot_size, total_qty, placed_qty, last_order_placement, exchange, segment, instrument_token from orderbuffer WHERE username = {} and (total_qty!=placed_qty or total_qty == 0);'.format(gSF(username)))", 'sqlite3.OperationalError: no such table: orderbuffer']
+root - INFO - 2023-04-16 13:09:22.373625 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17900PE, qty:50, transaction type:BUY, placed price:140.3, id:839.
+root - INFO - 2023-04-16 13:09:22.451272 - 583.9159488677979
+root - INFO - 2023-04-16 13:09:23.308448 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17850PE, qty:-50, transaction type:SELL, placed price:117.95, id:644.
+root - INFO - 2023-04-16 13:09:23.398871 - 595.4430103302002
+root - INFO - 2023-04-16 13:10:12.313034 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17900PE, qty:-50, transaction type:SELL, placed price:140.3, id:107.
+root - INFO - 2023-04-16 13:10:12.382323 - 573.5113620758057
+root - INFO - 2023-04-16 13:10:13.258237 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:50, transaction type:BUY, placed price:247.35, id:200.
+root - INFO - 2023-04-16 13:10:13.341277 - 587.8651142120361
+root - INFO - 2023-04-16 13:10:14.201336 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17850PE, qty:50, transaction type:BUY, placed price:117.95, id:299.
+root - INFO - 2023-04-16 13:10:14.325776 - 630.3999423980713
+root - INFO - 2023-04-16 13:10:15.224506 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17850PE, qty:-50, transaction type:SELL, placed price:229.45, id:292.
+root - INFO - 2023-04-16 13:10:15.313586 - 593.6839580535889
+root - INFO - 2023-04-16 13:11:33.199223 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:11:33.286352 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:11:33.401740 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:11:40.461871 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:11:40.807392 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:11:48.686555 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:12:12.640074 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17900PE, qty:50, transaction type:BUY, placed price:140.3, id:274.
+root - INFO - 2023-04-16 13:12:12.710455 - 571.7830657958984
+root - INFO - 2023-04-16 13:12:13.587560 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17850PE, qty:-50, transaction type:SELL, placed price:117.95, id:875.
+root - INFO - 2023-04-16 13:12:13.682008 - 599.3831157684326
+root - INFO - 2023-04-16 13:17:28.990136 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:17:29.062391 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:17:29.178912 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:17:36.537729 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:17:36.870250 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:17:44.454830 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:17:45.023997 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17900PE, qty:-50, transaction type:SELL, placed price:140.3, id:138.
+root - INFO - 2023-04-16 13:17:45.110285 - 588.3989334106445
+root - INFO - 2023-04-16 13:17:45.980950 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:50, transaction type:BUY, placed price:247.35, id:898.
+root - INFO - 2023-04-16 13:17:46.051200 - 576.0960578918457
+root - INFO - 2023-04-16 13:17:46.910487 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17850PE, qty:50, transaction type:BUY, placed price:117.95, id:845.
+root - INFO - 2023-04-16 13:17:46.997179 - 589.5841121673584
+root - INFO - 2023-04-16 13:17:47.860724 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17850PE, qty:-50, transaction type:SELL, placed price:229.45, id:588.
+root - INFO - 2023-04-16 13:17:47.935221 - 579.2388916015625
+root - INFO - 2023-04-16 13:20:09.229961 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:20:11.112918 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:20:11.267095 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:20:20.754997 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:20:21.095822 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:20:28.726830 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:20:29.298566 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17900PE, qty:50, transaction type:BUY, placed price:140.3, id:686.
+root - INFO - 2023-04-16 13:20:29.394132 - 599.2178916931152
+root - INFO - 2023-04-16 13:20:30.259920 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17850PE, qty:-50, transaction type:SELL, placed price:117.95, id:125.
+root - INFO - 2023-04-16 13:20:30.327470 - 572.3750591278076
+root - INFO - 2023-04-16 13:22:08.550636 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17900PE, qty:-50, transaction type:SELL, placed price:140.3, id:930.
+root - INFO - 2023-04-16 13:22:08.628237 - 580.7089805603027
+root - INFO - 2023-04-16 13:22:09.491581 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:50, transaction type:BUY, placed price:247.35, id:303.
+root - INFO - 2023-04-16 13:22:09.568654 - 582.3631286621094
+root - INFO - 2023-04-16 13:22:10.449094 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17850PE, qty:50, transaction type:BUY, placed price:117.95, id:40.
+root - INFO - 2023-04-16 13:22:10.516539 - 569.0538883209229
+root - INFO - 2023-04-16 13:22:11.381057 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17850PE, qty:-50, transaction type:SELL, placed price:229.45, id:994.
+root - INFO - 2023-04-16 13:22:11.449967 - 571.6516971588135
+root - INFO - 2023-04-16 13:24:19.698309 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:50, transaction type:BUY, placed price:247.35, id:761.
+root - INFO - 2023-04-16 13:24:19.765833 - 572.908878326416
+root - INFO - 2023-04-16 13:24:20.643949 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17850PE, qty:-50, transaction type:SELL, placed price:229.45, id:428.
+root - INFO - 2023-04-16 13:24:20.717005 - 578.2918930053711
+root - INFO - 2023-04-16 13:24:36.068905 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:-50, transaction type:SELL, placed price:247.35, id:369.
+root - CRITICAL - CRITICAL ERROR:2023-04-16 13:24:36.164641 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23MAY17900PE. QTY:-50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 533, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 412, in update_orderbuffer', '    data = list(list(cur.fetchall())[0])', 'IndexError: list index out of range']
+root - INFO - 2023-04-16 13:38:53.890314 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:38:53.979020 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:38:54.104269 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:39:02.205164 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:39:02.521509 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:39:10.105573 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:39:19.590320 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:50, transaction type:BUY, placed price:247.35, id:366.
+root - INFO - 2023-04-16 13:39:19.671672 - 586.7130756378174
+root - INFO - 2023-04-16 13:39:20.551430 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17850PE, qty:-50, transaction type:SELL, placed price:229.45, id:711.
+root - INFO - 2023-04-16 13:39:20.646928 - 600.0509262084961
+root - INFO - 2023-04-16 13:39:49.036249 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:-50, transaction type:SELL, placed price:247.35, id:312.
+root - CRITICAL - CRITICAL ERROR:2023-04-16 13:39:49.112971 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23MAY17900PE. QTY:-50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 538, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 417, in update_orderbuffer', '    data = list(list(cur.fetchall())[0])', 'IndexError: list index out of range']
+root - INFO - 2023-04-16 13:42:00.652702 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:42:00.746999 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:42:00.870304 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:42:07.809590 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:42:08.137114 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:42:15.878123 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:42:26.080159 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:50, transaction type:BUY, placed price:247.35, id:888.
+root - INFO - 2023-04-16 13:42:26.164859 - 590.1551246643066
+root - INFO - 2023-04-16 13:42:27.041431 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17850PE, qty:-50, transaction type:SELL, placed price:229.45, id:88.
+root - INFO - 2023-04-16 13:42:27.392910 - 854.3360233306885
+root - INFO - 2023-04-16 13:42:52.560738 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:-50, transaction type:SELL, placed price:247.35, id:565.
+root - CRITICAL - CRITICAL ERROR:2023-04-16 13:42:52.635244 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23MAY17900PE. QTY:-50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 538, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 417, in update_orderbuffer', '    data = list(list(cur.fetchall())[0])', 'IndexError: list index out of range']
+root - INFO - 2023-04-16 13:43:32.484840 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:43:32.569893 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:43:32.709862 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:43:39.988243 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:43:40.323973 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:43:47.822868 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:43:48.398197 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:-50, transaction type:SELL, placed price:247.35, id:111.
+root - CRITICAL - CRITICAL ERROR:2023-04-16 13:43:48.476928 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23MAY17900PE. QTY:-50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 538, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 417, in update_orderbuffer', '    data = list(list(cur.fetchall())[0])', 'IndexError: list index out of range']
+root - INFO - 2023-04-16 13:45:17.824275 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:45:17.920064 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:45:18.060646 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:45:25.357275 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:45:25.682449 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:45:34.897575 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:45:35.701756 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:-50, transaction type:SELL, placed price:247.35, id:406.
+root - CRITICAL - CRITICAL ERROR:2023-04-16 13:45:35.773553 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23MAY17900PE. QTY:-50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 539, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 418, in update_orderbuffer', '    data = list(list(cur.fetchall())[0])', 'IndexError: list index out of range']
+root - INFO - 2023-04-16 13:45:59.252996 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:45:59.323344 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:45:59.484979 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:46:07.738174 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:46:08.121469 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:46:16.133907 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:46:16.707648 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:-50, transaction type:SELL, placed price:247.35, id:310.
+root - CRITICAL - CRITICAL ERROR:2023-04-16 13:46:17.068826 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23MAY17900PE. QTY:-50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 539, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 418, in update_orderbuffer', '    data = list(list(cur.fetchall())[0])', 'IndexError: list index out of range']
+root - INFO - 2023-04-16 13:48:31.785870 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-16 13:48:31.852314 - OMS Backend mainloop started.
+root - INFO - 2023-04-16 13:48:31.965424 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-16 13:48:38.723864 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-16 13:48:39.057148 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-16 13:48:45.729437 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-16 13:48:46.322961 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17900PE, qty:-50, transaction type:SELL, placed price:247.35, id:73.
+root - CRITICAL - CRITICAL ERROR:2023-04-16 13:48:46.418965 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23MAY17900PE. QTY:-50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 541, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 435, in update_orderbuffer', '    data = list(list(cur.fetchall())[0])', 'IndexError: list index out of range']
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))

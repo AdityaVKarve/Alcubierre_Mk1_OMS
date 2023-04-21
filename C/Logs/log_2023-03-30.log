@@ -1,0 +1,228 @@
+root - INFO - 2023-03-30 10:45:03.877980 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [41007]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fc8cbcf6220>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [41007]
+root - INFO - 2023-03-30 11:40:36.428869 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [41514]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fd31fe09280>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-03-30 11:41:28.922018 - Order placed for TEST NOVA NIFTY BUY 1 0 0
+root - INFO - 2023-03-30 11:41:29.087859 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [41514]
+root - INFO - 2023-03-30 11:45:52.034461 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [41815]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f78375072b0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [41815]
+root - INFO - 2023-03-30 11:48:40.313985 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [41965]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fae3ccf52b0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-03-30 12:52:22.484354 - Order placed for TEST NOVA NIFTY BUY 1 0 0
+root - INFO - 2023-03-30 12:52:22.635780 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-30 12:53:35.137713 - Order placed for TEST NOVA NIFTY BUY 1 0 0
+root - INFO - 2023-03-30 12:53:35.284615 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-30 12:56:29.068842 - Order placed for TEST NOVA NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0 0
+root - INFO - 2023-03-30 12:56:29.197413 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-30 13:03:04.214767 - Order placed for TEST NOVA NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0 0
+root - INFO - 2023-03-30 13:03:04.383129 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [41965]
+root - INFO - 2023-03-30 13:05:17.470324 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [42832]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fd6e24f42b0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [42832]
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - ERROR - Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 624, in lifespan
+    await receive()
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/Users/vishaljha/anaconda3/lib/python3.8/asyncio/queues.py", line 163, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+root - INFO - 2023-03-30 18:28:36.466530 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [43177]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7ff172cf52b0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [43177]
+root - INFO - 2023-03-30 18:29:16.773851 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [43261]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fbb8e5042b0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [43261]
+root - INFO - 2023-03-30 18:30:51.612644 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [43324]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fd82de342b0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [43324]
+root - INFO - 2023-03-30 18:32:24.900119 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [43374]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fe2f83f62b0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/applications.py", line 261, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./main.py", line 1026, in create_order
+    if placeOrder(user_name, strategy, instrument_nomenclature, position, quantity, stoploss, target, nomenclature_to_details):
+  File "./main.py", line 400, in placeOrder
+    ret = addOrderToOrderReference(order_id = order_id, username=username, instrument_nomenclature = instrument_nomenclature, quantity = quantity, position = position, strategy=strategy_name, nomenclature_to_details=nomenclature_to_details)
+  File "./main.py", line 469, in addOrderToOrderReference
+    instrument_data = nomenclature_to_details.process_order_nomenclature(instrument_nomenclature)[instrument_nomenclature]   #Get details on the instrument to be placed based on instrument nomenclature
+  File "./NomenclatureToDetails.py", line 82, in process_order_nomenclature
+    index_peg = spread['INDEX_PEG']
+KeyError: 'INDEX_PEG'
+root - INFO - 2023-03-30 18:35:19.009163 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/applications.py", line 261, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./main.py", line 1026, in create_order
+    if placeOrder(user_name, strategy, instrument_nomenclature, position, quantity, stoploss, target, nomenclature_to_details):
+  File "./main.py", line 400, in placeOrder
+    ret = addOrderToOrderReference(order_id = order_id, username=username, instrument_nomenclature = instrument_nomenclature, quantity = quantity, position = position, strategy=strategy_name, nomenclature_to_details=nomenclature_to_details)
+  File "./main.py", line 469, in addOrderToOrderReference
+    instrument_data = nomenclature_to_details.process_order_nomenclature(instrument_nomenclature)[instrument_nomenclature]   #Get details on the instrument to be placed based on instrument nomenclature
+  File "./NomenclatureToDetails.py", line 82, in process_order_nomenclature
+    index_peg = spread['INDEX_PEG']
+KeyError: 'INDEX_PEG'
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [43374]
+root - INFO - 2023-03-30 18:36:04.891804 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [43541]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f99a12ed250>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-03-30 18:36:10.457173 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-03-30 18:36:10.588384 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-30 18:40:22.067586 - Order placed for TEST NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-03-30 18:40:22.217525 - Order placement successful for users: [{'user_name': 'TEST', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [43541]

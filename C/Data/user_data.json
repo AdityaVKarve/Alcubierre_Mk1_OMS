@@ -1,0 +1,360 @@
+{
+    "LAST_UPDATED": 1682057720.5814047,
+    "USER_DATA": {
+        "MASTER_TRUST": {
+            "USER_TYPE": "XTS",
+            "PAPER_TRADE": false,
+            "LOGIN_DETAILS": {
+                "ENDPOINT": "http://103.156.122.4:10121/",
+                "APP_KEY": "595e4768e1d3fb41b5e282",
+                "SECRET": "Bovq746$m0",
+                "SOURCE": "WEBAPI",
+                "CLIENT_ID": "9PR22"
+            },
+            "STRATEGY_DETAILS": {
+                "TEST": {
+                    "NIFTY": [
+                        1,
+                        1
+                    ]
+                },
+                "OPHIUCUS": {
+                    "NIFTY|L|0|CE|WEEK|0": [
+                        0,
+                        10
+                    ],
+                    "NIFTY|L|0|PE|WEEK|0": [
+                        0,
+                        10
+                    ]
+                }
+            }
+        },
+        "ODIN": {
+            "USER_TYPE": "ODIN",
+            "PAPER_TRADE": false,
+            "LOGIN_DETAILS": {
+                "CLIENT_CODE": "NB01",
+                "CLIENT_PASSWORD": "odin@123",
+                "CLIENT_2FA": "9460454571",
+                "CLIENT_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzUGFydG5lckFwcElkIjoiMDFGMDBGIiwiQjJDIjoiWSIsIlB1Ymxpc2hlck5hbWUiOiJJbmRpcmEgU2VjdXJpdGllcyBQdnQgTHRkIC0gQjJDIiwic1B1Ymxpc2hlckNvZGUiOiJjdSIsIkN1c3RvbWVySWQiOiIzODUiLCJzQXBwbGljYXRpb25Ub2tlbiI6IkluZGlyYVNlY3VyaXRpZXNCMkMxMDcwNDY0ZGVlZiIsInVzZXJJZCI6Ik5CMDEiLCJCcm9rZXJOYW1lIjoiSW5kaXJhIFNlY3VyaXRpZXMgUHZ0IEx0ZCIsImV4cCI6OTExNzczMzIwMCwiaWF0IjoxNjUyNzczMjU4fQ.UpOSoLuaZw7u5bTx714jXLPDn6mrl39BKCLtWBg3bI8"
+            },
+            "STRATEGY_DETAILS": {
+                "TEST": {
+                    "NIFTY": [
+                        1,
+                        1
+                    ]
+                },
+                "OPHIUCUS": {
+                    "NIFTY|L|0|CE|WEEK|0": [
+                        0,
+                        1
+                    ],
+                    "NIFTY|L|0|PE|WEEK|0": [
+                        0,
+                        1
+                    ]
+                }
+            }
+        },
+        "AIRAN": {
+            "USER_TYPE": "ODIN",
+            "PAPER_TRADE": false,
+            "LOGIN_DETAILS": {
+                "CLIENT_CODE": "S0201",
+                "CLIENT_PASSWORD": "abc777",
+                "CLIENT_2FA": "9328606010",
+                "CLIENT_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzUHVibGlzaGVyQ29kZSI6Ik1mIiwiQ3VzdG9tZXJJZCI6IjE1NjQiLCJzUGFydG5lckFwcElkIjoiMEU1MEJBIiwic0FwcGxpY2F0aW9uVG9rZW4iOiJBaXJhbkZpbnN0b2NrQjJDMTg3YzRjMzA2NDQiLCJQdWJsaXNoZXJOYW1lIjoiQWlyYW4gRmluc3RvY2sgUHZ0IGx0ZCAtIEIyQyIsIkJyb2tlck5hbWUiOiJBaXJhbiBGaW5zdG9jayBQdnQgbHRkIiwiUHJvZHVjdFNvdXJjZSI6IldFQkFQSSIsIkIyQyI6IlkiLCJ1c2VySWQiOiJTMDIwMSIsImV4cCI6OTE0NTIyODI2MCwiaWF0IjoxNjgwMjY4MjgwfQ.cYUvyWJj7D8LdT2Z-UVFRobhksFx5m0F4tJXWGV6jDI"
+            },
+            "STRATEGY_DETAILS": {
+                "LUNA_FUTURES": {
+                    "NIFTY": [
+                        0,
+                        3
+                    ],
+                    "BANKNIFTY": [
+                        0,
+                        3
+                    ]
+                },
+                "ALTAIR_FUTURES": {
+                    "NIFTY": [
+                        0,
+                        3
+                    ],
+                    "BANKNIFTY": [
+                        0,
+                        3
+                    ]
+                }
+            }
+        },
+        "FINVANT_LIVE": {
+            "USER_TYPE": "ZERODHA",
+            "PAPER_TRADE": false,
+            "LOGIN_DETAILS": {
+                "API_KEY": "wd4rw474uonpvn94",
+                "API_SECRET": "8bsd661b6i29y064pei4riikj0lr3ede",
+                "ID": "WG5235",
+                "PASSWORD": "Finvant@Research1",
+                "TOTP_PIN": "BK4I753O24NO5BU5JLTO2JPT2TFT54CC"
+            },
+            "STRATEGY_DETAILS": {
+                "TEST": {
+                    "NIFTY": [
+                        1,
+                        1
+                    ]
+                },
+                "QUASAR_5M": {
+                    "NIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        2,
+                        0
+                    ],
+                    "BANKNIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ]
+                },
+                "LUNA": {
+                    "NIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ],
+                    "BANKNIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ]
+                },
+                "ALTAIR": {
+                    "NIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ],
+                    "BANKNIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ]
+                },
+                "COPURNICUS": {
+                    "NIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ],
+                    "BANKNIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ],
+                    "NIFTY_SYNTHETIC_INTRADAY_LONG": [
+                        1,
+                        0
+                    ],
+                    "BANKNIFTY_SYNTHETIC_INTRADAY_LONG": [
+                        1,
+                        0
+                    ]
+                },
+                "OPHIUCUS_HEDGED": {
+                    "OPHIUCUS_HEDGED_NIFTY_LONG": [
+                        1,
+                        0
+                    ],
+                    "OPHIUCUS_HEDGED_NIFTY_SHORT": [
+                        1,
+                        0
+                    ]
+                },
+                "OBERON": {
+                    "NIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ],
+                    "NIFTY_SYNTHETIC_INTRADAY_LONG": [
+                        1,
+                        0
+                    ],
+                    "BANKNIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ],
+                    "BANKNIFTY_SYNTHETIC_INTRADAY_LONG": [
+                        1,
+                        0
+                    ]
+                },
+                "ANTARES": {
+                    "NIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ],
+                    "NIFTY_SYNTHETIC_INTRADAY_LONG": [
+                        1,
+                        0
+                    ],
+                    "BANKNIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ],
+                    "BANKNIFTY_SYNTHETIC_INTRADAY_LONG": [
+                        1,
+                        0
+                    ]
+                }
+            }
+        },
+        "FINVANT_TEST": {
+            "USER_TYPE": "ZERODHA",
+            "PAPER_TRADE": true,
+            "LOGIN_DETAILS": {
+                "API_KEY": "wd4rw474uonpvn94",
+                "API_SECRET": "8bsd661b6i29y064pei4riikj0lr3ede",
+                "ID": "WG5235",
+                "PASSWORD": "Finvant@Research1",
+                "TOTP_PIN": "BK4I753O24NO5BU5JLTO2JPT2TFT54CC"
+            },
+            "STRATEGY_DETAILS": {
+                "TEST_OPTIONS": {
+                    "NIFTY|L|0|CE|WEEK|0": [
+                        0,
+                        1
+                    ],
+                    "NIFTY|L|0|PE|WEEK|0": [
+                        0,
+                        1
+                    ]
+                },
+                "QUASAR_5M_TEST": {
+                    "NIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        2,
+                        0
+                    ],
+                    "BANKNIFTY_SYNTHETIC_INTRADAY_SHORT": [
+                        1,
+                        0
+                    ]
+                }
+            }
+        },
+        "BPWealth_AHO7706": {
+            "USER_TYPE": "BPWEALTH",
+            "PAPER_TRADE": true,
+            "LOGIN_DETAILS": {
+                "USERNAME": "AHO7706",
+                "PASSWORD": "abcd1234",
+                "GROUP_ID": "HO",
+                "PROD_CODE": "12"
+            },
+            "STRATEGY_DETAILS": {
+                "LUNA_FUTURES": {
+                    "NIFTY": [
+                        0,
+                        2
+                    ],
+                    "BANKNIFTY": [
+                        0,
+                        2
+                    ]
+                },
+                "ALTAIR_FUTURES": {
+                    "NIFTY": [
+                        0,
+                        2
+                    ],
+                    "BANKNIFTY": [
+                        0,
+                        1
+                    ]
+                }
+            }
+        },
+        "BPWealth_AHD083": {
+            "USER_TYPE": "BPWEALTH",
+            "PAPER_TRADE": false,
+            "LOGIN_DETAILS": {
+                "USERNAME": "AHD083",
+                "PASSWORD": "avanik222",
+                "GROUP_ID": "HO",
+                "PROD_CODE": "12"
+            },
+            "STRATEGY_DETAILS": {
+                "OPHIUCUS": {
+                    "NIFTY|L|0|CE|WEEK|0": [
+                        0,
+                        1
+                    ],
+                    "NIFTY|L|0|PE|WEEK|0": [
+                        0,
+                        1
+                    ]
+                }
+            }
+        },
+        "BPWealth_ACS1301": {
+            "USER_TYPE": "BPWEALTH",
+            "PAPER_TRADE": false,
+            "LOGIN_DETAILS": {
+                "USERNAME": "ACS1301",
+                "PASSWORD": "a11111",
+                "GROUP_ID": "HO",
+                "PROD_CODE": "12"
+            },
+            "STRATEGY_DETAILS": {
+                "OPHIUCUS": {
+                    "NIFTY|L|0|CE|WEEK|0": [
+                        0,
+                        1
+                    ],
+                    "NIFTY|L|0|PE|WEEK|0": [
+                        0,
+                        1
+                    ]
+                }
+            }
+        },
+        "BPWealth_ACS1207": {
+            "USER_TYPE": "BPWEALTH",
+            "PAPER_TRADE": true,
+            "LOGIN_DETAILS": {
+                "USERNAME": "ACS1207",
+                "PASSWORD": "Vaishal@83",
+                "GROUP_ID": "HO",
+                "PROD_CODE": "12"
+            },
+            "STRATEGY_DETAILS": {
+                "OPHIUCUS": {
+                    "NIFTY|L|0|CE|WEEK|0": [
+                        0,
+                        1
+                    ],
+                    "NIFTY|L|0|PE|WEEK|0": [
+                        0,
+                        1
+                    ]
+                }
+            }
+        },
+        "BPWealth_AC66": {
+            "USER_TYPE": "BPWEALTH",
+            "PAPER_TRADE": false,
+            "LOGIN_DETAILS": {
+                "USERNAME": "AC66",
+                "PASSWORD": "abcd123",
+                "GROUP_ID": "HO",
+                "PROD_CODE": "12"
+            },
+            "STRATEGY_DETAILS": {
+                "OPHIUCUS": {
+                    "NIFTY|L|0|CE|WEEK|0": [
+                        0,
+                        2
+                    ],
+                    "NIFTY|L|0|PE|WEEK|0": [
+                        0,
+                        2
+                    ]
+                }
+            }
+        }
+    }
+}

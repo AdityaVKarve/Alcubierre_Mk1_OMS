@@ -1,0 +1,188 @@
+root - INFO - 2023-03-08 08:35:28.674385 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [55783]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x12554e6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [55783]
+root - INFO - 2023-03-08 08:36:19.143472 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [55923]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x12a3c26a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-08 09:35:17.057816 - Order placement successful for users: []
+root - INFO - 2023-03-08 09:40:15.913189 - Order placement successful for users: []
+root - INFO - 2023-03-08 09:50:15.965170 - Order placement successful for users: []
+root - INFO - 2023-03-08 09:55:15.922122 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:00:15.938406 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:05:15.862276 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:10:15.932957 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:15:15.973316 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:20:15.923217 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:25:15.987565 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:30:15.983123 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:35:15.927139 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:45:15.963362 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:50:15.930678 - Order placement successful for users: []
+root - INFO - 2023-03-08 10:55:15.978986 - Order placement successful for users: []
+root - INFO - 2023-03-08 11:05:15.966341 - Order placement successful for users: []
+root - INFO - 2023-03-08 11:10:15.888111 - Order placement successful for users: []
+root - INFO - 2023-03-08 11:15:15.859077 - Order placement successful for users: []
+root - INFO - 2023-03-08 11:20:16.432267 - Order placed for FINVANT_LIVE ALTAIR BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.5
+root - INFO - 2023-03-08 11:20:16.537505 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 2, 'quantity': 1}]
+root - INFO - 2023-03-08 11:22:38.898824 - Order placed for MASTER_TRUST TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 11:22:39.011223 - Order placed for ODIN TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 11:22:39.125131 - Order placed for FINVANT_LIVE TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 11:22:39.223169 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'ODIN', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [55923]
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - ERROR - Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 638, in lifespan
+    await receive()
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/queues.py", line 166, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+root - INFO - 2023-03-08 11:40:51.410002 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [3776]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x11b9529d0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [3776]
+root - INFO - 2023-03-08 11:49:36.547714 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [5326]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x12a0fa9d0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-08 11:50:17.945614 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 2 0 0.5
+root - INFO - 2023-03-08 11:50:18.044289 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-03-08 11:55:15.857096 - Order placed for FINVANT_LIVE ALTAIR NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.5
+root - INFO - 2023-03-08 11:55:15.964945 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 2, 'quantity': 1}]
+root - INFO - 2023-03-08 12:07:29.236159 - Order placed for MASTER_TRUST TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:07:29.343095 - Order placed for ODIN TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:07:29.439911 - Order placed for FINVANT_LIVE TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:07:29.537654 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'ODIN', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-08 12:10:15.958900 - Order placement successful for users: []
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [5326]
+root - INFO - 2023-03-08 12:13:19.169479 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [9269]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x111e4a9d0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-08 12:13:51.007556 - Order placed for MASTER_TRUST TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:13:51.105397 - Order placed for ODIN TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:13:51.201221 - Order placed for FINVANT_LIVE TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:13:51.298341 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'ODIN', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-08 12:15:15.904100 - Order placement successful for users: []
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [9269]
+root - INFO - 2023-03-08 12:18:03.782039 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [10126]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x11bbc29d0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-08 12:19:09.278519 - Order placed for MASTER_TRUST TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:19:09.376243 - Order placed for ODIN TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:19:09.495303 - Order placed for FINVANT_LIVE TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:19:09.594388 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'ODIN', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-08 12:20:15.850299 - Order placement successful for users: []
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [10126]
+root - INFO - 2023-03-08 12:21:28.654126 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [10778]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x13494e9d0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-08 12:21:47.888229 - Order placed for MASTER_TRUST TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:21:47.997209 - Order placed for ODIN TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:21:48.097752 - Order placed for FINVANT_LIVE TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:21:48.205304 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'ODIN', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [10778]
+root - INFO - 2023-03-08 12:26:35.218071 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [11571]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x11758e9d0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-08 12:26:48.382455 - Order placed for MASTER_TRUST TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:26:48.481701 - Order placed for ODIN TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:26:48.580371 - Order placed for FINVANT_LIVE TEST NIFTY BUY 1 0 0
+root - INFO - 2023-03-08 12:26:48.678884 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'ODIN', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'TEST', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-08 12:35:15.918130 - Order placement successful for users: []
+root - INFO - 2023-03-08 13:15:15.861827 - Order placement successful for users: []
+root - INFO - 2023-03-08 13:25:15.876308 - Order placement successful for users: []
+root - INFO - 2023-03-08 13:30:15.910749 - Order placement successful for users: []
+root - INFO - 2023-03-08 13:35:15.913543 - Order placement successful for users: []
+root - INFO - 2023-03-08 13:53:01.802642 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [24397]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x10f1129d0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - ERROR - [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+root - INFO - 2023-03-08 13:57:45.915710 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [24837]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x119b4a9d0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [24837]
+root - INFO - 2023-03-08 14:26:56.510249 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [28213]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x12a52a9d0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [28213]

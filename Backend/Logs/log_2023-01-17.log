@@ -1,0 +1,288 @@
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:23:32.081261 - Failed to initialise Log server/ADS.
+['Traceback (most recent call last):', '  File "Main.py", line 30, in __init__', '    self.start()', '  File "Main.py", line 38, in start', '    self.main_loop()', '  File "Main.py", line 78, in main_loop', '    sleep(1)', 'KeyboardInterrupt']
+root - INFO - 2023-01-17 23:23:38.124710 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-01-17 23:23:38.259515 - OMS Backend mainloop started.
+root - INFO - 2023-01-17 23:23:38.442606 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-01-17 23:23:45.718101 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-01-17 23:23:45.850098 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:23:45.850752 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:23:45.852117 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:23:45.852497 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:23:53.792805 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:23:53.852897 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:23:53.943671 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:23:53.978493 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:23:54.007137 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:23:54.220160 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:23:54.247519 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:23:54.354893 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:01.381893 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:01.514745 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:01.824936 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:01.977391 - OMSB: Zerodha login for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:24:02.072406 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:24:02.223459 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:02.249190 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:02.416692 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:08.561890 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:08.710396 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:09.655797 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:09.802035 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:09.804845 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:09.998956 - OMSB: Zerodha login for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:24:10.032814 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:24:10.217451 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:15.819121 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:15.971201 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:17.410074 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:17.578464 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:17.584194 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:17.774416 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:17.799788 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:18.024839 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:24:22.744368 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:25.312710 - OMSB: Zerodha login succesful for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:24:25.377412 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:24:25.412707 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:24:42.846504 - Placed Zerodha Kite futures order for:PVYWqipD, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17580, id:18.
+root - INFO - 2023-01-17 23:24:44.632080 - Placed Zerodha Kite futures order for:KsCsvenc, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17520, id:13.
+root - INFO - 2023-01-17 23:24:45.648335 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17130, id:19.
+root - INFO - 2023-01-17 23:24:46.681581 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17286, id:13.
+root - INFO - 2023-01-17 23:24:47.767009 - Placed Zerodha Kite futures order for:TTQaNDXf, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17768, id:19.
+root - INFO - 2023-01-17 23:24:48.816922 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17777, id:1.
+root - INFO - 2023-01-17 23:24:49.861047 - Placed Zerodha Kite futures order for:uRSwdIpo, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17219, id:11.
+root - INFO - 2023-01-17 23:24:50.788191 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17687, id:10.
+root - INFO - 2023-01-17 23:24:51.794233 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17629, id:2.
+root - INFO - 2023-01-17 23:24:51.840355 - 1052.1268844604492
+root - INFO - 2023-01-17 23:24:51.866178 - 4099.38383102417
+root - INFO - 2023-01-17 23:24:51.888210 - 3071.2952613830566
+root - INFO - 2023-01-17 23:24:51.949861 - 155.56979179382324
+root - INFO - 2023-01-17 23:24:51.967106 - 5286.082029342651
+root - INFO - 2023-01-17 23:24:51.984708 - 7352.608919143677
+root - INFO - 2023-01-17 23:24:52.067035 - 2205.97767829895
+root - INFO - 2023-01-17 23:24:52.183273 - 9336.766958236694
+root - INFO - 2023-01-17 23:24:52.313482 - 6665.690183639526
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:31:07.813931 - Failed to initialise Log server/ADS.
+['Traceback (most recent call last):', '  File "Main.py", line 30, in __init__', '    self.start()', '  File "Main.py", line 38, in start', '    self.main_loop()', '  File "Main.py", line 78, in main_loop', '    sleep(1)', 'KeyboardInterrupt']
+root - INFO - 2023-01-17 23:31:14.238335 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-01-17 23:31:14.406453 - OMS Backend mainloop started.
+root - INFO - 2023-01-17 23:31:14.597449 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-01-17 23:31:22.543574 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-01-17 23:31:22.676711 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:22.676959 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:22.677213 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:22.677444 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:30.093641 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:31:30.232615 - OMSB: Zerodha login for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:31:30.833216 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:31:30.860666 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:31:30.984617 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:30.993109 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:31:31.040906 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:31.179875 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:38.002374 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:31:38.159060 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:38.593932 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:31:38.754192 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:38.826125 - OMSB: Zerodha login succesful for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:31:38.946927 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:31:38.981493 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:39.085188 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:45.803879 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:31:45.948083 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:46.055395 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:31:46.195303 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:46.462565 - OMSB: Zerodha login succesful for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:31:46.467370 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:31:46.602813 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:46.663589 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:53.316946 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:31:53.456685 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:53.718638 - OMSB: Zerodha login succesful for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:31:53.803750 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:31:53.878766 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:53.900454 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:31:53.935158 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:31:54.083048 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:32:00.606327 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:32:01.186214 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:32:01.682192 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:32:02.155999 - OMSB: Zerodha login succesful for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:32:55.241913 - Failed to initialise Log server/ADS.
+['Traceback (most recent call last):', '  File "Main.py", line 30, in __init__', '    self.start()', '  File "Main.py", line 38, in start', '    self.main_loop()', '  File "Main.py", line 78, in main_loop', '    sleep(1)', 'KeyboardInterrupt']
+root - INFO - 2023-01-17 23:38:34.254276 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-01-17 23:38:34.390282 - OMS Backend mainloop started.
+root - INFO - 2023-01-17 23:38:34.594626 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-01-17 23:38:41.472177 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-01-17 23:38:41.620812 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:38:41.622639 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:38:41.622843 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:38:41.623170 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:38:48.827169 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:38:48.963505 - OMSB: Zerodha login for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:38:49.409810 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:38:49.470077 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:38:49.561468 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:38:49.622638 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:38:49.708070 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:38:49.879227 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:38:56.180344 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:38:56.319806 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:38:56.684076 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:38:56.824872 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:38:57.713159 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:38:57.885727 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:38:58.067787 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:38:58.219461 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:39:03.122237 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:03.266765 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:39:03.638860 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:03.783961 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:39:04.611496 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:04.768794 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:39:05.120338 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:05.356609 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:39:10.992703 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:11.156159 - OMSB: Zerodha login for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:39:11.482487 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:39:11.629992 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:39:11.898816 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:12.054160 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:39:12.222120 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:12.388421 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:39:17.939012 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:18.437427 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:19.219336 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:19.721782 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:39:42.544395 - Placed Zerodha Kite futures order for:PVYWqipD, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17073, id:18.
+root - INFO - 2023-01-17 23:39:43.686600 - Placed Zerodha Kite futures order for:KsCsvenc, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17257, id:5.
+root - INFO - 2023-01-17 23:39:44.943069 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17331, id:4.
+root - INFO - 2023-01-17 23:39:46.189117 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17352, id:8.
+root - INFO - 2023-01-17 23:39:47.203453 - Placed Zerodha Kite futures order for:TTQaNDXf, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17412, id:19.
+root - INFO - 2023-01-17 23:39:48.462336 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17608, id:2.
+root - INFO - 2023-01-17 23:39:49.732950 - Placed Zerodha Kite futures order for:uRSwdIpo, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17263, id:9.
+root - INFO - 2023-01-17 23:39:51.054844 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17346, id:4.
+root - INFO - 2023-01-17 23:39:52.218130 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17319, id:10.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:40:10.575146 - Failed to initialise Log server/ADS.
+['Traceback (most recent call last):', '  File "Main.py", line 30, in __init__', '    self.start()', '  File "Main.py", line 38, in start', '    self.main_loop()', '  File "Main.py", line 78, in main_loop', '    sleep(1)', 'KeyboardInterrupt']
+root - INFO - 2023-01-17 23:43:09.399350 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-01-17 23:43:09.527523 - OMS Backend mainloop started.
+root - INFO - 2023-01-17 23:43:09.725091 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-01-17 23:43:16.811845 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-01-17 23:43:16.943110 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:16.945373 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:16.945694 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:16.945978 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:24.325993 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:24.460322 - OMSB: Zerodha login for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:43:24.989365 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:43:25.114033 - OMSB: Zerodha login succesful for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:43:25.113960 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-17 23:43:25.157454 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:25.280139 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:25.331588 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:31.704796 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:31.877146 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:32.396817 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:32.542996 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:32.793934 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:32.923119 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:33.041093 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:33.180562 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:39.566019 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:39.633733 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:39.708046 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:39.773117 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:40.078299 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:40.247493 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:40.537756 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:40.679049 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:47.021659 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:47.186266 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:47.460662 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:47.594709 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:48.493717 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:48.653795 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:49.310434 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:49.446088 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:43:54.551974 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:54.800196 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:55.315398 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:43:57.050131 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:44:14.322420 - Placed Zerodha Kite futures order for:uRSwdIpo, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17116, id:18.
+root - INFO - 2023-01-17 23:44:14.322706 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17791, id:14.
+root - INFO - 2023-01-17 23:44:14.323072 - Placed Zerodha Kite futures order for:TTQaNDXf, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17607, id:11.
+root - INFO - 2023-01-17 23:44:14.323973 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17630, id:13.
+root - INFO - 2023-01-17 23:44:14.326069 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17777, id:14.
+root - INFO - 2023-01-17 23:44:14.326806 - Placed Zerodha Kite futures order for:PVYWqipD, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17291, id:10.
+root - INFO - 2023-01-17 23:44:14.328495 - Placed Zerodha Kite futures order for:KsCsvenc, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17038, id:8.
+root - INFO - 2023-01-17 23:44:14.333903 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17683, id:16.
+root - INFO - 2023-01-17 23:44:14.335905 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17389, id:6.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:46:54.220717 - Failed to initialise Log server/ADS.
+['Traceback (most recent call last):', '  File "Main.py", line 30, in __init__', '    self.start()', '  File "Main.py", line 38, in start', '    self.main_loop()', '  File "Main.py", line 78, in main_loop', '    sleep(1)', 'KeyboardInterrupt']
+root - INFO - 2023-01-17 23:47:00.296883 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-01-17 23:47:00.446432 - OMS Backend mainloop started.
+root - INFO - 2023-01-17 23:47:00.683532 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-01-17 23:47:07.778203 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-01-17 23:47:07.953063 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:07.954208 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:07.954368 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:07.954783 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:15.222572 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:15.371438 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:15.617747 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:15.754820 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:15.772558 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:15.953376 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:15.958449 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:16.089683 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:22.637837 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:22.771443 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:22.804561 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:22.962027 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:23.645485 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:23.796502 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:23.854435 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:23.989016 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:29.736534 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:29.898818 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:30.985254 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:31.150575 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:31.275456 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:31.416486 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:31.559165 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:31.739007 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:36.958525 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:37.086773 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:37.991404 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:38.136099 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:38.485098 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:38.618712 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:38.625957 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:38.869307 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-17 23:47:45.140764 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:45.494034 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:46.357741 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:47:46.871936 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-17 23:48:06.312598 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17378, id:14.
+root - INFO - 2023-01-17 23:48:06.317861 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17440, id:12.
+root - INFO - 2023-01-17 23:48:06.319361 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17279, id:15.
+root - INFO - 2023-01-17 23:48:06.320444 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17267, id:13.
+root - INFO - 2023-01-17 23:48:06.321168 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17742, id:12.
+root - INFO - 2023-01-17 23:48:06.321605 - Placed Zerodha Kite futures order for:TTQaNDXf, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17160, id:1.
+root - INFO - 2023-01-17 23:48:06.321813 - Placed Zerodha Kite futures order for:KsCsvenc, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17460, id:14.
+root - INFO - 2023-01-17 23:48:06.323589 - Placed Zerodha Kite futures order for:PVYWqipD, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17142, id:18.
+root - INFO - 2023-01-17 23:48:06.325971 - Placed Zerodha Kite futures order for:uRSwdIpo, instrument:NIFTY23JANFUT, qty:1, transaction type:BUY, placed price:17128, id:5.
+root - CRITICAL - CRITICAL ERROR:2023-01-17 23:50:01.202611 - Failed to initialise Log server/ADS.
+['Traceback (most recent call last):', '  File "Main.py", line 30, in __init__', '    self.start()', '  File "Main.py", line 40, in start', '    sleep(100)', 'KeyboardInterrupt']

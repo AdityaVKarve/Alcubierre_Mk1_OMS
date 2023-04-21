@@ -1,0 +1,44 @@
+root - INFO - 2023-02-10 17:17:42.708995 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [75569]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f9ccf537820>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [75569]
+root - INFO - 2023-02-10 17:18:35.747749 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [75607]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f9debc3a820>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [75607]
+root - INFO - 2023-02-10 17:25:29.548808 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [75951]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f87bed39820>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-02-10 17:32:31.927782 - Order placement successful for users: []
+root - INFO - 2023-02-10 17:34:59.104898 - Order placed for FINVANT QUASAR_SHORT BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0.1 0.1
+root - INFO - 2023-02-10 17:34:59.285675 - Order placement successful for users: [{'user_name': 'FINVANT', 'strategy': 'QUASAR_SHORT', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.1, 'stoploss': 0.1}]
+root - INFO - 2023-02-10 17:53:51.615518 - Order placed for FINVANT QUASAR_SHORT BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0.1 0.1
+root - INFO - 2023-02-10 17:53:51.750419 - Order placement successful for users: [{'user_name': 'FINVANT', 'strategy': 'QUASAR_SHORT', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.1, 'stoploss': 0.1}]
+root - INFO - 2023-02-13 12:03:30.077379 - Order placed for FINVANT QUASAR_SHORT BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0.1 0.1
+root - INFO - 2023-02-13 12:03:30.202130 - Order placed for INDRA_SECURITIES QUASAR_SHORT BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0.1 0.1
+root - INFO - 2023-02-13 12:03:30.320347 - Order placement successful for users: [{'user_name': 'FINVANT', 'strategy': 'QUASAR_SHORT', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.1, 'stoploss': 0.1}, {'user_name': 'INDRA_SECURITIES', 'strategy': 'QUASAR_SHORT', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.1, 'stoploss': 0.1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [75951]
