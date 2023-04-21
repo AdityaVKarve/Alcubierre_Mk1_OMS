@@ -2,7 +2,7 @@ root - INFO - 2023-01-19 12:31:38.637978 - Finvant Alcubierre Mk1 OMS Backend tu
 root - INFO - 2023-01-19 12:31:38.760815 - OMS Backend mainloop started.
 root - INFO - 2023-01-19 12:31:38.938782 - OMSB: Logging in for backend kite ticker.
 root - INFO - 2023-01-19 12:31:48.663308 - OMSB: Login succesful for backend kite ticker.
-root - CRITICAL - CRITICAL ERROR:2023-01-19 12:31:48.789919 - Failed to initialise LTP gather module.
+root - CRITICAL - CRITICAL ERROR:2023-01-19 12:31:48.05 - Failed to initialise LTP gather module.
 ['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/GatherLTP.py", line 18, in __init__', "    with open('../../OMS_Server/Data/lookup_table.json') as f:", "FileNotFoundError: [Errno 2] No such file or directory: '../../OMS_Server/Data/lookup_table.json'"]
 root - INFO - 2023-01-19 12:31:48.914779 - OMSB: Zerodha login for WG5235.
 root - INFO - 2023-01-19 12:31:48.914887 - OMSB: Zerodha login for WG5235.
