@@ -1,0 +1,727 @@
+root - INFO - 2023-04-06 11:09:58.753585 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 11:09:58.880208 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 11:09:59.089513 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 11:10:10.257293 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 11:10:10.662708 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 11:10:18.629885 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-06 11:10:19.264134 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17600PE, qty:50, transaction type:BUY, placed price:240.0, id:776.
+root - CRITICAL - CRITICAL ERROR:2023-04-06 11:10:19.395495 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23MAY17600PE. QTY:50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 513, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 413, in update_orderbuffer', '    data = list(list(cur.fetchall())[0])', 'IndexError: list index out of range']
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 11:23:40.790903 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 11:23:40.928722 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 11:23:41.110975 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 11:23:48.765461 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 11:23:49.163956 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 11:23:56.866766 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-06 11:23:57.566831 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17600PE, qty:50, transaction type:BUY, placed price:242.0, id:65.
+root - CRITICAL - CRITICAL ERROR:2023-04-06 11:23:57.739992 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23MAY17600PE. QTY:50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 514, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 414, in update_orderbuffer', '    data = list(list(cur.fetchall())[0])', 'IndexError: list index out of range']
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 11:28:58.765994 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 11:28:58.976483 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 11:28:59.222242 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 11:29:07.574286 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 11:29:07.944423 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 11:29:14.989699 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - CRITICAL - CRITICAL ERROR:2023-04-06 11:29:34.311249 - Failed to refresh lookup table.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/GatherLTP.py", line 64, in refresh_lookup_table', '    self.lookup_table = json.load(f)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/json/__init__.py", line 293, in load', '    return loads(fp.read(),', '  File "/Users/vishaljha/anaconda3/lib/python3.8/json/__init__.py", line 357, in loads', '    return _default_decoder.decode(s)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/json/decoder.py", line 337, in decode', '    obj, end = self.raw_decode(s, idx=_w(s, 0).end())', '  File "/Users/vishaljha/anaconda3/lib/python3.8/json/decoder.py", line 355, in raw_decode', '    raise JSONDecodeError("Expecting value", s, err.value) from None', 'json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)']
+root - INFO - 2023-04-06 11:29:34.934730 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:192.7, id:584.
+root - INFO - 2023-04-06 11:29:35.106924 - 675.3861904144287
+root - INFO - 2023-04-06 11:29:37.070691 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:170.75, id:272.
+root - INFO - 2023-04-06 11:29:37.223018 - 1663.407325744629
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 11:38:14.014457 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:191.25, id:21.
+root - INFO - 2023-04-06 11:38:14.160691 - 652.3036956787109
+root - INFO - 2023-04-06 11:38:15.079784 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:277.5, id:2.
+root - CRITICAL - CRITICAL ERROR:2023-04-06 11:38:15.224091 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23MAY17700PE. QTY:50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 514, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 414, in update_orderbuffer', '    data = list(list(cur.fetchall())[0])', 'IndexError: list index out of range']
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 13:18:56.913653 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 13:18:57.040808 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 13:18:57.242909 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 13:19:05.030594 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 13:19:05.441723 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-06 13:19:13.079963 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 13:19:15.668960 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:186.0, id:992.
+root - INFO - 2023-04-06 13:19:15.807968 - 639.9679183959961
+root - INFO - 2023-04-06 13:19:16.722289 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:163.35, id:972.
+root - INFO - 2023-04-06 13:19:16.867880 - 651.8549919128418
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 13:21:22.343355 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 13:21:22.468757 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 13:21:22.642509 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 13:21:30.492231 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 13:21:30.887108 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-06 13:21:37.701451 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-06 13:21:38.348378 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:185.1, id:57.
+root - INFO - 2023-04-06 13:21:38.494508 - 653.9900302886963
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 13:21:40.418599 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:268.05, id:577.
+root - INFO - 2023-04-06 13:21:40.559256 - 1651.2000560760498
+root - INFO - 2023-04-06 13:21:41.489620 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:50, transaction type:BUY, placed price:163.5, id:934.
+root - INFO - 2023-04-06 13:21:41.628157 - 641.9620513916016
+root - INFO - 2023-04-06 13:21:42.540464 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17650PE, qty:-50, transaction type:SELL, placed price:245.4, id:707.
+root - INFO - 2023-04-06 13:21:42.681097 - 645.1358795166016
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 13:28:51.291311 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:188.0, id:685.
+root - INFO - 2023-04-06 13:28:51.431227 - 641.7629718780518
+root - INFO - 2023-04-06 13:28:52.351626 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:165.5, id:87.
+root - INFO - 2023-04-06 13:28:52.483946 - 635.0352764129639
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 13:31:35.615399 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:185.35, id:511.
+root - INFO - 2023-04-06 13:31:35.802901 - 694.066047668457
+root - INFO - 2023-04-06 13:31:36.763346 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:269.0, id:224.
+root - INFO - 2023-04-06 13:31:36.954093 - 704.0729522705078
+root - INFO - 2023-04-06 13:31:37.927545 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:50, transaction type:BUY, placed price:163.8, id:30.
+root - INFO - 2023-04-06 13:31:38.125890 - 714.838981628418
+root - INFO - 2023-04-06 13:31:39.078458 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17650PE, qty:-50, transaction type:SELL, placed price:250.0, id:247.
+root - INFO - 2023-04-06 13:31:39.272418 - 704.556941986084
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 14:07:53.524069 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:209.4, id:181.
+root - INFO - 2023-04-06 14:07:53.655119 - 635.1668834686279
+root - INFO - 2023-04-06 14:07:54.584000 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:185.0, id:63.
+root - INFO - 2023-04-06 14:07:54.730521 - 650.6962776184082
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 14:08:58.477612 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 14:08:58.610598 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 14:08:58.815249 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 14:09:06.841891 - OMSB: Login succesful for backend kite ticker.
+root - CRITICAL - CRITICAL ERROR:2023-04-06 14:09:45.207253 - Failed to initialise LTP gather module.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 379, in _make_request', '    httplib_response = conn.getresponse(buffering=True)', "TypeError: getresponse() got an unexpected keyword argument 'buffering'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/GatherLTP.py", line 30, in __init__', '    self.OMS_interface = OMS_API_Interface.OMS_Interface(Config().OMS_SERVER_ADDRESS)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OMS_API_Interface.py", line 12, in __init__', '    self.token = self.authentification()', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OMS_API_Interface.py", line 23, in authentification', "    response = requests.post(self.url + 'token', data=data)", '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 115, in post', '    return request("post", url, data=data, json=json, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 59, in request', '    return session.request(method=method, url=url, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 587, in request', '    resp = self.send(prep, **send_kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 701, in send', '    r = adapter.send(request, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 489, in send', '    resp = conn.urlopen(', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen', '    httplib_response = self._make_request(conn, method, url,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 383, in _make_request', '    httplib_response = conn.getresponse()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1332, in getresponse', '    response.begin()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 303, in begin', '    version, status, reason = self._read_status()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 264, in _read_status', '    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")', '  File "/Users/vishaljha/anaconda3/lib/python3.8/socket.py", line 669, in readinto', '    return self._sock.recv_into(b)', 'KeyboardInterrupt']
+root - INFO - 2023-04-06 14:09:45.365144 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - CRITICAL - CRITICAL ERROR:2023-04-06 14:09:46.823919 - Failed to generate user dictionary.
+['Traceback (most recent call last):', '  File "Main.py", line 76, in main_loop', '    user_dict = UserProfileGenerator().create_user_profiles(user_data=user_data, log_interface=self.log_interface, debug=self.DEBUG)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/UserProfileGenerator.py", line 74, in create_user_profiles', '    t.join()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/threading.py", line 1011, in join', '    self._wait_for_tstate_lock()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock', '    elif lock.acquire(block, timeout):', 'KeyboardInterrupt']
+root - CRITICAL - CRITICAL ERROR:2023-04-06 14:09:46.850493 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen', '    httplib_response = self._make_request(conn, method, url,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request', '    six.raise_from(e, None)', '  File "<string>", line 2, in raise_from', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 383, in _make_request', '    httplib_response = conn.getresponse()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1332, in getresponse', '    response.begin()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 303, in begin', '    version, status, reason = self._read_status()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 272, in _read_status', '    raise RemoteDisconnected("Remote end closed connection without"', 'http.client.RemoteDisconnected: Remote end closed connection without response', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 36, in automate_login', "    browser = webdriver.Chrome(options = options,executable_path='../Chrome/chromedriver')", '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 76, in __init__', '    RemoteWebDriver.__init__(', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 157, in __init__', '    self.start_session(capabilities, browser_profile)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 252, in start_session', '    response = self.execute(Command.NEW_SESSION, parameters)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute', '    response = self.command_executor.execute(driver_command, params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute', '    return self._request(command_info[0], url, body=data)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request', '    resp = self._conn.request(method, url, body=body, headers=headers)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/request.py", line 70, in request', '    return self.request_encode_body(method, url, fields=fields,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/request.py", line 150, in request_encode_body', '    return self.urlopen(method, url, **extra_kw)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/poolmanager.py", line 326, in urlopen', '    response = conn.urlopen(method, u.request_uri, **kw)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 640, in urlopen', '    retries = retries.increment(method, url, error=e, _pool=self,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/retry.py", line 368, in increment', '    raise six.reraise(type(error), error, _stacktrace)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/packages/six.py", line 685, in reraise', '    raise value.with_traceback(tb)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen', '    httplib_response = self._make_request(conn, method, url,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request', '    six.raise_from(e, None)', '  File "<string>", line 2, in raise_from', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 383, in _make_request', '    httplib_response = conn.getresponse()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1332, in getresponse', '    response.begin()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 303, in begin', '    version, status, reason = self._read_status()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 272, in _read_status', '    raise RemoteDisconnected("Remote end closed connection without"', "urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/common/service.py", line 72, in start', '    self.process = subprocess.Popen(cmd, env=self.env,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/subprocess.py", line 854, in __init__', '    self._execute_child(args, executable, preexec_fn, close_fds,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/subprocess.py", line 1702, in _execute_child', '    raise child_exception_type(errno_num, err_msg, err_filename)', "FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 117, in auto_login_zerodha', '    key = automate_login(browser_url, user_id, password, totp_pin)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 40, in automate_login', '    browser = webdriver.Chrome(options = options)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__', '    self.service.start()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/common/service.py", line 81, in start', '    raise WebDriverException(', "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home", '']
+root - CRITICAL - CRITICAL ERROR:2023-04-06 14:09:46.971628 - Failure in order handler.
+['Traceback (most recent call last):', '  File "Main.py", line 82, in main_loop', '    order_handler = OrderHandler(user_profiles=user_dict, spread_list=spread_list, log_interface = self.log_interface, debug=self.DEBUG)', "UnboundLocalError: local variable 'user_dict' referenced before assignment"]
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - INFO - 2023-04-06 14:10:00.622209 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 14:10:00.756607 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 14:10:00.940441 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 14:10:08.532638 - OMSB: Login succesful for backend kite ticker.
+root - CRITICAL - CRITICAL ERROR:2023-04-06 14:10:18.714874 - Failed to initialise LTP gather module.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen', '    httplib_response = self._make_request(conn, method, url,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request', '    six.raise_from(e, None)', '  File "<string>", line 2, in raise_from', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 383, in _make_request', '    httplib_response = conn.getresponse()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1332, in getresponse', '    response.begin()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 303, in begin', '    version, status, reason = self._read_status()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 264, in _read_status', '    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")', '  File "/Users/vishaljha/anaconda3/lib/python3.8/socket.py", line 669, in readinto', '    return self._sock.recv_into(b)', 'ConnectionResetError: [Errno 54] Connection reset by peer', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 489, in send', '    resp = conn.urlopen(', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 640, in urlopen', '    retries = retries.increment(method, url, error=e, _pool=self,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/retry.py", line 368, in increment', '    raise six.reraise(type(error), error, _stacktrace)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/packages/six.py", line 685, in reraise', '    raise value.with_traceback(tb)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen', '    httplib_response = self._make_request(conn, method, url,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request', '    six.raise_from(e, None)', '  File "<string>", line 2, in raise_from', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 383, in _make_request', '    httplib_response = conn.getresponse()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1332, in getresponse', '    response.begin()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 303, in begin', '    version, status, reason = self._read_status()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 264, in _read_status', '    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")', '  File "/Users/vishaljha/anaconda3/lib/python3.8/socket.py", line 669, in readinto', '    return self._sock.recv_into(b)', "urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/GatherLTP.py", line 30, in __init__', '    self.OMS_interface = OMS_API_Interface.OMS_Interface(Config().OMS_SERVER_ADDRESS)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OMS_API_Interface.py", line 12, in __init__', '    self.token = self.authentification()', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OMS_API_Interface.py", line 23, in authentification', "    response = requests.post(self.url + 'token', data=data)", '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 115, in post', '    return request("post", url, data=data, json=json, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 59, in request', '    return session.request(method=method, url=url, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 587, in request', '    resp = self.send(prep, **send_kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 701, in send', '    r = adapter.send(request, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 547, in send', '    raise ConnectionError(err, request=request)', "requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"]
+root - INFO - 2023-04-06 14:10:18.868606 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - CRITICAL - CRITICAL ERROR:2023-04-06 14:10:20.547200 - Failed to generate user dictionary.
+['Traceback (most recent call last):', '  File "Main.py", line 76, in main_loop', '    user_dict = UserProfileGenerator().create_user_profiles(user_data=user_data, log_interface=self.log_interface, debug=self.DEBUG)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/UserProfileGenerator.py", line 74, in create_user_profiles', '    t.join()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/threading.py", line 1011, in join', '    self._wait_for_tstate_lock()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/threading.py", line 1027, in _wait_for_tstate_lock', '    elif lock.acquire(block, timeout):', 'KeyboardInterrupt']
+root - CRITICAL - CRITICAL ERROR:2023-04-06 14:10:20.553722 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen', '    httplib_response = self._make_request(conn, method, url,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request', '    six.raise_from(e, None)', '  File "<string>", line 2, in raise_from', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 383, in _make_request', '    httplib_response = conn.getresponse()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1332, in getresponse', '    response.begin()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 303, in begin', '    version, status, reason = self._read_status()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 272, in _read_status', '    raise RemoteDisconnected("Remote end closed connection without"', 'http.client.RemoteDisconnected: Remote end closed connection without response', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 37, in automate_login', '    browser.get(browser_url)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get', "    self.execute(Command.GET, {'url': url})", '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute', '    response = self.command_executor.execute(driver_command, params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute', '    return self._request(command_info[0], url, body=data)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request', '    resp = self._conn.request(method, url, body=body, headers=headers)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/request.py", line 70, in request', '    return self.request_encode_body(method, url, fields=fields,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/request.py", line 150, in request_encode_body', '    return self.urlopen(method, url, **extra_kw)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/poolmanager.py", line 326, in urlopen', '    response = conn.urlopen(method, u.request_uri, **kw)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 640, in urlopen', '    retries = retries.increment(method, url, error=e, _pool=self,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/retry.py", line 368, in increment', '    raise six.reraise(type(error), error, _stacktrace)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/packages/six.py", line 685, in reraise', '    raise value.with_traceback(tb)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen', '    httplib_response = self._make_request(conn, method, url,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 387, in _make_request', '    six.raise_from(e, None)', '  File "<string>", line 2, in raise_from', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 383, in _make_request', '    httplib_response = conn.getresponse()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1332, in getresponse', '    response.begin()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 303, in begin', '    version, status, reason = self._read_status()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 272, in _read_status', '    raise RemoteDisconnected("Remote end closed connection without"', "urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/common/service.py", line 72, in start', '    self.process = subprocess.Popen(cmd, env=self.env,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/subprocess.py", line 854, in __init__', '    self._execute_child(args, executable, preexec_fn, close_fds,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/subprocess.py", line 1702, in _execute_child', '    raise child_exception_type(errno_num, err_msg, err_filename)', "FileNotFoundError: [Errno 2] No such file or directory: 'chromedriver'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 117, in auto_login_zerodha', '    key = automate_login(browser_url, user_id, password, totp_pin)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 40, in automate_login', '    browser = webdriver.Chrome(options = options)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__', '    self.service.start()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/selenium/webdriver/common/service.py", line 81, in start', '    raise WebDriverException(', "selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home", '']
+root - INFO - 2023-04-06 14:11:18.380943 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 14:11:18.529794 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 14:11:18.836545 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 14:11:26.442227 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 14:11:26.846467 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 14:11:33.751000 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 14:11:55.757161 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:205.1, id:601.
+root - INFO - 2023-04-06 14:11:55.923137 - 668.6530113220215
+root - INFO - 2023-04-06 14:11:56.864472 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:285.0, id:668.
+root - INFO - 2023-04-06 14:11:57.012619 - 655.4417610168457
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-04-06 14:11:58.954233 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:50, transaction type:BUY, placed price:181.4, id:591.
+root - INFO - 2023-04-06 14:11:59.107958 - 1661.5910530090332
+root - INFO - 2023-04-06 14:12:00.045823 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17650PE, qty:-50, transaction type:SELL, placed price:281.0, id:689.
+root - INFO - 2023-04-06 17:47:55.034961 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 17:47:55.178322 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 17:47:55.393998 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 17:48:02.979110 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 17:48:03.419025 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-06 17:48:10.204860 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-06 17:48:14.029395 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:192.0, id:982.
+root - INFO - 2023-04-06 17:48:14.160322 - 636.1510753631592
+root - INFO - 2023-04-06 17:48:15.079254 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:168.55, id:574.
+root - INFO - 2023-04-06 17:48:15.210920 - 638.4069919586182
+root - INFO - 2023-04-06 17:56:40.271378 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 17:56:40.407202 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 17:56:40.589708 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 17:56:47.771809 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 17:56:48.138675 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-06 17:56:55.149122 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-06 17:56:55.800395 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:192.0, id:86.
+root - CRITICAL - CRITICAL ERROR:2023-04-06 17:56:55.929563 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23APR17700PE. QTY:-50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 532, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 420, in update_orderbuffer', "    cur.execute('SELECT position_type from order_reference WHERE order_id = {} tradingsymbol = {};'.format(order_id,gSF(tradingsymbol)))", 'sqlite3.OperationalError: near "tradingsymbol": syntax error']
+root - INFO - 2023-04-06 17:57:22.207391 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 17:57:22.337074 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 17:57:22.509307 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 17:57:29.383770 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 17:57:29.773055 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-06 17:57:36.537321 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-06 17:57:37.169238 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:192.0, id:269.
+root - CRITICAL - CRITICAL ERROR:2023-04-06 17:57:37.305904 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23APR17700PE. QTY:-50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 532, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 421, in update_orderbuffer', '    position_type_or = list(list(cur.fetchall())[0])[0]', 'IndexError: list index out of range']
+root - INFO - 2023-04-06 17:58:17.700777 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 17:58:17.826207 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 17:58:18.006929 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 17:58:24.817025 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 17:58:25.186869 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-06 17:58:32.484022 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-06 17:58:33.122294 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:192.0, id:869.
+root - CRITICAL - CRITICAL ERROR:2023-04-06 17:58:33.278886 - Failed to update order placement in DB. User: TEST. Tradingsymbol:NIFTY23APR17700PE. QTY:-50.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderPlacement.py", line 132, in placeOrder', '    update_order_placement(username=username,tradingsymbol=tradingsymbol,placed_qty=qty,placed_price=placed_price, spread_list=spread_list, brokerage_name=user_type, brokerage_id=order_id, debug=debug) # If this fails, infinite order placement -> stop this thread + critical user message', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 532, in update_order_placement', '    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 422, in update_orderbuffer', '    position_type_or = list(list(cur.fetchall())[0])[0]', 'IndexError: list index out of range']
+root - INFO - 2023-04-06 23:37:38.414790 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 23:37:38.550196 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 23:37:38.745255 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 23:37:46.439228 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 23:37:46.822972 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-06 23:37:54.316745 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-06 23:38:51.414727 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-06 23:38:51.573604 - OMS Backend mainloop started.
+root - INFO - 2023-04-06 23:38:51.758798 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-06 23:38:58.501973 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-06 23:38:58.879437 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-06 23:39:06.373908 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-06 23:39:07.064807 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:192.0, id:312.
+root - INFO - 2023-04-06 23:39:07.217004 - 657.437801361084
+root - INFO - 2023-04-06 23:39:08.137267 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:168.55, id:59.
+root - INFO - 2023-04-06 23:39:08.276793 - 646.0022926330566
+root - INFO - 2023-04-06 23:40:20.544283 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:192.0, id:795.
+root - INFO - 2023-04-06 23:40:20.722040 - 680.7448863983154
+root - INFO - 2023-04-06 23:40:21.637785 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:276.0, id:45.
+root - INFO - 2023-04-06 23:40:21.807592 - 676.5561103820801
+root - INFO - 2023-04-06 23:40:22.741934 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:50, transaction type:BUY, placed price:168.55, id:737.
+root - INFO - 2023-04-06 23:40:22.896725 - 658.4639549255371
+root - INFO - 2023-04-06 23:40:23.807726 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17650PE, qty:-50, transaction type:SELL, placed price:255.0, id:961.
+root - INFO - 2023-04-06 23:40:23.939196 - 634.0470314025879
+root - INFO - 2023-04-07 00:01:01.149435 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-07 00:01:01.300270 - OMS Backend mainloop started.
+root - INFO - 2023-04-07 00:01:01.512825 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-07 00:01:09.471588 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-07 00:01:09.854158 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-07 00:01:16.573611 - OMSB: Zerodha login succesful for WG5235.

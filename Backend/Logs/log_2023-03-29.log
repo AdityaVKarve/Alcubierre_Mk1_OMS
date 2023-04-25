@@ -1,0 +1,166 @@
+root - INFO - 2023-03-29 13:25:14.203101 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-29 13:25:14.538236 - OMS Backend mainloop started.
+root - INFO - 2023-03-29 13:25:14.753028 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-29 13:25:22.640219 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-29 13:25:23.035209 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-03-29 13:25:29.935768 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-03-29 13:29:04.089206 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-29 13:29:04.223021 - OMS Backend mainloop started.
+root - INFO - 2023-03-29 13:29:04.408845 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-29 13:29:12.044313 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-29 13:29:12.404270 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-03-29 13:29:19.819138 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-03-29 15:21:17.362759 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-29 15:21:17.495761 - OMS Backend mainloop started.
+root - INFO - 2023-03-29 15:21:17.669620 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-29 15:21:26.387725 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-29 15:21:26.786583 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-29 15:21:34.387512 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-03-29 15:23:35.274476 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-29 15:23:35.408764 - OMS Backend mainloop started.
+root - INFO - 2023-03-29 15:23:35.590502 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-29 15:23:43.405637 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-29 15:23:43.768606 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-29 15:23:50.396896 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-03-29 15:25:49.182279 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-29 15:25:49.315528 - OMS Backend mainloop started.
+root - INFO - 2023-03-29 15:25:49.517235 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-29 15:25:56.457414 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-29 15:25:56.845973 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-29 15:26:03.521180 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - CRITICAL - CRITICAL ERROR:2023-03-29 15:51:37.969323 - OMSB_ADSINT_1
+['Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn', '    conn = connection.create_connection(', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py", line 80, in create_connection', '    raise err', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py", line 70, in create_connection', '    sock.connect(sa)', 'ConnectionRefusedError: [Errno 61] Connection refused', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen', '    httplib_response = self._make_request(conn, method, url,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 355, in _make_request', '    conn.request(method, url, **httplib_request_kw)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1240, in request', '    self._send_request(method, url, body, headers, encode_chunked)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1286, in _send_request', '    self.endheaders(body, encode_chunked=encode_chunked)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1235, in endheaders', '    self._send_output(message_body, encode_chunked=encode_chunked)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1006, in _send_output', '    self.send(msg)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 946, in send', '    self.connect()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 183, in connect', '    conn = self._new_conn()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn', '    raise NewConnectionError(', 'urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fd5e5cf3c10>: Failed to establish a new connection: [Errno 61] Connection refused', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 489, in send', '    resp = conn.urlopen(', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 640, in urlopen', '    retries = retries.increment(method, url, error=e, _pool=self,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/retry.py", line 399, in increment', '    raise MaxRetryError(_pool, url, error or ResponseError(cause))', "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd5e5cf3c10>: Failed to establish a new connection: [Errno 61] Connection refused'))", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/ADS_Interface.py", line 31, in authentification', "    response = requests.post(self.url + 'token', data=data)", '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 115, in post', '    return request("post", url, data=data, json=json, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 59, in request', '    return session.request(method=method, url=url, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 587, in request', '    resp = self.send(prep, **send_kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 701, in send', '    r = adapter.send(request, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 565, in send', '    raise ConnectionError(e, request=request)', "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fd5e5cf3c10>: Failed to establish a new connection: [Errno 61] Connection refused'))"]
+root - INFO - 2023-03-29 15:51:48.714183 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-29 15:51:48.857896 - OMS Backend mainloop started.
+root - INFO - 2023-03-29 15:51:49.042121 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-29 15:51:56.015432 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-29 15:51:56.429077 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-29 15:52:03.214106 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-03-29 15:54:17.159701 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-29 15:54:17.287874 - OMS Backend mainloop started.
+root - INFO - 2023-03-29 15:54:17.484635 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-29 15:54:25.154038 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-29 15:54:25.533266 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-29 15:54:32.498505 - OMSB: Zerodha login succesful for WG5235.

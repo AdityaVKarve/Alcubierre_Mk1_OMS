@@ -1,0 +1,83 @@
+root - INFO - 2023-04-20 17:27:10.442579 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [11710]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fda1eb10f40>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9093 (Press CTRL+C to quit)
+root - INFO - 2023-04-20 17:36:37.170081 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-04-20 17:36:37.236487 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-20 17:36:37.303157 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-20 17:36:37.368940 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-20 17:36:37.434523 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-20 17:36:37.500653 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -2 0 0
+root - INFO - 2023-04-20 17:36:37.568545 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-04-20 17:41:43.207663 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-04-20 17:41:43.273462 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-20 17:41:43.340061 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-20 17:41:43.406204 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-20 17:41:43.472137 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-20 17:41:43.538669 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -2 0 0
+root - INFO - 2023-04-20 17:41:43.604146 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-20 17:46:22.959374 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-04-20 17:46:23.026754 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-20 17:46:23.093229 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-20 17:46:23.159737 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-20 17:46:23.226440 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-20 17:46:23.291830 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -2 0 0
+root - INFO - 2023-04-20 17:46:23.354199 - Order placed for AIRAN ALTAIR_FUTURES BANKNIFTY OPEN SHORT -3 0.5 2
+root - INFO - 2023-04-20 17:46:23.415791 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES BANKNIFTY OPEN SHORT -1 0.5 2
+root - INFO - 2023-04-20 17:46:23.491044 - Order placed for FINVANT_LIVE ALTAIR BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0.5 2
+root - INFO - 2023-04-20 17:46:23.568377 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}, {'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 2, 'stoploss': 0.5, 'quantity': 1}]
+root - INFO - 2023-04-20 17:47:52.583684 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-04-20 17:47:52.648603 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-20 17:47:52.713635 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-20 17:47:52.779570 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-20 17:47:52.844912 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-20 17:47:52.910437 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -2 0 0
+root - INFO - 2023-04-20 17:47:52.974264 - Order placed for AIRAN ALTAIR_FUTURES BANKNIFTY CLOSE SHORT -3 0.5 2
+root - INFO - 2023-04-20 17:47:53.038443 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES BANKNIFTY CLOSE SHORT -1 0.5 2
+root - INFO - 2023-04-20 17:47:53.111014 - Order placed for FINVANT_LIVE ALTAIR BANKNIFTY_SYNTHETIC_INTRADAY_SHORT SELL 1 0.5 2
+root - INFO - 2023-04-20 17:47:53.177366 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 2, 'stoploss': 0.5}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 2, 'stoploss': 0.5}, {'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 2, 'stoploss': 0.5}]
+root - INFO - 2023-04-21 09:35:21.924415 - Order placed for FINVANT_LIVE ALTAIR NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.5
+root - INFO - 2023-04-21 09:35:22.266971 - Order placed for AIRAN ALTAIR_FUTURES NIFTY OPEN SHORT -3 0.5 2
+root - INFO - 2023-04-21 09:35:22.627451 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY OPEN SHORT -2 0.5 2
+root - INFO - 2023-04-21 09:35:22.975282 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 2, 'quantity': 1}, {'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 2}]
+root - INFO - 2023-04-21 09:40:18.782316 - Order placement successful for users: []
+root - INFO - 2023-04-21 09:45:18.086032 - Order placement successful for users: []
+root - INFO - 2023-04-21 09:50:18.337299 - Order placement successful for users: []
+root - INFO - 2023-04-21 09:55:18.283066 - Order placement successful for users: []
+root - INFO - 2023-04-21 10:00:18.468149 - Order placement successful for users: []
+root - INFO - 2023-04-21 10:10:21.999286 - Order placement successful for users: []
+root - INFO - 2023-04-21 10:15:18.685970 - Order placed for FINVANT_LIVE QUASAR_5M BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0 0.5
+root - INFO - 2023-04-21 10:15:19.034570 - Order placed for FINVANT_LIVE ALTAIR BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.5
+root - INFO - 2023-04-21 10:15:19.359548 - Order placed for AIRAN ALTAIR_FUTURES BANKNIFTY OPEN SHORT -3 0.5 2
+root - INFO - 2023-04-21 10:15:19.675983 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES BANKNIFTY OPEN SHORT -1 0.5 2
+root - INFO - 2023-04-21 10:15:20.020790 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 2, 'quantity': 1}, {'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 1}]
+root - INFO - 2023-04-21 10:20:18.370815 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 2 0 0.5
+root - INFO - 2023-04-21 10:20:18.646549 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-04-21 10:30:18.366009 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-04-21 10:30:18.621837 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-21 10:30:18.878869 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-21 10:30:19.181604 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-21 10:30:19.422197 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-04-21 10:30:19.735076 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -2 0 0
+root - INFO - 2023-04-21 10:30:20.027619 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED OPHIUCUS_HEDGED_NIFTY_SHORT BUY 1 0 0
+root - INFO - 2023-04-21 10:30:20.250677 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'OPHIUCUS_HEDGED_NIFTY_SHORT', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-04-21 10:35:18.132554 - Order placement successful for users: []
+root - INFO - 2023-04-21 10:40:18.637303 - Order placement successful for users: []
+root - INFO - 2023-04-21 10:45:18.208201 - Order placement successful for users: []
+root - INFO - 2023-04-21 10:55:18.230764 - Order placement successful for users: []
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [11710]
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - ERROR - Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 624, in lifespan
+    await receive()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/usr/lib/python3.8/asyncio/queues.py", line 163, in get
+    await getter
+asyncio.exceptions.CancelledError
+

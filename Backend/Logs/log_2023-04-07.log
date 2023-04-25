@@ -1,0 +1,97 @@
+root - INFO - 2023-04-07 10:44:24.182445 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-07 10:44:24.315433 - OMS Backend mainloop started.
+root - INFO - 2023-04-07 10:44:24.497866 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-07 10:44:32.471825 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-07 10:44:32.911936 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-07 10:44:40.826920 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-07 10:44:40.954401 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-07 10:44:48.008786 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-07 10:45:20.277915 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:192.0, id:576.
+root - INFO - 2023-04-07 10:45:20.280758 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:192.0, id:613.
+root - INFO - 2023-04-07 10:45:20.559898 - 785.9759330749512
+root - INFO - 2023-04-07 10:45:20.621072 - 846.5859889984131
+root - INFO - 2023-04-07 10:45:21.475697 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:168.55, id:742.
+root - INFO - 2023-04-07 10:45:21.603746 - 633.3489418029785
+root - INFO - 2023-04-07 10:45:21.610341 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:168.55, id:809.
+root - INFO - 2023-04-07 10:45:21.898982 - 794.4598197937012
+root - INFO - 2023-04-07 10:48:17.610197 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:192.0, id:961.
+root - INFO - 2023-04-07 10:48:17.610420 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:192.0, id:983.
+root - INFO - 2023-04-07 10:48:17.861115 - 755.1069259643555
+root - INFO - 2023-04-07 10:48:17.925325 - 819.450855255127
+root - INFO - 2023-04-07 10:48:18.777967 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:276.0, id:573.
+root - INFO - 2023-04-07 10:48:18.915088 - 642.2910690307617
+root - INFO - 2023-04-07 10:48:18.915510 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:276.0, id:754.
+root - INFO - 2023-04-07 10:48:19.178029 - 766.9200897216797
+root - INFO - 2023-04-07 10:48:19.828968 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17650PE, qty:50, transaction type:BUY, placed price:168.55, id:635.
+root - INFO - 2023-04-07 10:48:20.223105 - 896.5089321136475
+root - INFO - 2023-04-07 10:48:20.285476 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:50, transaction type:BUY, placed price:168.55, id:351.
+root - INFO - 2023-04-07 10:48:20.519766 - 738.070011138916
+root - INFO - 2023-04-07 10:48:21.241026 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23MAY17650PE, qty:-50, transaction type:SELL, placed price:255.0, id:690.
+root - INFO - 2023-04-07 10:48:21.404958 - 669.9650287628174
+root - INFO - 2023-04-07 10:48:21.436740 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17650PE, qty:-50, transaction type:SELL, placed price:255.0, id:470.
+root - INFO - 2023-04-07 10:48:21.600765 - 668.6398983001709
+root - INFO - 2023-04-07 10:52:07.747020 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:192.0, id:102.
+root - INFO - 2023-04-07 10:52:07.747150 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:192.0, id:161.
+root - INFO - 2023-04-07 10:52:07.879509 - 638.4642124176025
+root - INFO - 2023-04-07 10:52:07.941278 - 700.4408836364746
+root - INFO - 2023-04-07 10:52:08.790283 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:168.55, id:782.
+root - INFO - 2023-04-07 10:52:08.850637 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:168.55, id:146.
+root - INFO - 2023-04-07 10:52:08.918514 - 632.084846496582
+root - INFO - 2023-04-07 10:52:08.994243 - 645.5490589141846
+root - INFO - 2023-04-07 10:52:56.967199 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-07 10:52:57.096995 - OMS Backend mainloop started.
+root - INFO - 2023-04-07 10:52:57.272323 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-07 10:53:04.876635 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-07 10:53:05.261188 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-07 10:53:11.887052 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-07 10:53:12.022694 - OMSB: Zerodha login for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-04-07 10:53:23.729661 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 255, in generate_session', '    h = hashlib.sha256(self.api_key.encode("utf-8") + request_token.encode("utf-8") + api_secret.encode("utf-8"))', "AttributeError: 'int' object has no attribute 'encode'"]
+root - INFO - 2023-04-07 10:53:33.715425 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:192.0, id:168.
+root - INFO - 2023-04-07 10:53:33.715601 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:192.0, id:149.
+root - INFO - 2023-04-07 10:53:33.844035 - 634.4139575958252
+root - INFO - 2023-04-07 10:53:33.907722 - 697.9620456695557
+root - INFO - 2023-04-07 10:53:34.762905 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:276.0, id:545.
+root - INFO - 2023-04-07 10:53:34.827687 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:276.0, id:530.
+root - INFO - 2023-04-07 10:53:34.896677 - 638.9322280883789
+root - INFO - 2023-04-07 10:53:34.955205 - 634.0007781982422
+root - INFO - 2023-04-07 10:53:35.805039 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:50, transaction type:BUY, placed price:168.55, id:845.
+root - INFO - 2023-04-07 10:53:35.871295 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17650PE, qty:50, transaction type:BUY, placed price:168.55, id:490.
+root - INFO - 2023-04-07 10:53:35.950420 - 650.3472328186035
+root - INFO - 2023-04-07 10:53:36.009159 - 641.5600776672363
+root - INFO - 2023-04-07 10:53:36.861406 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17650PE, qty:-50, transaction type:SELL, placed price:255.0, id:699.
+root - INFO - 2023-04-07 10:53:36.922905 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23MAY17650PE, qty:-50, transaction type:SELL, placed price:255.0, id:756.
+root - INFO - 2023-04-07 10:53:36.992928 - 635.6301307678223
+root - INFO - 2023-04-07 10:53:37.053575 - 636.052131652832
+root - INFO - 2023-04-07 11:02:24.207615 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-04-07 11:02:24.351278 - OMS Backend mainloop started.
+root - INFO - 2023-04-07 11:02:24.555932 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-04-07 11:02:32.064833 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-04-07 11:02:32.691115 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-07 11:02:41.170901 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-07 11:02:41.307232 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-04-07 11:02:48.710123 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-04-07 11:02:49.343635 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:192.0, id:524.
+root - INFO - 2023-04-07 11:02:49.344042 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17700PE, qty:50, transaction type:BUY, placed price:192.0, id:668.
+root - INFO - 2023-04-07 11:02:49.475578 - 637.9809379577637
+root - INFO - 2023-04-07 11:02:49.541424 - 703.3898830413818
+root - INFO - 2023-04-07 11:02:50.399544 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:168.55, id:891.
+root - INFO - 2023-04-07 11:02:50.463586 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17650PE, qty:-50, transaction type:SELL, placed price:168.55, id:189.
+root - INFO - 2023-04-07 11:02:50.535691 - 642.7578926086426
+root - INFO - 2023-04-07 11:02:50.598421 - 640.9139633178711
+root - INFO - 2023-04-07 11:04:56.416283 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:192.0, id:2.
+root - INFO - 2023-04-07 11:04:56.417543 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17700PE, qty:-50, transaction type:SELL, placed price:192.0, id:766.
+root - INFO - 2023-04-07 11:04:56.565422 - 653.9521217346191
+root - INFO - 2023-04-07 11:04:56.627309 - 716.1998748779297
+root - INFO - 2023-04-07 11:04:57.476389 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:276.0, id:608.
+root - INFO - 2023-04-07 11:04:57.550984 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17700PE, qty:50, transaction type:BUY, placed price:276.0, id:107.
+root - INFO - 2023-04-07 11:04:57.615454 - 644.6518898010254
+root - INFO - 2023-04-07 11:04:57.684334 - 638.0636692047119
+root - INFO - 2023-04-07 11:04:58.530712 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23APR17650PE, qty:50, transaction type:BUY, placed price:168.55, id:834.
+root - INFO - 2023-04-07 11:04:58.603487 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17650PE, qty:50, transaction type:BUY, placed price:168.55, id:943.
+root - INFO - 2023-04-07 11:04:58.661557 - 635.338306427002
+root - INFO - 2023-04-07 11:04:58.735447 - 637.4979019165039
+root - INFO - 2023-04-07 11:04:59.582651 - Placed Zerodha Kite options order for:TEST 2, instrument:NIFTY23MAY17650PE, qty:-50, transaction type:SELL, placed price:255.0, id:211.
+root - INFO - 2023-04-07 11:04:59.652092 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17650PE, qty:-50, transaction type:SELL, placed price:255.0, id:60.
+root - INFO - 2023-04-07 11:04:59.722168 - 641.1230564117432
+root - INFO - 2023-04-07 11:04:59.782278 - 635.0882053375244

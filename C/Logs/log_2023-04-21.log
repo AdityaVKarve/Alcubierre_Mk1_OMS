@@ -1,0 +1,141 @@
+root - INFO - 2023-04-21 10:59:30.013879 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [18912]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f2328202f70>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9093 (Press CTRL+C to quit)
+root - INFO - 2023-04-21 11:00:18.609325 - Order placement successful for users: []
+root - INFO - 2023-04-21 11:05:18.456802 - Order placement successful for users: []
+root - INFO - 2023-04-21 11:10:19.088941 - Order placement successful for users: []
+root - INFO - 2023-04-21 11:20:18.114146 - Order placement successful for users: []
+root - INFO - 2023-04-21 11:35:18.386269 - Order placement successful for users: []
+root - INFO - 2023-04-21 11:45:22.038439 - Order placement successful for users: []
+root - INFO - 2023-04-21 12:00:18.160486 - Order placement successful for users: []
+root - INFO - 2023-04-21 12:20:18.062057 - Order placement successful for users: []
+root - INFO - 2023-04-21 12:30:18.003681 - Order placement successful for users: []
+root - INFO - 2023-04-21 12:45:19.205619 - Order placement successful for users: []
+root - INFO - 2023-04-21 13:00:18.377022 - Order placement successful for users: []
+root - INFO - 2023-04-21 13:15:18.363673 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/ubuntu/C/RUN/./main.py", line 1086, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-04-21 13:15:23.114703 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/fastapi/routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/ubuntu/C/RUN/./main.py", line 1086, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+root - INFO - 2023-04-21 13:20:18.492092 - Order placement successful for users: []
+root - INFO - 2023-04-21 13:25:18.797530 - Order placement successful for users: []
+root - INFO - 2023-04-21 13:30:19.107254 - Order placement successful for users: []
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [18912]
+root - INFO - 2023-04-21 13:34:57.897771 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [21286]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f5f40c33f70>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9093 (Press CTRL+C to quit)
+root - INFO - 2023-04-21 13:35:19.382200 - Order placement successful for users: []
+root - INFO - 2023-04-21 13:40:18.393602 - Order placement successful for users: []
+root - INFO - 2023-04-21 13:45:18.784978 - Order placement successful for users: []
+root - INFO - 2023-04-21 14:00:22.883196 - Order placement successful for users: []
+root - INFO - 2023-04-21 14:10:18.566920 - Order placement successful for users: []
+root - INFO - 2023-04-21 14:25:19.102350 - Order placement successful for users: []
+root - INFO - 2023-04-21 14:30:18.316544 - Order placement successful for users: []
+root - INFO - 2023-04-21 14:35:19.221151 - Order placement successful for users: []
+root - INFO - 2023-04-21 14:50:18.285563 - Order placement successful for users: []
+root - INFO - 2023-04-21 14:55:19.473324 - Order placement successful for users: []
+root - INFO - 2023-04-21 15:00:19.520280 - Order placement successful for users: []
+root - INFO - 2023-04-21 15:05:20.348012 - Order placement successful for users: []
+root - INFO - 2023-04-21 15:10:19.575073 - Order placement successful for users: []
+root - INFO - 2023-04-21 15:15:19.660127 - Order placement successful for users: []
+root - INFO - 2023-04-21 15:20:20.263855 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-04-21 15:20:20.966222 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-21 15:20:21.652683 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-21 15:20:22.200320 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-21 15:20:22.863153 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-04-21 15:20:23.375433 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -2 0 0
+root - INFO - 2023-04-21 15:20:23.883310 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-21 15:25:18.723146 - Order placed for FINVANT_LIVE QUASAR_5M BANKNIFTY_SYNTHETIC_INTRADAY_SHORT SELL 1 0 0
+root - INFO - 2023-04-21 15:25:19.155915 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT SELL 2 0 0
+root - INFO - 2023-04-21 15:25:19.670427 - Order placed for FINVANT_LIVE ALTAIR NIFTY_SYNTHETIC_INTRADAY_SHORT SELL 1 0 0
+root - INFO - 2023-04-21 15:25:20.071016 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-21 15:27:06.645808 - Order placed for AIRAN ALTAIR_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-04-21 15:27:07.234929 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES BANKNIFTY CLOSE SHORT -1 0 0
+root - INFO - 2023-04-21 15:27:07.779068 - Order placement successful for users: [{'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-21 15:27:40.630053 - Order placed for AIRAN ALTAIR_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-04-21 15:27:41.364643 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY CLOSE SHORT -2 0 0
+root - INFO - 2023-04-21 15:27:41.761418 - Order placement successful for users: [{'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-04-21 15:30:18.542691 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED OPHIUCUS_HEDGED_NIFTY_SHORT SELL 1 0 0
+root - INFO - 2023-04-21 15:30:18.774092 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'OPHIUCUS_HEDGED_NIFTY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [21286]

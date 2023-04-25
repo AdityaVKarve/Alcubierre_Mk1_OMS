@@ -1,0 +1,132 @@
+root - INFO - 2023-03-15 09:01:44.945053 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [73314]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x116e926a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - ERROR - [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+root - INFO - 2023-03-15 09:02:55.275639 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [73398]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x11771a6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [73398]
+root - INFO - 2023-03-15 09:21:56.388188 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [75146]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x12460a6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-15 09:35:17.141467 - Order placed for FINVANT_LIVE ALTAIR BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.5
+root - INFO - 2023-03-15 09:35:17.243731 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 2, 'quantity': 1}]
+root - INFO - 2023-03-15 09:40:15.923193 - Order placed for FINVANT_LIVE LUNA NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.55
+root - INFO - 2023-03-15 09:40:16.047663 - Order placed for FINVANT_LIVE LUNA BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0
+root - INFO - 2023-03-15 09:40:16.147192 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'LUNA', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.55, 'stoploss': 2, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'LUNA', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0, 'stoploss': 2, 'quantity': 1}]
+root - INFO - 2023-03-15 09:45:15.919631 - Order placement successful for users: []
+root - INFO - 2023-03-15 09:50:15.868467 - Order placement successful for users: []
+root - INFO - 2023-03-15 09:55:15.923645 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:00:15.936889 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:05:15.883298 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:10:15.898752 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:15:15.905074 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:20:15.874693 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:25:15.933289 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:30:15.919668 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:35:15.898973 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:40:15.866581 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:45:15.889826 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:50:15.923424 - Order placement successful for users: []
+root - INFO - 2023-03-15 10:55:15.883571 - Order placement successful for users: []
+root - INFO - 2023-03-15 11:00:15.875295 - Order placement successful for users: []
+root - INFO - 2023-03-15 11:05:15.899312 - Order placement successful for users: []
+root - INFO - 2023-03-15 11:10:16.043761 - Order placed for FINVANT_LIVE QUASAR_5M BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0 0.5
+root - INFO - 2023-03-15 11:10:16.151223 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 2 0 0.5
+root - INFO - 2023-03-15 11:10:16.251620 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-03-15 11:15:15.883923 - Order placement successful for users: []
+root - INFO - 2023-03-15 11:20:15.903806 - Order placement successful for users: []
+root - INFO - 2023-03-15 11:25:15.887524 - Order placement successful for users: []
+root - INFO - 2023-03-15 11:30:15.884396 - Order placement successful for users: []
+root - INFO - 2023-03-15 11:40:17.015745 - Order placement successful for users: []
+root - INFO - 2023-03-15 11:45:15.947473 - Order placement successful for users: []
+root - INFO - 2023-03-15 11:50:15.944206 - Order placement successful for users: []
+root - INFO - 2023-03-15 11:55:15.934889 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:00:16.012559 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:05:15.946502 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:10:15.978078 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:15:15.902098 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:20:16.054734 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:25:15.971398 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:30:16.954621 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:35:16.045341 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:40:15.949403 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:45:15.954083 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:50:15.937192 - Order placement successful for users: []
+root - INFO - 2023-03-15 12:55:15.916837 - Order placement successful for users: []
+root - INFO - 2023-03-15 13:00:16.121135 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-15 13:00:16.234920 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-15 13:00:16.336029 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-15 13:00:16.453112 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-15 13:00:16.581829 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-15 13:00:16.680997 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-15 13:00:16.780147 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-15 13:00:16.877974 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-15 13:05:15.943665 - Order placement successful for users: []
+root - INFO - 2023-03-15 13:10:15.900598 - Order placement successful for users: []
+root - INFO - 2023-03-15 13:15:16.044839 - Order placement successful for users: []
+root - INFO - 2023-03-15 13:20:16.003273 - Order placement successful for users: []
+root - INFO - 2023-03-15 13:25:15.914048 - Order placement successful for users: []
+root - INFO - 2023-03-15 13:30:16.108776 - Order placement successful for users: []
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [75146]
+root - INFO - 2023-03-15 13:32:21.047691 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [2339]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x12feca6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-15 13:35:15.918177 - Order placement successful for users: []
+root - INFO - 2023-03-15 13:40:15.880591 - Order placement successful for users: []
+root - INFO - 2023-03-15 13:45:16.965591 - Order placement successful for users: []
+root - INFO - 2023-03-15 13:50:15.891572 - Order placement successful for users: []
+root - INFO - 2023-03-15 13:55:15.936558 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:00:16.066409 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:05:15.986228 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:10:15.852683 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:15:15.958322 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:20:15.875537 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:25:15.872261 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:30:15.947478 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:35:16.005739 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:40:15.918337 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:45:15.903181 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:50:15.881952 - Order placement successful for users: []
+root - INFO - 2023-03-15 14:55:15.894047 - Order placement successful for users: []
+root - INFO - 2023-03-15 15:00:15.879344 - Order placement successful for users: []
+root - INFO - 2023-03-15 15:05:16.249975 - Order placement successful for users: []
+root - INFO - 2023-03-15 15:10:16.789163 - Order placement successful for users: []
+root - INFO - 2023-03-15 15:15:16.120953 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-03-15 15:15:16.246849 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-15 15:15:16.346153 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-15 15:15:16.456699 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-15 15:15:16.569168 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-15 15:15:16.683046 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-03-15 15:20:15.964254 - Order placement successful for users: []
+root - INFO - 2023-03-15 15:25:16.031646 - Order placed for FINVANT_LIVE QUASAR_5M BANKNIFTY_SYNTHETIC_INTRADAY_SHORT SELL 1 0 0
+root - INFO - 2023-03-15 15:25:16.136592 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT SELL 2 0 0
+root - INFO - 2023-03-15 15:25:16.254035 - Order placed for FINVANT_LIVE LUNA NIFTY_SYNTHETIC_INTRADAY_SHORT SELL 1 0 0
+root - INFO - 2023-03-15 15:25:16.373329 - Order placed for FINVANT_LIVE LUNA BANKNIFTY_SYNTHETIC_INTRADAY_SHORT SELL 1 0 0
+root - INFO - 2023-03-15 15:25:16.484438 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'LUNA', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'LUNA', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}]

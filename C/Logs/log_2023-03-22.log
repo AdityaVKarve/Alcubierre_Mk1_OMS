@@ -1,0 +1,394 @@
+root - INFO - 2023-03-22 08:09:09.363203 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [22685]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x11e98d6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-22 08:09:23.761783 - Order placed for AIRAN LUNA_FUTURES NIFTY OPEN SHORT -3 0 0
+root - INFO - 2023-03-22 08:09:23.865286 - Order placed for BPWealth_AHO7706 LUNA_FUTURES NIFTY OPEN SHORT -2 0 0
+root - INFO - 2023-03-22 08:09:23.968228 - Order placement successful for users: [{'user_name': 'AIRAN', 'strategy': 'LUNA_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'LUNA_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-03-22 08:11:24.443169 - Order placement successful for users: []
+root - INFO - 2023-03-22 08:11:30.470771 - Order placed for AIRAN ALTAIR_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-03-22 08:11:30.570593 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY CLOSE SHORT -2 0 0
+root - INFO - 2023-03-22 08:11:30.668591 - Order placement successful for users: [{'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [22685]
+root - INFO - 2023-03-22 08:12:25.240903 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [22912]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x11775d6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-22 08:12:38.350570 - Order placed for AIRAN ALTAIR_FUTURES NIFTY OPEN SHORT -3 0 0
+root - INFO - 2023-03-22 08:12:38.451735 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY OPEN SHORT -2 0 0
+root - INFO - 2023-03-22 08:12:38.552004 - Order placement successful for users: [{'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [22912]
+root - INFO - 2023-03-22 08:15:35.852921 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [23163]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x119d116a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [23163]
+root - INFO - 2023-03-22 08:16:14.613824 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [23201]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x11ca496a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-22 08:16:26.191908 - Order placed for AIRAN ALTAIR_FUTURES NIFTY OPEN SHORT -3 0 0
+root - INFO - 2023-03-22 08:16:26.305876 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY OPEN SHORT -2 0 0
+root - INFO - 2023-03-22 08:16:26.405158 - Order placement successful for users: [{'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-03-22 08:18:29.781326 - Order placed for AIRAN ALTAIR_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-03-22 08:18:29.881959 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY CLOSE SHORT -2 0 0
+root - INFO - 2023-03-22 08:18:29.983565 - Order placement successful for users: [{'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-03-22 08:19:39.583053 - Order placed for AIRAN ALTAIR_FUTURES NIFTY OPEN SHORT -3 0 0
+root - INFO - 2023-03-22 08:19:39.756126 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY OPEN SHORT -2 0 0
+root - INFO - 2023-03-22 08:19:39.936414 - Order placement successful for users: [{'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [23201]
+root - INFO - 2023-03-22 08:20:26.785069 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [23502]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x12d6b96a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-22 08:20:33.994410 - Order placed for AIRAN ALTAIR_FUTURES NIFTY OPEN SHORT -3 0 0
+root - INFO - 2023-03-22 08:20:34.097987 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY OPEN SHORT -2 0 0
+root - INFO - 2023-03-22 08:20:34.201932 - Order placement successful for users: [{'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-03-22 08:22:10.553618 - Order placed for AIRAN ALTAIR_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-03-22 08:22:10.653528 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY CLOSE SHORT -2 0 0
+root - INFO - 2023-03-22 08:22:10.751647 - Order placement successful for users: [{'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-03-22 08:23:17.940203 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-03-22 08:23:18.038774 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-22 08:23:18.139051 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-22 08:23:18.236329 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-22 08:23:18.334377 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-22 08:23:18.433801 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-22 08:23:18.531936 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -2 0 0
+root - INFO - 2023-03-22 08:23:18.632540 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-03-22 08:25:27.337332 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-03-22 08:25:27.438697 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-22 08:25:27.548178 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-22 08:25:27.647624 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-22 08:25:27.748395 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-22 08:25:27.846182 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-22 08:25:27.949343 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -2 0 0
+root - INFO - 2023-03-22 08:25:28.050005 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [23502]
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - ERROR - Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 638, in lifespan
+    await receive()
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/queues.py", line 166, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+root - INFO - 2023-03-22 08:34:59.829837 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [24124]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x1172cd6a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-22 09:35:16.086189 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 1003, in create_order
+    if placeOrder(user_name, strategy, instrument_nomenclature, position, quantity, stoploss, target, nomenclature_to_details):
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 377, in placeOrder
+    ret = addOrderToOrderReference(order_id = order_id, username=username, instrument_nomenclature = instrument_nomenclature, quantity = quantity, position = position, strategy=strategy_name, nomenclature_to_details=nomenclature_to_details)
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 472, in addOrderToOrderReference
+    cur.execute('INSERT INTO order_rexference VALUES ({}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},{} ,{}, {})'.format(gSF(order_id),gSF("IN PROGRESS"),gSF(current_time),quantity,gSF(expiry),gSF(exchange),gSF(segment),exchange_token,gSF(tradingsymbol),instrument_token,lot_size,position_stoploss_percent,position_target_percent,0,0,0,0,gSF(position_spread),gSF(nomenclature)))
+sqlite3.OperationalError: no such table: order_rexference
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 1007, in create_order
+    log.postLog(severity="INFO", message="Error placing order: " + str(e), tag="OMS_Main_9")
+TypeError: postLog() missing 1 required positional argument: 'publish'
+root - INFO - 2023-03-22 09:40:18.325930 - Order placement successful for users: []
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [24124]
+root - INFO - 2023-03-22 09:44:37.998331 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [30759]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x10ff716a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 1003, in create_order
+    if placeOrder(user_name, strategy, instrument_nomenclature, position, quantity, stoploss, target, nomenclature_to_details):
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 377, in placeOrder
+    ret = addOrderToOrderReference(order_id = order_id, username=username, instrument_nomenclature = instrument_nomenclature, quantity = quantity, position = position, strategy=strategy_name, nomenclature_to_details=nomenclature_to_details)
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 472, in addOrderToOrderReference
+    cur.execute('INSERT INTO order_rexference VALUES ({}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},{} ,{}, {})'.format(gSF(order_id),gSF("IN PROGRESS"),gSF(current_time),quantity,gSF(expiry),gSF(exchange),gSF(segment),exchange_token,gSF(tradingsymbol),instrument_token,lot_size,position_stoploss_percent,position_target_percent,0,0,0,0,gSF(position_spread),gSF(nomenclature)))
+sqlite3.OperationalError: no such table: order_rexference
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 1007, in create_order
+    log.postLog(severity="INFO", message="Error placing order: " + str(e), tag="OMS_Main_9")
+TypeError: postLog() missing 1 required positional argument: 'publish'
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 1003, in create_order
+    if placeOrder(user_name, strategy, instrument_nomenclature, position, quantity, stoploss, target, nomenclature_to_details):
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 377, in placeOrder
+    ret = addOrderToOrderReference(order_id = order_id, username=username, instrument_nomenclature = instrument_nomenclature, quantity = quantity, position = position, strategy=strategy_name, nomenclature_to_details=nomenclature_to_details)
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 472, in addOrderToOrderReference
+    cur.execute('INSERT INTO order_rexference VALUES ({}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},{} ,{}, {})'.format(gSF(order_id),gSF("IN PROGRESS"),gSF(current_time),quantity,gSF(expiry),gSF(exchange),gSF(segment),exchange_token,gSF(tradingsymbol),instrument_token,lot_size,position_stoploss_percent,position_target_percent,0,0,0,0,gSF(position_spread),gSF(nomenclature)))
+sqlite3.OperationalError: no such table: order_rexference
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 93, in __call__
+    raise exc
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 65, in app
+    response = await func(request)
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/opt/homebrew/lib/python3.9/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/aditya/Downloads/API 2/C/RUN/./main.py", line 1007, in create_order
+    log.postLog(severity="INFO", message="Error placing order: " + str(e), tag="OMS_Main_9")
+TypeError: postLog() missing 1 required positional argument: 'publish'
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [30759]
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - ERROR - Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 638, in lifespan
+    await receive()
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/queues.py", line 166, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+root - INFO - 2023-03-22 09:46:18.041376 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [31130]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x117ae16a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [31130]
+root - INFO - 2023-03-22 09:58:25.911803 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [32590]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x1182c96a0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-22 10:00:15.947463 - Order placed for FINVANT_LIVE ALTAIR NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.5
+root - INFO - 2023-03-22 10:00:16.068416 - Order placed for FINVANT_LIVE ALTAIR BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.5
+root - INFO - 2023-03-22 10:00:16.181408 - Order placed for AIRAN ALTAIR_FUTURES NIFTY OPEN SHORT -3 0.5 2
+root - INFO - 2023-03-22 10:00:16.279148 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY OPEN SHORT -2 0.5 2
+root - INFO - 2023-03-22 10:00:16.389309 - Order placed for AIRAN ALTAIR_FUTURES BANKNIFTY OPEN SHORT -3 0.5 2
+root - INFO - 2023-03-22 10:00:16.501308 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES BANKNIFTY OPEN SHORT -1 0.5 2
+root - INFO - 2023-03-22 10:00:16.601885 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 2, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 2, 'quantity': 1}, {'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 2}, {'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0.5, 'quantity': 1}]
+root - INFO - 2023-03-22 10:05:16.860841 - Order placement successful for users: []
+root - INFO - 2023-03-22 10:10:15.936259 - Order placement successful for users: []
+root - INFO - 2023-03-22 10:15:16.040463 - Order placed for FINVANT_LIVE LUNA NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0.55
+root - INFO - 2023-03-22 10:15:16.146219 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'LUNA', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.55, 'stoploss': 2, 'quantity': 1}]
+root - INFO - 2023-03-22 10:20:15.912559 - Order placement successful for users: []
+root - INFO - 2023-03-22 10:25:15.936732 - Order placement successful for users: []
+root - INFO - 2023-03-22 10:30:15.954848 - Order placement successful for users: []
+root - INFO - 2023-03-22 10:35:15.877920 - Order placement successful for users: []
+root - INFO - 2023-03-22 10:40:15.908864 - Order placement successful for users: []
+root - INFO - 2023-03-22 10:45:15.887546 - Order placement successful for users: []
+root - INFO - 2023-03-22 10:50:15.912052 - Order placement successful for users: []
+root - INFO - 2023-03-22 10:55:15.896291 - Order placement successful for users: []
+root - INFO - 2023-03-22 11:00:15.977837 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 2 0 0.5
+root - INFO - 2023-03-22 11:00:16.078261 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-03-22 11:05:15.861098 - Order placement successful for users: []
+root - INFO - 2023-03-22 11:10:15.871825 - Order placement successful for users: []
+root - INFO - 2023-03-22 11:20:15.906396 - Order placement successful for users: []
+root - INFO - 2023-03-22 11:25:15.888190 - Order placement successful for users: []
+root - INFO - 2023-03-22 11:30:15.953842 - Order placement successful for users: []
+root - INFO - 2023-03-22 11:35:15.952077 - Order placement successful for users: []
+root - INFO - 2023-03-22 11:40:15.863010 - Order placement successful for users: []
+root - INFO - 2023-03-22 11:45:15.926064 - Order placement successful for users: []
+root - INFO - 2023-03-22 11:50:15.898251 - Order placement successful for users: []
+root - INFO - 2023-03-22 11:55:15.948490 - Order placement successful for users: []
+root - INFO - 2023-03-22 12:00:15.878444 - Order placement successful for users: []
+root - INFO - 2023-03-22 12:15:17.010875 - Order placement successful for users: []
+root - INFO - 2023-03-22 12:20:15.898309 - Order placement successful for users: []
+root - INFO - 2023-03-22 12:25:15.885808 - Order placement successful for users: []
+root - INFO - 2023-03-22 12:30:15.908084 - Order placement successful for users: []
+root - INFO - 2023-03-22 12:35:15.858453 - Order placement successful for users: []
+root - INFO - 2023-03-22 12:40:15.921997 - Order placement successful for users: []
+root - INFO - 2023-03-22 12:45:16.010789 - Order placement successful for users: []
+root - INFO - 2023-03-22 12:50:15.946743 - Order placement successful for users: []
+root - INFO - 2023-03-22 12:55:15.934323 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:00:15.935941 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:05:16.064974 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:10:16.066335 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:15:15.957911 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:20:15.946770 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:25:15.897920 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:30:15.888944 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:35:15.974675 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:40:15.887543 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:45:15.956632 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:50:15.862110 - Order placement successful for users: []
+root - INFO - 2023-03-22 13:55:15.908845 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:00:15.923975 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:05:15.964166 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:10:15.953044 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:15:15.923082 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:20:16.882793 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:25:15.924852 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:30:15.939753 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:35:15.895088 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:40:15.897959 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:45:15.930807 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:50:15.950741 - Order placement successful for users: []
+root - INFO - 2023-03-22 14:55:15.855286 - Order placement successful for users: []
+root - INFO - 2023-03-22 15:00:15.912852 - Order placement successful for users: []
+root - INFO - 2023-03-22 15:05:15.932560 - Order placement successful for users: []
+root - INFO - 2023-03-22 15:10:15.924236 - Order placement successful for users: []
+root - INFO - 2023-03-22 15:20:15.880617 - Order placement successful for users: []
+root - INFO - 2023-03-22 15:25:16.023264 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT SELL 2 0 0
+root - INFO - 2023-03-22 15:25:16.127425 - Order placed for FINVANT_LIVE ALTAIR NIFTY_SYNTHETIC_INTRADAY_SHORT SELL 1 0 0
+root - INFO - 2023-03-22 15:25:17.234951 - Order placed for FINVANT_LIVE ALTAIR BANKNIFTY_SYNTHETIC_INTRADAY_SHORT SELL 1 0 0
+root - INFO - 2023-03-22 15:25:17.335062 - Order placed for FINVANT_LIVE LUNA NIFTY_SYNTHETIC_INTRADAY_SHORT SELL 1 0 0
+root - INFO - 2023-03-22 15:25:17.432165 - Order placed for AIRAN ALTAIR_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-03-22 15:25:17.530288 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES NIFTY CLOSE SHORT -2 0 0
+root - INFO - 2023-03-22 15:25:17.628395 - Order placed for AIRAN ALTAIR_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-03-22 15:25:17.729284 - Order placed for BPWealth_AHO7706 ALTAIR_FUTURES BANKNIFTY CLOSE SHORT -1 0 0
+root - INFO - 2023-03-22 15:25:17.828329 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'ALTAIR', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'LUNA', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'AIRAN', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'ALTAIR_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Finished server process [32590]
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - ERROR - Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/starlette/routing.py", line 638, in lifespan
+    await receive()
+  File "/opt/homebrew/lib/python3.9/site-packages/uvicorn/lifespan/on.py", line 135, in receive
+    return await self.receive_queue.get()
+  File "/opt/homebrew/Cellar/python@3.9/3.9.12/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/queues.py", line 166, in get
+    await getter
+asyncio.exceptions.CancelledError
+

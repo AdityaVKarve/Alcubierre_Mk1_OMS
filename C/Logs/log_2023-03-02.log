@@ -1,0 +1,479 @@
+root - INFO - 2023-03-02 11:10:24.703088 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [12163]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fc159d38850>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [12163]
+root - INFO - 2023-03-02 11:11:45.316327 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [12207]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fcda753ac10>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [12207]
+root - INFO - 2023-03-02 11:17:56.370626 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [12428]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f7a15643130>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 355, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1240, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1286, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1235, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1006, in _send_output
+    self.send(msg)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 946, in send
+    self.connect()
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 183, in connect
+    conn = self._new_conn()
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f7a156faeb0>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 640, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7a156faeb0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/applications.py", line 261, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./main.py", line 932, in create_order
+    user_details = await asyncio.create_task(getUserDetails(strategy, instrument_nomenclature, position)) # async allows to run multiple tasks at the same time
+  File "./main.py", line 619, in getUserDetails
+    ads = ADS_Interface(config.ADS_SERVER_ADDRESS)
+  File "./APIhelper.py", line 186, in __init__
+    self.token = self.authentification()
+  File "./APIhelper.py", line 220, in authentification
+    response = requests.post(self.url + 'token', data=data)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7a156faeb0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [12428]
+root - INFO - 2023-03-02 11:19:27.343300 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [12519]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fbabcc1b190>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py", line 80, in create_connection
+    raise err
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 355, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1240, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1286, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1235, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1006, in _send_output
+    self.send(msg)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 946, in send
+    self.connect()
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 183, in connect
+    conn = self._new_conn()
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fbabccd1ee0>: Failed to establish a new connection: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 640, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/retry.py", line 399, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbabccd1ee0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/applications.py", line 261, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./main.py", line 932, in create_order
+    user_details = await asyncio.create_task(getUserDetails(strategy, instrument_nomenclature, position)) # async allows to run multiple tasks at the same time
+  File "./main.py", line 619, in getUserDetails
+    ads = ADS_Interface(config.ADS_SERVER_ADDRESS)
+  File "./APIhelper.py", line 186, in __init__
+    self.token = self.authentification()
+  File "./APIhelper.py", line 220, in authentification
+    response = requests.post(self.url + 'token', data=data)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8080): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fbabccd1ee0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [12519]
+root - INFO - 2023-03-02 11:20:34.644821 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [12602]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fe5e9540130>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [12602]
+root - INFO - 2023-03-02 11:20:41.799347 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [12618]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f93d3d43190>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-03-02 11:20:49.771666 - Order placement successful for users: []
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/applications.py", line 261, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./main.py", line 1011, in create_order
+    return user_result
+UnboundLocalError: local variable 'user_result' referenced before assignment
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [12618]
+root - INFO - 2023-03-02 11:26:16.353657 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [12845]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fc4f4642190>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-03-02 11:26:20.615892 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-02 11:26:20.751782 - Order placed for ODIN OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-02 11:26:20.882429 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-02 11:26:21.031324 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 2 0.5 0
+root - INFO - 2023-03-02 11:26:21.164477 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0, 'stoploss': 0.5, 'quantity': 2}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [12845]
+root - INFO - 2023-03-02 12:07:40.892905 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [14187]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f81b7d40160>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [14187]
+root - INFO - 2023-03-02 12:08:32.938454 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [14228]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7ff119682160>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [14228]
+root - INFO - 2023-03-02 12:09:31.120213 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [14271]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fbd78642160>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [14271]
+root - INFO - 2023-03-02 12:11:55.555885 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [14374]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fe95b642100>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [14374]
+root - INFO - 2023-03-02 12:12:15.364033 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [14401]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fc1e1d40100>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-03-02 12:46:22.278869 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [47509]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f252b40fbe0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9093 (Press CTRL+C to quit)
+root - INFO - 2023-03-02 12:50:16.232477 - Order placement successful for users: []
+root - INFO - 2023-03-02 12:55:16.190929 - Order placement successful for users: []
+root - INFO - 2023-03-02 13:00:16.421907 - Order placement successful for users: []
+root - INFO - 2023-03-02 13:05:16.164520 - Order placement successful for users: []
+root - INFO - 2023-03-02 13:10:16.404364 - Order placement successful for users: []
+root - INFO - 2023-03-02 13:15:16.269117 - Order placement successful for users: []
+root - INFO - 2023-03-02 13:25:18.448743 - Order placement successful for users: []
+root - INFO - 2023-03-02 13:35:16.419679 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-02 13:35:16.490656 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-02 13:35:16.569429 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-02 13:35:16.667238 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [47509]
+root - INFO - 2023-03-02 14:07:46.391188 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [48466]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f7a75593be0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:9093 (Press CTRL+C to quit)
+root - INFO - 2023-03-02 15:20:16.102573 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-02 15:20:16.198504 - Order placed for ODIN OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-02 15:20:16.290652 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-02 15:20:16.364487 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-03-02 15:25:16.080690 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT SELL 2 0 0
+root - INFO - 2023-03-02 15:25:16.146817 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/usr/lib/python3/dist-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/lib/python3/dist-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/lib/python3/dist-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/lib/python3/dist-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/lib/python3/dist-packages/h11/_readers.py", line 81, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/routing.py", line 699, in __call__
+    await self.default(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/routing.py", line 593, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/usr/lib/python3/dist-packages/h11/_connection.py", line 485, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/usr/lib/python3/dist-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/usr/lib/python3/dist-packages/h11/_connection.py", line 467, in next_event
+    event = self._extract_next_receive_event()
+  File "/usr/lib/python3/dist-packages/h11/_connection.py", line 409, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/usr/lib/python3/dist-packages/h11/_readers.py", line 85, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/usr/lib/python3/dist-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+root - INFO - 2023-03-03 09:35:18.507958 - Order placement successful for users: []
+root - INFO - 2023-03-03 09:40:16.483437 - Order placement successful for users: []
+root - INFO - 2023-03-03 09:45:16.221476 - Order placement successful for users: []
+root - INFO - 2023-03-03 09:50:16.270083 - Order placement successful for users: []
+root - INFO - 2023-03-03 09:55:16.252669 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-03 09:55:16.317369 - Order placed for ODIN OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-03 09:55:16.382227 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-03 09:55:16.451970 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-03 10:05:16.451972 - Order placement successful for users: []
+root - INFO - 2023-03-03 10:15:16.419688 - Order placed for FINVANT_LIVE OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-03 10:15:16.485708 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-03 10:20:16.363424 - Order placement successful for users: []
+root - INFO - 2023-03-03 10:25:16.215175 - Order placement successful for users: []
+root - INFO - 2023-03-03 10:30:16.484868 - Order placement successful for users: []
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [48466]

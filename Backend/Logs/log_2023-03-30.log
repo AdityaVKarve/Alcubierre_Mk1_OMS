@@ -1,0 +1,222 @@
+root - INFO - 2023-03-30 10:47:34.416208 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-30 10:47:34.553012 - OMS Backend mainloop started.
+root - INFO - 2023-03-30 10:47:34.736218 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-30 10:47:48.233207 - OMSB: Login succesful for backend kite ticker.
+root - CRITICAL - CRITICAL ERROR:2023-03-30 10:47:48.375672 - Failed to initialise LTP gather module.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn', '    conn = connection.create_connection(', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py", line 80, in create_connection', '    raise err', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py", line 70, in create_connection', '    sock.connect(sa)', 'ConnectionRefusedError: [Errno 61] Connection refused', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen', '    httplib_response = self._make_request(conn, method, url,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 355, in _make_request', '    conn.request(method, url, **httplib_request_kw)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1240, in request', '    self._send_request(method, url, body, headers, encode_chunked)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1286, in _send_request', '    self.endheaders(body, encode_chunked=encode_chunked)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1235, in endheaders', '    self._send_output(message_body, encode_chunked=encode_chunked)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1006, in _send_output', '    self.send(msg)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 946, in send', '    self.connect()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 183, in connect', '    conn = self._new_conn()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn', '    raise NewConnectionError(', 'urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9daa39ef10>: Failed to establish a new connection: [Errno 61] Connection refused', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 489, in send', '    resp = conn.urlopen(', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 640, in urlopen', '    retries = retries.increment(method, url, error=e, _pool=self,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/retry.py", line 399, in increment', '    raise MaxRetryError(_pool, url, error or ResponseError(cause))', "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=9093): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9daa39ef10>: Failed to establish a new connection: [Errno 61] Connection refused'))", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/GatherLTP.py", line 30, in __init__', '    self.OMS_interface = OMS_API_Interface.OMS_Interface(Config().OMS_SERVER_ADDRESS)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OMS_API_Interface.py", line 12, in __init__', '    self.token = self.authentification()', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OMS_API_Interface.py", line 23, in authentification', "    response = requests.post(self.url + 'token', data=data)", '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 115, in post', '    return request("post", url, data=data, json=json, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 59, in request', '    return session.request(method=method, url=url, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 587, in request', '    resp = self.send(prep, **send_kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 701, in send', '    r = adapter.send(request, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 565, in send', '    raise ConnectionError(e, request=request)', "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=9093): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9daa39ef10>: Failed to establish a new connection: [Errno 61] Connection refused'))"]
+root - INFO - 2023-03-30 10:47:48.515206 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - INFO - 2023-03-30 10:47:56.541601 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - INFO - 2023-03-30 11:40:12.527328 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-30 11:40:12.659110 - OMS Backend mainloop started.
+root - INFO - 2023-03-30 11:40:12.832171 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-30 11:40:20.412490 - OMSB: Login succesful for backend kite ticker.
+root - CRITICAL - CRITICAL ERROR:2023-03-30 11:40:20.552977 - Failed to initialise LTP gather module.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 159, in _new_conn', '    conn = connection.create_connection(', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py", line 80, in create_connection', '    raise err', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/connection.py", line 70, in create_connection', '    sock.connect(sa)', 'ConnectionRefusedError: [Errno 61] Connection refused', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 600, in urlopen', '    httplib_response = self._make_request(conn, method, url,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 355, in _make_request', '    conn.request(method, url, **httplib_request_kw)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1240, in request', '    self._send_request(method, url, body, headers, encode_chunked)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1286, in _send_request', '    self.endheaders(body, encode_chunked=encode_chunked)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1235, in endheaders', '    self._send_output(message_body, encode_chunked=encode_chunked)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 1006, in _send_output', '    self.send(msg)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/http/client.py", line 946, in send', '    self.connect()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 183, in connect', '    conn = self._new_conn()', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connection.py", line 168, in _new_conn', '    raise NewConnectionError(', 'urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fc1ec5e6e20>: Failed to establish a new connection: [Errno 61] Connection refused', '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 489, in send', '    resp = conn.urlopen(', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 640, in urlopen', '    retries = retries.increment(method, url, error=e, _pool=self,', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/urllib3/util/retry.py", line 399, in increment', '    raise MaxRetryError(_pool, url, error or ResponseError(cause))', "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=9093): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc1ec5e6e20>: Failed to establish a new connection: [Errno 61] Connection refused'))", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/GatherLTP.py", line 30, in __init__', '    self.OMS_interface = OMS_API_Interface.OMS_Interface(Config().OMS_SERVER_ADDRESS)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OMS_API_Interface.py", line 12, in __init__', '    self.token = self.authentification()', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OMS_API_Interface.py", line 23, in authentification', "    response = requests.post(self.url + 'token', data=data)", '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 115, in post', '    return request("post", url, data=data, json=json, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/api.py", line 59, in request', '    return session.request(method=method, url=url, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 587, in request', '    resp = self.send(prep, **send_kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/sessions.py", line 701, in send', '    r = adapter.send(request, **kwargs)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/requests/adapters.py", line 565, in send', '    raise ConnectionError(e, request=request)', "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=9093): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fc1ec5e6e20>: Failed to establish a new connection: [Errno 61] Connection refused'))"]
+root - INFO - 2023-03-30 11:40:20.684229 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - INFO - 2023-03-30 11:40:28.129792 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - INFO - 2023-03-30 11:40:51.885474 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-30 11:40:52.018830 - OMS Backend mainloop started.
+root - INFO - 2023-03-30 11:40:52.198837 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-30 11:40:59.386097 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-30 11:40:59.787547 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-30 11:41:07.362267 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-03-30 11:41:29.089453 - Placed Zerodha Kite futures order for:TEST, instrument:NIFTY23APRFUT, qty:50, transaction type:BUY, placed price:17213.1, id:608.
+root - INFO - 2023-03-30 11:41:29.277228 - 188.7223720550537
+root - INFO - 2023-03-30 11:42:30.155032 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-30 11:42:30.291303 - OMS Backend mainloop started.
+root - INFO - 2023-03-30 11:42:30.470840 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-30 11:42:38.138732 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-30 11:42:38.496341 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-30 11:42:46.011527 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-03-30 11:45:58.761346 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-30 11:45:58.896859 - OMS Backend mainloop started.
+root - INFO - 2023-03-30 11:45:59.076211 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-30 11:46:06.579820 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-30 11:46:06.963702 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-30 11:46:13.522724 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-03-30 11:48:44.941024 - Placed Zerodha Kite futures order for:TEST, instrument:NIFTY23APRFUT, qty:-50, transaction type:SELL, placed price:17213.1, id:619.
+root - INFO - 2023-03-30 11:48:45.075822 - 135.7431411743164
+root - INFO - 2023-03-30 11:48:45.491012 - Placed Zerodha Kite futures order for:TEST, instrument:NIFTY23MAYFUT, qty:50, transaction type:BUY, placed price:17264.85, id:686.
+root - INFO - 2023-03-30 11:48:45.628190 - 138.87286186218262
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-03-30 12:52:22.637055 - Placed Zerodha Kite futures order for:TEST, instrument:NIFTY23MAYFUT, qty:50, transaction type:BUY, placed price:17264.85, id:997.
+root - INFO - 2023-03-30 12:52:22.850409 - 214.26796913146973
+root - CRITICAL - CRITICAL ERROR:2023-03-30 12:53:02.234812 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderHandler.py", line 53, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/OrderHandler.py", line 67, in place_pending_orders', '    pending_orders = DBManager.get_pending_orders(username)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 257, in get_pending_orders', "    cur.execute('SELECT tradingsymbol, exchange_token, lot_size, total_qty, placed_qty, last_order_placement, exchange, segment, instrument_token from orderbuffer WHERE username = {} and (total_qty!=placed_qty or total_qty == 0);'.format(gSF(username)))", 'sqlite3.OperationalError: no such table: orderbuffer']
+root - INFO - 2023-03-30 12:53:35.286916 - Placed Zerodha Kite futures order for:TEST, instrument:NIFTY23APRFUT, qty:50, transaction type:BUY, placed price:17213.1, id:151.
+root - INFO - 2023-03-30 12:53:35.474842 - 188.7660026550293
+root - INFO - 2023-03-30 12:54:29.416494 - Placed Zerodha Kite futures order for:TEST, instrument:NIFTY23APRFUT, qty:-50, transaction type:SELL, placed price:17213.1, id:717.
+root - INFO - 2023-03-30 12:54:29.615873 - 200.16789436340332
+root - INFO - 2023-03-30 12:54:30.029583 - Placed Zerodha Kite futures order for:TEST, instrument:NIFTY23MAYFUT, qty:50, transaction type:BUY, placed price:17264.85, id:929.
+root - INFO - 2023-03-30 12:54:30.159403 - 130.71513175964355
+root - INFO - 2023-03-30 12:56:29.699188 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY2340617100PE, qty:50, transaction type:BUY, placed price:102.7, id:134.
+root - INFO - 2023-03-30 12:56:29.849008 - 650.7101058959961
+root - INFO - 2023-03-30 12:56:30.790323 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY2340617100CE, qty:-50, transaction type:SELL, placed price:123.35, id:706.
+root - INFO - 2023-03-30 12:56:30.980935 - 696.3462829589844
+root - INFO - 2023-03-30 13:03:04.885449 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY2340617100PE, qty:50, transaction type:BUY, placed price:102.7, id:6.
+root - INFO - 2023-03-30 13:03:05.038673 - 654.961109161377
+root - INFO - 2023-03-30 13:03:05.958611 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY2340617100CE, qty:-50, transaction type:SELL, placed price:123.35, id:590.
+root - INFO - 2023-03-30 13:03:06.136489 - 683.0408573150635
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Retrying connection. Retry attempt count: 1. Next retry in around: 3 seconds
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-03-30 18:28:41.457575 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-30 18:28:41.591975 - OMS Backend mainloop started.
+root - INFO - 2023-03-30 18:28:41.786447 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-30 18:28:48.907997 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-30 18:28:49.330455 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-30 18:28:56.101139 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-03-30 18:36:28.379599 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-30 18:36:28.516335 - OMS Backend mainloop started.
+root - INFO - 2023-03-30 18:36:28.696467 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-30 18:36:36.676127 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-30 18:36:37.059040 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-30 18:36:43.928324 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-03-30 18:37:45.553503 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-03-30 18:37:45.697971 - OMS Backend mainloop started.
+root - INFO - 2023-03-30 18:37:45.872920 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-03-30 18:37:53.555460 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-03-30 18:37:53.949372 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-03-30 18:38:01.579431 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-03-30 18:38:02.214559 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17000PE, qty:50, transaction type:BUY, placed price:243.8, id:884.
+root - INFO - 2023-03-30 18:38:02.344187 - 634.8023414611816
+root - INFO - 2023-03-30 18:38:03.261541 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17200PE, qty:50, transaction type:BUY, placed price:314.6, id:208.
+root - INFO - 2023-03-30 18:38:03.394712 - 637.5749111175537
+root - INFO - 2023-03-30 18:38:04.322893 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17050PE, qty:-50, transaction type:SELL, placed price:252.75, id:240.
+root - INFO - 2023-03-30 18:38:04.468543 - 651.5319347381592
+root - INFO - 2023-03-30 18:38:05.396486 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17150PE, qty:-50, transaction type:SELL, placed price:305.15, id:97.
+root - INFO - 2023-03-30 18:38:05.530702 - 640.0418281555176
+root - INFO - 2023-03-30 18:40:22.722921 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17200PE, qty:50, transaction type:BUY, placed price:235.55, id:412.
+root - INFO - 2023-03-30 18:40:22.904718 - 685.8439445495605
+root - INFO - 2023-03-30 18:40:23.827230 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17150PE, qty:-50, transaction type:SELL, placed price:215.55, id:951.
+root - INFO - 2023-03-30 18:40:23.971235 - 650.3827571868896
+root - INFO - 2023-03-30 18:41:25.204414 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17200PE, qty:-50, transaction type:SELL, placed price:235.55, id:558.
+root - INFO - 2023-03-30 18:41:25.361586 - 660.9721183776855
+root - INFO - 2023-03-30 18:41:26.292367 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17200PE, qty:50, transaction type:BUY, placed price:314.6, id:437.
+root - INFO - 2023-03-30 18:41:26.423659 - 637.3748779296875
+root - INFO - 2023-03-30 18:41:27.352024 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23APR17150PE, qty:50, transaction type:BUY, placed price:215.55, id:893.
+root - INFO - 2023-03-30 18:41:27.486554 - 640.1228904724121
+root - INFO - 2023-03-30 18:41:28.406141 - Placed Zerodha Kite options order for:TEST, instrument:NIFTY23MAY17150PE, qty:-50, transaction type:SELL, placed price:305.15, id:509.
+root - INFO - 2023-03-30 18:41:28.570846 - 670.9721088409424
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (peer dropped the TCP connection without previous WebSocket closing handshake)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (peer dropped the TCP connection without previous WebSocket closing handshake)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Retrying connection. Retry attempt count: 4. Next retry in around: 56 seconds
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))

@@ -1,0 +1,43 @@
+root - INFO - 2023-03-10 08:20:39.424805 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [84484]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x13328a9d0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+root - INFO - 2023-03-10 09:35:17.041649 - Order placement successful for users: []
+root - INFO - 2023-03-10 10:00:15.951723 - Order placement successful for users: []
+root - INFO - 2023-03-10 10:05:15.888732 - Order placement successful for users: []
+root - INFO - 2023-03-10 10:10:15.968792 - Order placement successful for users: []
+root - INFO - 2023-03-10 10:20:15.881252 - Order placement successful for users: []
+root - INFO - 2023-03-10 10:43:00.265850 - Order placed for FINVANT_TEST TEST_OPTIONS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-10 10:43:00.399796 - Order placement successful for users: [{'user_name': 'FINVANT_TEST', 'strategy': 'TEST_OPTIONS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-10 10:44:52.749994 - Order placed for FINVANT_TEST TEST_OPTIONS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-10 10:44:52.850856 - Order placement successful for users: [{'user_name': 'FINVANT_TEST', 'strategy': 'TEST_OPTIONS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-03-10 11:22:36.394476 - Order placement successful for users: []
+root - INFO - 2023-03-10 11:23:19.553184 - Order placed for FINVANT_TEST TEST_OPTIONS NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-03-10 11:23:19.671002 - Order placement successful for users: [{'user_name': 'FINVANT_TEST', 'strategy': 'TEST_OPTIONS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-03-10 11:23:45.671494 - Order placed for FINVANT_TEST TEST_OPTIONS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-03-10 11:23:45.792409 - Order placement successful for users: [{'user_name': 'FINVANT_TEST', 'strategy': 'TEST_OPTIONS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-03-10 12:15:18.126498 - Order placement successful for users: []
+root - INFO - 2023-03-10 12:20:16.094578 - Order placement successful for users: []
+root - INFO - 2023-03-10 12:25:15.987387 - Order placement successful for users: []
+root - INFO - 2023-03-10 12:30:15.938787 - Order placement successful for users: []
+root - INFO - 2023-03-10 12:35:16.007480 - Order placement successful for users: []
+root - INFO - 2023-03-10 12:40:16.143164 - Order placement successful for users: []
+root - INFO - 2023-03-10 13:05:16.066282 - Order placement successful for users: []
+root - INFO - 2023-03-10 13:20:15.858805 - Order placement successful for users: []
+root - INFO - 2023-03-10 13:25:15.913534 - Order placement successful for users: []
+root - INFO - 2023-03-10 13:50:16.297246 - Order placement successful for users: []
+root - INFO - 2023-03-10 13:55:16.061041 - Order placement successful for users: []
+root - INFO - 2023-03-10 14:05:15.964407 - Order placement successful for users: []
+root - INFO - 2023-03-10 14:30:17.073574 - Order placement successful for users: []
+root - INFO - 2023-03-10 14:35:15.887430 - Order placement successful for users: []
+root - INFO - 2023-03-10 14:40:15.870586 - Order placement successful for users: []
+root - INFO - 2023-03-10 14:45:15.949543 - Order placement successful for users: []
+root - INFO - 2023-03-10 14:50:15.876277 - Order placement successful for users: []
+root - INFO - 2023-03-10 14:55:15.895229 - Order placement successful for users: []
+root - INFO - 2023-03-10 15:05:15.937137 - Order placement successful for users: []
+root - INFO - 2023-03-10 15:15:16.017628 - Order placement successful for users: []
+root - INFO - 2023-03-10 15:20:15.960474 - Order placement successful for users: []
+root - INFO - 2023-03-10 15:25:16.004004 - Order placement successful for users: []
