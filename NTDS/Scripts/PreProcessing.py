@@ -262,7 +262,7 @@ class PreProcessing:
         None
         '''
         instruments = pd.DataFrame(self.kite.instruments())
-        instruments.to_csv('instruments.csv')
+        instruments.to_csv('../Data/Misc/instruments.csv')
         all_nifty_options = instruments.loc[instruments['segment'] == 'NFO-OPT'].loc[instruments['name'] == 'NIFTY']
         all_banknifty_options = instruments.loc[instruments['segment'] == 'NFO-OPT'].loc[instruments['name'] == 'BANKNIFTY']
         all_nifty_options['expiry'] = pd.to_datetime(all_nifty_options['expiry'], format='%Y-%m-%d')
