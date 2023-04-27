@@ -5,22 +5,10 @@ class Config:
         self.refresh_config()
 
     def refresh_config(self):
+        """ Refreshes the config data from the config file. """
         try:
             with open('../Config/OMS_Backend_Config.json','r') as f:
                 config_data = json.load(f)
-            # self.LOG_SERVER_ADDRESS = 'http://15.207.12.225:9092/'
-            
-            # self.ADS_SERVER_ADDRESS = 'http://127.0.0.1:8080/'
-            # self.OMS_SERVER_ADDRESS = 'http://127.0.0.1:9093/'
-            # # self.ADS_SERVER_ADDRESS = 'http://15.207.12.225:8080/'
-            # # self.OMS_SERVER_ADDRESS = 'http://15.207.12.225:9093/'
-            
-            # self.SUBSYSTEMS = 'OMS Backend'
-            # self.DEFAULT_API_KEY = 'wd4rw474uonpvn94'
-            # self.DEFAULT_API_SECRET = '8bsd661b6i29y064pei4riikj0lr3ede'
-            # self.DEFAULT_ID = 'WG5235'
-            # self.DEFAULT_PASSWORD = 'Finvant@Research1'
-            # self.DEFAULT_TOTP = 'BK4I753O24NO5BU5JLTO2JPT2TFT54CC'
 
             self.LOG_SERVER_ADDRESS = config_data['LOG_SERVER_ADDRESS']
             self.ADS_SERVER_ADDRESS = config_data['ADS_SERVER_ADDRESS']

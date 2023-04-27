@@ -11,6 +11,7 @@ import json
 import time
 
 def addToOrderHistory(cur,order_id, brokerage_id, user_type,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_price, order_qty, lot_size, order_time, order_status=None):
+    """ Adds an order to the order_history table in the database. """
     cur.execute("INSERT INTO order_history (order_id, brokerage,brokerage_id,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_status, order_price, order_qty, order_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",(order_id,brokerage_id, user_type ,username, strategy_name, tradingsymbol, position, instrument_nomenclature, 'COMPLETE', order_price, order_qty*lot_size, order_time))
 
 def measure_performance(func):
@@ -117,6 +118,7 @@ def addOrderToPositionReference(position_id, strategy_name, instrument_nomenclat
         return False
 
 def update_LTP(instrument_token:int, LTP:float):
+    """ Updates the LTP of the instrument in the database. """
     db_connection = get_new_dbconnection()
     #Call tickwise
     cur = db_connection.cursor()
@@ -338,6 +340,25 @@ def update_orderbook_status(order_id:int,cur: Cursor, debug: bool = False):
 
 
 def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed_price: float,conn: Connection, cur: Cursor,spread_list: dict, brokerage_name : str, brokerage_id : int,debug: bool = False):
+    """ 
+    Update the order buffer with the new order placement 
+    
+    Parameters:
+    username (str): Username of the user
+    tradingsymbol (str): Tradingsymbol of the order
+    placed_qty (int): Quantity of the order
+    placed_price (float): Price of the order
+    conn (Connection): Connection to the database
+    cur (Cursor): Cursor to the database
+    spread_list (dict): Spread list of the order
+    brokerage_name (str): Name of the brokerage
+    brokerage_id (int): ID of the brokerage
+    debug (bool): Debug flag for printing debug statements
+
+    Returns:
+    None
+
+    """
     #Get corresponding positions from the order buffer
     #We need position id, placed qty, total qty, placed price
     #Position ID is used to reference the position reference
@@ -359,17 +380,17 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
         
         print("ORDER IS COMPLETE")
         order_completion = True
-    print(order_completion)
-    print("__________________")
-    print(placed_price)
-    print(type(placed_price))
-    print(placed_qty)
-    print(type(placed_qty))
-    print(existing_price)
-    print(type(existing_price))
-    print(existing_qty)
-    print(type(existing_qty))
-    print("__________________")
+    # print(order_completion)
+    # print("__________________")
+    # print(placed_price)
+    # print(type(placed_price))
+    # print(placed_qty)
+    # print(type(placed_qty))
+    # print(existing_price)
+    # print(type(existing_price))
+    # print(existing_qty)
+    # print(type(existing_qty))
+    # print("__________________")
     placed_price = float(placed_price)
     new_placement_price = (placed_price*placed_qty+existing_price*existing_qty)/(placed_qty+existing_qty) #The new average price
     
@@ -391,7 +412,7 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
     if total_qty == placed_qty + existing_qty:
 
 
-        ########### ###########
+        ######################
         # ADD TO ORDER HISTORY#
 
         """ 
@@ -483,13 +504,9 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
         addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type_corrected, instrument_nomenclature=instrument_nomenclature, order_price=new_placement_price, order_qty=placed_qty, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         ######################
 
-        # addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type, instrument_nomenclature=instrument_nomenclature(of the leg), order_price=new_placement_price, order_qty=quantity, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-        ########### ###########
-
-
-
+        ######################
         
-        
+        # Delete from ORDERBUFFER
         cur.execute("DELETE FROM orderbuffer WHERE tradingsymbol = {} AND username = {};".format(gSF(tradingsymbol),gSF(username)))
         cur.execute("DELETE FROM position_reference WHERE position_id = {};".format(position_id))
     if rollover == 'N':
@@ -516,8 +533,6 @@ def update_order_reference(username: str, position_list: list, placed_price: flo
             traded_position = 'BUY'
 
         #Get order id from orderbook for order_reference
-        #print('SELECT order_id FROM orderbook WHERE username={} AND strategy_name={} AND position={} AND instrument_nomenclature={};'.format(gSF(username),gSF(strategy_name),gSF(traded_position),gSF(instrument_nomenclature)))
-        #print(list(cur.execute('SELECT order_id FROM orderbook WHERE username={} AND strategy_name={} AND position={} AND instrument_nomenclature={};'.format(gSF(username),gSF(strategy_name),gSF(traded_position),gSF(instrument_nomenclature))).fetchall()[0])[0])
         order_id = list(cur.execute('SELECT order_id FROM orderbook WHERE username={} AND strategy_name={} AND position={} AND instrument_nomenclature={};'.format(gSF(username),gSF(strategy_name),gSF(traded_position),gSF(instrument_nomenclature))).fetchall()[0])[0]
         
         #Go to position within order reference
@@ -547,22 +562,9 @@ def update_order_reference(username: str, position_list: list, placed_price: flo
 
         if order_completion and (position_type == 'BUY' or position_type == 'OPEN SHORT'):
             order_status = 'PLACED'
-            # # CLOSE POSITION | Add to order_history table below data (using fetch)
-            # cur.execute('SELECT username, instrument_nomenclature, position, net_entry_price, quantity, strategy_name from orderbook WHERE order_id = {};'.format(order_id))
-            # order_data = list(list(cur.fetchall())[0])
-            # strategy = (order_data)[5]
-            
-            # cur.execute('SELECT lot_size, quantity, position_entry_price from order_reference WHERE order_id = {} and position_type = {};'.format(order_id,gSF(position_type)))
-            # data = list(list(cur.fetchall())[0])
-            # lot_size = (data)[0]
-            # quantity = (data)[1]
-            # entry_price = (data)[2]
-            
-            # addToOrderHistory(cur,order_id, brokerage_name,brokerage_id,username, strategy, tradingsymbol, position_type, instrument_nomenclature, entry_price, quantity, lot_size, time.time())
             cur.execute('UPDATE order_reference SET position_status = {} WHERE order_id = {} and tradingsymbol = {};'.format(gSF('PLACED'),order_id,gSF(tradingsymbol)))
         
         #Set orderbook order status
-        
         update_orderbook_status(order_id=order_id,cur=cur, debug=debug)
 
         
@@ -573,58 +575,3 @@ def update_order_placement(username:str, tradingsymbol: str, placed_qty: int, pl
     #Add order to order buffer
     update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)
     db_connection.commit()
-
-
-
-""" # CLOSE POSITION | Add to order_history table below data (using fetch)
-        # Fetch order_id, using position_id from position_reference table get strategy_name, instrument_nomenclature, position_type -> orderbook table -> order_id
-        data = list(list(cur.execute("SELECT strategy_name, instrument_nomenclature, username from position_reference where position_id = {};".format(position_id)).fetchall())[0])
-        print('DATA (ORDER HISTORY!!!!): {}'.format(data))
-        strategy_name_ = data[0]
-        instrument_nomenclature_ = data[1]
-        username_ = data[2]
-        
-        print("SELECT order_id from orderbook where strategy_name = {} and instrument_nomenclature = {} and username = {};".format(gSF(strategy_name_),gSF(instrument_nomenclature_),gSF(username_)))
-        order_id = list(list(cur.execute("SELECT order_id from orderbook where strategy_name = {} and instrument_nomenclature = {} and username = {};".format(gSF(strategy_name_),gSF(instrument_nomenclature_),gSF(username_))).fetchall())[0])[0]
-
-
-
-        print("ORDER ID: {}".format(order_id))
-        cur.execute('SELECT username, instrument_nomenclature, position, net_entry_price, quantity, strategy_name from orderbook WHERE order_id = {};'.format(order_id))
-        order_data = list(list(cur.fetchall())[0])
-        strategy = (order_data)[5]
-
-        # Fetch position_type
-        print('SELECT position_type from position_reference WHERE position_id = {} and username = {} and strategy_name = {};'.format(position_id,gSF(username_),gSF(strategy)))
-        cur.execute('SELECT position_type from position_reference WHERE position_id = {} and username = {} and strategy_name = {};'\
-            .format(position_id,gSF(username),gSF(strategy)))
-        position_type_new = list(list(cur.fetchall())[0])[0]
-        
-        
-
-        cur.execute('SELECT total_qty from orderbuffer WHERE position_id = {};'.format(position_id))
-        data = list(list(cur.fetchall())[0])
-        total_qty = (data)[0]
-
-        if total_qty < 0:
-            if position_type_new == 'BUY':
-                position_type_ = 'SELL'
-            else:
-                position_type_ = 'OPEN SHORT'
-        else: # positive eg. 2
-            if position_type_new == 'OPEN SHORT':
-                position_type_ = 'CLOSE SHORT'
-            else:
-                position_type_ = 'BUY'
-
-        print('SELECT lot_size, quantity, position_entry_price from order_reference WHERE order_id = {} and position_type = {};'.format(order_id,gSF(position_type_new)))
-        cur.execute('SELECT lot_size, quantity, position_entry_price from order_reference WHERE order_id = {} and position_type = {};'.format(order_id,gSF(position_type_new)))
-        data = list(list(cur.fetchall())[0])
-        lot_size = (data)[0]
-        quantity = (data)[1]
-        entry_price = (data)[2]
-
-        print('TRADINSYMBOL: {}'.format(tradingsymbol))
-        print('TOTAL QTY: {}'.format(total_qty))
-        print('POSITION TYPE: {}'.format(position_type_new))
-        print('POSITION TYPE_: {}'.format(position_type_)) """

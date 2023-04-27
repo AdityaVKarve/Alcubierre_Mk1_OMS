@@ -336,26 +336,26 @@ class BPWEALTH:
 
 
 # Main ##
-if __name__ == "__main__":
-    openAPI = BPWEALTH('AC217', 'abcd2222', 'HO', '12')
-    # 2FA 9408644613
+# if __name__ == "__main__":
+#     openAPI = BPWEALTH('AC217', 'abcd2222', 'HO', '12')
+#     # 2FA 9408644613
 
-    # Login
-    openAPI.login() # Login is called in the constructor
+#     # Login
+#     openAPI.login() # Login is called in the constructor
 
-    # Get Order Book
-    # orderbook = openAPI.get_orderbook()
+#     # Get Order Book
+#     # orderbook = openAPI.get_orderbook()
 
-    # Place Order SAMPLE
-    # print(openAPI.place_order(position="BUY", scriptkn="47223", instrument="OPTIDX", symbol="NIFTY",buysell="1", org_qty="50", ord_price="535"))
-    # {'ResponseStatus': True, 'ResponseObject': '64=121|5022=Order Submitted', 'ResponseCode': 0, 'ErrorMessages': None}
+#     # Place Order SAMPLE
+#     # print(openAPI.place_order(position="BUY", scriptkn="47223", instrument="OPTIDX", symbol="NIFTY",buysell="1", org_qty="50", ord_price="535"))
+#     # {'ResponseStatus': True, 'ResponseObject': '64=121|5022=Order Submitted', 'ResponseCode': 0, 'ErrorMessages': None}
 
-    # Create a json file and dump the response object
+#     # Create a json file and dump the response object
 
-    # with open('response.json', 'w') as f:
-    #     json.dump(orderbook, f, indent=4)
+#     # with open('response.json', 'w') as f:
+#     #     json.dump(orderbook, f, indent=4)
 
-    # Get Order Details
-    # order_details = openAPI.get_order_details(order_id="6379643263")
-    order_details = openAPI.get_order_details(order_id="-690855549")
-    print(order_details)
+#     # Get Order Details
+#     # order_details = openAPI.get_order_details(order_id="6379643263")
+#     order_details = openAPI.get_order_details(order_id="-690855549")
+#     print(order_details)
