@@ -8,6 +8,7 @@ import threading
 from time import sleep
 from OrderPlacement import placeOrder
 from Log_Server_Interface import Log_Server_Interface
+from Logs import logInfo
 
 class OrderHandler:
     def __init__(self, user_profiles: dict, spread_list: dict, log_interface: Log_Server_Interface, debug:bool = False) -> None:
@@ -20,6 +21,7 @@ class OrderHandler:
         self.place_times = []
         self.kill = []
 
+        self.log_interface.postLog("INFO","Order handler initialised.",1,0)
         self.conn = ''  # RECORD : time taken for individual orders to be placed -> Placing to placed (in orderbook) | to avoid api rate limit | class variable time_taken (list) -> saves time taken for each order to be placed
         
 
@@ -27,14 +29,15 @@ class OrderHandler:
     def start_order_handler(self):
         try:
             if self.DEBUG:
-                print('Creating order handler sub threads.')
+                logInfo('Creating order handler sub threads.')
+                
             user_threads = []
             for ctr,u in enumerate(self.user_profiles):
                 self.kill.append(False)
                 user_threads.append(self.create_user_thread(u, ctr))
             
             if self.DEBUG:
-                print('Starting order handler sub threads.')
+                logInfo('Starting order handler sub threads.')
             for u in user_threads:
                 u.start()
         except:
@@ -53,13 +56,13 @@ class OrderHandler:
                 self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)
             except:
                 self.log_interface.postLog(severity="CRITICAL",message='Failed to clear pending orders.',publish = 1, tag = 'OMSB_OH_2')
-            sleep(0.001)
+            sleep(1)
 
     
 
     def place_pending_orders(self,username: str, spread_list: dict, cntr):
         if self.DEBUG:
-            print('Placing pending orders for user : ', username)
+            logInfo('Placing pending orders for user : ', username)
 
         user_type = self.user_profiles[username]['USER_TYPE']
         brokerage_object = self.user_profiles[username]['BROKERAGE_OBJECT']
@@ -88,8 +91,7 @@ class OrderHandler:
                 k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)
                 if k == True:
                     self.kill[cntr] = True
-                # Add a 5s delay to avoid order placement failure
-                sleep(0.28)
+                
                 
     
         

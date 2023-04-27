@@ -1,0 +1,7 @@
+27/04/23
+_________
+
+1. Optimise performance by either optimising LTP gathering or order handling
+2. Add error codes in the following modules:
+3. Make sure config file is used everywhere
+4. Carefully document everything in DBManager.py

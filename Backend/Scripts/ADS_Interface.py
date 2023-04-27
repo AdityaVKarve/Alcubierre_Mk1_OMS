@@ -9,8 +9,6 @@ from Logs import logCritical, logInfo
 
 class ADS_Interface:
     def __init__(self):
-        # self.url = 'http://15.207.12.225:8080/' #This must remain constant, as ADS is the link to everything else
-        # self.url = 'http://127.0.0.1:8000/' #This must remain constant, as ADS is the link to everything else
         self.url = Config().ADS_SERVER_ADDRESS
         self.get_routes = ['get/user_data', 'get/spreads', 'get/config']
         self.post_routes = ['post/user_data', 'post/spreads', 'post/config']

@@ -4,14 +4,38 @@ import json
 import requests
 
 class XTS:
-    def __init__(self, token:str, client_id:str, endpoint:str, log_interface:Log_Server_Interface) -> None:
-        self.header = {'Content-Type': 'application/json', 'Authorization': token}
+    def __init__(self, app_key:str, secret:str, source:str, client_id:str, endpoint:str, log_interface:Log_Server_Interface) -> None:
+        self.log_server_interface = log_interface
+        self.app_key = app_key
+        self.secret = secret
+        self.source = source
         self.client_id = client_id
         self.endpoint = endpoint
-        self.log_server_interface = log_interface
+        self.AutoLoginXTS()
+        
+        
+       
+    
+    def AutoLoginXTS(self):
+        self.log_server_interface.postLog(severity='INFO',message='Attempting XTS login.',publish=0)
+        parameters = {
+            "appKey": self.app_key,
+            "secretKey": self.secret,
+            "source": self.source
+        }
+        try:
+            url = self.endpoint+"/interactive/user/session"
+            r = requests.post(url, data = parameters).json()
+
+            token = r['result']['token']
+            self.log_server_interface.postLog(severity='INFO',message='XTS login token: {}.'.format(token),publish=0)
+            self.header = {'Content-Type': 'application/json', 'Authorization': token}
+        except:
+            self.log_server_interface.postLog(severity='CRITICAL',message='XTS Login failed.',publish=1, tag='OMSB_AuLoU_2')
+            return -1
     
     def place_order(self,exchange_token:int, order_type:str, position:str, quantity:int, limit_price:float = 0):
-        print("LIMIT PRICE:{}".format(limit_price))
+        self.AutoLoginXTS()
         self.log_server_interface.postLog('INFO','attempting XTS order. Token:{}, Position:{}, Quantity:{}.'.format(exchange_token,position,quantity),0)
         parameters = {
             "exchangeSegment": "NSEFO",
@@ -39,3 +63,5 @@ class XTS:
         params['clientID'] = self.client_id
         r = requests.get(url = self.endpoint+"/interactive/orders", params=params, headers=self.header)
         return r.json()
+    
+    

@@ -28,3 +28,9 @@ OMSB_OP_1: Failed to place zerodha kite order for futures.
 OMSB_OP_2: Failed to place zerodha kite order for options.
 OMSB_OP_3: Failed to place XTS order for futures.
 OMSB_OP_4: Failed to place XTS order for options.
+
+
+Configs needed:
+
+GatherLTP.py:
+ROLLOVER_TIME
