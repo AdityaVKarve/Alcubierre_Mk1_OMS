@@ -34,7 +34,7 @@ class Main:
             now = datetime.now()
             if now.time() > self.LOGIN_TIME and now.time() < self.SLEEP_TIME and isTradingDay(now):
                 try:
-                    print("Tyring")
+                    
                     self.ads_interface = ADS_Interface()
                     self.ads_interface.update_config()
                     config = Config()
