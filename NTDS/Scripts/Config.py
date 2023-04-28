@@ -10,5 +10,5 @@ class Config:
         self.KITE_ID = self.config['BACKEND_KITE_ID']
         self.KITE_PASSWORD = self.config['BACKEND_KITE_PASSWORD']
         self.KITE_TOTP = self.config['BACKEND_KITE_TOTP_PIN']
-        self.LOG_SERVER_ADRESS = "15.207.12.225:9092/"
+        self.LOG_SERVER_ADDRESS = "http://15.207.12.225:9092/"
         self.SUBSYSTEMS = "NTDS"

@@ -53,7 +53,6 @@ def automate_login(browser_url:str, user_id:str, password:str, pin:str):
             password_element.find_element("xpath","//button[@type='submit']").click()
             time.sleep(1)
             flag_login = 1
-            print("COMPLETE 1")
             break
         except Exception as e:
             print(e)
@@ -67,7 +66,6 @@ def automate_login(browser_url:str, user_id:str, password:str, pin:str):
             pin_element.send_keys(totp)
             time.sleep(1)
             flag_pin = 1
-            print("COMPLETE 2")
             break
         except Exception as e:
             print(e)

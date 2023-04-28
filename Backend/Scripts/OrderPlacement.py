@@ -45,8 +45,6 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                     json.dump(LTP_Table, f)
             sleep(1)
             continue
-    # with open('../Data/LTP_Table.json') as f:
-    #     LTP_Table = json.load(f)
 
     if user_type == 'ZERODHA':
         if qty > 0:

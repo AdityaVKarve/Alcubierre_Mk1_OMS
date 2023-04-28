@@ -1,9 +1,17 @@
 {
+<<<<<<< HEAD
     "LAST_UPDATED": 1682356991.272388,
     "USER_DATA": {
         "MASTER_TRUST": {
             "USER_TYPE": "XTS",
             "PAPER_TRADE": true,
+=======
+    "LAST_UPDATED": 1682057720.5814047,
+    "USER_DATA": {
+        "MASTER_TRUST": {
+            "USER_TYPE": "XTS",
+            "PAPER_TRADE": false,
+>>>>>>> backend_cleanup
             "LOGIN_DETAILS": {
                 "ENDPOINT": "http://103.156.122.4:10121/",
                 "APP_KEY": "595e4768e1d3fb41b5e282",
@@ -32,7 +40,11 @@
         },
         "ODIN": {
             "USER_TYPE": "ODIN",
+<<<<<<< HEAD
             "PAPER_TRADE": true,
+=======
+            "PAPER_TRADE": false,
+>>>>>>> backend_cleanup
             "LOGIN_DETAILS": {
                 "CLIENT_CODE": "NB01",
                 "CLIENT_PASSWORD": "odin@123",
@@ -60,7 +72,11 @@
         },
         "AIRAN": {
             "USER_TYPE": "ODIN",
+<<<<<<< HEAD
             "PAPER_TRADE": true,
+=======
+            "PAPER_TRADE": false,
+>>>>>>> backend_cleanup
             "LOGIN_DETAILS": {
                 "CLIENT_CODE": "S0201",
                 "CLIENT_PASSWORD": "abc777",
@@ -92,7 +108,11 @@
         },
         "FINVANT_LIVE": {
             "USER_TYPE": "ZERODHA",
+<<<<<<< HEAD
             "PAPER_TRADE": true,
+=======
+            "PAPER_TRADE": false,
+>>>>>>> backend_cleanup
             "LOGIN_DETAILS": {
                 "API_KEY": "wd4rw474uonpvn94",
                 "API_SECRET": "8bsd661b6i29y064pei4riikj0lr3ede",
@@ -270,7 +290,11 @@
         },
         "BPWealth_AHD083": {
             "USER_TYPE": "BPWEALTH",
+<<<<<<< HEAD
             "PAPER_TRADE": true,
+=======
+            "PAPER_TRADE": false,
+>>>>>>> backend_cleanup
             "LOGIN_DETAILS": {
                 "USERNAME": "AHD083",
                 "PASSWORD": "avanik222",
@@ -292,7 +316,11 @@
         },
         "BPWealth_ACS1301": {
             "USER_TYPE": "BPWEALTH",
+<<<<<<< HEAD
             "PAPER_TRADE": true,
+=======
+            "PAPER_TRADE": false,
+>>>>>>> backend_cleanup
             "LOGIN_DETAILS": {
                 "USERNAME": "ACS1301",
                 "PASSWORD": "a11111",
@@ -336,7 +364,11 @@
         },
         "BPWealth_AC66": {
             "USER_TYPE": "BPWEALTH",
+<<<<<<< HEAD
             "PAPER_TRADE": true,
+=======
+            "PAPER_TRADE": false,
+>>>>>>> backend_cleanup
             "LOGIN_DETAILS": {
                 "USERNAME": "AC66",
                 "PASSWORD": "abcd123",

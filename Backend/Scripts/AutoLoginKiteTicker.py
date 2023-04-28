@@ -77,7 +77,6 @@ def automate_login(browser_url:str, user_id:str, password:str, pin:str, debug:bo
     if flag_pin == 0:
         return -1
     flag_request = 0
-    # time.sleep(2)
     for i in range(5):
         if debug:
             print("Trying to get request token...")
