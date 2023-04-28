@@ -62,7 +62,7 @@ def addOrderToOrderBuffer(username, tradingsymbol, lot_size, exchange_token, qua
     Returns:
     bool: True if successful, False otherwise
 
-    Keywork Arguments:
+    Keyword Arguments:
     None
     """
     try:
@@ -106,7 +106,7 @@ def addOrderToPositionReference(position_id, strategy_name, instrument_nomenclat
     Returns:
     bool: True if successful, False otherwise
 
-    Keywork Arguments:
+    Keyword Arguments:
     None
     """
     try:
@@ -117,6 +117,19 @@ def addOrderToPositionReference(position_id, strategy_name, instrument_nomenclat
         return False
 
 def update_LTP(instrument_token:int, LTP:float):
+    """ 
+    This function updates the position values in the order_reference class and then checks if targets and stoplosses are hit.
+
+    Parameters:
+    instrument_token (int): Instrument token of the instrument
+    LTP (float): LTP of the instrument to be updated
+
+    Returns:
+    None
+
+    Keyword Arguments:
+    None
+    """
     db_connection = get_new_dbconnection()
     #Call tickwise
     cur = db_connection.cursor()
@@ -128,6 +141,20 @@ def update_LTP(instrument_token:int, LTP:float):
 
 # @measure_performance
 def update_LTP_peg(peg:str, LTP:float):
+    """ 
+    This function updates the peg for pegged instruments in the orderbook with the latest value of the index they are pegged against.
+
+    Parameters:
+    peg (str): NIFTY or BANKNIFTY
+
+    LTP (float): LTP of the instrument to be updated
+
+    Returns:
+    None
+
+    Keyword Arguments:
+    None
+    """
     db_connection = get_new_dbconnection()
     #Call tickwise
     cur = db_connection.cursor()
@@ -145,11 +172,23 @@ def update_LTP_peg(peg:str, LTP:float):
 
 def check_position_stoploss():
     db_connection = get_new_dbconnection() 
-    cur = db_connection.cursor()
-    cur.execute("SELECT * FROM order_reference WHERE position_value < position_stoploss and position_stoploss > 0 and position_status = {};".format(gSF('PLACED')))
+    #cur = db_connection.cursor()
+    #cur.execute("SELECT * FROM order_reference WHERE position_value < position_stoploss and position_stoploss > 0 and position_status = {};".format(gSF('PLACED')))
 
 
 def check_net_stoploss_target(log_interface: Log_Server_Interface):
+    """ 
+    This function checks if stoplosses or targets are hit in the orderbook.
+
+    Parameters:
+    log_interface (Log_Server_Interface): an object of the Log_Server_Interface class
+    
+    Returns:
+    None
+
+    Keyword Arguments:
+    None
+    """
 
     db_connection = get_new_dbconnection() 
     cur = db_connection.cursor()
@@ -187,6 +226,19 @@ def check_net_stoploss_target(log_interface: Log_Server_Interface):
         db_connection.commit()
 
 def update_net_position_values(log_interface: Log_Server_Interface):
+    """ 
+    This function updates the current value of every position in the orderbook based off the LTP which are not pegged to the index.
+    Position value = sum(all positions in the order_reference linked to that id)
+
+    Parameters:
+    log_interface (Log_Server_Interface): an object of the Log_Server_Interface class
+    
+    Returns:
+    None
+
+    Keyword Arguments:
+    None
+    """
     db_connection = get_new_dbconnection()
     #Current paradigm: Call every 1s
     cur = db_connection.cursor()
@@ -208,6 +260,18 @@ def update_net_position_values(log_interface: Log_Server_Interface):
 
 
 def get_pending_orders(username:str):
+    """ 
+    This returns all orders in the orderbuffer that are yet to be completed.
+
+    Parameters:
+    username (str): user for whom we want pending orders.
+    
+    Returns:
+    A list of dictionaries containing order details of the pending orders.
+
+    Keyword Arguments:
+    None
+    """
     db_connection = get_new_dbconnection()
     cur = db_connection.cursor()
     cur.execute('SELECT tradingsymbol, exchange_token, lot_size, total_qty, placed_qty, last_order_placement, exchange, segment, instrument_token from orderbuffer WHERE username = {} and (total_qty!=placed_qty or total_qty == 0);'.format(gSF(username)))
@@ -216,7 +280,6 @@ def get_pending_orders(username:str):
     for o in orders:
         dict = {}
         order = list(o)
-        #print(order)
         dict['tradingsymbol'] = order[0]
         dict['exchange_token'] = order[1]
         dict['lot_size'] = order[2]
@@ -231,6 +294,21 @@ def get_pending_orders(username:str):
 
 
 def update_orderbook_status(order_id:int,cur: Cursor, debug: bool = False):
+
+    """ 
+    Either deletes an entry from the orderbook if the order is closed, or sets it to placed if it's completed.
+
+    Parameters:
+    order_id (int): The orderid of the order to be checked.
+    cur (Cursor): A cursor to access the database
+    debug (bool): A check to enable debugging mode
+    
+    Returns:
+    A list of dictionaries containing order details of the pending orders.
+
+    Keyword Arguments:
+    None
+    """
     
     position = cur.execute('SELECT position_status, position_entry_price, quantity, lot_size,position_type from order_reference WHERE order_id = {};'.format(order_id)).fetchall()
     #If it's a sell order and all legs/positions are sold
@@ -274,7 +352,6 @@ def update_orderbook_status(order_id:int,cur: Cursor, debug: bool = False):
                 position_entry_price = ltp_table['260105']
             
             net_position_value = position_entry_price
-            print(net_position_value)
 
 
         if position_status != 'PLACED':
@@ -293,6 +370,19 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
     #We need position id, placed qty, total qty, placed price
     #Position ID is used to reference the position reference
     #placed, total qty are used to verify order completion, and the new order placement price
+    """ 
+    On order placement, this method is called to update the order buffer with the latest details obtained. On order completion, the position
+    is deleted from the orderbuffer.
+
+    Parameters:
+    many..
+    
+    Returns:
+    None
+
+    Keyword Arguments:
+    None
+    """
     cur.execute('SELECT position_id, placed_qty, total_qty, placed_price, rollover from orderbuffer WHERE username = {} AND tradingsymbol = {};'.format(gSF(username),gSF(tradingsymbol)))
     c = cur.fetchall()
 
@@ -365,7 +455,19 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
         update_order_reference(username=username, position_list=positions_list, placed_price=new_placement_price,order_completion=order_completion,conn=conn,cur=cur, spread_list=spread_list, rollover = rollover, debug=debug, brokerage_name = brokerage_name, brokerage_id = brokerage_id)
 
 def update_order_reference(username: str, position_list: list, placed_price: float, order_completion: bool,conn : Connection, cur: Cursor, spread_list: dict, brokerage_name : str, brokerage_id : int,debug: bool = False, rollover = 'N'):
-    print("UOR:{}".format(order_completion))
+    """ 
+    Called after updating orderbuffer. If the orderbuffer completes the order, the entry from the position_reference is deleted.
+
+    Parameters:
+    many..
+    
+    Returns:
+    None
+
+    Keyword Arguments:
+    None
+    """
+    
     if debug:
         print('CALLED UPDATE ORDER REFERENCE')
 
@@ -380,7 +482,6 @@ def update_order_reference(username: str, position_list: list, placed_price: flo
             traded_position = 'BUY'
         if position_type == 'CLOSE SHORT':
             traded_position = 'OPEN SHORT'
-        print(traded_position)
         if instrument_nomenclature in spread_list.keys() and traded_position == 'OPEN SHORT':
             traded_position = 'BUY'
 
@@ -424,6 +525,18 @@ def update_order_reference(username: str, position_list: list, placed_price: flo
         
 
 def update_order_placement(username:str, tradingsymbol: str, placed_qty: int, placed_price: float, spread_list: dict,brokerage_name : str, brokerage_id : int, debug: bool = False):
+    """ 
+    Called by OrderPlacement.py post order placement. This method begins the chain of methods that complete order placement.
+
+    Parameters:
+    many..
+    
+    Returns:
+    None
+
+    Keyword Arguments:
+    None
+    """
     db_connection = get_new_dbconnection()
     cur = db_connection.cursor()
     #Add order to order buffer
