@@ -5,7 +5,6 @@ import datetime
 import json
 import time
 import traceback
-import unittest
 from typing import Optional
 
 import sqlite3
@@ -17,11 +16,11 @@ from passlib.hash import bcrypt
 from tortoise.contrib.fastapi import register_tortoise
 from tortoise.exceptions import DoesNotExist
 from fastapi.middleware.cors import CORSMiddleware
-# from Config import *
+
 from Config import Config
 from NomenclatureToDetails import NomeclatureToDetails
 from encryption_hybrid import EncryptionHybrid
-from APIhelper import ADS_Interface, LOG_Interface
+from APIhelper import ADS_Interface
 from models import (
     User,
     User_Pydantic,
@@ -36,6 +35,9 @@ from Log_Server_Interface import Log_Server_Interface
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 app = FastAPI()
 config = Config()
+
+#################### """ APP CONFIG """ ###############################
+# Add additional origins here if required. Addresses must be in the format: "http://localhost:8000" -> for applications accessing the API from this address.
 origins = [
     "http://localhost",
     "http://localhost:8000"
@@ -45,7 +47,7 @@ origins = [
     "http://13.126.93.66:9021"
 
 ]
-
+# Purpose: To allow cross origin requests from the above origins.
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -250,28 +252,54 @@ def check_expiry(expiry_date, instrument_nomenclature):
     return False
 
 def addToOrderHistory(cur,order_id, brokerage_id, user_type,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_price, order_qty, lot_size, order_time, order_status=None):
+    """ 
+    Adds the order to the order history table.
+
+    Arguments:
+    cur {cursor} -- The cursor to the database
+    order_id {str} -- The order id of the order
+    brokerage_id {str} -- The brokerage id of the order
+    user_type {str} -- The type of user placing the order
+    username {str} -- The username of the account on which the order goes
+    strategy_name {str} -- The strategy placing the order
+    tradingsymbol {str} -- The tradingsymbol of the instrument to be traded
+    position {str} -- BUY/SELL/OPEN SHORT/CLOSE SHORT
+    instrument_nomenclature {str} -- The instrument nomenclature of the instrument to be traded
+    order_price {float} -- The price at which the order is placed
+    order_qty {int} -- The quantity of the order
+    lot_size {int} -- The lot size of the instrument
+    order_time {str} -- The time at which the order is placed
+
+    Keyword Arguments:
+    order_status {str} -- The status of the order (default: {None})
+
+    Returns:
+    None
+    """
     cur.execute("INSERT INTO order_history (order_id, brokerage,brokerage_id,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_status, order_price, order_qty, order_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",(order_id,brokerage_id, user_type ,username, strategy_name, tradingsymbol, position, instrument_nomenclature, 'COMPLETE', order_price, order_qty*lot_size, order_time))
 
 
 def rollOverOrder():
     '''
-    1st, go to order reference, and find positions to be rolled over.
-    This will be done by checking if current tradingsymbol is not the same as held tradingsymbol
-    Save new instrument nom to lookup table
-    Get the LTP of new and old instrument
-    Set placed price = old placed price - diff in LTPs of new and old LTP
-    Adjust target and stoploss accordingly
-    Add old position close to orderbuffer
-    Add new position open to orderbuffer
-    Update orderbook
+    Rolls over the order to the next expiry.
+
+    Arguments:
+    None
+
+    Keyword Arguments:
+    None
+
+    Returns:
+    None
     '''
     try:
         checked_instruments = {}
         cur.execute('SELECT instrument_nomenclature, tradingsymbol,instrument_token, order_id, position_stoploss_percent, position_target_percent, position_entry_price, lot_size, exchange_token, quantity, exchange, segment, order_id FROM order_reference WHERE position_status = {};'.format(gSF('PLACED')))
         orders = cur.fetchall()
-        # print(orders)
-        # with open('../../Backend/Data/LTP_table.json') as f:
-        #     ltp_table = json.load(f)
+
+        ########################################
+        # Get LTP table
+        # Posssible issues : LTP table not updated, LTP table not found
         while True:
             try:
                 with open('../../Backend/Data/LTP_table.json') as f:
@@ -281,8 +309,25 @@ def rollOverOrder():
                 print('Waiting for LTP table to be updated')
                 time.sleep(0.5)
                 continue
+        ########################################
             
         for o in orders:
+
+            """ 
+            Working of the following code:
+            1st, go to order reference, and find positions to be rolled over.
+            This will be done by checking if current tradingsymbol is not the same as held tradingsymbol
+            Save new instrument nom to lookup table
+
+            Get the LTP of new and old instrument
+            Set placed price = old placed price - diff in LTPs of new and old LTP
+            Adjust target and stoploss accordingly
+
+            Add old position close to orderbuffer
+            Add new position open to orderbuffer
+            Update orderbook
+              
+            """
             print(list(o))
             instrument_nomenclature = list(o)[0]
             held_tradingsymbol = list(o)[1]
@@ -302,22 +347,12 @@ def rollOverOrder():
             cur.execute('SELECT username, net_stoploss_perc, net_target_perc, strategy_name, position, strategy_name from orderbook where order_id = {};'.format(order_id))
             position = cur.fetchall()
             username = list(position)[0][0]
-            net_stoploss_perc = list(position)[0][1]
-            net_target_perc = list(position)[0][2]
             strategy_name = list(position)[0][3]
-            held_pos = list(position)[0][4]
             strategy_name = list(position)[0][5]
-            latest_pos = ''
 
             cur.execute('SELECT position_type from ORDER_REFERENCE WHERE order_id = {} and tradingsymbol = {};'.format(order_id, gSF(held_tradingsymbol)))
             position_type_or = cur.fetchall()[0][0]
-
-            if held_pos == 'BUY':
-                latest_pos = 'SELL'
-            elif held_pos == 'OPEN SHORT':
-                latest_pos = 'CLOSE SHORT'
-
-            print(held_tradingsymbol)
+            # print(held_tradingsymbol)
 
             if instrument_nomenclature not in checked_instruments:
                 n = NomeclatureToDetails(config.ADS_SERVER_ADDRESS)
@@ -332,24 +367,47 @@ def rollOverOrder():
             latest_expiry = instrument_data['EXPIRY']
             latest_exchange_token = instrument_data['EXCHANGE_TOKEN']
             if held_tradingsymbol != latest_tradingsymbol:
-                #Rollover
+                #Rollover existing position
                 ltp_old = ltp_table[held_instrument_token]
                 ltp_new = ltp_table[latest_instrument_token]
                 diff = ltp_new - ltp_old
+
                 new_position_stoploss = (position_entry_price + diff)*(position_stoploss_perc/100)
                 new_position_target = (position_entry_price + diff)*(position_target_perc/100)
-                print("UPDATE order_reference SET expiry_date = {}, exchange_token = {}, tradingsymbol = {}, instrument_token = {}, position_stoploss = {}, position_target = {}, position_entry_price = {} WHERE instrument_nomenclature = {} AND order_id = {};".format(gSF(latest_expiry),latest_exchange_token,gSF(latest_tradingsymbol),gSF(latest_instrument_token),new_position_stoploss,new_position_target,position_entry_price+diff, gSF(instrument_nomenclature), order_id))
                 cur.execute("UPDATE order_reference SET expiry_date = {}, exchange_token = {}, tradingsymbol = {}, instrument_token = {}, position_stoploss = {}, position_target = {}, position_entry_price = {} WHERE instrument_nomenclature = {} AND order_id = {};".format(gSF(latest_expiry),latest_exchange_token,gSF(latest_tradingsymbol),gSF(latest_instrument_token),new_position_stoploss,new_position_target,position_entry_price+diff, gSF(instrument_nomenclature), order_id))
+                
+
+                ######################################## TO BE UPDATED
+                # lookup_table = open('../Data/lookup_table.json')
+                # lookup_table = json.load(lookup_table)
+                # # Update lookup table
+                # if str(instrument_token) in lookup_table:
+                #     lookup_table[str(instrument_token)]['ctr'] = lookup_table[str(instrument_token)]['ctr'] + 1
+                # else:
+                #     lookup_table[instrument_token] = {
+                #         "ctr": 1
+                #     }
+                ########################################
+                
+                
+                # Print order details
+                log.postLog('INFO', "Rollover order placed for {} with order id {}".format(held_tradingsymbol, order_id), publish=False, tag='Rollover')
+
+                # Add old position close to orderbuffer -> to CLOSE the position
                 addOrderToOrderBuffer(username=username, tradingsymbol=held_tradingsymbol, lot_size=lot_size, exchange_token=held_exchange_token, quantity=(quantity*-1),strategy_name=strategy_name, instrument_nomenclature=instrument_nomenclature_ob,position=position_type_or, exchange=exchange,segment=segment,instrument_token=held_instrument_token,rollover='Y')
+                # Add new position open to orderbuffer -> to OPEN the position
                 addOrderToOrderBuffer(username=username, tradingsymbol=latest_tradingsymbol, lot_size=lot_size, exchange_token=latest_exchange_token, quantity=quantity,strategy_name=strategy_name, instrument_nomenclature=instrument_nomenclature_ob,position=position_type_or, exchange=exchange,segment=segment,instrument_token=latest_instrument_token,rollover='Y')
                 
         # Release the db lock
         con.commit()
+
+        # log the order
+        log.postLog(username, 'Order rollover successful', 'INFO')
         return {'status': 'success'}
     except Exception as e:
         print(e)
         traceback.print_exc()
-        return {'status': 'error'}
+        return {'status': 'error - {}'.format(e)}
     
      
 
@@ -685,6 +743,7 @@ async def getUserDetails(strategy, instrument, position):
         
         if strategy in list(user_data[user]['STRATEGY_DETAILS'].keys()):
             if position == 'BUY' or position == 'OPEN SHORT':
+                # d = 0 for BUY and d = 1 for OPEN SHORT | d is short/long position in strategy details
                 if position == 'BUY':
                     d = 0
                 elif position == 'OPEN SHORT':
@@ -709,15 +768,20 @@ def getOrderBook():
     Keywork Arguments:
     None
     """
-    #Fetch order book from database
+
     try:
         cur.execute('SELECT * FROM orderbook')
         res = cur.fetchall()
 
-        print("Order book: ", res)
+        #############################
+        # Sample orderbook response #
+        # res = [
+        #     ('OPEN', 'user1', 'strategy1', 'NIFTY', 'BUY', 100, 10000, 0.5, 1, 2, 1000000, 'order1', 0, 'N'),
+        #     ('OPEN', 'user1', 'strategy1', 'NIFTY', 'SELL', 100, 10000, 0.5, 1, 2, 1000000, 'order2', 0, 'NIFTY'),
+        # ]
+        #############################
 
-        # Sample : [('Placing', 'FINVANT_LIVE', 'QUASAR_5M', 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'BUY', 2, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, -6419202146163273807, 'NIFTY'), ('Placing', 'MASTER_TRUST', 'OPHIUCUS', 'NIFTY|L|0|PE|WEEK|0', 'OPEN SHORT', -1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -6280289392558185120, 'N'), ('Placing', 'FINVANT_LIVE', 'OPHIUCUS', 'NIFTY|L|0|PE|WEEK|0', 'OPEN SHORT', -1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1989496469206336082, 'N'), ('Placing', 'ODIN', 'OPHIUCUS', 'NIFTY|L|0|PE|WEEK|0', 'OPEN SHORT', -1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 8820313153233238990, 'N')]
-        # Convert to dictionary
+        print("Order book: ", res)
         order_book = []
         for order in res:
             order_book.append({
@@ -907,22 +971,28 @@ async def rollover_order(data: dict, user: User_Pydantic = Depends(get_current_u
     Returns:
     order success message {dict} -- The success message of the order.
     '''
-     # Decypting the orderIn
-    # Get encrypted key and encrypted data from request
-    encrypted_key = data["encrypted_key"]
-    encrypted_data = data["encrypted_data"]
+    try:
+        # Decypting the orderIn
+        # Get encrypted key and encrypted data from request
+        encrypted_key = data["encrypted_key"]
+        encrypted_data = data["encrypted_data"]
 
-    # Convert encrypted key and encrypted data from hex format to bytes
-    encrypted_key = bytes.fromhex(encrypted_key)
-    encrypted_data = bytes.fromhex(encrypted_data)
+        # Convert encrypted key and encrypted data from hex format to bytes
+        encrypted_key = bytes.fromhex(encrypted_key)
+        encrypted_data = bytes.fromhex(encrypted_data)
 
-    # Decrypt encrypted key and encrypted data
-    encryption = EncryptionHybrid()
-    decrypted_message = encryption.decrypt(encrypted_key, encrypted_data)
-    decrypted_message = decrypted_message.replace("\'", '\"') 
-    decrypted_message = json.loads(decrypted_message)
-    print('RUNNING ROLLOVER ORDER')
-    return rollOverOrder()
+        # Decrypt encrypted key and encrypted data
+        encryption = EncryptionHybrid()
+        decrypted_message = encryption.decrypt(encrypted_key, encrypted_data)
+        decrypted_message = decrypted_message.replace("\'", '\"') 
+        decrypted_message = json.loads(decrypted_message)
+        print('RUNNING ROLLOVER ORDER')
+        return rollOverOrder()
+    except Exception as e:
+        log.postLog(severity='INFO', message='Error in rollover order route: {}'.format(e), tag='OMS_Main_10')
+        return {"message": "Error in rollover order route: {}".format(e)}
+    
+
 
 ## Route to return orderbook from OrderData.db
 @app.get("/orders/orderbook")
@@ -1023,11 +1093,16 @@ async def create_order(data: dict, user: User_Pydantic = Depends(get_current_use
                     temp_details["position"] = position
                     temp_details["target"] = target
                     temp_details["stoploss"] = stoploss
+
+                    # Get quantity from user_details (from ADS(A) server)
                     if position == "BUY":
                         temp_details["quantity"] = user_details[user_name][instrument_nomenclature][0]
                     elif position == "OPEN SHORT":
                         temp_details["quantity"] = user_details[user_name][instrument_nomenclature][1]
                     valid_users.append(temp_details)
+        else:
+            # If no users found for the order, return error message
+            return {"message": "No users found for the order with strategy: {}, instrument_nomenclature: {}, position: {}".format(strategy, instrument_nomenclature, position)}
 
 
     nomenclature_to_details = NomeclatureToDetails(config.ADS_SERVER_ADDRESS) # object to get details of instrument nomenclature
@@ -1075,13 +1150,9 @@ async def create_order(data: dict, user: User_Pydantic = Depends(get_current_use
         
         if user_name not in user_result:
             user_result[user_name] = "Order placement unsuccessful."
-    #else:
-    #    user_result[user_name] = "Order not valid. Please check the order details and try again."
     
 
     con.commit() # commit changes to database here to allow bulk order placement
-    
-    """ ADD LOG MESSAGE HERE """
     log.postLog(severity="INFO", message="Order placement successful for users: " + str(valid_users), tag="OMS_Main_9", publish=True)
     return user_result
 
