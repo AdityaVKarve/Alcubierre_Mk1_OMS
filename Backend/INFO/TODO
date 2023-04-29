@@ -5,3 +5,8 @@ _________
 2. Add error codes in the following modules:
 3. Make sure config file is used everywhere
 4. Carefully document everything in DBManager.py
+
+
+28-04-23
+1. Added comments to DBManager.py
+2. Changed sleep times at various points with the aim of boosting performance
