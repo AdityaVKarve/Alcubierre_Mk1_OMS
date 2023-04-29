@@ -5,6 +5,7 @@ class Config:
         self.refresh_config()
 
     def refresh_config(self):
+        """ Refreshes the config data from the config file. """
         try:
             with open('../Config/OMS_Backend_Config.json','r') as f:
                 config_data = json.load(f)

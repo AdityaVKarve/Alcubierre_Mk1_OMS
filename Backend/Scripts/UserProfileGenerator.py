@@ -3,7 +3,6 @@ import threading
 import time
 from AutoLoginZerodha import auto_login_zerodha
 from AutoLoginOdin import ODIN
-from AutoLoginXTS import AutoLoginXTS
 from XTS import XTS
 import DBManager
 from BP import BPWEALTH

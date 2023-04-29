@@ -13,13 +13,6 @@ from Logs import logInfo
 def myround(x, base=5):
     return base * round(x/base)
 
-def addToOrderHistory(order_id, user_type,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_price, order_qty, lot_size, order_time, order_status=None):
-    conn = sqlite3.connect('../../C/Data/OrderData.db')
-    cur = conn.cursor()
-    cur.execute("INSERT INTO order_history (order_id, brokerage,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_status, order_price, order_qty, order_time) VALUES (?,?,?,?,?,?,?,?,?,?,?)",(order_id, user_type ,username, strategy_name, tradingsymbol, position, instrument_nomenclature, 'COMPLETE', order_price, order_qty*lot_size, order_time))
-    conn.commit()
-    conn.close()
-
 def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_token, lot_size, qty , exchange, segment, brokerage_object, spread_list, log_interface: Log_Server_Interface, paper_trade, debug: bool = False):
     time_before = (time.time())
     conn = sqlite3.connect('../../C/Data/OrderData.db')
@@ -91,8 +84,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                 except:
                     placed_price = ltp
                     log_interface.postLog(severity='INFO',message='Placed Zerodha Kite options order for:{}, instrument:{}, qty:{}, transaction type:{}, placed price:{}, id:{}.'.format(username,tradingsymbol,qty*lot_size, transaction_type,placed_price, order_id), publish=1,tag='ORDER')
-                # ORDER_HISTORY appending, use qty sign to check position type
-                # addToOrderHistory(order_id, user_type,  username, 'N', tradingsymbol, transaction_type, 'OPTIONS', placed_price, qty, lot_size, time.time())
+                
 
             except:
                 log_interface.postLog(severity="CRITICAL",message='Failed to place Zerodha Kite options order. User: {}. Tradingsymbol:{}. QTY:{} .'.format(username,tradingsymbol,qty*lot_size),publish = 1, tag = 'OMSB_OP_1')
@@ -119,8 +111,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                     placed_price = LTP_Table[str(instrument_token)]
                 
                 log_interface.postLog(severity='INFO',message='Placed Zerodha Kite futures order for:{}, instrument:{}, qty:{}, transaction type:{}, placed price:{}, id:{}.'.format(username,tradingsymbol,qty*lot_size, transaction_type,placed_price, order_id), publish=1,tag='ORDER')
-                # ORDER_HISTORY appending, use qty sign to check position type
-                # addToOrderHistory(order_id, user_type,  username, 'N', tradingsymbol, transaction_type, 'FUTURES', placed_price, qty, lot_size, time.time())
+                
             except:
                 log_interface.postLog(severity="CRITICAL",message='Failed to place Zerodha Kite futures order. User: {}. Tradingsymbol:{}. QTY:{}.'.format(username,tradingsymbol, qty*lot_size),publish = 1, tag = 'OMSB_OP_2')
                 order_id = -1
@@ -183,8 +174,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                 except:
                     placed_price = ltp
                     log_interface.postLog(severity='INFO',message='Placed XTS options order for:{}, instrument:{}, qty:{}, transaction type:{}, placed price:{}, id:{}.'.format(username,tradingsymbol,qty*lot_size, transaction_type,placed_price, order_id), publish=1, tag='ORDER')
-                # ORDER_HISTORY appending, use qty sign to check position type
-                # addToOrderHistory(order_id, user_type,  username, 'N', tradingsymbol, transaction_type, 'OPTIONS', placed_price, qty, lot_size, time.time())
+                
 
             except:
                 log_interface.postLog(severity="CRITICAL",message='Failed to place XTS options order. User: {}. Tradingsymbol:{}. QTY:{} .'.format(username,tradingsymbol,qty*lot_size),publish = 1, tag = 'OMSB_OP_1')
@@ -211,8 +201,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                     placed_price = LTP_Table[str(instrument_token)]
                 
                 log_interface.postLog(severity='INFO',message='Placed XTS futures order for:{}, instrument:{}, qty:{}, transaction type:{}, placed price:{}, id:{}.'.format(username,tradingsymbol,qty*lot_size, transaction_type,placed_price, order_id), publish=1,tag='ORDER')
-                # ORDER_HISTORY appending, use qty sign to check position type
-                # addToOrderHistory(order_id, user_type,  username, 'N', tradingsymbol, transaction_type, 'FUTURES', placed_price, qty, lot_size, time.time())
+                
             except:
                 log_interface.postLog(severity="CRITICAL",message='Failed to place XTS futures order. User: {}. Tradingsymbol:{}. QTY:{}.'.format(username,tradingsymbol, qty*lot_size),publish = 1, tag = 'OMSB_OP_2')
                 order_id = -1
@@ -279,8 +268,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                 except:
                     placed_price = ltp
                     log_interface.postLog(severity='INFO',message='Placed ODIN options order for:{}, instrument:{}, qty:{}, transaction type:{}, placed price:{}, id:{}.'.format(username,tradingsymbol,qty*lot_size, transaction_type,placed_price, order_id), publish=1,tag='ORDER')
-                # ORDER_HISTORY appending, use qty sign to check position type
-                # addToOrderHistory(order_id, user_type,  username, 'N', tradingsymbol, transaction_type, 'OPTIONS', placed_price, qty, lot_size, time.time())
+                
             except:
                 log_interface.postLog(severity="CRITICAL",message='Failed to place ODIN options order. User: {}. Tradingsymbol:{}. QTY:{} .'.format(username,tradingsymbol,qty*lot_size),publish = 1, tag = 'OMSB_OP_1')
                 order_id = -1
@@ -302,8 +290,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                     placed_price = LTP_Table[str(instrument_token)]
                 
                 log_interface.postLog(severity='INFO',message='Placed ODIN futures order for:{}, instrument:{}, qty:{}, transaction type:{}, placed price:{}, id:{}.'.format(username,tradingsymbol,qty*lot_size, transaction_type,placed_price, order_id), publish=1,tag='ORDER')
-                # ORDER_HISTORY appending, use qty sign to check position type
-                # addToOrderHistory(order_id, user_type,  username, 'N', tradingsymbol, transaction_type, 'FUTURES', placed_price, qty, lot_size, time.time())
+                
             except:
                 log_interface.postLog(severity="CRITICAL",message='Failed to place ODIN futures order. User: {}. Tradingsymbol:{}. QTY:{}.'.format(username,tradingsymbol, qty*lot_size),publish = 1, tag = 'OMSB_OP_2')
                 order_id = -1
@@ -378,8 +365,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                     order_id = randint(1,1000)
                     placed_price = ltp
                 log_interface.postLog(severity='INFO',message='Placed BP WEALTH options order for:{}, instrument:{}, qty:{}, transaction type:{}, placed price:{}, id:{}.'.format(username,tradingsymbol,qty*lot_size, transaction_type,placed_price, order_id), publish=1)
-                # ORDER_HISTORY appending, use qty sign to check position type
-                # addToOrderHistory(order_id, user_type,  username, 'N', tradingsymbol, transaction_type, 'OPTIONS', placed_price, qty, lot_size, time.time())
+                
             except:
                 log_interface.postLog(severity="CRITICAL",message='Failed to place BP WEALTH options order. User: {}. Tradingsymbol:{}. QTY:{} .'.format(username,tradingsymbol,qty*lot_size),publish = 1, tag = 'OMSB_OP_1')
                 order_id = -1
@@ -424,8 +410,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                     placed_price = LTP_Table[str(instrument_token)]
                 
                 log_interface.postLog(severity='INFO',message='Placed BP WEALTH futures order for:{}, instrument:{}, qty:{}, transaction type:{}, placed price:{}, id:{}.'.format(username,tradingsymbol,qty*lot_size, transaction_type,placed_price, order_id), publish=1)
-                # ORDER_HISTORY appending, use qty sign to check position type
-                # addToOrderHistory(order_id, user_type,  username, 'N', tradingsymbol, transaction_type, 'FUTURES', placed_price, qty, lot_size, time.time())
+                
             except:
                 log_interface.postLog(severity="CRITICAL",message='Failed to place BP WEALTH futures order. User: {}. Tradingsymbol:{}. QTY:{}.'.format(username,tradingsymbol, qty*lot_size),publish = 1, tag = 'OMSB_OP_2')
                 order_id = -1

@@ -12,6 +12,7 @@ import time
 from Logs import logInfo, logCritical
 
 def addToOrderHistory(cur,order_id, brokerage_id, user_type,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_price, order_qty, lot_size, order_time, order_status=None):
+    """ Adds an order to the order_history table in the database. """
     cur.execute("INSERT INTO order_history (order_id, brokerage,brokerage_id,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_status, order_price, order_qty, order_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",(order_id,brokerage_id, user_type ,username, strategy_name, tradingsymbol, position, instrument_nomenclature, 'COMPLETE', order_price, order_qty*lot_size, order_time))
 
 def measure_performance(func):
@@ -366,6 +367,25 @@ def update_orderbook_status(order_id:int,cur: Cursor, debug: bool = False):
 
 
 def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed_price: float,conn: Connection, cur: Cursor,spread_list: dict, brokerage_name : str, brokerage_id : int,debug: bool = False):
+    """ 
+    Update the order buffer with the new order placement 
+    
+    Parameters:
+    username (str): Username of the user
+    tradingsymbol (str): Tradingsymbol of the order
+    placed_qty (int): Quantity of the order
+    placed_price (float): Price of the order
+    conn (Connection): Connection to the database
+    cur (Cursor): Cursor to the database
+    spread_list (dict): Spread list of the order
+    brokerage_name (str): Name of the brokerage
+    brokerage_id (int): ID of the brokerage
+    debug (bool): Debug flag for printing debug statements
+
+    Returns:
+    None
+
+    """
     #Get corresponding positions from the order buffer
     #We need position id, placed qty, total qty, placed price
     #Position ID is used to reference the position reference
@@ -448,7 +468,6 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
             position_type_corrected = position_type
 
         addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type_corrected, instrument_nomenclature=instrument_nomenclature, order_price=new_placement_price, order_qty=placed_qty, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-
         cur.execute("DELETE FROM orderbuffer WHERE tradingsymbol = {} AND username = {};".format(gSF(tradingsymbol),gSF(username)))
         cur.execute("DELETE FROM position_reference WHERE position_id = {};".format(position_id))
     if rollover == 'N':
@@ -517,7 +536,6 @@ def update_order_reference(username: str, position_list: list, placed_price: flo
             cur.execute('UPDATE order_reference SET position_status = {} WHERE order_id = {} and tradingsymbol = {};'.format(gSF('PLACED'),order_id,gSF(tradingsymbol)))
         
         #Set orderbook order status
-        
         update_orderbook_status(order_id=order_id,cur=cur, debug=debug)
 
         
