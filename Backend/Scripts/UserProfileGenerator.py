@@ -3,7 +3,6 @@ import threading
 import time
 from AutoLoginZerodha import auto_login_zerodha
 from AutoLoginOdin import ODIN
-from AutoLoginXTS import AutoLoginXTS
 from XTS import XTS
 import DBManager
 from BP import BPWEALTH
@@ -23,23 +22,22 @@ class UserProfileGenerator:
             user_type = user_data[username]['USER_TYPE']
             login_details = user_data[username]['LOGIN_DETAILS']
             paper_trade = user_data[username]['PAPER_TRADE']
-            print(paper_trade)
-            if user_type == 'ZERODHA':
-                brokerage_interface = auto_login_zerodha(login_details, log_interface=log_interface)
-            elif user_type == 'ODIN':
-                # ADD ODIN LOGIN
-                brokerage_interface = ODIN(login_details, log_interface=log_interface)
-            elif user_type == 'XTS':
-                login_token = AutoLoginXTS(endpoint=login_details['ENDPOINT'], app_key=login_details['APP_KEY'],secret=login_details['SECRET'],source=login_details['SOURCE'],log_interface=log_interface)
-                brokerage_interface = XTS(token=login_token,client_id=login_details['CLIENT_ID'],endpoint=login_details['ENDPOINT'],log_interface=log_interface)
-
-            elif user_type == 'BPWEALTH':
-                brokerage_interface = BPWEALTH(username=login_details['USERNAME'], password=login_details['PASSWORD'], groupid=login_details['GROUP_ID'], prodcode=login_details['PROD_CODE'], log_interface=log_interface)
-                
-            self.dict[username] = {}
-            self.dict[username]['USER_TYPE'] = user_type
-            self.dict[username]['BROKERAGE_OBJECT'] = brokerage_interface
-            self.dict[username]['PAPER_TRADE'] = paper_trade
+            try:
+                if user_type == 'ZERODHA':
+                    brokerage_interface = auto_login_zerodha(login_details, log_interface=log_interface)
+                elif user_type == 'ODIN':
+                    brokerage_interface = ODIN(login_details, log_interface=log_interface)
+                elif user_type == 'XTS':
+                    brokerage_interface = XTS(app_key=login_details['APP_KEY'],secret=login_details['SECRET'],source=login_details['SOURCE'],client_id=login_details['CLIENT_ID'],endpoint=login_details['ENDPOINT'],log_interface=log_interface)
+                elif user_type == 'BPWEALTH':
+                    brokerage_interface = BPWEALTH(username=login_details['USERNAME'], password=login_details['PASSWORD'], groupid=login_details['GROUP_ID'], prodcode=login_details['PROD_CODE'], log_interface=log_interface)
+                    
+                self.dict[username] = {}
+                self.dict[username]['USER_TYPE'] = user_type
+                self.dict[username]['BROKERAGE_OBJECT'] = brokerage_interface
+                self.dict[username]['PAPER_TRADE'] = paper_trade
+            except Exception as e:
+                log_interface.postLog(severity = "CRITICAL", message = "Failed to login for: {}.".format(username), publish = 1, tag = '')
         
 
     def create_user_thread(self,username, log_interface):
@@ -48,7 +46,7 @@ class UserProfileGenerator:
         return thread
 
     def create_user_profiles(self,user_data, log_interface, debug=False):
-        # Slice user_data dict into groups of 5 users with each group in a dict for multithreading
+        # Slice user_data dict into groups of n users with each group in a dict for multithreading
         user_list_temp = {}
         for i, u in enumerate(user_data):
             if i % 5 == 0 and i > 0:
@@ -58,7 +56,6 @@ class UserProfileGenerator:
             else:
                 user_list_temp[u] = user_data[u]
         self.user_groups.append(user_list_temp)
-
         if debug:
             print('Number of user groups: ', len(self.user_groups))
             print('User groups: ', self.user_groups)
@@ -80,6 +77,5 @@ class UserProfileGenerator:
         with open('../Data/metrics.json','w') as f:
             json.dump(metrics,f,indent=4)
             f.close()
-
         print('LOGIN COMPLETE')
         return self.dict

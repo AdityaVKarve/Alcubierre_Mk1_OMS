@@ -50,7 +50,6 @@ class Log_Server_Interface:
             logCritical(message)
         else:
             logInfo(message)
-        # encrypt the message
         json_compatible_item_data = self.encryption.encrypt(log_payload)
         response = requests.post(self.url + 'post/log', headers=headers, json=json_compatible_item_data)
         return response.json()

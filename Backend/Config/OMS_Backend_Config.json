@@ -10,5 +10,6 @@
   "DEFAULT_PASSWORD": "Finvant@Research1",
   "DEFAULT_TOTP": "BK4I753O24NO5BU5JLTO2JPT2TFT54CC",
   "EXPIRY_MINUTES": 420,
-  "SECRET_KEY": "3092325@$@(234#24@$(8finvantResearchCapitalSecretKeyApi208u39324935@$#(*3@#(989898"
+  "SECRET_KEY": "3092325@$@(234#24@$(8finvantResearchCapitalSecretKeyApi208u39324935@$#(*3@#(989898",
+  "ROLLOVER_TIME": "12:30:00"
 }

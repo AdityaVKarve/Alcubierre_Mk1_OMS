@@ -19,5 +19,6 @@ class Config:
             self.DEFAULT_ID = config_data['DEFAULT_ID']
             self.DEFAULT_PASSWORD = config_data['DEFAULT_PASSWORD']
             self.DEFAULT_TOTP = config_data['DEFAULT_TOTP']
+            self.ROLLOVER_TIME = config_data['ROLLOVER_TIME']
         except: 
             logCritical('Failed to get configs.',exit=True)

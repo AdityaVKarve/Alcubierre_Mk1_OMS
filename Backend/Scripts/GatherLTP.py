@@ -20,27 +20,33 @@ def measure_performance(func):
 
 
 class GatherLTP:
-    def __init__(self,kws: KiteTicker, log_interface: Log_Server_Interface):
+    def __init__(self,kws: KiteTicker, log_interface: Log_Server_Interface, config: Config):
         try:
             self.log_interface = log_interface
+            self.config = config
+            self.log_interface.postLog("INFO","Initialising LTP gather thread.",1,"")
             self.kws = kws
             self.checked_rollovers = False
-            self.SLEEP_TIME = datetime.strptime("19:31:00",'%H:%M:%S').time()
-            self.ROLLOVER_TIME = datetime.strptime("19:00:00",'%H:%M:%S').time()
+            self.SLEEP_TIME = datetime.strptime("15:31:00",'%H:%M:%S').time()
+            self.ROLLOVER_TIME = datetime.strptime(config.ROLLOVER_TIME,'%H:%M:%S').time()
             self.OMS_interface = OMS_API_Interface.OMS_Interface(Config().OMS_SERVER_ADDRESS)
             self.START_TIME = datetime.now()
             self.tick_ctr = 0
-            with open('../../NTDS/Data/Misc/instrument_tokens.json') as f:
-                instrument_token_json = json.load(f)
-            
-            with open('../../C/Data/lookup_table.json') as f:
-                self.lookup_table = json.load(f)
 
-            with open('../Data/LTP_table.json','w') as f:
-                json.dump({},f,indent=2)
-            
-            with open('../Data/LTP_table.json') as f:
-                self.LTP_table = json.load(f)
+            try:
+                with open('../../NTDS/Data/Misc/instrument_tokens.json') as f:
+                    instrument_token_json = json.load(f)
+                
+                with open('../../C/Data/lookup_table.json') as f:
+                    self.lookup_table = json.load(f)
+
+                with open('../Data/LTP_table.json','w') as f:
+                    json.dump({},f,indent=2)
+                
+                with open('../Data/LTP_table.json') as f:
+                    self.LTP_table = json.load(f)
+            except:
+                self.log_interface.postLog("CRITICAL","Failed to load vital jsons for LTP gathering.",1,"")
 
             self.instrument_token_list = instrument_token_json["instrument_tokens"]
         except:
@@ -80,16 +86,12 @@ class GatherLTP:
             count += 1
             if count%2 == 0:
                 sleep(0.5)
-                # print('GatherLTP.py, 76) LTPs updated.')
                 DBManager.update_net_position_values(self.log_interface)
             if datetime.now().time() > self.SLEEP_TIME:
                 return
-            '''if datetime.now().time() > self.ROLLOVER_TIME:
-                DBManager.check_rollovers(oms_interface = self.OMS_interface)'''
     
     def update_ltp(self,ticks: list):
         try:
-            # print('(GatherLTP.py, 90) TICKS : ')
             for tick in ticks:
                 instrument_token = tick['instrument_token']
                 last_price = tick['last_price']
@@ -98,9 +100,7 @@ class GatherLTP:
                 self.save_LTP_table()
                 if str(instrument_token) == '256265' or str(instrument_token) == '260105':
                     if str(instrument_token) == '256265':
-                        # print('(GatherLTP.py,85) LAST PRICE : ', last_price)
                         self.tick_ctr += 1
-                        # print("Ticks per second:{}".format(self.tick_ctr/(datetime.now() - self.START_TIME).seconds))
                         DBManager.update_LTP_peg('NIFTY',last_price)
                     else:
                         DBManager.update_LTP_peg('BANKNIFTY',last_price)

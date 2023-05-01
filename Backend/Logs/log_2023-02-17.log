@@ -1,0 +1,15 @@
+root - INFO - 2023-02-17 12:39:05.540167 - Attempting XTS login.
+root - INFO - 2023-02-17 12:51:31.640191 - Attempting XTS login.
+root - INFO - 2023-02-17 12:51:32.129949 - XTS order placed. Token:58377, Position:BUY, Quantity:25.
+root - INFO - 2023-02-17 12:51:54.611340 - Attempting XTS login.
+root - INFO - 2023-02-17 12:51:55.088154 - XTS order placed. Token:58377, Position:BUY, Quantity:25.
+root - INFO - 2023-02-17 12:52:08.829079 - Attempting XTS login.
+root - INFO - 2023-02-17 12:52:09.280361 - XTS order placed. Token:58377, Position:BUY, Quantity:25.
+root - INFO - 2023-02-17 13:54:24.721216 - Attempting XTS login.
+root - INFO - 2023-02-17 13:54:25.191596 - attempting XTS order. Token:58377, Position:BUY, Quantity:50.
+root - INFO - 2023-02-17 13:54:25.628853 - XTS order placed. Token:58377, Position:BUY, Quantity:50.
+root - INFO - 2023-02-17 13:55:06.102932 - Attempting XTS login.
+root - INFO - 2023-02-17 13:55:24.048655 - Attempting XTS login.
+root - INFO - 2023-02-17 13:56:01.599977 - Attempting XTS login.
+root - INFO - 2023-02-17 13:56:01.777587 - attempting XTS order. Token:58377, Position:SELL, Quantity:50.
+root - INFO - 2023-02-17 13:56:01.935635 - XTS order placed. Token:58377, Position:SELL, Quantity:50.

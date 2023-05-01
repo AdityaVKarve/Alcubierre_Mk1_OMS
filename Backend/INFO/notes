@@ -1,0 +1,36 @@
+OMSB_ADSINT_1: Failed to obtain access token for ADS interface.
+OMSB_ADSINT_2: Failed to get user data from ADS.
+OMSB_ADSINT_3: Failed to get spreads from ADS
+OMSB_ADSINT_4: Failed to get config from ADS.
+
+OMSB_MAIN_1: Failed to initialise Log server/ADS.
+OMSB_MAIN_2: Failed to get user data/spreads/config.
+OMSB_MAIN_3: Failed to start LTP thread.
+OMSB_MAIN_4: Failed to generate user dictionary.
+OMSB_MAIN_5: Failure in order handler.
+
+OMSB_AuLoB_1: Failed to log into kite ticker for code backend.
+
+OMSB_AuLoU_1: Failed to log into kite for user.
+OMSB_AuLoU_2: Failed to log into the XTS API for user.
+
+OMSB_GLTP_1: Failed to initialise LTP gather module.
+OMSB_GLTP_2: Failed to start LTP thread.
+OMSB_GLTP_3: Failed to refresh lookup table.
+OMSB_GLTP_4: Failed to start KWS thread.
+OMSB_GLTP_5: Failed to update LTPs.
+
+OMSB_OH_1: Failed to start order handler sub threads.
+OMSB_OH_2: Failed to clear pending orders.
+
+
+OMSB_OP_1: Failed to place zerodha kite order for futures.
+OMSB_OP_2: Failed to place zerodha kite order for options.
+OMSB_OP_3: Failed to place XTS order for futures.
+OMSB_OP_4: Failed to place XTS order for options.
+
+
+Configs needed:
+
+GatherLTP.py:
+ROLLOVER_TIME

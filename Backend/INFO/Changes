@@ -1,0 +1,8 @@
+23-04-23
+1. Changed sleep time in thread_function in OrderHandler.py from 0.001s to 1s
+2. Added new config parameter ROLLOVER_TIME to ADS obtained config
+3. Deleted AutoLoginXTS.py and integrated it all in XTS.py
+
+28-04-23
+1. Added comments to DBManager.py
+2. Changed sleep times at various points with the aim of boosting performance

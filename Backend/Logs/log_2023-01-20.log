@@ -1,0 +1,463 @@
+root - INFO - 2023-01-20 11:55:31.869357 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-01-20 11:55:32.010518 - OMS Backend mainloop started.
+root - INFO - 2023-01-20 11:55:32.196589 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-01-20 11:55:40.849542 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-01-20 11:55:41.003197 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 11:55:47.771275 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 11:56:48.363008 - Placed Zerodha Kite futures order for:FINVANT, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18112.3, id:879.
+root - INFO - 2023-01-20 11:56:48.781384 - 419.27599906921387
+root - INFO - 2023-01-20 12:04:31.126670 - Placed Zerodha Kite futures order for:FINVANT, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18116.85, id:892.
+root - INFO - 2023-01-20 12:04:31.546458 - 420.7420349121094
+root - CRITICAL - CRITICAL ERROR:2023-01-20 12:04:54.102830 - Failed to initialise Log server/ADS.
+['Traceback (most recent call last):', '  File "Main.py", line 30, in __init__', '    self.start()', '  File "Main.py", line 38, in start', '    self.main_loop()', '  File "Main.py", line 78, in main_loop', '    sleep(1)', 'KeyboardInterrupt']
+root - INFO - 2023-01-20 12:05:16.857227 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-01-20 12:05:16.995184 - OMS Backend mainloop started.
+root - INFO - 2023-01-20 12:05:17.174364 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-01-20 12:05:24.757453 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-01-20 12:05:24.890885 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:24.891517 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:24.891839 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:24.892155 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:32.309495 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:32.446488 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:32.750402 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:32.889278 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:33.213991 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:33.342775 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:33.783916 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:33.916997 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:39.743583 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:39.880510 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:40.360577 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:40.486997 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:42.000275 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:42.125407 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:42.660965 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:42.829427 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:46.676755 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:46.803682 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:47.563862 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:47.699871 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:49.270063 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:49.405618 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:50.721776 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:50.879720 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:55.553022 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:55.692146 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:56.110123 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:56.264101 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:57.647954 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:57.798672 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:05:59.387776 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:05:59.521518 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 12:06:03.146609 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:06:03.427965 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:06:04.787124 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 12:06:07.541210 - OMSB: Zerodha login succesful for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - CRITICAL - CRITICAL ERROR:2023-01-20 12:06:53.394330 - Failed to refresh lookup table.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/GatherLTP.py", line 45, in refresh_lookup_table', '    self.lookup_table = json.load(f)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/json/__init__.py", line 293, in load', '    return loads(fp.read(),', '  File "/Users/vishaljha/anaconda3/lib/python3.8/json/__init__.py", line 357, in loads', '    return _default_decoder.decode(s)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/json/decoder.py", line 337, in decode', '    obj, end = self.raw_decode(s, idx=_w(s, 0).end())', '  File "/Users/vishaljha/anaconda3/lib/python3.8/json/decoder.py", line 355, in raw_decode', '    raise JSONDecodeError("Expecting value", s, err.value) from None', 'json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)']
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-01-20 12:07:00.043611 - Placed Zerodha Kite futures order for:KsCsvenc, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18119.1, id:826.
+root - INFO - 2023-01-20 12:07:00.047030 - Placed Zerodha Kite futures order for:PVYWqipD, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18119.1, id:352.
+root - INFO - 2023-01-20 12:07:00.048353 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18119.1, id:569.
+root - INFO - 2023-01-20 12:07:00.049077 - Placed Zerodha Kite futures order for:uRSwdIpo, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18119.1, id:509.
+root - INFO - 2023-01-20 12:07:00.050331 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18119.1, id:645.
+root - INFO - 2023-01-20 12:07:00.052512 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18119.1, id:517.
+root - INFO - 2023-01-20 12:07:00.055050 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18119.1, id:464.
+root - INFO - 2023-01-20 12:07:00.057865 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18119.1, id:716.
+root - INFO - 2023-01-20 12:07:00.063556 - Placed Zerodha Kite futures order for:TTQaNDXf, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18119.1, id:44.
+root - INFO - 2023-01-20 12:07:00.539569 - 495.44692039489746
+root - INFO - 2023-01-20 12:07:00.598674 - 558.9339733123779
+root - INFO - 2023-01-20 12:07:00.662102 - 617.9919242858887
+root - INFO - 2023-01-20 12:07:00.727629 - 686.7918968200684
+root - INFO - 2023-01-20 12:07:00.779605 - 737.0409965515137
+root - INFO - 2023-01-20 12:07:00.845555 - 800.5349636077881
+root - INFO - 2023-01-20 12:07:00.900678 - 848.1698036193848
+root - INFO - 2023-01-20 12:07:00.956360 - 912.5313758850098
+root - INFO - 2023-01-20 12:07:01.033227 - 981.6379547119141
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - CRITICAL - CRITICAL ERROR:2023-01-20 12:08:56.223480 - Failed to update LTPs.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/GatherLTP.py", line 74, in update_ltp', '    DBManager.update_LTP(instrument_token=instrument_token,LTP=last_price)', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/DBManager.py", line 111, in update_LTP', "    cur.execute('UPDATE order_reference SET position_value = {} - position_entry_price WHERE instrument_token = {} and position_type = {} and position_status = {};'.format(LTP,instrument_token,gSF('BUY'),gSF('PLACED')))", 'sqlite3.OperationalError: database is locked']
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-01-20 12:08:56.455973 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18115.55, id:660.
+root - INFO - 2023-01-20 12:08:56.461653 - Placed Zerodha Kite futures order for:uRSwdIpo, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18115.55, id:915.
+root - INFO - 2023-01-20 12:08:56.464614 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18115.55, id:618.
+root - INFO - 2023-01-20 12:08:56.468736 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18115.55, id:195.
+root - INFO - 2023-01-20 12:08:56.471195 - Placed Zerodha Kite futures order for:KsCsvenc, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18115.55, id:937.
+root - INFO - 2023-01-20 12:08:56.472773 - Placed Zerodha Kite futures order for:PVYWqipD, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18115.55, id:271.
+root - INFO - 2023-01-20 12:08:56.475077 - Placed Zerodha Kite futures order for:TTQaNDXf, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18115.55, id:559.
+root - INFO - 2023-01-20 12:08:56.477864 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18115.55, id:703.
+root - INFO - 2023-01-20 12:08:56.480042 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18115.55, id:782.
+root - INFO - 2023-01-20 12:08:56.930631 - 474.1168022155762
+root - INFO - 2023-01-20 12:08:57.004986 - 546.9460487365723
+root - INFO - 2023-01-20 12:08:57.055905 - 601.5219688415527
+root - INFO - 2023-01-20 12:08:57.118856 - 658.501148223877
+root - INFO - 2023-01-20 12:08:57.175844 - 718.9350128173828
+root - INFO - 2023-01-20 12:08:57.235299 - 764.2030715942383
+root - INFO - 2023-01-20 12:08:57.307976 - 841.3670063018799
+root - INFO - 2023-01-20 12:08:57.366075 - 898.3159065246582
+root - INFO - 2023-01-20 12:08:57.433329 - 977.931022644043
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-01-20 12:13:23.274292 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42587.4, id:161.
+root - INFO - 2023-01-20 12:13:23.276692 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42587.4, id:149.
+root - INFO - 2023-01-20 12:13:23.277907 - Placed Zerodha Kite futures order for:cAHaQDSM, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42587.4, id:488.
+root - INFO - 2023-01-20 12:13:23.281206 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42587.4, id:620.
+root - INFO - 2023-01-20 12:13:23.282460 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42587.4, id:424.
+root - INFO - 2023-01-20 12:13:23.282594 - Placed Zerodha Kite futures order for:RVJWXyZg, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42587.4, id:458.
+root - INFO - 2023-01-20 12:13:23.287271 - Placed Zerodha Kite futures order for:VMpiueuA, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42587.4, id:239.
+root - INFO - 2023-01-20 12:13:23.290747 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42587.4, id:568.
+root - INFO - 2023-01-20 12:13:23.796509 - 520.6959247589111
+root - INFO - 2023-01-20 12:13:23.855740 - 582.3228359222412
+root - INFO - 2023-01-20 12:13:23.926613 - 659.8773002624512
+root - INFO - 2023-01-20 12:13:23.980545 - 713.090181350708
+root - INFO - 2023-01-20 12:13:24.048071 - 779.595136642456
+root - INFO - 2023-01-20 12:13:24.111705 - 837.3997211456299
+root - INFO - 2023-01-20 12:13:24.161371 - 887.9327774047852
+root - INFO - 2023-01-20 12:13:24.210333 - 941.5078163146973
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-01-20 12:14:21.309820 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42583.0, id:321.
+root - INFO - 2023-01-20 12:14:21.312933 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42583.0, id:810.
+root - INFO - 2023-01-20 12:14:21.314590 - Placed Zerodha Kite futures order for:RVJWXyZg, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42583.0, id:617.
+root - INFO - 2023-01-20 12:14:21.315283 - Placed Zerodha Kite futures order for:VMpiueuA, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42583.0, id:840.
+root - INFO - 2023-01-20 12:14:21.316988 - Placed Zerodha Kite futures order for:cAHaQDSM, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42583.0, id:217.
+root - INFO - 2023-01-20 12:14:21.322548 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42583.0, id:677.
+root - INFO - 2023-01-20 12:14:21.324438 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42583.0, id:571.
+root - INFO - 2023-01-20 12:14:21.327449 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42583.0, id:668.
+root - INFO - 2023-01-20 12:14:21.803954 - 501.18088722229004
+root - INFO - 2023-01-20 12:14:21.882181 - 581.6929340362549
+root - INFO - 2023-01-20 12:14:21.947337 - 637.617826461792
+root - INFO - 2023-01-20 12:14:22.013365 - 713.0308151245117
+root - INFO - 2023-01-20 12:14:22.052899 - 746.0782527923584
+root - INFO - 2023-01-20 12:14:22.127669 - 819.0708160400391
+root - INFO - 2023-01-20 12:14:22.188205 - 876.5721321105957
+root - INFO - 2023-01-20 12:14:22.252136 - 950.5631923675537
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - CRITICAL - CRITICAL ERROR:2023-01-20 12:21:45.271579 - Failed to initialise Log server/ADS.
+['Traceback (most recent call last):', '  File "Main.py", line 30, in __init__', '    self.start()', '  File "Main.py", line 38, in start', '    self.main_loop()', '  File "Main.py", line 78, in main_loop', '    sleep(1)', 'KeyboardInterrupt']
+root - INFO - 2023-01-20 23:04:46.213217 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-01-20 23:04:46.356533 - OMS Backend mainloop started.
+root - INFO - 2023-01-20 23:04:46.539320 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-01-20 23:04:55.216391 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-01-20 23:04:55.373944 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:04:55.374526 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:04:55.374856 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:04:55.375570 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:02.533266 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:02.668080 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:02.695700 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:02.878234 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:02.887499 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:03.018804 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:03.467931 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:03.603173 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:09.405656 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:09.543241 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:10.022922 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:10.159025 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:10.201643 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:10.384048 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:12.002148 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:12.151959 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:16.337500 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:16.466699 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:17.872515 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:18.007644 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:18.168307 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:18.296827 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:19.589353 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:19.720053 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:23.187572 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:23.324674 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:24.988560 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:25.120370 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:25.123782 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:25.314517 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:27.191020 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:27.396654 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:05:30.254926 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:32.021518 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:32.552843 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:33.917423 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:05:48.532617 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42549.1, id:729.
+root - INFO - 2023-01-20 23:05:48.533685 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42549.1, id:195.
+root - INFO - 2023-01-20 23:05:48.536117 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42549.1, id:726.
+root - INFO - 2023-01-20 23:05:48.538456 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42549.1, id:975.
+root - INFO - 2023-01-20 23:05:48.539515 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42549.1, id:785.
+root - INFO - 2023-01-20 23:05:48.541143 - Placed Zerodha Kite futures order for:RVJWXyZg, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42549.1, id:531.
+root - INFO - 2023-01-20 23:05:48.542628 - Placed Zerodha Kite futures order for:cAHaQDSM, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42549.1, id:597.
+root - INFO - 2023-01-20 23:05:48.549044 - Placed Zerodha Kite futures order for:VMpiueuA, instrument:BANKNIFTY23JANFUT, qty:25, transaction type:BUY, placed price:42549.1, id:226.
+root - INFO - 2023-01-20 23:05:49.028413 - 498.6917972564697
+root - INFO - 2023-01-20 23:05:49.097751 - 566.6906833648682
+root - INFO - 2023-01-20 23:05:49.155598 - 625.8201599121094
+root - INFO - 2023-01-20 23:05:49.219410 - 691.6859149932861
+root - INFO - 2023-01-20 23:05:49.275987 - 746.1457252502441
+root - INFO - 2023-01-20 23:05:49.341225 - 811.9840621948242
+root - INFO - 2023-01-20 23:05:49.386701 - 852.586030960083
+root - INFO - 2023-01-20 23:05:49.449018 - 915.6148433685303
+root - INFO - 2023-01-20 23:06:56.262340 - Placed Zerodha Kite futures order for:RVJWXyZg, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42549.1, id:947.
+root - INFO - 2023-01-20 23:06:56.264526 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42549.1, id:643.
+root - INFO - 2023-01-20 23:06:56.266273 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42549.1, id:272.
+root - INFO - 2023-01-20 23:06:56.270480 - Placed Zerodha Kite futures order for:VMpiueuA, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42549.1, id:442.
+root - INFO - 2023-01-20 23:06:56.272282 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42549.1, id:618.
+root - INFO - 2023-01-20 23:06:56.284011 - Placed Zerodha Kite futures order for:cAHaQDSM, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42549.1, id:184.
+root - INFO - 2023-01-20 23:06:56.294022 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42549.1, id:859.
+root - INFO - 2023-01-20 23:06:56.294176 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:BANKNIFTY23JANFUT, qty:-25, transaction type:SELL, placed price:42549.1, id:264.
+root - INFO - 2023-01-20 23:06:56.733049 - 475.49891471862793
+root - INFO - 2023-01-20 23:06:56.806406 - 550.1940250396729
+root - INFO - 2023-01-20 23:06:56.859835 - 602.3027896881104
+root - INFO - 2023-01-20 23:06:56.920018 - 658.7350368499756
+root - INFO - 2023-01-20 23:06:56.981291 - 722.1107482910156
+root - INFO - 2023-01-20 23:06:57.028377 - 764.5509243011475
+root - INFO - 2023-01-20 23:06:57.094206 - 831.1550617218018
+root - INFO - 2023-01-20 23:06:57.167954 - 908.8597297668457
+root - INFO - 2023-01-20 23:07:37.033078 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:742.
+root - INFO - 2023-01-20 23:07:37.034210 - Placed Zerodha Kite futures order for:KsCsvenc, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:975.
+root - INFO - 2023-01-20 23:07:37.037363 - Placed Zerodha Kite futures order for:PVYWqipD, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:865.
+root - INFO - 2023-01-20 23:07:37.040487 - Placed Zerodha Kite futures order for:TTQaNDXf, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:81.
+root - INFO - 2023-01-20 23:07:37.044660 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:580.
+root - INFO - 2023-01-20 23:07:37.045841 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:714.
+root - INFO - 2023-01-20 23:07:37.047635 - Placed Zerodha Kite futures order for:uRSwdIpo, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:833.
+root - INFO - 2023-01-20 23:07:37.049281 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:57.
+root - INFO - 2023-01-20 23:07:37.050413 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:159.
+root - INFO - 2023-01-20 23:07:37.494070 - 465.4247760772705
+root - INFO - 2023-01-20 23:07:37.551866 - 514.0862464904785
+root - INFO - 2023-01-20 23:07:37.632781 - 603.8050651550293
+root - INFO - 2023-01-20 23:07:37.675155 - 636.9979381561279
+root - INFO - 2023-01-20 23:07:37.729118 - 692.2197341918945
+root - INFO - 2023-01-20 23:07:37.795114 - 757.7042579650879
+root - INFO - 2023-01-20 23:07:37.858267 - 816.5349960327148
+root - INFO - 2023-01-20 23:07:37.902577 - 863.8560771942139
+root - INFO - 2023-01-20 23:07:38.272961 - 1238.6538982391357
+root - INFO - 2023-01-20 23:07:56.488812 - Placed Zerodha Kite futures order for:KsCsvenc, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:740.
+root - INFO - 2023-01-20 23:07:56.490980 - Placed Zerodha Kite futures order for:TTQaNDXf, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:338.
+root - INFO - 2023-01-20 23:07:56.492124 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:913.
+root - INFO - 2023-01-20 23:07:56.495066 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:266.
+root - INFO - 2023-01-20 23:07:56.502257 - Placed Zerodha Kite futures order for:PVYWqipD, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:128.
+root - INFO - 2023-01-20 23:07:56.503452 - Placed Zerodha Kite futures order for:uRSwdIpo, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:938.
+root - INFO - 2023-01-20 23:07:56.505379 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:577.
+root - INFO - 2023-01-20 23:07:56.505651 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:363.
+root - INFO - 2023-01-20 23:07:56.508082 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:453.
+root - INFO - 2023-01-20 23:07:56.969509 - 482.9530715942383
+root - INFO - 2023-01-20 23:07:57.029206 - 532.43088722229
+root - INFO - 2023-01-20 23:07:57.085911 - 597.8477001190186
+root - INFO - 2023-01-20 23:07:57.155221 - 668.1981086730957
+root - INFO - 2023-01-20 23:07:57.216069 - 718.6641693115234
+root - INFO - 2023-01-20 23:07:57.276578 - 781.1660766601562
+root - INFO - 2023-01-20 23:07:57.339078 - 853.4021377563477
+root - INFO - 2023-01-20 23:07:57.386455 - 892.4658298492432
+root - INFO - 2023-01-20 23:07:57.443557 - 948.3897686004639
+root - CRITICAL - CRITICAL ERROR:2023-01-20 23:11:31.093453 - Failed to initialise Log server/ADS.
+['Traceback (most recent call last):', '  File "Main.py", line 30, in __init__', '    self.start()', '  File "Main.py", line 38, in start', '    self.main_loop()', '  File "Main.py", line 78, in main_loop', '    sleep(1)', 'KeyboardInterrupt']
+root - INFO - 2023-01-20 23:20:53.824290 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-01-20 23:20:53.958195 - OMS Backend mainloop started.
+root - INFO - 2023-01-20 23:20:54.141443 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-01-20 23:21:02.352541 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-01-20 23:21:02.489945 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:02.490282 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:02.491415 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:02.491731 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:09.439406 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:09.556890 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:09.568742 - OMSB: Zerodha login for WG5235.
+root - CRITICAL - CRITICAL ERROR:2023-01-20 23:21:09.711349 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "/Users/vishaljha/Desktop/FINVANT/API/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 258, in generate_session', '    resp = self._post("api.token", params={', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 841, in _post', '    return self._request(route, "POST", url_args=url_args, params=params, is_json=is_json, query_params=query_params)', '  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/kiteconnect/connect.py", line 913, in _request', '    raise exp(data["message"], code=r.status_code)', 'kiteconnect.exceptions.InputException: `request_token` should be minimum 10 characters in length.']
+root - INFO - 2023-01-20 23:21:09.713078 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:09.717938 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:09.845989 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:09.964814 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:16.464570 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:16.612989 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:16.814994 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:16.915137 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:16.942850 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:17.041792 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:17.280570 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:17.407455 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:23.332946 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:23.456998 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:23.888276 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:24.012783 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:24.678076 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:24.807412 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:25.213679 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:25.370704 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:30.188310 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:30.316060 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:30.737757 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:30.869598 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:32.008860 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:32.136408 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:32.380701 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:32.519089 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-01-20 23:21:37.826851 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:38.455993 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:39.513169 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:21:40.095282 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-01-20 23:25:01.955283 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:385.
+root - INFO - 2023-01-20 23:25:01.958182 - Placed Zerodha Kite futures order for:PVYWqipD, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:250.
+root - INFO - 2023-01-20 23:25:01.959882 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:815.
+root - INFO - 2023-01-20 23:25:01.963769 - Placed Zerodha Kite futures order for:KsCsvenc, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:623.
+root - INFO - 2023-01-20 23:25:01.967228 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:96.
+root - INFO - 2023-01-20 23:25:01.967802 - Placed Zerodha Kite futures order for:TTQaNDXf, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:452.
+root - INFO - 2023-01-20 23:25:01.973055 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:338.
+root - INFO - 2023-01-20 23:25:01.975827 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:735.
+root - INFO - 2023-01-20 23:25:01.977253 - Placed Zerodha Kite futures order for:uRSwdIpo, instrument:NIFTY23JANFUT, qty:50, transaction type:BUY, placed price:18055.95, id:129.
+root - INFO - 2023-01-20 23:25:02.479244 - 522.1598148345947
+root - INFO - 2023-01-20 23:25:02.545212 - 587.5320434570312
+root - INFO - 2023-01-20 23:25:02.612531 - 658.6029529571533
+root - INFO - 2023-01-20 23:25:02.674146 - 720.679759979248
+root - INFO - 2023-01-20 23:25:02.728900 - 768.7220573425293
+root - INFO - 2023-01-20 23:25:02.795249 - 831.8812847137451
+root - INFO - 2023-01-20 23:25:02.871330 - 909.0831279754639
+root - INFO - 2023-01-20 23:25:02.928817 - 968.3792591094971
+root - INFO - 2023-01-20 23:25:02.973194 - 1012.0470523834229
+root - INFO - 2023-01-20 23:25:31.714693 - Placed Zerodha Kite futures order for:DHYVmDuL, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:462.
+root - INFO - 2023-01-20 23:25:31.715447 - Placed Zerodha Kite futures order for:uRSwdIpo, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:253.
+root - INFO - 2023-01-20 23:25:31.716687 - Placed Zerodha Kite futures order for:TTQaNDXf, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:136.
+root - INFO - 2023-01-20 23:25:31.723004 - Placed Zerodha Kite futures order for:PVYWqipD, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:187.
+root - INFO - 2023-01-20 23:25:31.723325 - Placed Zerodha Kite futures order for:cJPEsAqA, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:409.
+root - INFO - 2023-01-20 23:25:31.725998 - Placed Zerodha Kite futures order for:WprNkyOw, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:623.
+root - INFO - 2023-01-20 23:25:31.728503 - Placed Zerodha Kite futures order for:KsCsvenc, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:155.
+root - INFO - 2023-01-20 23:25:31.730918 - Placed Zerodha Kite futures order for:LXfgnNeV, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:694.
+root - INFO - 2023-01-20 23:25:31.733979 - Placed Zerodha Kite futures order for:ecCsimDH, instrument:NIFTY23JANFUT, qty:-50, transaction type:SELL, placed price:18055.95, id:638.
+root - INFO - 2023-01-20 23:25:32.203951 - 494.19713020324707
+root - INFO - 2023-01-20 23:25:32.254162 - 546.1246967315674
+root - INFO - 2023-01-20 23:25:32.299739 - 589.5001888275146
+root - INFO - 2023-01-20 23:25:32.414760 - 695.080041885376
+root - INFO - 2023-01-20 23:25:32.420882 - 700.2499103546143
+root - INFO - 2023-01-20 23:25:32.481102 - 760.977029800415
+root - INFO - 2023-01-20 23:25:32.532663 - 818.016767501831
+root - INFO - 2023-01-20 23:25:32.608431 - 880.6362152099609
+root - INFO - 2023-01-20 23:25:32.819538 - 1102.0936965942383
+root - CRITICAL - CRITICAL ERROR:2023-01-20 23:26:00.781242 - Failed to initialise Log server/ADS.
+['Traceback (most recent call last):', '  File "Main.py", line 30, in __init__', '    self.start()', '  File "Main.py", line 38, in start', '    self.main_loop()', '  File "Main.py", line 78, in main_loop', '    sleep(1)', 'KeyboardInterrupt']
