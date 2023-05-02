@@ -1,0 +1,24 @@
+Error key for this server:
+ADS
+
+Sample error:
+ADS_Main_1 (Error in the ADS server, error #1)
+
+ADS_EncryptionHybrid_1: generate_keys(), Failure to generate public private key pair. 
+ADS_EncryptionHybrid_2: load_keys(), Failure to load public/private keys.
+ADS_EncryptionHybrid_3: encrypt(), Failure to encrypt message.
+ADS_EncryptionHybrid_4: decrypt(), Failure to decrypt message.
+
+ADS_Main_1: create_access_token(), Failure to generate access token.
+ADS_Main_2: authenticate_user(), Failure to verify login.
+ADS_Main_3: get_current_user(), Failure in fastAPI helper function to check current user login.
+ADS_Main_4: login(), Failure to login.
+ADS_Main_5: create_user(), Failure to create new API user.
+ADS_Main_6: get_user(), Failure to obtain user by id.
+ADS_Main_7: get_user_data(), Failure to GET user data.
+ADS_Main_8: get_option_spreads(), Failure to GET option spreads.
+ADS_Main_9: get_config(), Failure to GET configs.
+ADS_Main_10: post_user_data(), Failure to POST user data.
+ADS_Main_11: post_option_spreads(), Failure to spreads posts.
+ADS_Main_12: post_config(), Failure to post config.
+ADS_Main_13: edit_user_data(), Failure to edit user data.

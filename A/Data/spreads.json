@@ -1,0 +1,47 @@
+{
+    "SPREAD_TEST": {
+        "INDEX_PEG" : "N",
+    	"BUY":[
+		"NIFTY|G|200|PE|MONTH|0|0|0|0"
+	],
+	"OPEN SHORT":[
+		"NIFTY|G|100|PE|MONTH|0|0|0|0"
+	]
+    },
+	"NIFTY_SYNTHETIC_INTRADAY_LONG": {
+        "INDEX_PEG":"NIFTY",
+        "BUY":[
+            "NIFTY|L|0|CE|WEEK|0|0|0|0"
+        ],
+        "OPEN SHORT":[
+            "NIFTY|L|0|PE|WEEK|0|0|0|0"
+        ]
+    },
+    "NIFTY_SYNTHETIC_INTRADAY_SHORT": {
+        "INDEX_PEG":"NIFTY",
+        "BUY":[
+            "NIFTY|L|0|PE|WEEK|0|0|0|0"
+        ],
+        "OPEN SHORT":[
+            "NIFTY|L|0|CE|WEEK|0|0|0|0"
+        ]
+    },
+	"BANKNIFTY_SYNTHETIC_INTRADAY_LONG": {
+        "INDEX_PEG":"BANKNIFTY",
+        "BUY":[
+            "BANKNIFTY|L|0|CE|WEEK|0|0|0|0"
+        ],
+        "OPEN SHORT":[
+            "BANKNIFTY|L|0|PE|WEEK|0|0|0|0"
+        ]
+    },
+    "BANKNIFTY_SYNTHETIC_INTRADAY_SHORT": {
+        "INDEX_PEG":"BANKNIFTY",
+        "BUY":[
+            "BANKNIFTY|L|0|PE|WEEK|0|0|0|0"
+        ],
+        "OPEN SHORT":[
+            "BANKNIFTY|L|0|CE|WEEK|0|0|0|0"
+        ]
+    }
+}

@@ -1,0 +1,910 @@
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:02:27.698666
+Data thread not started...
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.conn - INFO - <BrokerConnection node_id=0 host=ec2-15-207-12-225.ap-south-1.compute.amazonaws.com:9092 <connected> [IPv4 ('15.207.12.225', 9092)]>: Closing connection. 
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=15.207.12.225:9092 <connected> [IPv4 ('15.207.12.225', 9092)]>: Closing connection. 
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:03.672900
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:08.711864
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:13.752744
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:18.790472
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:23.828261
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:28.868421
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:33.924073
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:38.964308
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:44.005607
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:49.038614
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:54.084724
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:03:59.122926
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:04.167613
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:09.206722
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:14.246267
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:19.278024
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:24.314870
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:29.383678
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:34.424012
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:39.463185
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:44.513758
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:49.563783
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:54.616235
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:04:59.653949
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:04.703771
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:09.742406
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:14.780676
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:19.849195
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:24.913431
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:29.947004
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:34.996887
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:40.035033
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:45.072418
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:50.118298
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:05:55.152761
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:00.186300
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:05.223578
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:10.266269
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:15.313600
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:20.347357
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:25.392117
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:30.442741
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:35.482442
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:40.529686
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:45.564025
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:50.600068
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:06:55.643492
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:00.686102
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:05.729103
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:10.766519
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:15.807959
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:20.841486
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:25.879258
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:30.922096
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:35.958386
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:41.009074
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:46.535477
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:51.574297
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:07:56.612309
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:01.654015
+Data thread not started...
+kafka.conn - INFO - <BrokerConnection node_id=0 host=ec2-15-207-12-225.ap-south-1.compute.amazonaws.com:9092 <connecting> [IPv4 ('15.207.12.225', 9092)]>: connecting to ec2-15-207-12-225.ap-south-1.compute.amazonaws.com:9092 [('15.207.12.225', 9092) IPv4]
+kafka.conn - INFO - <BrokerConnection node_id=0 host=ec2-15-207-12-225.ap-south-1.compute.amazonaws.com:9092 <connecting> [IPv4 ('15.207.12.225', 9092)]>: Connection complete.
+kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=15.207.12.225:9092 <connected> [IPv4 ('15.207.12.225', 9092)]>: Closing connection. 
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:06.691072
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:11.728718
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:16.772799
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:21.821491
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:26.856471
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:31.902718
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:36.965229
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:42.017639
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:47.052529
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:52.089895
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:08:57.126974
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:02.165510
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:07.219043
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:12.259773
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:17.295491
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:22.329215
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:27.367356
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:32.424207
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:37.466506
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:42.521901
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:47.559109
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:52.603034
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:09:57.643314
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:02.685943
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:07.726922
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:12.771050
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:17.809191
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:22.854695
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:27.892569
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:32.934322
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:38.222855
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:43.271258
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:48.337840
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:53.376163
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:10:58.410188
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:03.452098
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:08.486170
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:13.538737
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:18.577456
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:23.619539
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:28.653166
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:33.688741
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:38.747022
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:43.783195
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:48.822025
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:53.860702
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:11:58.898862
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:03.934182
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:08.980791
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:14.025002
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:19.073752
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:24.111127
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:29.161328
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:34.216892
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:39.258617
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:44.294904
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:49.338544
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:54.385011
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:12:59.439573
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:04.475374
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:09.576459
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:14.614286
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:19.658489
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:24.693600
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:29.744753
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:34.799203
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:39.847640
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:44.891405
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:49.933530
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:13:54.975028
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:00.041158
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:05.086077
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:10.128526
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:15.175446
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:20.221777
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:25.253788
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:30.288990
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:35.331221
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:40.366157
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:45.433674
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:50.473321
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:14:55.510530
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:00.548414
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:05.587294
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:10.620423
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:15.653649
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:20.688740
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:25.728271
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:30.763566
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:35.799035
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:40.842397
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:45.877807
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:50.917460
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:15:55.951632
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:00.984098
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:06.044406
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:11.079492
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:16.124448
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:21.160363
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:26.197053
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:31.248779
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:36.285245
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:41.329918
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:46.378786
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:51.413296
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:16:56.455370
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:01.502244
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:06.546901
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:11.583730
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:16.621608
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:21.657464
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:26.697439
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:31.743690
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:36.783813
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:41.821533
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:47.106379
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:52.150984
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:17:57.188128
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:02.261517
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:07.297540
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:12.344072
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:17.393546
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:22.442094
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:27.476859
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:32.524720
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:37.570107
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:42.603844
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:47.647264
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:52.684436
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:18:57.734469
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:19:02.776316
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:19:07.845459
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:19:12.885157
+Data thread not started...
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.conn - INFO - <BrokerConnection node_id=0 host=ec2-15-207-12-225.ap-south-1.compute.amazonaws.com:9092 <connected> [IPv4 ('15.207.12.225', 9092)]>: Closing connection. 
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.conn - INFO - <BrokerConnection node_id=0 host=ec2-15-207-12-225.ap-south-1.compute.amazonaws.com:9092 <connected> [IPv4 ('15.207.12.225', 9092)]>: Closing connection. 
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:19:23.903156
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:19:28.947905
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:19:33.985719
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:19:39.046608
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:19:44.088400
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:19:49.134898
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:19:54.169854
+Data thread not started...
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.conn - INFO - <BrokerConnection node_id=0 host=ec2-15-207-12-225.ap-south-1.compute.amazonaws.com:9092 <connected> [IPv4 ('15.207.12.225', 9092)]>: Closing connection. 
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:02.445070
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:07.479376
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:12.522243
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:17.558065
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:22.592223
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:27.645772
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:32.680842
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:37.715648
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:42.751769
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:47.787566
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:52.858394
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:20:57.905830
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:21:02.941383
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:21:07.980563
+Data thread not started...
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.conn - INFO - <BrokerConnection node_id=0 host=ec2-15-207-12-225.ap-south-1.compute.amazonaws.com:9092 <connected> [IPv4 ('15.207.12.225', 9092)]>: Closing connection. 
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=15.207.12.225:9092 <connected> [IPv4 ('15.207.12.225', 9092)]>: Closing connection. 
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:21:18.382305
+Data thread not started...
+root - INFO - (INFO) MAIN
+No shutdown
+2022-09-28 23:21:23.443345
+Data thread not started...
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.conn - INFO - <BrokerConnection node_id=0 host=ec2-15-207-12-225.ap-south-1.compute.amazonaws.com:9092 <connected> [IPv4 ('15.207.12.225', 9092)]>: Closing connection. 
+kafka.producer.kafka - INFO - Closing the Kafka producer with 0 secs timeout.
+kafka.producer.kafka - INFO - Proceeding to force close the producer since pending requests could not be completed within timeout 0.
+kafka.conn - INFO - <BrokerConnection node_id=bootstrap-0 host=15.207.12.225:9092 <connected> [IPv4 ('15.207.12.225', 9092)]>: Closing connection. 
