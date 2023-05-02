@@ -1,17 +1,6 @@
 import sys
 sys.path.insert(0,'../Security')
 from encryption import Encryption
-<<<<<<< HEAD
-import requests
-import json
-from datetime import datetime
-from Config import Config
-
-
-class Log_Server_Interface:
-    def __init__(self, config:Config) -> None:
-        self.url = config.LOG_SERVER_ADRESS
-=======
 from Config import Config
 import requests
 import json
@@ -22,7 +11,6 @@ from Logs import logInfo, logError, logCritical, logWarning
 class Log_Server_Interface:
     def __init__(self, config) -> None:
         self.url = config.LOG_SERVER_ADDRESS
->>>>>>> backend_cleanup
         self.subsystem = config.SUBSYSTEMS
         self.encryption = Encryption('../Security/Keys/LOG/public_key_.pem', '../Keys/LOG/private_key_.pem')
         self.token = self.authentification()
@@ -49,15 +37,6 @@ class Log_Server_Interface:
             "Section":self.subsystem,
             "Severity":severity,
             "Message":message,
-<<<<<<< HEAD
-            "Send Time": datetime.now(),
-            "Publish": publish  
-        }
-        # encrypt the message
-        json_compatible_item_data = self.encryption.encrypt(log_payload)
-        response = requests.post(self.url + 'post/log', headers=headers, json=json_compatible_item_data)
-        return response.json()
-=======
             "SendTime": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             "Publish": publish,
             "Tag": tag
@@ -77,4 +56,3 @@ class Log_Server_Interface:
         return response.json()
 
 
->>>>>>> backend_cleanup
