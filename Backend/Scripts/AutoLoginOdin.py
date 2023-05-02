@@ -4,6 +4,8 @@ import re
 import requests
 from Config import Config
 from Log_Server_Interface import Log_Server_Interface
+
+
 def pretty_print(json_data):
     print(json.dumps(json_data, indent=4, sort_keys=True))
 
@@ -49,8 +51,7 @@ class ODIN:
 
 
         except Exception as e:
-            print("ER: ", e)
-            print("Login Failed")
+            self.log_interface.postLog(severity='CRITICAL',message='ODIN login failed for {}. Error: {}.'.format(self.client_code,e),publish=1)
 
     def place_order(self, scrip_token, symbol, quantity, order_type, expiry_date=None):
         data = {
@@ -78,6 +79,7 @@ class ODIN:
             headers=self.header,
             json=data,
         ).json()
+        self.log_interface.postLog(severity='INFO',message='ODIN order placed for {}, instrument: {}, type: {}.'.format(self.client_code,scrip_token, type),publish=1)
         return r
 
     def order_history(self, order_id):
