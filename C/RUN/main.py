@@ -717,43 +717,49 @@ async def getUserDetails(strategy, instrument, position):
     Keywork Arguments:
     None
     """
-    #Fetch user data from ADS(A)
-    with open('../Data/user_data.json', 'r') as f:
-        ud = json.load(f)
-    if ud['LAST_UPDATED'] + 7200 < time.time():
-        #Fetch user data from ADS server
-        ads = ADS_Interface(config.ADS_SERVER_ADDRESS)
-        user_data = ads.get('get/user_data')
-        user_data = json.loads(user_data)
-        ud['LAST_UPDATED'] = time.time()
-        ud['USER_DATA'] = user_data
-        with open('../Data/user_data.json', 'w') as f:
-            json.dump(ud, f, indent=4)
-    else:
-        user_data = ud['USER_DATA']
 
-    #Fetch user names from user data (are keys in dict) and have same strategy name
-    user_names = list(user_data.keys())
+    try:
+        #Fetch user data from ADS(A)
+        with open('../Data/user_data.json', 'r') as f:
+            ud = json.load(f) 
+        if ud['LAST_UPDATED'] + 7200 < time.time():
+            #Fetch user data from ADS server
+            ads = ADS_Interface(config.ADS_SERVER_ADDRESS)
+            user_data = ads.get('get/user_data')
+            user_data = json.loads(user_data)
+            ud['LAST_UPDATED'] = time.time()
+            ud['USER_DATA'] = user_data
+            with open('../Data/user_data.json', 'w') as f:
+                json.dump(ud, f, indent=4)
+        else:
+            user_data = ud['USER_DATA']
 
-    user_details = {}
-    
-    for user in user_names:
-        # Print list of strategies for each user
-        print('Checking user {} for strategy {}'.format(user, strategy))
+        #Fetch user names from user data (are keys in dict) and have same strategy name
+        user_names = list(user_data.keys())
+
+        user_details = {}
         
-        if strategy in list(user_data[user]['STRATEGY_DETAILS'].keys()):
-            if position == 'BUY' or position == 'OPEN SHORT':
-                # d = 0 for BUY and d = 1 for OPEN SHORT | d is short/long position in strategy details
-                if position == 'BUY':
-                    d = 0
-                elif position == 'OPEN SHORT':
-                    d = 1
-                if user_data[user]['STRATEGY_DETAILS'][strategy][instrument][d] > 0:
+        for user in user_names:
+            # Print list of strategies for each user
+            print('Checking user {} for strategy {}'.format(user, strategy))
+            
+            if strategy in list(user_data[user]['STRATEGY_DETAILS'].keys()):
+                if position == 'BUY' or position == 'OPEN SHORT':
+                    # d = 0 for BUY and d = 1 for OPEN SHORT | d is short/long position in strategy details
+                    if position == 'BUY':
+                        d = 0
+                    elif position == 'OPEN SHORT':
+                        d = 1
+                    if user_data[user]['STRATEGY_DETAILS'][strategy][instrument][d] > 0:
+                        user_details[user] = user_data[user]['STRATEGY_DETAILS'][strategy]
+                elif position == 'SELL' or position == 'CLOSE SHORT':
                     user_details[user] = user_data[user]['STRATEGY_DETAILS'][strategy]
-            elif position == 'SELL' or position == 'CLOSE SHORT':
-                user_details[user] = user_data[user]['STRATEGY_DETAILS'][strategy]
-    print('Number of users with strategy {}: {}'.format(strategy, len(user_details)))
-    return user_details
+        print('Number of users with strategy {}: {}'.format(strategy, len(user_details)))
+        return user_details
+    except Exception as e:
+        print("Error while fetching user details: ", e)
+        traceback.print_exc()
+        return {}
 
 def getOrderBook():
     """ 

@@ -14,7 +14,10 @@ class OrderHandler:
     def __init__(self, user_profiles: dict, spread_list: dict, log_interface: Log_Server_Interface, debug:bool = False) -> None:
         self.user_profiles = user_profiles
         self.log_interface = log_interface
-        self.SLEEP_TIME = datetime.strptime("23:59:00",'%H:%M:%S').time()
+        if debug:
+            self.SLEEP_TIME = datetime.strptime("23:59:00",'%H:%M:%S').time()
+        else:
+            self.SLEEP_TIME = datetime.strptime("15:35:00",'%H:%M:%S').time()
         self.spread_list = spread_list
         self.DEBUG = debug
 
@@ -61,9 +64,6 @@ class OrderHandler:
     
 
     def place_pending_orders(self,username: str, spread_list: dict, cntr):
-        if self.DEBUG:
-            logInfo('Placing pending orders for user : ', username)
-
         user_type = self.user_profiles[username]['USER_TYPE']
         brokerage_object = self.user_profiles[username]['BROKERAGE_OBJECT']
         paper_trade = self.user_profiles[username]['PAPER_TRADE']

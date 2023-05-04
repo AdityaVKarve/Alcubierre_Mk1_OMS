@@ -11,7 +11,7 @@ from UpdateIndices import UpdateIndices
 class Main:
     def __init__(self) -> None:
         self.START_TIME = datetime.strptime("09:10:00",'%H:%M:%S').time()
-        self.SLEEP_TIME = datetime.strptime("15:30:00",'%H:%M:%S').time()
+        self.SLEEP_TIME = datetime.strptime("19:30:00",'%H:%M:%S').time()
         self.RUNNING = False
         self.run()
         

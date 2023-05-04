@@ -1,0 +1,181 @@
+root - INFO - 2023-05-03 16:35:00.511953 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [14027]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fbe4b715280>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/applications.py", line 261, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./main.py", line 1077, in create_order
+    user_details = await asyncio.create_task(getUserDetails(strategy, instrument_nomenclature, position)) # async allows to run multiple tasks at the same time
+  File "./main.py", line 722, in getUserDetails
+    ud = json.load(f)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Users/vishaljha/anaconda3/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/vishaljha/anaconda3/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [14027]
+root - INFO - 2023-05-03 17:03:42.393423 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [15998]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fabbb754220>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [15998]
+root - INFO - 2023-05-03 17:04:41.582772 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [16047]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fee28026280>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [16047]
+root - INFO - 2023-05-03 17:05:49.269818 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [16100]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f85d2012280>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/protocols/http/h11_impl.py", line 366, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/applications.py", line 261, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/starlette/routing.py", line 61, in app
+    response = await func(request)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "/Users/vishaljha/anaconda3/lib/python3.8/site-packages/fastapi/routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./main.py", line 1130, in create_order
+    if placeOrder(user_name, strategy, instrument_nomenclature, position, quantity, stoploss, target, nomenclature_to_details):
+  File "./main.py", line 480, in placeOrder
+    ret = addOrderToOrderReference(order_id = order_id, username=username, instrument_nomenclature = instrument_nomenclature, quantity = quantity, position = position, strategy=strategy_name, nomenclature_to_details=nomenclature_to_details)
+  File "./main.py", line 549, in addOrderToOrderReference
+    instrument_data = nomenclature_to_details.process_order_nomenclature(instrument_nomenclature)[instrument_nomenclature]   #Get details on the instrument to be placed based on instrument nomenclature
+  File "./NomenclatureToDetails.py", line 91, in process_order_nomenclature
+    option_details = self.get_option(index=index,deviation=deviation,dev_amt=dev_amt,type=type,expiry_type=expiry_type,expiry_dev=expiry_dev)
+  File "./NomenclatureToDetails.py", line 36, in get_option
+    index = json.load(f)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/Users/vishaljha/anaconda3/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/Users/vishaljha/anaconda3/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Users/vishaljha/anaconda3/lib/python3.8/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 6 column 1 (char 124)
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [16100]
+root - INFO - 2023-05-03 17:14:13.906950 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [16377]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fa05f115220>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-05-03 17:14:19.869590 - Order placed for fin_user_1 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:20.011011 - Order placed for fin_user_2 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:20.158053 - Order placed for fin_user_3 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:20.298687 - Order placed for fin_user_4 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:20.438463 - Order placed for fin_user_5 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:20.577363 - Order placed for fin_user_6 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:20.716702 - Order placed for fin_user_7 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:20.859216 - Order placed for fin_user_8 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:20.996309 - Order placed for fin_user_9 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:21.137967 - Order placed for fin_user_10 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:21.278379 - Order placed for fin_user_11 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:21.418598 - Order placed for fin_user_12 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:21.557521 - Order placed for fin_user_13 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:21.698807 - Order placed for fin_user_14 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:21.839836 - Order placed for fin_user_15 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:21.978653 - Order placed for fin_user_16 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:22.118579 - Order placed for fin_user_17 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:22.258786 - Order placed for fin_user_18 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:22.398694 - Order placed for fin_user_19 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:22.538702 - Order placed for fin_user_20 NOVA SPREAD_TEST BUY 1 0 0
+root - INFO - 2023-05-03 17:14:22.669500 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_2', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_3', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_4', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_5', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_6', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_7', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_8', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_9', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_10', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_11', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_12', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_13', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_14', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_15', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_16', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_17', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_18', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_19', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'fin_user_20', 'strategy': 'NOVA', 'instrument_nomenclature': 'SPREAD_TEST', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [16377]

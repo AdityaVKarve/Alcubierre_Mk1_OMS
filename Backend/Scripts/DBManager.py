@@ -310,7 +310,7 @@ def update_orderbook_status(order_id:int,cur: Cursor, debug: bool = False):
     Keyword Arguments:
     None
     """
-    
+
     position = cur.execute('SELECT position_status, position_entry_price, quantity, lot_size,position_type from order_reference WHERE order_id = {};'.format(order_id)).fetchall()
     #If it's a sell order and all legs/positions are sold
     if len(position) == 0:
@@ -436,38 +436,50 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
     
     #Empty orderbuffer if placed
     if total_qty == placed_qty + existing_qty:
-        cur.execute("SELECT strategy_name, position_type, instrument_nomenclature from position_reference where position_id = {};".format(position_id))
-        c = cur.fetchall()
-        strategy = list(c[0])[0]
-        position_type = list(c[0])[1]
-        instrument_nomenclature = list(c[0])[2]
-        cur.execute("SELECT order_id from orderbook where username = {} AND strategy_name = {} AND instrument_nomenclature = {};".format(gSF(username),gSF(strategy),gSF(instrument_nomenclature)))
-        c = cur.fetchall()
-        order_id = list(c[0])[0]
+        cur.execute("""
+            SELECT 
+                pr.strategy_name, 
+                pr.position_type, 
+                pr.instrument_nomenclature,
+                ob.order_id,
+                ob.lot_size,
+                ob.total_qty
+            FROM position_reference pr
+            JOIN orderbook ob ON ob.strategy_name = pr.strategy_name AND ob.instrument_nomenclature = pr.instrument_nomenclature
+            JOIN order_reference ore ON ore.order_id = ob.order_id
+            JOIN orderbuffer obf ON obf.position_id = pr.position_id
+            WHERE ob.username = {} AND ore.tradingsymbol = {}
+            """.format(gSF(username), gSF(tradingsymbol)))
+        result = cur.fetchone()
 
-        cur.execute("SELECT instrument_nomenclature from order_reference where order_id = {} AND tradingsymbol = {};".format(order_id,gSF(tradingsymbol)))
-        c = cur.fetchall()
+        if result:
+            strategy = result[0]
+            position_type = result[1]
+            instrument_nomenclature = result[2]
+            order_id = result[3]
+            lot_size = result[4]
+            total_qty = result[5]
 
-        cur.execute("SELECT lot_size, total_qty from orderbuffer where position_id = {};".format(position_id))
-        c = cur.fetchall()
-        lot_size = list(c[0])[0]
-        total_qty = list(c[0])[1]
+            if total_qty < 0:
+                if position_type == 'BUY': # Closing a long position
+                    position_type_corrected = 'SELL'
+                else:
+                    position_type_corrected = 'OPEN SHORT'
+            else: # total_qty > 0
+                if position_type == 'OPEN SHORT': # Closing a short position
+                    position_type_corrected = 'CLOSE SHORT'
+                else:
+                    position_type_corrected = 'BUY'
 
-        if total_qty < 0:
-            if position_type == 'BUY': # Closing a long position
-                position_type_corrected = 'SELL'
-            else:
-                position_type_corrected = 'OPEN SHORT'
-        else: # total_qty > 0
-            if position_type == 'OPEN SHORT': # Closing a short position
-                position_type_corrected = 'CLOSE SHORT'
-            else:
-                position_type_corrected = 'BUY'
+            if position_type == 'SELL' or position_type == 'CLOSE SHORT':
+                position_type_corrected = position_type
 
-        if position_type == 'SELL' or position_type == 'CLOSE SHORT':
-            position_type_corrected = position_type
+            addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type_corrected, instrument_nomenclature=instrument_nomenclature, order_price=new_placement_price, order_qty=placed_qty, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        else:
+            # handle the case when no result is found
+            # ...
+            print('Error: No result found in update_orderbuffer() for orderHistory')
 
-        addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type_corrected, instrument_nomenclature=instrument_nomenclature, order_price=new_placement_price, order_qty=placed_qty, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         cur.execute("DELETE FROM orderbuffer WHERE tradingsymbol = {} AND username = {};".format(gSF(tradingsymbol),gSF(username)))
         cur.execute("DELETE FROM position_reference WHERE position_id = {};".format(position_id))
     if rollover == 'N':
@@ -495,12 +507,11 @@ def update_order_reference(username: str, position_list: list, placed_price: flo
         instrument_nomenclature = position['INSTRUMENT_NOMENCLATURE']
         tradingsymbol = position['TRADINGSYMBOL']
         position_type = position['POSITION']
-        traded_position = position_type
+        traded_position = position_type 
         
-        if position_type == 'SELL':
-            traded_position = 'BUY'
-        if position_type == 'CLOSE SHORT':
-            traded_position = 'OPEN SHORT'
+        # mapposition type to traded position
+        traded_position = {'SELL': 'BUY', 'CLOSE SHORT': 'OPEN SHORT'}.get(position_type, position_type)
+        # spread check
         if instrument_nomenclature in spread_list.keys() and traded_position == 'OPEN SHORT':
             traded_position = 'BUY'
 
@@ -554,8 +565,9 @@ def update_order_placement(username:str, tradingsymbol: str, placed_qty: int, pl
     None
     """
     db_connection = get_new_dbconnection()
-    cur = db_connection.cursor()
-    #Add order to order buffer
-    update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)
-    db_connection.commit()
+    with db_connection.cursor() as cur:
+        # cur = db_connection.cursor()
+        #Add order to order buffer
+        update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)
+        db_connection.commit()
 

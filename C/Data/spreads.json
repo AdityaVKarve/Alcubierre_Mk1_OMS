@@ -1,5 +1,5 @@
 {
-    "LAST_UPDATE": 1682052020.5552406,
+    "LAST_UPDATE": 1683113755.525918,
     "SPREADS": {
         "SPREAD_TEST": {
             "INDEX_PEG": "N",
@@ -44,24 +44,6 @@
             ],
             "OPEN SHORT": [
                 "BANKNIFTY|L|0|CE|WEEK|0|0|0|0"
-            ]
-        },
-        "OPHIUCUS_HEDGED_NIFTY_SHORT": {
-            "INDEX_PEG": "N",
-            "BUY": [
-                "NIFTY|G|800|CE|WEEK|0|0|0|0"
-            ],
-            "OPEN SHORT": [
-                "NIFTY|L|0|CE|WEEK|0|0|0|0"
-            ]
-        },
-        "OPHIUCUS_HEDGED_NIFTY_LONG": {
-            "INDEX_PEG": "N",
-            "BUY": [
-                "NIFTY|L|800|PE|WEEK|0|0|0|0"
-            ],
-            "OPEN SHORT": [
-                "NIFTY|L|0|PE|WEEK|0|0|0|0"
             ]
         }
     }

@@ -24,9 +24,11 @@ class Main:
         if len(sys.argv) > 1 and sys.argv[1] == 'debug':
             print('DEBUG mode enabled.')
             self.DEBUG = True
-
+            self.SLEEP_TIME = datetime.strptime("23:35:00",'%H:%M:%S').time()
+        else:
+            self.SLEEP_TIME = datetime.strptime("15:35:00",'%H:%M:%S').time()
         self.LOGIN_TIME = datetime.strptime("09:00:00",'%H:%M:%S').time()
-        self.SLEEP_TIME = datetime.strptime("15:35:00",'%H:%M:%S').time()
+
         self.start()
         
 
@@ -36,7 +38,8 @@ class Main:
             if now.time() > self.LOGIN_TIME and now.time() < self.SLEEP_TIME and isTradingDay(now):
                 try:
                     self.ads_interface = ADS_Interface()
-                    self.ads_interface.update_config()
+                    if self.DEBUG == False:
+                        self.ads_interface.update_config()
                     self.config = Config()
                     self.config.refresh_config()
                     self.log_interface = Log_Server_Interface(config=self.config)
@@ -65,7 +68,8 @@ class Main:
         
         try:
             spread_list = self.ads_interface.get_spreads()
-            self.ads_interface.update_config()
+            if self.DEBUG == False:
+                self.ads_interface.update_config()
             self.log_interface.postLog(severity='INFO',message='Spreads obtained.', publish=0)
         except Exception as e:
             self.log_interface.postLog(severity="CRITICAL",message="Failed to get spreads.",publish=1)
