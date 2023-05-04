@@ -25,7 +25,7 @@ def automate_login(browser_url:str, user_id:str, password:str, pin:str, debug:bo
     request_token {str} -- The request token of the login request.
     '''
     options = webdriver.ChromeOptions()
-    # options.add_argument("--headless")
+    options.add_argument("--headless")
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
     options.add_argument("start-maximized")
