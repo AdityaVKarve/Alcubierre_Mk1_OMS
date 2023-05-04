@@ -436,20 +436,6 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
     
     #Empty orderbuffer if placed
     if total_qty == placed_qty + existing_qty:
-        # cur.execute("""
-        #     SELECT 
-        #         pr.strategy_name, 
-        #         pr.position_type, 
-        #         pr.instrument_nomenclature,
-        #         ob.order_id,
-        #         obf.lot_size,
-        #         obf.total_qty
-        #     FROM position_reference pr
-        #     JOIN orderbook ob ON ob.strategy_name = pr.strategy_name AND ob.instrument_nomenclature = pr.instrument_nomenclature AND ob.username = pr.username
-        #     JOIN order_reference ore ON ore.order_id = ob.order_id AND ore.tradingsymbol = pr.tradingsymbol
-        #     JOIN orderbuffer obf ON obf.position_id = pr.position_id
-        #     WHERE ob.username = {} AND ore.tradingsymbol = {}
-        #     """.format(gSF(username), gSF(tradingsymbol)))
         cur.execute(
             """
             SELECT o.order_id, pr.strategy_name, pr.position_type, pr.instrument_nomenclature, or2.instrument_nomenclature as leg_instrument_nomenclature, ob.lot_size, ob.placed_qty, ob.placed_price 
@@ -468,10 +454,7 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
             strategy = result[1]
             position_type = result[2]
             instrument_nomenclature = result[3]
-            leg_instrument_nomenclature = result[4]
             lot_size = result[5]
-            # placed_qty = result[6]
-            # placed_price = result[7]
 
 
             if total_qty < 0:
@@ -493,6 +476,7 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
             # handle the case when no result is found
             # ...
             print('Error: No result found in update_orderbuffer() for orderHistory')
+            return
 
         cur.execute("DELETE FROM orderbuffer WHERE tradingsymbol = {} AND username = {};".format(gSF(tradingsymbol),gSF(username)))
         cur.execute("DELETE FROM position_reference WHERE position_id = {};".format(position_id))
