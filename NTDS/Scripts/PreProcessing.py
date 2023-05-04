@@ -212,12 +212,12 @@ class PreProcessing:
         '''
 
         futures = instruments.loc[instruments['segment'] == 'NFO-FUT']
-        nifty_current_month = futures.loc[instruments['name'] == 'NIFTY'].loc[instruments['expiry'] == monthly_expiries[0]].iloc[0]
-        banknifty_current_month = futures.loc[instruments['name'] == 'BANKNIFTY'].loc[instruments['expiry'] == monthly_expiries[0]].iloc[0]
+        nifty_current_month = futures.loc[instruments['name'] == 'NIFTY'].loc[instruments['expiry'] == monthly_expiries[0].to_pydatetime().date()].iloc[0]
+        banknifty_current_month = futures.loc[instruments['name'] == 'BANKNIFTY'].loc[instruments['expiry'] == monthly_expiries[0].to_pydatetime().date()].iloc[0]
 
         if len(monthly_expiries) > 3:
-            nifty_expired_month = futures.loc[instruments['name'] == 'NIFTY'].loc[instruments['expiry'] == monthly_expiries[-1]].iloc[0]
-            banknifty_expired_month = futures.loc[instruments['name'] == 'BANKNIFTY'].loc[instruments['expiry'] == monthly_expiries[-1]].iloc[0]
+            nifty_expired_month = futures.loc[instruments['name'] == 'NIFTY'].loc[instruments['expiry'] == monthly_expiries[-1].to_pydatetime().date()].iloc[0]
+            banknifty_expired_month = futures.loc[instruments['name'] == 'BANKNIFTY'].loc[instruments['expiry'] == monthly_expiries[-1].to_pydatetime().date()].iloc[0]
             self.instrument_token_list.append(nifty_expired_month['instrument_token'])
             self.instrument_token_list.append(banknifty_expired_month['instrument_token'])
 
