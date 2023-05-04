@@ -24,10 +24,11 @@ class Main:
         if len(sys.argv) > 1 and sys.argv[1] == 'debug':
             print('DEBUG mode enabled.')
             self.DEBUG = True
-            self.SLEEP_TIME = datetime.strptime("23:35:00",'%H:%M:%S').time()
+            self.LOGIN_TIME = datetime.strptime("00:00:00",'%H:%M:%S').time()
+            self.SLEEP_TIME = datetime.strptime("23:59:00",'%H:%M:%S').time()
         else:
+            self.LOGIN_TIME = datetime.strptime("09:00:00",'%H:%M:%S').time()
             self.SLEEP_TIME = datetime.strptime("15:35:00",'%H:%M:%S').time()
-        self.LOGIN_TIME = datetime.strptime("09:00:00",'%H:%M:%S').time()
 
         self.start()
         

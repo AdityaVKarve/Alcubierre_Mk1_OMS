@@ -436,29 +436,43 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
     
     #Empty orderbuffer if placed
     if total_qty == placed_qty + existing_qty:
-        cur.execute("""
-            SELECT 
-                pr.strategy_name, 
-                pr.position_type, 
-                pr.instrument_nomenclature,
-                ob.order_id,
-                ob.lot_size,
-                ob.total_qty
-            FROM position_reference pr
-            JOIN orderbook ob ON ob.strategy_name = pr.strategy_name AND ob.instrument_nomenclature = pr.instrument_nomenclature
-            JOIN order_reference ore ON ore.order_id = ob.order_id
-            JOIN orderbuffer obf ON obf.position_id = pr.position_id
-            WHERE ob.username = {} AND ore.tradingsymbol = {}
-            """.format(gSF(username), gSF(tradingsymbol)))
+        # cur.execute("""
+        #     SELECT 
+        #         pr.strategy_name, 
+        #         pr.position_type, 
+        #         pr.instrument_nomenclature,
+        #         ob.order_id,
+        #         obf.lot_size,
+        #         obf.total_qty
+        #     FROM position_reference pr
+        #     JOIN orderbook ob ON ob.strategy_name = pr.strategy_name AND ob.instrument_nomenclature = pr.instrument_nomenclature AND ob.username = pr.username
+        #     JOIN order_reference ore ON ore.order_id = ob.order_id AND ore.tradingsymbol = pr.tradingsymbol
+        #     JOIN orderbuffer obf ON obf.position_id = pr.position_id
+        #     WHERE ob.username = {} AND ore.tradingsymbol = {}
+        #     """.format(gSF(username), gSF(tradingsymbol)))
+        cur.execute(
+            """
+            SELECT o.order_id, pr.strategy_name, pr.position_type, pr.instrument_nomenclature, or2.instrument_nomenclature as leg_instrument_nomenclature, ob.lot_size, ob.placed_qty, ob.placed_price 
+            FROM orderbuffer ob
+            JOIN position_reference pr ON ob.position_id = pr.position_id
+            JOIN orderbook o ON ob.username = o.username AND pr.strategy_name = o.strategy_name AND pr.instrument_nomenclature = o.instrument_nomenclature
+            JOIN order_reference or2 ON o.order_id = or2.order_id AND ob.tradingsymbol = or2.tradingsymbol
+            WHERE ob.username = {}
+            AND ob.tradingsymbol = {};
+            """.format(gSF(username), gSF(tradingsymbol))
+        )
         result = cur.fetchone()
 
         if result:
-            strategy = result[0]
-            position_type = result[1]
-            instrument_nomenclature = result[2]
-            order_id = result[3]
-            lot_size = result[4]
-            total_qty = result[5]
+            order_id = result[0]
+            strategy = result[1]
+            position_type = result[2]
+            instrument_nomenclature = result[3]
+            leg_instrument_nomenclature = result[4]
+            lot_size = result[5]
+            # placed_qty = result[6]
+            # placed_price = result[7]
+
 
             if total_qty < 0:
                 if position_type == 'BUY': # Closing a long position
@@ -565,9 +579,9 @@ def update_order_placement(username:str, tradingsymbol: str, placed_qty: int, pl
     None
     """
     db_connection = get_new_dbconnection()
-    cur = db_connection.cursor()
-    with cur:
-        # cur = db_connection.cursor()
+    
+    with db_connection:
+        cur = db_connection.cursor()
         #Add order to order buffer
         update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)
         db_connection.commit()

@@ -224,7 +224,7 @@ if __name__ == "__main__":
     cur.execute("DROP TABLE orderbuffer;")
     cur.execute("DROP TABLE position_reference;")
     cur.execute("DROP TABLE order_history;")
-    cur.execute("DROP TABLE strategy_history;")
+    # cur.execute("DROP TABLE strategy_history;")
     
 
     cur.execute('CREATE TABLE IF NOT EXISTS orderbook ('\
@@ -309,17 +309,17 @@ if __name__ == "__main__":
         'order_time text NOT NULL'\
     ');')
     
-    cur.execute('CREATE TABLE IF NOT EXISTS strategy_history ('\
-        'order_id integer NOT NULL,'\
-        'username text NOT NULL,'\
-        'strategy_name text NOT NULL,'\
-        'tradingsymbol text NOT NULL,'\
-        'position text NOT NULL,'\
-        'instrument_nomenclature text NOT NULL,'\
-        'order_price real NOT NULL,'\
-        'order_quantity integer NOT NULL,'\
-        'order_datetime text NOT NULL'\
-    ');')
+    # cur.execute('CREATE TABLE IF NOT EXISTS strategy_history ('\
+    #     'order_id integer NOT NULL,'\
+    #     'username text NOT NULL,'\
+    #     'strategy_name text NOT NULL,'\
+    #     'tradingsymbol text NOT NULL,'\
+    #     'position text NOT NULL,'\
+    #     'instrument_nomenclature text NOT NULL,'\
+    #     'order_price real NOT NULL,'\
+    #     'order_quantity integer NOT NULL,'\
+    #     'order_datetime text NOT NULL'\
+    # ');')
 
     # SAMPLE VALUE (order_reference) : -2225231794287368831	IN PROGRESS	2022-12-19 17:42:07	1	2022-12-29	10000	NIFTY16800PE	50	0.0	1.0	0.0	0.0	0.0
     # SAMPLE VALUE (orderbook) : CLOSING	FINVANT	NOVA	NIFTY	BUY	75	0.0	1.0	1.0	0.0	0.0	-7744856246554436579
@@ -332,7 +332,7 @@ if __name__ == "__main__":
     cur.execute("DELETE FROM orderbuffer;")
     cur.execute("DELETE FROM position_reference;")
     # cur.execute("DELETE FROM order_history;")
-    cur.execute("DELETE FROM strategy_history;")
+    # cur.execute("DELETE FROM strategy_history;")
 
 
     # Query for inserting values for sample order

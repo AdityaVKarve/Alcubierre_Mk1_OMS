@@ -1,0 +1,21 @@
+root - INFO - 2023-05-05 00:56:10.688684 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-05-05 00:56:10.839483 - OMS Backend mainloop started.
+root - INFO - 2023-05-05 00:56:11.584377 - User data obtained.
+root - INFO - 2023-05-05 00:56:12.315537 - Spreads obtained.
+root - INFO - 2023-05-05 00:56:12.457721 - Config file obtained.
+root - INFO - 2023-05-05 00:56:12.602921 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-05-05 00:56:20.491214 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-05-05 00:56:20.629328 - Initialising LTP gather thread.
+root - INFO - 2023-05-05 00:56:21.173633 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-05-05 00:56:28.800060 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-05-05 00:56:28.929590 - Order handler initialised.
+root - INFO - 2023-05-05 00:56:29.070883 - Creating order handler sub threads.
+root - INFO - 2023-05-05 00:56:29.071081 - Starting order handler sub threads.
+root - INFO - 2023-05-05 00:56:29.575067 - Placed Zerodha Kite options order for:fin_user_1, instrument:NIFTY23MAY18400PE, qty:50, transaction type:BUY, placed price:230.0, id:988.
+root - INFO - 2023-05-05 00:56:29.724997 - 652.8239250183105
+root - INFO - 2023-05-05 00:56:30.372866 - Placed Zerodha Kite options order for:fin_user_1, instrument:NIFTY23MAY18300PE, qty:-50, transaction type:SELL, placed price:177.75, id:450.
+root - INFO - 2023-05-05 00:56:30.502631 - 635.8201503753662
+root - INFO - 2023-05-05 00:57:07.294577 - Placed Zerodha Kite options order for:fin_user_1, instrument:NIFTY23MAY18400PE, qty:-50, transaction type:SELL, placed price:230.0, id:669.
+root - INFO - 2023-05-05 00:57:07.425036 - 633.018970489502
+root - INFO - 2023-05-05 00:57:08.060011 - Placed Zerodha Kite options order for:fin_user_1, instrument:NIFTY23MAY18300PE, qty:50, transaction type:BUY, placed price:177.75, id:49.
+root - INFO - 2023-05-05 00:57:08.197428 - 643.718957901001
