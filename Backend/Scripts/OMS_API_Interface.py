@@ -28,7 +28,6 @@ class OMS_Interface:
         headers = {
             'Authorization': 'Bearer ' + self.token
         }
-        print(message)
         # encrypt the message
         json_compatible_item_data = self.encryption.encrypt(message)
 
@@ -43,20 +42,8 @@ class OMS_Interface:
             'Authorization': 'Bearer ' + self.token
         }
         response = requests.get(self.url + 'instrument/{}'.format(instrument_nomenclature), headers=headers)
-        # print(response.json())
         return response.json()
 
-    def place_rollover(self, strategy, username, order_id):
-        order = {
-        "ORDERS":[
-            {
-                "STRATEGY": strategy,
-                "USERNAME": username,
-                "ORDER_ID": order_id,
-                "INSTRUMENT_NOMENCLATURE": "NIFTY"
-            }
-        ]
-        }
-        self.post('/orders/rollover',order)
+
     
 
