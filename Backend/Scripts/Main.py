@@ -86,7 +86,7 @@ class Main:
             # Starting the LTP gather thread #
             #=================================
             kite_ticker = auto_login_zerodha_ticker(config=config,log_interface=self.log_interface, debug=self.DEBUG)
-            g = GatherLTP(kws = kite_ticker, log_interface = self.log_interface)
+            g = GatherLTP(kws = kite_ticker, log_interface = self.log_interface, config = self.config)
             g.start_LTP_thread()
         except:
             self.log_interface.postLog(severity="CRITICAL",message='Failed to start LTP thread.',publish = 1, tag = 'OMSB_MAIN_3')
