@@ -565,7 +565,8 @@ def update_order_placement(username:str, tradingsymbol: str, placed_qty: int, pl
     None
     """
     db_connection = get_new_dbconnection()
-    with db_connection.cursor() as cur:
+    cur = db_connection.cursor()
+    with cur:
         # cur = db_connection.cursor()
         #Add order to order buffer
         update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)
