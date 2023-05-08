@@ -1,0 +1,6 @@
+root - INFO - 2023-05-08 17:17:54.880055 - Starting NTDS
+numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+root - INFO - 2023-05-08 17:25:55.460833 - Starting NTDS
+numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+numexpr.utils - INFO - NumExpr defaulting to 8 threads.
