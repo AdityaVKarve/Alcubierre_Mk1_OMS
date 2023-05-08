@@ -69,8 +69,8 @@ class OrderHandler:
         paper_trade = self.user_profiles[username]['PAPER_TRADE']
         pending_orders = DBManager.get_pending_orders(username)
         for p in pending_orders:
-            if self.DEBUG:
-                print('PENDING ORDERS: ', pending_orders)
+            # if self.DEBUG:
+            #     print('PENDING ORDERS: ', pending_orders)
             tradingsymbol = p['tradingsymbol']
             exchange_token = p['exchange_token']
 
