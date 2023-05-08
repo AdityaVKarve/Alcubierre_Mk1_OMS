@@ -156,7 +156,7 @@ class PreProcessing:
         for e in expiries:
             if (next_next_next_month_expiry == None or (next_next_next_month_expiry < e)) and (e.month == months[3][0] and e.year == months[3][1]):
                 next_next_next_month_expiry = e
-        if self.get_trading_days_between(datetime.now(),current_month_expiry.to_pydatetime()) <= 2:
+        if self.get_trading_days_between(datetime.now(),current_month_expiry.to_pydatetime()) <= 30:
             return [next_month_expiry, next_next_month_expiry, next_next_next_month_expiry,current_month_expiry]
         
         return [current_month_expiry, next_month_expiry, next_next_month_expiry]

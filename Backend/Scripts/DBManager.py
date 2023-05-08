@@ -436,47 +436,145 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
     
     #Empty orderbuffer if placed
     if total_qty == placed_qty + existing_qty:
-        cur.execute(
-            """
-            SELECT o.order_id, pr.strategy_name, pr.position_type, pr.instrument_nomenclature, or2.instrument_nomenclature as leg_instrument_nomenclature, ob.lot_size, ob.placed_qty, ob.placed_price 
-            FROM orderbuffer ob
-            JOIN position_reference pr ON ob.position_id = pr.position_id
-            JOIN orderbook o ON ob.username = o.username AND pr.strategy_name = o.strategy_name AND pr.instrument_nomenclature = o.instrument_nomenclature
-            JOIN order_reference or2 ON o.order_id = or2.order_id AND ob.tradingsymbol = or2.tradingsymbol
-            WHERE ob.username = {}
-            AND ob.tradingsymbol = {};
-            """.format(gSF(username), gSF(tradingsymbol))
-        )
-        result = cur.fetchone()
+        ################################## NEW CODE ##################################
+        # print('#'*100)
+        # print("""
+        #     SELECT o.order_id, pr.strategy_name, pr.position_type, pr.instrument_nomenclature, or2.instrument_nomenclature as leg_instrument_nomenclature, ob.lot_size, ob.placed_qty, ob.placed_price 
+        #     FROM orderbuffer ob
+        #     JOIN position_reference pr ON ob.position_id = pr.position_id
+        #     JOIN orderbook o ON ob.username = o.username AND pr.strategy_name = o.strategy_name AND pr.instrument_nomenclature = o.instrument_nomenclature
+        #     JOIN order_reference or2 ON o.order_id = or2.order_id AND ob.tradingsymbol = or2.tradingsymbol
+        #     WHERE ob.username = {}
+        #     AND ob.position_id = {};
+        #     """.format(gSF(username), position_id))
+        # print('#'*100)
+        # cur.execute(
+        #     """
+        #     SELECT o.order_id, pr.strategy_name, pr.position_type, pr.instrument_nomenclature, or2.instrument_nomenclature as leg_instrument_nomenclature, ob.lot_size, ob.placed_qty, ob.placed_price 
+        #     FROM orderbuffer ob
+        #     JOIN position_reference pr ON ob.position_id = pr.position_id
+        #     JOIN orderbook o ON ob.username = o.username AND pr.strategy_name = o.strategy_name AND pr.instrument_nomenclature = o.instrument_nomenclature
+        #     JOIN order_reference or2 ON o.order_id = or2.order_id AND ob.tradingsymbol = or2.tradingsymbol
+        #     WHERE ob.username = {}
+        #     AND ob.position_id = {};
+        #     """.format(gSF(username), position_id)
+        # )
+        # result = cur.fetchone()
 
-        if result:
-            order_id = result[0]
-            strategy = result[1]
-            position_type = result[2]
-            instrument_nomenclature = result[3]
-            lot_size = result[5]
+        # if result:
+        #     order_id = result[0]
+        #     strategy = result[1]
+        #     position_type = result[2]
+        #     instrument_nomenclature = result[3]
+        #     lot_size = result[5]
 
 
-            if total_qty < 0:
-                if position_type == 'BUY': # Closing a long position
-                    position_type_corrected = 'SELL'
-                else:
-                    position_type_corrected = 'OPEN SHORT'
-            else: # total_qty > 0
-                if position_type == 'OPEN SHORT': # Closing a short position
-                    position_type_corrected = 'CLOSE SHORT'
-                else:
-                    position_type_corrected = 'BUY'
+        #     if total_qty < 0:
+        #         if position_type == 'BUY': # Closing a long position
+        #             position_type_corrected = 'SELL'
+        #         else:
+        #             position_type_corrected = 'OPEN SHORT'
+        #     else: # total_qty > 0
+        #         if position_type == 'OPEN SHORT': # Closing a short position
+        #             position_type_corrected = 'CLOSE SHORT'
+        #         else:
+        #             position_type_corrected = 'BUY'
 
-            if position_type == 'SELL' or position_type == 'CLOSE SHORT':
-                position_type_corrected = position_type
+        #     if position_type == 'SELL' or position_type == 'CLOSE SHORT':
+        #         position_type_corrected = position_type
 
-            addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type_corrected, instrument_nomenclature=instrument_nomenclature, order_price=new_placement_price, order_qty=placed_qty, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-        else:
-            # handle the case when no result is found
-            # ...
-            print('Error: No result found in update_orderbuffer() for orderHistory')
-            return
+        #     addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type_corrected, instrument_nomenclature=instrument_nomenclature, order_price=new_placement_price, order_qty=placed_qty, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        # else:
+        #     # handle the case when no result is found
+        #     # ...
+        #     print('Error: No result found in update_orderbuffer() for orderHistory')
+
+
+        ############################################## OLD CODE ##############################################
+        ########### ###########
+        # ADD TO ORDER HISTORY#
+
+        """ 
+        requirements : 
+        FETCH
+        order_id : ORDER BOOK
+        strategy_name, instrument_nomenclature, position_type : POSITION_REFERENCE
+        instrument_nomenclature(of the leg) : ORDER_REFERENCE 
+        lot_size : ORDERBUFFER
+        
+        READY TO USE
+        placed_qty, tradingsymbol, username, brokerage_id, brokerage_name, order_price (placed_price) : passed through DBManager functions
+        order_time : added in function (datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+        """
+
+        ######################
+        # Fetch from POSITION_REFERENCE
+        # use : position_id
+        # get : strategy_name, position_type, instrument_nomenclature
+        ######################
+        cur.execute("SELECT strategy_name, position_type, instrument_nomenclature from position_reference where position_id = {};".format(position_id))
+        c = cur.fetchall()
+        strategy = list(c[0])[0]
+        position_type = list(c[0])[1]
+        instrument_nomenclature = list(c[0])[2]
+
+
+        ######################
+        # Fetch from ORDERBOOK
+        # use : username, strategy_name, instrument_nomenclature
+        # get : order_id
+        ######################
+        cur.execute("SELECT order_id from orderbook where username = {} AND strategy_name = {} AND instrument_nomenclature = {};".format(gSF(username),gSF(strategy),gSF(instrument_nomenclature)))
+        c = cur.fetchall()
+        order_id = list(c[0])[0]
+
+        
+        ######################
+        # Fetch from ORDERBUFFER
+        # use : position_id
+        # get : lot_size
+        ######################
+        cur.execute("SELECT lot_size, total_qty from orderbuffer where position_id = {};".format(position_id))
+        c = cur.fetchall()
+        lot_size = list(c[0])[0]
+        total_qty = list(c[0])[1]
+
+
+        ######################
+        # Set position_type using total_qty from ORDERBUFFER
+        if total_qty < 0:
+            if position_type == 'BUY': # Closing a long position
+                position_type_corrected = 'SELL'
+            else:
+                position_type_corrected = 'OPEN SHORT'
+        else: # total_qty > 0
+            if position_type == 'OPEN SHORT': # Closing a short position
+                position_type_corrected = 'CLOSE SHORT'
+            else:
+                position_type_corrected = 'BUY'
+        
+        # Overriding position_type_corrected to 'SELL'/'CLOSE SHORT' if position_type is 'SELL'/'CLOSE SHORT' in position_reference (becasue this is a non-rollover order)
+        if position_type == 'SELL' or position_type == 'CLOSE SHORT':
+            position_type_corrected = position_type
+
+
+        print("#"*20)
+        print("position_type : {}".format(position_type))
+        print("total_qty : {}".format(total_qty))
+        print("position_type_corrected : {}".format(position_type_corrected))
+        print("#"*20)
+
+        ######################
+
+        
+        ######################
+        addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type_corrected, instrument_nomenclature=instrument_nomenclature, order_price=new_placement_price, order_qty=placed_qty, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        ######################
+
+        # addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type, instrument_nomenclature=instrument_nomenclature(of the leg), order_price=new_placement_price, order_qty=quantity, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        ########### ###########
+            
 
         cur.execute("DELETE FROM orderbuffer WHERE tradingsymbol = {} AND username = {};".format(gSF(tradingsymbol),gSF(username)))
         cur.execute("DELETE FROM position_reference WHERE position_id = {};".format(position_id))
