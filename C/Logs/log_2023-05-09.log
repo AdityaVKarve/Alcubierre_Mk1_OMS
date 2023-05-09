@@ -1,0 +1,39 @@
+root - INFO - 2023-05-09 12:08:47.294008 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [31220]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fdd41e962b0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-05-09 12:10:53.998228 - Order placed for TEJAS QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0
+root - INFO - 2023-05-09 12:10:54.119970 - Order placed for SOHAM QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0
+root - INFO - 2023-05-09 12:10:54.249655 - Order placed for YASH QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0
+root - INFO - 2023-05-09 12:10:54.376406 - Order placed for JASMI QUASAR_5M_FUTURES NIFTY OPEN SHORT -2 0 0
+root - INFO - 2023-05-09 12:10:54.508682 - Order placed for HEMENDRA QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0
+root - INFO - 2023-05-09 12:10:54.705554 - Order placed for HIREN QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0
+root - INFO - 2023-05-09 12:10:54.912275 - Order placed for AMIT QUASAR_5M_FUTURES NIFTY OPEN SHORT -1 0 0
+root - INFO - 2023-05-09 12:10:55.039338 - Order placement successful for users: [{'user_name': 'TEJAS', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 3}, {'user_name': 'SOHAM', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 3}, {'user_name': 'YASH', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 3}, {'user_name': 'JASMI', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}, {'user_name': 'HEMENDRA', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 3}, {'user_name': 'HIREN', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 3}, {'user_name': 'AMIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-05-09 12:10:59.019891 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:02.991552 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:06.930051 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:10.890968 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:14.890722 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:18.869006 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:22.851335 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:26.818970 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:30.830633 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:34.794974 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:38.736947 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:42.709491 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:46.704364 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:50.651764 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:54.656521 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:11:58.687849 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:12:02.729156 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:12:06.740040 - Order placement successful for users: []
+root - INFO - 2023-05-09 12:12:10.696789 - Order placement successful for users: []
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [31220]

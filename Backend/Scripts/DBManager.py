@@ -662,6 +662,7 @@ def update_order_placement(username:str, tradingsymbol: str, placed_qty: int, pl
     """
     db_connection = get_new_dbconnection()
     
+    # context manager : ADD
     with db_connection:
         cur = db_connection.cursor()
         #Add order to order buffer
