@@ -45,6 +45,13 @@ def gSF(stringToConvert: str):
         return "Invalid input type!"
     return "\'"+stringToConvert+"\'"
 
+def clearOrderBuffer():
+    #Empty orderbuffer and position_reference tables post 3:30
+    con = get_new_dbconnection()
+    cur = con.cursor()
+    cur.execute("DELETE FROM orderbuffer;")
+    cur.execute("DELETE FROM position_reference;")
+    con.commit()
 
 def addOrderToOrderBuffer(username, tradingsymbol, lot_size, exchange_token, quantity, strategy_name, instrument_nomenclature, position,exchange,segment, instrument_token, cur, rollover = 'N'):
     """ 

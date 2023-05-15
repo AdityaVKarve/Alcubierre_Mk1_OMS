@@ -88,6 +88,7 @@ class GatherLTP:
                 sleep(0.5)
                 DBManager.update_net_position_values(self.log_interface)
             if datetime.now().time() > self.SLEEP_TIME:
+                DBManager.clearOrderBuffer()
                 return
     
     def update_ltp(self,ticks: list):

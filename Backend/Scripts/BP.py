@@ -94,6 +94,7 @@ class BPWEALTH:
                 
                 return response.json()['ResponseObject']['SessionId']
         except Exception as e:
+            
             print(e)
             traceback.print_exc()
 
@@ -166,7 +167,7 @@ class BPWEALTH:
             # self.log_interface.postLog(severity='INFO',message='OMSB: ODIN login for {}.'.format(self.username),publish=0)
             # return self.authenticate_user(self.jsessionIdencrypted)
         except Exception as e:
-            print(e)
+            self.log_interface.postLog(severity='CRITICAL',message='Failed to log into BPWealth for {}.\nError:{}'.format(self.username, e),publish=0,tag='OMSB_AuLoU_3')
             traceback.print_exc()
 
     def get_orderbook(self):

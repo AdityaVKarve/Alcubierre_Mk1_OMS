@@ -65,7 +65,7 @@ class Main:
             user_data = self.ads_interface.get_user_data()
             self.log_interface.postLog(severity='INFO',message='User data obtained.', publish=0)
         except Exception as e:
-            self.log_interface.postLog(severity="CRITICAL",message="Failed to get user data.",publish=1)
+            self.log_interface.postLog(severity="CRITICAL",message="Failed to get user data.",publish=1, tag = 'OMSB_MAIN_6')
         
         try:
             spread_list = self.ads_interface.get_spreads()
@@ -73,14 +73,14 @@ class Main:
                 self.ads_interface.update_config()
             self.log_interface.postLog(severity='INFO',message='Spreads obtained.', publish=0)
         except Exception as e:
-            self.log_interface.postLog(severity="CRITICAL",message="Failed to get spreads.",publish=1)
+            self.log_interface.postLog(severity="CRITICAL",message="Failed to get spreads.",publish=1, tag = 'OMSB_MAIN_7')
         
         try:
             config = Config()
             config.refresh_config()
             self.log_interface.postLog(severity='INFO',message='Config file obtained.', publish=0)
         except Exception as e:
-            self.log_interface.postLog(severity="CRITICAL",message="Failed to get config file.",publish=1)
+            self.log_interface.postLog(severity="CRITICAL",message="Failed to get config file.",publish=1, tag = 'OMSB_MAIN_8')
 
         try:
             #=================================
