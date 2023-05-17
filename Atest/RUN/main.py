@@ -1,10 +1,12 @@
 """ MODULES IMPORT """
 import base64
+import csv
 from datetime import timedelta, datetime
 import datetime
 import json
 import traceback
 from typing import Optional
+import pandas as pd
 
 import os
 import jwt
@@ -400,6 +402,61 @@ async def get_config(config_file: str, user: User_Pydantic = Depends(get_current
         
     except Exception as e:
         print({"Section": SECTION,"Severity": "ERROR","Message": str(e),"Publish": True,"Tags": "ADS_Main_9"})
+
+## Get route to check if passed date is a valid trading day
+@app.get("/get/trading_day")
+async def get_trading_day(date : str, user: User_Pydantic = Depends(get_current_user)):
+    '''
+    Route to get if passed date is a valid trading day which exists in trading_holidays_2023.csv.
+
+    Format:
+    Header : Date,Day of Week,Event
+    Row : 2023-01-26,Thursday,Republic Day
+
+    Arguments:
+    date {str} -- The date to check if it is a valid trading day.
+
+    Keyword Arguments:
+    None
+
+    Returns:
+    JSONResponse {Json} -- The key + encrypted data if valid.
+    HTTPException {HTTPException} -- Invalid login.
+    '''
+
+    try:
+        # date = datetime.datetime.now().strftime("%Y-%m-%d")
+
+        holiday_csv = pd.read_csv("../Data/trading_holidays_2023.csv")
+        holiday_csv["Date"] = pd.to_datetime(holiday_csv["Date"])
+        holiday_csv["Date"] = holiday_csv["Date"].dt.strftime("%Y-%m-%d")
+        holiday_csv = holiday_csv["Date"].tolist()
+        print(holiday_csv)
+        if date in holiday_csv:
+            response = {"message": True}
+        else:
+            response = {"message": False}
+
+        encryption = EncryptionHybrid()
+        # Encrypt spread data
+        encrypted_key, encrypted_data = encryption.encrypt(str(response))
+        # convert to hex format
+        encrypted_key = encrypted_key.hex()
+        encrypted_data = encrypted_data.hex()
+        # Package encrypted key and encrypted user data into a dictionary
+        response = {
+            "encrypted_key": str(encrypted_key),
+            "encrypted_data": str(encrypted_data),
+        }
+        # Encode response to json serializable object for api return
+        json_compatible_item_data = jsonable_encoder(
+            response, custom_encoder={bytes: lambda v: v.decode("utf-8")}
+        )
+        return JSONResponse(content=json_compatible_item_data)
+    except Exception as e:
+        print(e)
+        traceback.print_exc()
+        raise HTTPException(status_code=404, detail="Config file not found")
 
 ## POST ROUTES ##
 @app.post("/post/user_data")

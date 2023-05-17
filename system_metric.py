@@ -59,6 +59,8 @@ def plot_graph():
     plt.plot(timestamps, uvicorn_memory_percentages, label='Uvicorn Memory %')
     
     plt.xlabel('Time')
+    # reduce the number of xticks
+    plt.locator_params(axis='x', nbins=20)
     plt.ylabel('Percentage')
     plt.title('Process Metrics')
     plt.legend()
@@ -67,11 +69,47 @@ def plot_graph():
     plt.show()
 
 # Main execution
-try:
-    while True:
-        collect_metrics()
-        time.sleep(1)
-except KeyboardInterrupt:
-    filename = 'process_metrics.csv'
-    save_as_csv(filename)
-    plot_graph()
+# try:
+#     while True:
+#         collect_metrics()
+#         time.sleep(1)
+# except KeyboardInterrupt:
+#     filename = 'process_metrics.csv'
+#     save_as_csv(filename)
+#     plot_graph()
+
+# Open csv file and plot graph
+# with open('process_metrics.csv', 'r') as file:
+#     reader = csv.reader(file)
+#     next(reader)
+#     # header : Timestamp,Python CPU Percentage,Uvicorn CPU Percentage,Python Memory Percentage,Uvicorn Memory Percentage
+#     # sample row : 17:13:25,"(0.0, 0)","(6.882339814220759, 0)"
+#     for row in reader:
+#         timestamps.append(row[0])
+#         cpu_percentages.append(eval(row[1]))
+#         memory_percentages.append(eval(row[2]))
+
+#     python_cpu_percentages, uvicorn_cpu_percentages = zip(*cpu_percentages)
+#     python_memory_percentages, uvicorn_memory_percentages = zip(*memory_percentages)
+
+#     plt.plot(timestamps, uvicorn_cpu_percentages,'r--', label='Uvicorn CPU %', linewidth=2, color='red')
+#     plt.plot(timestamps, python_cpu_percentages,'r-', label='Python CPU %', linewidth=2, color='blue')
+#     plt.plot(timestamps, uvicorn_memory_percentages, label='Uvicorn Memory %', linewidth=2, color='green')
+#     plt.plot(timestamps, python_memory_percentages, label='Python Memory %', linewidth=2, color='orange')
+
+#     # different line types for different processes
+#     # plt.plot(timestamps, uvicorn_cpu_percentages, 'r--', label='Uvicorn CPU %')
+
+
+#     plt.xlabel('Time')
+#     # reduce the number of xticks
+#     plt.locator_params(axis='x', nbins=20)
+#     # dont print the xticks
+#     plt.xticks([])
+
+#     plt.ylabel('Percentage')
+#     plt.title('Process Metrics')
+#     plt.legend()
+#     plt.xticks(rotation=45)
+#     plt.tight_layout()
+#     plt.show()
