@@ -443,62 +443,6 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
     
     #Empty orderbuffer if placed
     if total_qty == placed_qty + existing_qty:
-        ################################## NEW CODE ##################################
-        # print('#'*100)
-        # print("""
-        #     SELECT o.order_id, pr.strategy_name, pr.position_type, pr.instrument_nomenclature, or2.instrument_nomenclature as leg_instrument_nomenclature, ob.lot_size, ob.placed_qty, ob.placed_price 
-        #     FROM orderbuffer ob
-        #     JOIN position_reference pr ON ob.position_id = pr.position_id
-        #     JOIN orderbook o ON ob.username = o.username AND pr.strategy_name = o.strategy_name AND pr.instrument_nomenclature = o.instrument_nomenclature
-        #     JOIN order_reference or2 ON o.order_id = or2.order_id AND ob.tradingsymbol = or2.tradingsymbol
-        #     WHERE ob.username = {}
-        #     AND ob.position_id = {};
-        #     """.format(gSF(username), position_id))
-        # print('#'*100)
-        # cur.execute(
-        #     """
-        #     SELECT o.order_id, pr.strategy_name, pr.position_type, pr.instrument_nomenclature, or2.instrument_nomenclature as leg_instrument_nomenclature, ob.lot_size, ob.placed_qty, ob.placed_price 
-        #     FROM orderbuffer ob
-        #     JOIN position_reference pr ON ob.position_id = pr.position_id
-        #     JOIN orderbook o ON ob.username = o.username AND pr.strategy_name = o.strategy_name AND pr.instrument_nomenclature = o.instrument_nomenclature
-        #     JOIN order_reference or2 ON o.order_id = or2.order_id AND ob.tradingsymbol = or2.tradingsymbol
-        #     WHERE ob.username = {}
-        #     AND ob.position_id = {};
-        #     """.format(gSF(username), position_id)
-        # )
-        # result = cur.fetchone()
-
-        # if result:
-        #     order_id = result[0]
-        #     strategy = result[1]
-        #     position_type = result[2]
-        #     instrument_nomenclature = result[3]
-        #     lot_size = result[5]
-
-
-        #     if total_qty < 0:
-        #         if position_type == 'BUY': # Closing a long position
-        #             position_type_corrected = 'SELL'
-        #         else:
-        #             position_type_corrected = 'OPEN SHORT'
-        #     else: # total_qty > 0
-        #         if position_type == 'OPEN SHORT': # Closing a short position
-        #             position_type_corrected = 'CLOSE SHORT'
-        #         else:
-        #             position_type_corrected = 'BUY'
-
-        #     if position_type == 'SELL' or position_type == 'CLOSE SHORT':
-        #         position_type_corrected = position_type
-
-        #     addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type_corrected, instrument_nomenclature=instrument_nomenclature, order_price=new_placement_price, order_qty=placed_qty, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-        # else:
-        #     # handle the case when no result is found
-        #     # ...
-        #     print('Error: No result found in update_orderbuffer() for orderHistory')
-
-
-        ############################################## OLD CODE ##############################################
-        ########### ###########
         # ADD TO ORDER HISTORY#
 
         """ 
@@ -547,6 +491,16 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
         lot_size = list(c[0])[0]
         total_qty = list(c[0])[1]
 
+        ######################
+        # Fetch from ORDER_REFERENCE
+        # use : order_id, tradingsymbol
+        # get : instrument_nomenclature(of the leg), lot_size
+        # issue : tradingsymbol changes for each leg when rollover function is called in API, thus refering using tradingsymbol for old data to close the leg is not possible, hence we need to use instrument_nomenclature
+        ######################
+        cur.execute("SELECT instrument_token from order_reference where order_id = {} AND tradingsymbol = {};".format(order_id,gSF(tradingsymbol)))
+        c = cur.fetchall()
+        instrument_token = list(c[0])[0]
+
 
         ######################
         # Set position_type using total_qty from ORDERBUFFER
@@ -576,7 +530,7 @@ def update_orderbuffer(username:str, tradingsymbol: str, placed_qty: int, placed
 
         
         ######################
-        addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type_corrected, instrument_nomenclature=instrument_nomenclature, order_price=new_placement_price, order_qty=placed_qty, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type_corrected, instrument_nomenclature=instrument_token, order_price=new_placement_price, order_qty=placed_qty, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         ######################
 
         # addToOrderHistory(cur=cur,order_id=order_id, user_type=brokerage_name,brokerage_id=brokerage_id,username=username, strategy_name=strategy, tradingsymbol=tradingsymbol, position=position_type, instrument_nomenclature=instrument_nomenclature(of the leg), order_price=new_placement_price, order_qty=quantity, lot_size=lot_size, order_time=datetime.now().strftime('%Y-%m-%d %H:%M:%S'))

@@ -17,6 +17,7 @@ from AutoLoginKiteTicker import auto_login_zerodha_ticker
 from Log_Server_Interface import Log_Server_Interface 
 import sys
 import Logs
+import requests
 
 class Main:
     def __init__(self) -> None:
@@ -31,7 +32,60 @@ class Main:
             self.SLEEP_TIME = datetime.strptime("15:35:00",'%H:%M:%S').time()
 
         self.start()
-        
+
+    def authentification(self):
+        username = 'vishal'
+        password = 'vishal'
+
+        data = {
+            'username': username,
+            'password': password
+        }
+
+        response = requests.post(self.url + 'token', data=data)
+        print(response.json())
+        token = response.json()['access_token']
+        return token
+
+    def slippage_report(self):
+        # This function is called at the end of the day to generate a slippage report by hitting an API
+        # The API will be called only if the day is a trading day
+
+        # Get the slippage report from the DB : orerHistory table
+        conn = DBManager.get_new_dbconnection()
+        cur = conn.cursor()
+
+        # Get the slippage report from the DB : orderHistory table where order_time is today
+        today = datetime.now().date()
+        query = f"SELECT order_time,instrument_nomenclature, tradingsymbol, order_price, position  FROM order_history WHERE DATE(order_time) = '2023-05-09'" 
+        print(query)
+        cur.execute(query)
+        slippage_report = cur.fetchall()
+
+        data = []
+
+        for row in slippage_report:
+            data.append({
+                'end_date': row[0],
+                'instrument_nomenclature': row[1],
+                'trading_symbol': row[2],
+                'price': row[3],
+                'position': row[4]
+            })
+
+        # hit the API with the slippage report
+        # API call
+        headers = {
+            'Authorization': 'Bearer ' + self.token
+        }
+        url = 'http://'
+        response = requests.get(url, headers=headers, json=slippage_report)
+        if response.status_code == 200:
+            print('Slippage report sent successfully')
+            return True
+        else:
+            print('Slippage report not sent')
+            return False
 
     def start(self):
         while True:
@@ -51,6 +105,11 @@ class Main:
                     Logs.logCritical(severity="CRITICAL",message='Failed to initialise Log server/ADS.',publish = 1, tag = 'OMSB_MAIN_1')
                 self.main_loop()
             else:
+                if now.time() > self.SLEEP_TIME:
+                    # Logs.logInfo(severity='INFO',message='OMS Backend sleeping.', publish=0)
+                    ## EOD : Slippage code 
+                    self.slippage_report()
+                    pass
                 sleep(100)
     
     def main_loop(self):
