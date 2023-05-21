@@ -22,6 +22,7 @@ import requests
 class Main:
     def __init__(self) -> None:
         self.DEBUG = False
+        self.SLIPPAGE = True
         if len(sys.argv) > 1 and sys.argv[1] == 'debug':
             print('DEBUG mode enabled.')
             self.DEBUG = True
@@ -99,6 +100,7 @@ class Main:
             now = datetime.now()
             if now.time() > self.LOGIN_TIME and now.time() < self.SLEEP_TIME and isTradingDay(now):
                 try:
+                    self.SLIPPAGE = True
                     self.ads_interface = ADS_Interface()
                     if self.DEBUG == False:
                         self.ads_interface.update_config()
@@ -112,10 +114,11 @@ class Main:
                     Logs.logCritical(severity="CRITICAL",message='Failed to initialise Log server/ADS.',publish = 1, tag = 'OMSB_MAIN_1')
                 self.main_loop()
             else:
-                if now.time() > self.SLEEP_TIME:
+                if now.time() > self.SLEEP_TIME and self.SLIPPAGE == True:
                     # Logs.logInfo(severity='INFO',message='OMS Backend sleeping.', publish=0)
                     ## EOD : Slippage code 
                     self.slippage_report()
+                    self.SLIPPAGE = False
                     pass
                 sleep(100)
     
