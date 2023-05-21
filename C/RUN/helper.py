@@ -1,5 +1,6 @@
 
 from datetime import datetime
+import json
 import sqlite3
 from sqlite3 import Connection, Cursor
 
@@ -218,96 +219,118 @@ if __name__ == "__main__":
     conn = sqlite3.connect('../Data/OrderData.db')
     cur = conn.cursor()
 
+    today = datetime.now().date()
+    query = f"SELECT order_time,instrument_nomenclature, tradingsymbol, order_price, position  FROM order_history WHERE DATE(order_time) = '2023-05-09'" 
+    print(query)
+    cur.execute(query)
+    slippage_report = cur.fetchall()
+    print(slippage_report)
+
+    data = []
+
+    for row in slippage_report:
+        data.append({
+            'end_date': row[0],
+            'instrument_nomenclature': row[1],
+            'trading_symbol': row[2],
+            'price': row[3],
+            'position': row[4]
+        })
+    
+    # pretty print data
+    print(json.dumps(data, indent=4, sort_keys=True))
+
+
     # Query for deleting all the tables (for testing) and reinitializing
-    cur.execute("DROP TABLE order_reference;")
-    cur.execute("DROP TABLE orderbook;")
-    cur.execute("DROP TABLE orderbuffer;")
-    cur.execute("DROP TABLE position_reference;")
-    cur.execute("DROP TABLE order_history;")
-    # cur.execute("DROP TABLE strategy_history;")
+    # cur.execute("DROP TABLE order_reference;")
+    # cur.execute("DROP TABLE orderbook;")
+    # cur.execute("DROP TABLE orderbuffer;")
+    # cur.execute("DROP TABLE position_reference;")
+    # cur.execute("DROP TABLE order_history;")
+    # # cur.execute("DROP TABLE strategy_history;")
     
 
-    cur.execute('CREATE TABLE IF NOT EXISTS orderbook ('\
-        'order_status text NOT NULL,'\
-    	'username text NOT NULL,'\
-    	'strategy_name text NOT NULL,'\
-        'instrument_nomenclature text NOT NULL,'\
-        'position text NOT NULL,'\
-        'quantity integer NOT NULL,'\
-        'net_entry_price real NOT NULL DEFAULT 0,'\
-        'net_stoploss_perc real NOT NULL,'\
-        'net_target_perc real NOT NULL,'\
-        'net_stoploss_value real NOT NULL DEFAULT 0,'\
-        'net_target_value real NOT NULL DEFAULT 0,'\
-        'net_position_value real NOT NULL DEFAULT 0,'\
-    	'order_id integer NOT NULL PRIMARY KEY,'\
-    	'index_peg text DEFAULT "N" NOT NULL'\
-    ');')
+    # cur.execute('CREATE TABLE IF NOT EXISTS orderbook ('\
+    #     'order_status text NOT NULL,'\
+    # 	'username text NOT NULL,'\
+    # 	'strategy_name text NOT NULL,'\
+    #     'instrument_nomenclature text NOT NULL,'\
+    #     'position text NOT NULL,'\
+    #     'quantity integer NOT NULL,'\
+    #     'net_entry_price real NOT NULL DEFAULT 0,'\
+    #     'net_stoploss_perc real NOT NULL,'\
+    #     'net_target_perc real NOT NULL,'\
+    #     'net_stoploss_value real NOT NULL DEFAULT 0,'\
+    #     'net_target_value real NOT NULL DEFAULT 0,'\
+    #     'net_position_value real NOT NULL DEFAULT 0,'\
+    # 	'order_id integer NOT NULL PRIMARY KEY,'\
+    # 	'index_peg text DEFAULT "N" NOT NULL'\
+    # ');')
 
-    cur.execute('CREATE TABLE IF NOT EXISTS order_reference ('\
-    	'order_id integer NOT NULL,'\
-        'position_status text NOT NULL,'\
-    	'entry_datetime text NOT NULL,'\
-        'quantity integer NOT NULL,'\
-        'expiry_date text NOT NULL,'\
-        'exchange text NOT NULL,'\
-        'segment text NOT NULL,'\
-        'exchange_token integer NOT NULL,'\
-        'tradingsymbol text NOT NULL,'\
-        'instrument_token text NOT NULL,'\
-        'lot_size integer NOT NULL,'\
-        'position_stoploss_percent real NOT NULL,'\
-        'position_target_percent real NOT NULL,'\
-        'position_stoploss real NOT NULL  DEFAULT 0,'\
-        'position_target real NOT NULL  DEFAULT 0,'\
-        'position_entry_price real NOT NULL  DEFAULT 0,'\
-        'position_value real NOT NULL  DEFAULT 0,'\
-        'position_type real NOT NULL  DEFAULT 0,'\
-        'instrument_nomenclature real NOT NULL,'\
-        'FOREIGN KEY (order_id) REFERENCES orderbook (order_id) ON DELETE CASCADE' 
-    ');')
+    # cur.execute('CREATE TABLE IF NOT EXISTS order_reference ('\
+    # 	'order_id integer NOT NULL,'\
+    #     'position_status text NOT NULL,'\
+    # 	'entry_datetime text NOT NULL,'\
+    #     'quantity integer NOT NULL,'\
+    #     'expiry_date text NOT NULL,'\
+    #     'exchange text NOT NULL,'\
+    #     'segment text NOT NULL,'\
+    #     'exchange_token integer NOT NULL,'\
+    #     'tradingsymbol text NOT NULL,'\
+    #     'instrument_token text NOT NULL,'\
+    #     'lot_size integer NOT NULL,'\
+    #     'position_stoploss_percent real NOT NULL,'\
+    #     'position_target_percent real NOT NULL,'\
+    #     'position_stoploss real NOT NULL  DEFAULT 0,'\
+    #     'position_target real NOT NULL  DEFAULT 0,'\
+    #     'position_entry_price real NOT NULL  DEFAULT 0,'\
+    #     'position_value real NOT NULL  DEFAULT 0,'\
+    #     'position_type real NOT NULL  DEFAULT 0,'\
+    #     'instrument_nomenclature real NOT NULL,'\
+    #     'FOREIGN KEY (order_id) REFERENCES orderbook (order_id) ON DELETE CASCADE' 
+    # ');')
 
-    cur.execute('CREATE TABLE IF NOT EXISTS orderbuffer ('\
-    	'username text NOT NULL,'\
-    	'tradingsymbol text NOT NULL,'\
-    	'instrument_token text NOT NULL,'\
-        'lot_size integer NOT NULL,'\
-        'exchange text NOT NULL,'\
-        'segment text NOT NULL,'\
-        'exchange_token integer NOT NULL,'\
-        'total_qty integer NOT NULL,'\
-        'placed_qty integer NOT NULL,'\
-        'placed_price integer NOT NULL,'\
-        'last_order_placement text NOT NULL,'\
-        'position_id integer NOT NULL,'\
-        'rollover text NOT NULL DEFAULT "N"'
-    ');')
+    # cur.execute('CREATE TABLE IF NOT EXISTS orderbuffer ('\
+    # 	'username text NOT NULL,'\
+    # 	'tradingsymbol text NOT NULL,'\
+    # 	'instrument_token text NOT NULL,'\
+    #     'lot_size integer NOT NULL,'\
+    #     'exchange text NOT NULL,'\
+    #     'segment text NOT NULL,'\
+    #     'exchange_token integer NOT NULL,'\
+    #     'total_qty integer NOT NULL,'\
+    #     'placed_qty integer NOT NULL,'\
+    #     'placed_price integer NOT NULL,'\
+    #     'last_order_placement text NOT NULL,'\
+    #     'position_id integer NOT NULL,'\
+    #     'rollover text NOT NULL DEFAULT "N"'
+    # ');')
 
-    cur.execute('CREATE TABLE IF NOT EXISTS position_reference ('\
-    	'position_id integer NOT NULL,'\
-    	'strategy_name text NOT NULL,'\
-        'instrument_nomenclature text NOT NULL,'\
-        'position_type text NOT NULL,'\
-        'username text NOT NULL,'\
-        'FOREIGN KEY (position_id)'\
-            'REFERENCES orderbuffer (position_id)'\
-            'ON DELETE CASCADE'
-    ');')
+    # cur.execute('CREATE TABLE IF NOT EXISTS position_reference ('\
+    # 	'position_id integer NOT NULL,'\
+    # 	'strategy_name text NOT NULL,'\
+    #     'instrument_nomenclature text NOT NULL,'\
+    #     'position_type text NOT NULL,'\
+    #     'username text NOT NULL,'\
+    #     'FOREIGN KEY (position_id)'\
+    #         'REFERENCES orderbuffer (position_id)'\
+    #         'ON DELETE CASCADE'
+    # ');')
     
-    cur.execute('CREATE TABLE IF NOT EXISTS order_history ('\
-        'order_id integer NOT NULL,'\
-        'brokerage_id integer NOT NULL,'\
-        'brokerage text NOT NULL,'\
-        'username text NOT NULL,'\
-        'strategy_name text NOT NULL,'\
-        'tradingsymbol text NOT NULL,'\
-        'position text NOT NULL,'\
-        'instrument_nomenclature text NOT NULL,'\
-        'order_status text NOT NULL,'\
-        'order_price real NOT NULL,'\
-        'order_qty integer NOT NULL,'\
-        'order_time text NOT NULL'\
-    ');')
+    # cur.execute('CREATE TABLE IF NOT EXISTS order_history ('\
+    #     'order_id integer NOT NULL,'\
+    #     'brokerage_id integer NOT NULL,'\
+    #     'brokerage text NOT NULL,'\
+    #     'username text NOT NULL,'\
+    #     'strategy_name text NOT NULL,'\
+    #     'tradingsymbol text NOT NULL,'\
+    #     'position text NOT NULL,'\
+    #     'instrument_nomenclature text NOT NULL,'\
+    #     'order_status text NOT NULL,'\
+    #     'order_price real NOT NULL,'\
+    #     'order_qty integer NOT NULL,'\
+    #     'order_time text NOT NULL'\
+    # ');')
     
     # cur.execute('CREATE TABLE IF NOT EXISTS strategy_history ('\
     #     'order_id integer NOT NULL,'\
@@ -327,10 +350,10 @@ if __name__ == "__main__":
     # SAMPLE VALUE (position_reference) : -6475757014321858749	NOVA	SPREAD123	BUY	FINVANT
 
     # Query for clearing all the tables (for testing) and reinitializing
-    cur.execute("DELETE FROM order_reference;")
-    cur.execute("DELETE FROM orderbook;")
-    cur.execute("DELETE FROM orderbuffer;")
-    cur.execute("DELETE FROM position_reference;")
+    # cur.execute("DELETE FROM order_reference;")
+    # cur.execute("DELETE FROM orderbook;")
+    # cur.execute("DELETE FROM orderbuffer;")
+    # cur.execute("DELETE FROM position_reference;")
     # cur.execute("DELETE FROM order_history;")
     # cur.execute("DELETE FROM strategy_history;")
 
