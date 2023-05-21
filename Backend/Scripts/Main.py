@@ -78,13 +78,20 @@ class Main:
         headers = {
             'Authorization': 'Bearer ' + self.token
         }
-        url = 'http://'
-        response = requests.get(url, headers=headers, json=slippage_report)
-        if response.status_code == 200:
-            print('Slippage report sent successfully')
-            return True
-        else:
-            print('Slippage report not sent')
+        url = 'http://13.233.26.147:9000/candlestick/'
+        try:
+            response = requests.get(url, headers=headers, json=data)
+            if response.status_code == 200:
+                print('Slippage report sent successfully')
+                self.log_interface.postLog(severity="INFO",message='Sent Slippage report',publish = 1)
+                return True
+            else:
+                print('Slippage report not sent')
+                self.log_interface.postLog(severity="CRITICAL",message='Failed to sent Slippage report',publish = 1)
+                return False
+        except Exception as e:
+            print(e)
+            self.log_interface.postLog(severity="CRITICAL",message=f'Failed to sent Slippage report: {e}',publish = 1)
             return False
 
     def start(self):
