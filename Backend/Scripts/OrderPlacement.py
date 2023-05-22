@@ -64,7 +64,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                 if paper_trade == False:
                     if debug:
                         print('Placing live Zerodha order for user: {} for tradingsymbol: {} and qty: {}'.format(username, tradingsymbol, qty))
-                    order_id = brokerage_object.place_order(variety='regular', exchange=exchange, tradingsymbol=tradingsymbol, transaction_type=transaction_type, quantity=abs(qty*lot_size), product=brokerage_object.PRODUCT_NRML, order_type=brokerage_object.ORDER_TYPE_LIMIT, price=price, validity=None, disclosed_quantity=None, trigger_price=None, stoploss=None, trailing_stoploss=None, tag=None)
+                    order_id = brokerage_object.place_order(variety='regular', exchange=exchange, tradingsymbol=tradingsymbol, transaction_type=transaction_type, quantity=abs(qty*lot_size), product=brokerage_object.PRODUCT_NRML, order_type=brokerage_object.ORDER_TYPE_LIMIT, price=price, validity=None, disclosed_quantity=None, trigger_price=None, tag=None)
                     orders = brokerage_object.order_history(order_id = order_id)
                     time.sleep(1)
                     logInfo('Zerodha order details')
