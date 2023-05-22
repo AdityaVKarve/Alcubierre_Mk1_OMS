@@ -77,7 +77,7 @@ class Main:
         # hit the API with the slippage report
         username = 'vishal'
         password = 'vishal'
-        url = 'http://13.233.26.147:9000/token/'
+        url = 'http://13.233.26.147:9000/token'
 
         data = {
             'username': username,
