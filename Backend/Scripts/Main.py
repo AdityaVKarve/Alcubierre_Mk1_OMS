@@ -75,9 +75,21 @@ class Main:
             })
 
         # hit the API with the slippage report
+        username = 'vishal'
+        password = 'vishal'
+        url = 'http://13.233.26.147:9000/token/'
+
+        data = {
+            'username': username,
+            'password': password
+        }
+
+        response = requests.post(url, data=data)
+        print(response.json())
+        token = response.json()['access_token']
         # API call
         headers = {
-            'Authorization': 'Bearer ' + self.token
+            'Authorization': 'Bearer ' + token
         }
         url = 'http://13.233.26.147:9000/candlestick/'
         try:
