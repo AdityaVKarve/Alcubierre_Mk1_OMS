@@ -49,9 +49,9 @@ class Main:
         return token
 
     def slippage_report(self):
-        self.log_interface = Log_Server_Interface(config=self.config)
-        self.config = Config()
-        self.config.refresh_config()
+        # self.log_interface = Log_Server_Interface(config=self.config)
+        # self.config = Config()
+        # self.config.refresh_config()
         # This function is called at the end of the day to generate a slippage report by hitting an API
         # The API will be called only if the day is a trading day
 
@@ -87,15 +87,15 @@ class Main:
             response = requests.get(url, headers=headers, json=data)
             if response.status_code == 200:
                 print('Slippage report sent successfully')
-                self.log_interface.postLog(severity="INFO",message='Sent Slippage report',publish = 1)
+                # self.log_interface.postLog(severity="INFO",message='Sent Slippage report',publish = 1)
                 return True
             else:
                 print('Slippage report not sent')
-                self.log_interface.postLog(severity="CRITICAL",message='Failed to sent Slippage report',publish = 1)
+                # self.log_interface.postLog(severity="CRITICAL",message='Failed to sent Slippage report',publish = 1)
                 return False
         except Exception as e:
             print(e)
-            self.log_interface.postLog(severity="CRITICAL",message=f'Failed to sent Slippage report: {e}',publish = 1)
+            # self.log_interface.postLog(severity="CRITICAL",message=f'Failed to sent Slippage report: {e}',publish = 1)
             return False
 
     def start(self):
