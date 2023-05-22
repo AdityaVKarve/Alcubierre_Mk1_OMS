@@ -457,9 +457,12 @@ async def get_candlestick_data(history_list: list):
     Returns:
     candlestick data {JSON} -- The candlestick data between two dates. 
     '''
+    print(len(history_list))
     responses = []
     kite = auto_login_zerodha(user_details = {'API_KEY':'wd4rw474uonpvn94','API_SECRET':'8bsd661b6i29y064pei4riikj0lr3ede','ID':'WG5235','PASSWORD':'Finvant@Research1','TOTP_PIN':'BK4I753O24NO5BU5JLTO2JPT2TFT54CC'},log_interface = None)
+    print('Login complete')
     for history in history_list:
+        print(history)
         end_date = history['end_date']
         instrument_nomenclature = history['instrument_nomenclature']
         trading_symbol = history['trading_symbol']
