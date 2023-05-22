@@ -85,6 +85,7 @@ class Main:
         url = 'http://13.233.26.147:9000/candlestick/'
         try:
             response = requests.get(url, headers=headers, json=data)
+            sleep(10)
             if response.status_code == 200:
                 print('Slippage report sent successfully')
                 # self.log_interface.postLog(severity="INFO",message='Sent Slippage report',publish = 1)
