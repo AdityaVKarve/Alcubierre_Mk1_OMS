@@ -493,9 +493,9 @@ async def get_candlestick_data(history_list: list):
 
             # Calculate slippage
             if position == 'CLOSE SHORT' or position == 'BUY':
-                slippage = int(candlestick_data['close']) - int(price)
+                slippage = float(candlestick_data['close']) - float(price)
             elif position == 'OPEN SHORT' or position == 'SELL':
-                slippage = int(price) - int(candlestick_data['close'])
+                slippage = float(price) - float(candlestick_data['close'])
 
             # Insert into table
             cur.execute("INSERT INTO slippage VALUES (?,?,?,?,?,?)", (end_date, trading_symbol, candlestick_data['close'], price, slippage, position))
