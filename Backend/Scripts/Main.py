@@ -67,7 +67,6 @@ class Main:
         slippage_report = cur.fetchall()
 
         print(len(slippage_report))
-        return
         data = []
 
         for row in slippage_report:
