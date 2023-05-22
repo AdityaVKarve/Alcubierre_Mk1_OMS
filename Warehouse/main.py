@@ -397,7 +397,7 @@ def auto_login_zerodha(user_details: dict,  log_interface):
         traceback.print_exc()
 
 
-def get_candlestick_data_from_kite(to, kite):
+def get_candlestick_data_from_kite(to, kite, instrument_nomenclature):
     '''
     Get candlestick data from kite.
     
@@ -412,10 +412,12 @@ def get_candlestick_data_from_kite(to, kite):
     candlestick data {JSON} -- The candlestick data between two dates. 
     '''
     try:
+        if type(instrument_nomenclature) == str:
+            instrument_nomenclature = int(instrument_nomenclature)
         to = datetime.strptime(to, '%Y-%m-%d %H:%M:%S')
         print(to)
         candle = kite.historical_data(
-        8960770,
+        instrument_nomenclature,
         from_date = to - timedelta(minutes=5) ,
         to_date = to,
         interval = "5minute"
@@ -423,7 +425,7 @@ def get_candlestick_data_from_kite(to, kite):
 
         # from instrument_token get trading symbol from kite
 
-        print(candle)
+        # print(candle)
         print('CLOSE: ',candle[-1]['close'])
 
         response =  {"candle" : candle, "close" : candle[-1]['close']}
@@ -471,7 +473,8 @@ async def get_candlestick_data(history_list: list):
 
         try:
             end_date = end_date.replace('_', ' ')
-            candlestick_data = get_candlestick_data_from_kite(end_date, kite)
+            candlestick_data = get_candlestick_data_from_kite(end_date, kite, instrument_nomenclature)
+            time.sleep(1)
             ## Add to sql database
             conn = sqlite3.connect('database.db')
             cur = conn.cursor()
