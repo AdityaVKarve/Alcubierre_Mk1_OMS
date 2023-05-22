@@ -49,6 +49,9 @@ class Main:
         return token
 
     def slippage_report(self):
+        self.log_interface = Log_Server_Interface(config=self.config)
+        self.config = Config()
+        self.config.refresh_config()
         # This function is called at the end of the day to generate a slippage report by hitting an API
         # The API will be called only if the day is a trading day
 
