@@ -61,11 +61,13 @@ class Main:
 
         # Get the slippage report from the DB : orderHistory table where order_time is today
         today = datetime.now().date()
-        query = f"SELECT order_time,instrument_nomenclature, tradingsymbol, order_price, position  FROM order_history WHERE DATE(order_time) = {today}" 
+        query = f"SELECT order_time,instrument_nomenclature, tradingsymbol, order_price, position  FROM order_history WHERE DATE(order_time) = '{today}'" 
         print(query)
         cur.execute(query)
         slippage_report = cur.fetchall()
 
+        print(len(slippage_report))
+        return
         data = []
 
         for row in slippage_report:
