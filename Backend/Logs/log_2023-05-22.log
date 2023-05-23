@@ -3384,3 +3384,48 @@ kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncl
 kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
 kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
 kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-05-23 09:00:04.590120 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-05-23 09:00:04.659689 - OMS Backend mainloop started.
+root - INFO - 2023-05-23 09:00:05.794500 - User data obtained.
+root - INFO - 2023-05-23 09:00:07.987074 - Spreads obtained.
+root - INFO - 2023-05-23 09:00:08.057761 - Config file obtained.
+root - INFO - 2023-05-23 09:00:08.125385 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-05-23 09:00:13.801210 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-05-23 09:00:13.871075 - Initialising LTP gather thread.
+root - INFO - 2023-05-23 09:00:14.279573 - Attempting XTS login.
+root - INFO - 2023-05-23 09:00:14.281860 - OMSB: Zerodha login for TL9951.
+root - INFO - 2023-05-23 09:00:14.282775 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-05-23 09:00:14.451422 - XTS login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiJIREwwMDA2XzU5NUU0NzY4RTFEM0ZCNDFCNUUyODIiLCJwdWJsaWNLZXkiOiI1OTVlNDc2OGUxZDNmYjQxYjVlMjgyIiwiaWF0IjoxNjg0ODEyNjE0LCJleHAiOjE2ODQ4OTkwMTR9.bDGIg0wAJ341qELM-R4fm_txn4-dpActHA-sXQZb-xI.
+root - INFO - 2023-05-23 09:00:14.491696 - BPWealth login for AHO7763.
+root - INFO - 2023-05-23 09:00:14.549054 - ODIN login for NB01.
+root - CRITICAL - CRITICAL ERROR:2023-05-23 09:00:15.374537 - ODIN login failed for NB01. Error: 'data'.
+['Traceback (most recent call last):', '  File "/home/ubuntu/Alcubierre_Mk1_OMS/Backend/Scripts/AutoLoginOdin.py", line 48, in login', '    access_token = r["data"]["access_token"]', "KeyError: 'data'"]
+root - INFO - 2023-05-23 09:00:15.442578 - ODIN login for AKV2922.
+root - INFO - 2023-05-23 09:00:15.978410 - BPWealth login for AHD083.
+root - INFO - 2023-05-23 09:00:16.438125 - BPWealth login for ACS1301.
+root - INFO - 2023-05-23 09:00:16.511542 - ODIN login succesful for AKV2922.
+root - INFO - 2023-05-23 09:00:16.580096 - ODIN login for S0201.
+root - INFO - 2023-05-23 09:00:17.058224 - BPWealth login for ACS1207.
+root - INFO - 2023-05-23 09:00:17.382858 - ODIN login succesful for S0201.
+root - INFO - 2023-05-23 09:00:17.455613 - ODIN login for S0201.
+root - INFO - 2023-05-23 09:00:17.529517 - BPWealth login for AC66.
+root - INFO - 2023-05-23 09:00:18.268784 - ODIN login succesful for S0201.
+root - INFO - 2023-05-23 09:00:20.596313 - OMSB: Zerodha login succesful for TL9951.
+root - INFO - 2023-05-23 09:00:20.669165 - OMSB: Zerodha login for RL7826.
+root - INFO - 2023-05-23 09:00:20.730073 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-05-23 09:00:20.799799 - OMSB: Zerodha login for FS3611.
+root - INFO - 2023-05-23 09:00:26.488785 - OMSB: Zerodha login succesful for RL7826.
+root - INFO - 2023-05-23 09:00:26.559936 - OMSB: Zerodha login for YU5680.
+root - INFO - 2023-05-23 09:00:26.687169 - OMSB: Zerodha login succesful for FS3611.
+root - INFO - 2023-05-23 09:00:26.756774 - OMSB: Zerodha login for VR1418.
+root - INFO - 2023-05-23 09:00:32.368377 - OMSB: Zerodha login succesful for YU5680.
+root - INFO - 2023-05-23 09:00:32.436973 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-05-23 09:00:32.679396 - OMSB: Zerodha login succesful for VR1418.
+root - INFO - 2023-05-23 09:00:32.747804 - OMSB: Zerodha login for BQ1244.
+root - INFO - 2023-05-23 09:00:37.649146 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-05-23 09:00:37.840288 - BPWealth login for AHO7706.
+root - INFO - 2023-05-23 09:00:38.400545 - OMSB: Zerodha login succesful for BQ1244.
+root - INFO - 2023-05-23 09:00:38.468985 - OMSB: Zerodha login for CJ4922.
+root - CRITICAL - CRITICAL ERROR:2023-05-23 09:00:49.035306 - OMSB: Failed auto login to kite for user:CJ4922.
+['Traceback (most recent call last):', '  File "/home/ubuntu/Alcubierre_Mk1_OMS/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/home/ubuntu/.local/lib/python3.10/site-packages/kiteconnect/connect.py", line 259, in generate_session', '    h = hashlib.sha256(self.api_key.encode("utf-8") + request_token.encode("utf-8") + api_secret.encode("utf-8"))', "AttributeError: 'int' object has no attribute 'encode'"]
+root - INFO - 2023-05-23 09:00:49.104351 - Order handler initialised.

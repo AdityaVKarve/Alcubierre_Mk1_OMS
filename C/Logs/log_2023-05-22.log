@@ -247,3 +247,356 @@ Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
     raise LocalProtocolError("Got data when expecting EOF")
 h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/routing.py", line 747, in __call__
+    await self.default(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/routing.py", line 635, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 83, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+root - INFO - 2023-05-23 09:35:17.562850 - Order placement successful for users: []
+root - INFO - 2023-05-23 09:40:16.182639 - Order placement successful for users: []
+root - INFO - 2023-05-23 09:45:16.059999 - Order placement successful for users: []
+root - INFO - 2023-05-23 09:50:16.133692 - Order placement successful for users: []
+root - INFO - 2023-05-23 09:55:16.134025 - Order placement successful for users: []
+root - INFO - 2023-05-23 10:00:16.248774 - Order placement successful for users: []
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+root - INFO - 2023-05-23 10:05:16.183392 - Order placement successful for users: []
+root - INFO - 2023-05-23 10:10:16.177567 - Order placement successful for users: []
+root - INFO - 2023-05-23 10:15:16.243619 - Order placement successful for users: []
+root - INFO - 2023-05-23 10:20:16.173676 - Order placement successful for users: []
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+root - INFO - 2023-05-23 10:25:16.172750 - Order placement successful for users: []
+root - INFO - 2023-05-23 10:30:16.217309 - Order placement successful for users: []
+root - INFO - 2023-05-23 10:35:16.167430 - Order placement successful for users: []
+root - INFO - 2023-05-23 10:40:16.189488 - Order placement successful for users: []
+root - INFO - 2023-05-23 10:45:16.153511 - Order placement successful for users: []
+root - INFO - 2023-05-23 10:50:16.149880 - Order placement successful for users: []
+root - INFO - 2023-05-23 10:55:16.147667 - Order placement successful for users: []
+root - INFO - 2023-05-23 11:00:16.198236 - Order placement successful for users: []
+root - INFO - 2023-05-23 11:10:16.095450 - Order placement successful for users: []
+root - INFO - 2023-05-23 11:15:10.800154 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-05-23 11:15:10.868722 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:15:10.938027 - Order placement successful for users: [{'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-05-23 11:15:11.913759 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 BUY 10 0 0
+root - INFO - 2023-05-23 11:15:11.982862 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 BUY 1 0 0
+root - INFO - 2023-05-23 11:15:12.053537 - Order placement successful for users: [{'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-05-23 11:15:16.136849 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-05-23 11:15:16.205551 - Order placed for ODIN OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:15:16.328274 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:15:16.396267 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:15:16.464998 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:15:16.533268 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -2 0 0
+root - INFO - 2023-05-23 11:15:16.604596 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-05-23 11:25:11.281873 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-05-23 11:25:11.355798 - Order placed for ODIN OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 11:25:11.428774 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 11:25:11.503411 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 11:25:11.574895 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 11:25:11.649477 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -2 0 0
+root - INFO - 2023-05-23 11:25:11.722708 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-05-23 11:25:12.688405 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:25:12.810903 - Order placement successful for users: [{'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-05-23 11:25:16.396087 - Order placement successful for users: []
+root - INFO - 2023-05-23 11:26:23.276023 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 11:26:23.353193 - Order placement successful for users: [{'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-05-23 11:27:23.997593 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-05-23 11:27:24.068820 - Order placed for ODIN OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:27:24.139235 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:27:24.279413 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:27:24.352404 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:27:24.424359 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|PE|WEEK|0 OPEN SHORT -2 0 0
+root - INFO - 2023-05-23 11:27:24.493277 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-05-23 11:27:25.400383 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 SELL 10 0 0
+root - INFO - 2023-05-23 11:27:25.468318 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 SELL 1 0 0
+root - INFO - 2023-05-23 11:27:25.716073 - Order placement successful for users: [{'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-05-23 11:27:26.697833 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-05-23 11:27:26.819698 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 11:27:26.937892 - Order placement successful for users: [{'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-05-23 11:30:05.898098 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 BUY 10 0 0
+root - INFO - 2023-05-23 11:30:06.016771 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 BUY 1 0 0
+root - INFO - 2023-05-23 11:30:06.084189 - Order placement successful for users: [{'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-05-23 11:30:07.006535 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-05-23 11:30:07.243514 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-05-23 11:30:07.311531 - Order placement successful for users: [{'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-05-23 11:45:17.518025 - Order placement successful for users: []
+root - INFO - 2023-05-23 11:50:16.104150 - Order placement successful for users: []
+root - INFO - 2023-05-23 11:55:16.112212 - Order placed for FINVANT_LIVE QUASAR_5M BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0 0.5
+root - INFO - 2023-05-23 11:55:16.177426 - Order placed for AIRAN_PAPER_TEST QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-05-23 11:55:16.241733 - Order placed for TEJAS QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-05-23 11:55:16.307162 - Order placed for SOHAM QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-05-23 11:55:16.375597 - Order placed for JASMI QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -2 0 0.5
+root - INFO - 2023-05-23 11:55:16.442416 - Order placed for MOHIT QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-05-23 11:55:16.507212 - Order placed for HEMENDRA QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-05-23 11:55:16.572163 - Order placed for HIREN QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-05-23 11:55:16.636798 - Order placed for AMIT QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -1 0 0.5
+root - INFO - 2023-05-23 11:55:16.701656 - Order placed for BPWealth_AHO7706 QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-05-23 11:55:16.767503 - Order placed for BPWealth_AHO7763 QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -6 0 0.5
+root - INFO - 2023-05-23 11:55:16.835534 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 1}, {'user_name': 'AIRAN_PAPER_TEST', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'TEJAS', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'SOHAM', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'JASMI', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 2}, {'user_name': 'MOHIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'HEMENDRA', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'HIREN', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'AMIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'BPWealth_AHO7763', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 6}]
+root - INFO - 2023-05-23 12:00:16.038774 - Order placement successful for users: []
+root - INFO - 2023-05-23 12:05:16.044271 - Order placement successful for users: []
+root - INFO - 2023-05-23 12:10:16.092979 - Order placement successful for users: []
+root - INFO - 2023-05-23 12:15:16.035744 - Order placement successful for users: []
+root - INFO - 2023-05-23 12:20:16.045570 - Order placement successful for users: []
+root - INFO - 2023-05-23 12:25:16.009059 - Order placement successful for users: []
+root - INFO - 2023-05-23 12:30:16.096485 - Order placement successful for users: []
+root - INFO - 2023-05-23 12:35:16.133959 - Order placement successful for users: []
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+root - INFO - 2023-05-23 12:40:16.117859 - Order placement successful for users: []
+root - INFO - 2023-05-23 12:45:16.093626 - Order placement successful for users: []
+root - INFO - 2023-05-23 12:50:16.088664 - Order placement successful for users: []
+root - INFO - 2023-05-23 12:55:16.102115 - Order placement successful for users: []
+root - INFO - 2023-05-23 13:05:16.229841 - Order placement successful for users: []
+root - INFO - 2023-05-23 13:10:16.179113 - Order placement successful for users: []
+root - INFO - 2023-05-23 13:15:16.131318 - Order placement successful for users: []
+root - INFO - 2023-05-23 13:20:16.174406 - Order placement successful for users: []
+root - INFO - 2023-05-23 13:25:16.114915 - Order placement successful for users: []
+root - INFO - 2023-05-23 13:40:16.176280 - Order placement successful for users: []
+root - INFO - 2023-05-23 13:50:17.605890 - Order placement successful for users: []
+root - INFO - 2023-05-23 13:55:16.189913 - Order placement successful for users: []
+root - INFO - 2023-05-23 14:00:16.156299 - Order placement successful for users: []
+root - INFO - 2023-05-23 14:05:16.221861 - Order placement successful for users: []
+root - INFO - 2023-05-23 14:20:16.310711 - Order placement successful for users: []
+root - INFO - 2023-05-23 14:25:16.183118 - Order placement successful for users: []
+root - INFO - 2023-05-23 14:35:16.220969 - Order placement successful for users: []
+root - INFO - 2023-05-23 14:45:16.276856 - Order placement successful for users: []
+root - INFO - 2023-05-23 14:50:16.209319 - Order placement successful for users: []
+root - INFO - 2023-05-23 14:55:10.598782 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-05-23 14:55:10.668118 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 14:55:10.736476 - Order placement successful for users: [{'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-05-23 14:55:11.729282 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 SELL 10 0 0
+root - INFO - 2023-05-23 14:55:11.796703 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 SELL 1 0 0
+root - INFO - 2023-05-23 14:55:11.865263 - Order placement successful for users: [{'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-05-23 14:55:16.200969 - Order placed for MASTER_TRUST OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-05-23 14:55:16.269736 - Order placed for ODIN OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 14:55:16.389353 - Order placed for BPWealth_AHD083 OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 14:55:16.457455 - Order placed for BPWealth_ACS1301 OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 14:55:16.524095 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 14:55:16.594047 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -2 0 0
+root - INFO - 2023-05-23 14:55:16.662597 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-05-23 15:00:16.256099 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:05:16.143918 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:10:16.214283 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:15:16.213220 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:20:10.207554 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:20:11.290815 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:20:12.418251 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:20:13.396322 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:20:16.128402 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:25:14.259918 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:25:15.340108 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:25:16.646778 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:25:17.722363 - Order placement successful for users: []
+root - INFO - 2023-05-23 15:30:16.065172 - Order placed for AIRAN_PAPER_TEST QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-05-23 15:30:16.130672 - Order placed for TEJAS QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-05-23 15:30:16.196153 - Order placed for SOHAM QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-05-23 15:30:16.321597 - Order placed for JASMI QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -2 0 0
+root - INFO - 2023-05-23 15:30:16.385975 - Order placed for MOHIT QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-05-23 15:30:16.450795 - Order placed for HEMENDRA QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-05-23 15:30:16.516395 - Order placed for HIREN QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-05-23 15:30:16.580162 - Order placed for AMIT QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -1 0 0
+root - INFO - 2023-05-23 15:30:16.646332 - Order placed for BPWealth_AHO7706 QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-05-23 15:30:16.711323 - Order placed for BPWealth_AHO7763 QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -6 0 0
+root - INFO - 2023-05-23 15:30:16.777658 - Order placement successful for users: [{'user_name': 'AIRAN_PAPER_TEST', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'TEJAS', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'SOHAM', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'JASMI', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'MOHIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'HEMENDRA', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'HIREN', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'AMIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7763', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
