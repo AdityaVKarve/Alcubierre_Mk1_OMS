@@ -61,7 +61,7 @@ class Main:
 
         # Get the slippage report from the DB : orderHistory table where order_time is today
         today = datetime.now().date()
-        query = f"SELECT order_time,instrument_nomenclature, tradingsymbol, order_price, position  FROM order_history WHERE DATE(order_time) = '{today}'" 
+        query = f"SELECT order_time,instrument_nomenclature, tradingsymbol, order_price, position, username, brokerage_id FROM order_history WHERE DATE(order_time) = '{today}' AND username = 'MASTER_TRUST'" 
         print(query)
         cur.execute(query)
         slippage_report = cur.fetchall()
@@ -75,7 +75,9 @@ class Main:
                 'instrument_nomenclature': row[1],
                 'trading_symbol': row[2],
                 'price': row[3],
-                'position': row[4]
+                'position': row[4],
+                'username': row[5],
+                'brokerage': row[6]
             })
 
         # hit the API with the slippage report
@@ -83,7 +85,8 @@ class Main:
         headers = {
             'Authorization': 'Bearer ' + ""
         }
-        url = 'http://13.233.26.147:9000/candlestick/'
+        # url = 'http://13.233.26.147:9000/candlestick/'
+        url = 'http://127.0.0.1:9000/candlestick/'
         try:
             response = requests.get(url, headers=headers, json=data)
             sleep(10)
