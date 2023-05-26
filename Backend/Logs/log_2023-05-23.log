@@ -3820,3 +3820,152 @@ root - INFO - 2023-05-23 15:30:38.172305 - 1935.0290298461914
 root - INFO - 2023-05-23 15:30:39.970019 - Placed BP WEALTH futures order for:BPWealth_AHO7763, instrument:BANKNIFTY23JUNFUT, qty:25, transaction type:BUY, placed price:44048.0, id:113.
 root - INFO - 2023-05-23 15:30:47.055316 - Placed BP WEALTH futures order for:BPWealth_AHO7763, instrument:BANKNIFTY23JUNFUT, qty:25, transaction type:BUY, placed price:44048.0, id:805.
 root - INFO - 2023-05-23 15:30:54.140335 - Placed BP WEALTH futures order for:BPWealth_AHO7763, instrument:BANKNIFTY23JUNFUT, qty:25, transaction type:BUY, placed price:44048.0, id:623.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (WebSocket connection upgrade failed (403 - Forbidden))
+root - INFO - 2023-05-24 09:00:45.013650 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-05-24 09:00:45.082649 - OMS Backend mainloop started.
+root - INFO - 2023-05-24 09:00:46.212084 - User data obtained.
+root - INFO - 2023-05-24 09:00:48.392567 - Spreads obtained.
+root - INFO - 2023-05-24 09:00:48.460735 - Config file obtained.
+root - INFO - 2023-05-24 09:00:48.528643 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-05-24 09:00:54.210326 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-05-24 09:00:54.279612 - Initialising LTP gather thread.
+root - INFO - 2023-05-24 09:00:54.685680 - Attempting XTS login.
+root - INFO - 2023-05-24 09:00:54.688337 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-05-24 09:00:54.689482 - OMSB: Zerodha login for TL9951.
+root - INFO - 2023-05-24 09:00:54.790458 - XTS login token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiJIREwwMDA2XzU5NUU0NzY4RTFEM0ZCNDFCNUUyODIiLCJwdWJsaWNLZXkiOiI1OTVlNDc2OGUxZDNmYjQxYjVlMjgyIiwiaWF0IjoxNjg0ODk5MDU0LCJleHAiOjE2ODQ5ODU0NTR9.ZGCd1yEcn_J6PPMcbjq8dDaZXZFw9vSANj0cppeLbLs.
+root - INFO - 2023-05-24 09:00:54.875828 - BPWealth login for AHO7763.
+root - INFO - 2023-05-24 09:00:54.949159 - ODIN login for NB01.
+root - CRITICAL - CRITICAL ERROR:2023-05-24 09:00:55.523085 - ODIN login failed for NB01. Error: 'data'.
+['Traceback (most recent call last):', '  File "/home/ubuntu/Alcubierre_Mk1_OMS/Backend/Scripts/AutoLoginOdin.py", line 48, in login', '    access_token = r["data"]["access_token"]', "KeyError: 'data'"]
+root - INFO - 2023-05-24 09:00:55.588746 - ODIN login for AKV2922.
+root - INFO - 2023-05-24 09:00:55.693703 - BPWealth login for AHD083.
+root - INFO - 2023-05-24 09:00:56.403338 - ODIN login succesful for AKV2922.
+root - INFO - 2023-05-24 09:00:56.460901 - BPWealth login for ACS1301.
+root - INFO - 2023-05-24 09:00:56.476367 - ODIN login for S0201.
+root - INFO - 2023-05-24 09:00:57.051886 - BPWealth login for ACS1207.
+root - INFO - 2023-05-24 09:00:57.225095 - ODIN login succesful for S0201.
+root - INFO - 2023-05-24 09:00:57.294447 - ODIN login for S0201.
+root - INFO - 2023-05-24 09:00:57.379568 - BPWealth login for AC66.
+root - INFO - 2023-05-24 09:00:57.844694 - ODIN login succesful for S0201.
+root - INFO - 2023-05-24 09:01:00.786161 - OMSB: Zerodha login succesful for TL9951.
+root - INFO - 2023-05-24 09:01:00.854900 - OMSB: Zerodha login for RL7826.
+root - INFO - 2023-05-24 09:01:00.972405 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-05-24 09:01:01.040876 - OMSB: Zerodha login for FS3611.
+root - INFO - 2023-05-24 09:01:06.680655 - OMSB: Zerodha login succesful for RL7826.
+root - INFO - 2023-05-24 09:01:06.750422 - OMSB: Zerodha login for YU5680.
+root - INFO - 2023-05-24 09:01:06.896959 - OMSB: Zerodha login succesful for FS3611.
+root - INFO - 2023-05-24 09:01:06.966484 - OMSB: Zerodha login for VR1418.
+root - INFO - 2023-05-24 09:01:12.545059 - OMSB: Zerodha login succesful for YU5680.
+root - INFO - 2023-05-24 09:01:12.613917 - OMSB: Zerodha login for WG5235.
+root - INFO - 2023-05-24 09:01:12.829561 - OMSB: Zerodha login succesful for VR1418.
+root - INFO - 2023-05-24 09:01:12.897891 - OMSB: Zerodha login for BQ1244.
+root - INFO - 2023-05-24 09:01:18.460175 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-05-24 09:01:18.777261 - BPWealth login for AHO7706.
+root - INFO - 2023-05-24 09:01:18.825239 - OMSB: Zerodha login succesful for BQ1244.
+root - INFO - 2023-05-24 09:01:18.911703 - OMSB: Zerodha login for CJ4922.
+root - CRITICAL - CRITICAL ERROR:2023-05-24 09:01:30.430693 - OMSB: Failed auto login to kite for user:CJ4922.
+['Traceback (most recent call last):', '  File "/home/ubuntu/Alcubierre_Mk1_OMS/Backend/Scripts/AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '  File "/home/ubuntu/.local/lib/python3.10/site-packages/kiteconnect/connect.py", line 259, in generate_session', '    h = hashlib.sha256(self.api_key.encode("utf-8") + request_token.encode("utf-8") + api_secret.encode("utf-8"))', "AttributeError: 'int' object has no attribute 'encode'"]
+root - INFO - 2023-05-24 09:01:30.504015 - Order handler initialised.
