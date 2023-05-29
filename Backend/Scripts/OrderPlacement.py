@@ -157,7 +157,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                     if debug:
                         print('Placing live XTS order for user: {} for tradingsymbol: {} and qty: {}'.format(username, tradingsymbol, qty))
                     order_id = brokerage_object.place_order(exchange_token = int(exchange_token), order_type = 'LIMIT', position = transaction_type, quantity = abs(qty*lot_size), limit_price = price)
-                    time.sleep(1)
+                    time.sleep(2)
                     orders = brokerage_object.order_history(order_id = order_id)
                     logInfo("XTS ORDER DETAIL")
                     logInfo(orders)
@@ -254,7 +254,7 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
 
                 if paper_trade == False:
                     order_detail = brokerage_object.place_order(scrip_token=exchange_token, symbol=symbol, quantity=(qty*lot_size), order_type=transaction_type)
-                    time.sleep(1)
+                    time.sleep(2)
                     order_id = order_detail['orderId']
                     orders = brokerage_object.order_history(order_id = order_id)['data']
                     for order in orders:
