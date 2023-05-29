@@ -1,9 +1,9 @@
 {
-    "LAST_UPDATED": 1683614453.5944588,
+    "LAST_UPDATED": 1685094914.8465414,
     "USER_DATA": {
         "MASTER_TRUST": {
             "USER_TYPE": "XTS",
-            "PAPER_TRADE": true,
+            "PAPER_TRADE": false,
             "LOGIN_DETAILS": {
                 "ENDPOINT": "http://103.156.122.4:10121/",
                 "APP_KEY": "595e4768e1d3fb41b5e282",
@@ -32,7 +32,7 @@
         },
         "ODIN": {
             "USER_TYPE": "ODIN",
-            "PAPER_TRADE": true,
+            "PAPER_TRADE": false,
             "LOGIN_DETAILS": {
                 "CLIENT_CODE": "NB01",
                 "CLIENT_PASSWORD": "odin@123",
@@ -58,9 +58,61 @@
                 }
             }
         },
+        "ODIN_AKV2922": {
+            "USER_TYPE": "ODIN",
+            "PAPER_TRADE": false,
+            "LOGIN_DETAILS": {
+                "CLIENT_CODE": "AKV2922",
+                "CLIENT_PASSWORD": "odin@123",
+                "CLIENT_2FA": "9826074997",
+                "CLIENT_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzUGFydG5lckFwcElkIjoiMDFGMDBGIiwiQjJDIjoiWSIsIlB1Ymxpc2hlck5hbWUiOiJJbmRpcmEgU2VjdXJpdGllcyBQdnQgTHRkIC0gQjJDIiwic1B1Ymxpc2hlckNvZGUiOiJjdSIsIkN1c3RvbWVySWQiOiIzODUiLCJzQXBwbGljYXRpb25Ub2tlbiI6IkluZGlyYVNlY3VyaXRpZXNCMkMxMDcwNDY0ZGVlZiIsInVzZXJJZCI6IkFLVjI5MjIiLCJCcm9rZXJOYW1lIjoiSW5kaXJhIFNlY3VyaXRpZXMgUHZ0IEx0ZCIsImV4cCI6OTEyMTg3ODYwMCwiaWF0IjoxNjU2OTE4NjE1fQ.AxWqtFuTvC6AsBzdoiYn7QnVHqkRa_yneLbSG95tqP4"
+            },
+            "STRATEGY_DETAILS": {
+                "OPHIUCUS_HEDGED": {
+                    "NIFTY|G|800|CE|WEEK|0": [
+                        10,
+                        0
+                    ],
+                    "NIFTY|L|0|CE|WEEK|0": [
+                        0,
+                        10
+                    ],
+                    "NIFTY|L|800|PE|WEEK|0": [
+                        10,
+                        0
+                    ],
+                    "NIFTY|L|0|PE|WEEK|0": [
+                        0,
+                        10
+                    ]
+                }
+            }
+        },
+        "AIRAN_PAPER_TEST": {
+            "USER_TYPE": "ODIN",
+            "PAPER_TRADE": false,
+            "LOGIN_DETAILS": {
+                "CLIENT_CODE": "S0201",
+                "CLIENT_PASSWORD": "abc777",
+                "CLIENT_2FA": "9328606010",
+                "CLIENT_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzUHVibGlzaGVyQ29kZSI6Ik1mIiwiQ3VzdG9tZXJJZCI6IjE1NjQiLCJzUGFydG5lckFwcElkIjoiMEU1MEJBIiwic0FwcGxpY2F0aW9uVG9rZW4iOiJBaXJhbkZpbnN0b2NrQjJDMTg3YzRjMzA2NDQiLCJQdWJsaXNoZXJOYW1lIjoiQWlyYW4gRmluc3RvY2sgUHZ0IGx0ZCAtIEIyQyIsIkJyb2tlck5hbWUiOiJBaXJhbiBGaW5zdG9jayBQdnQgbHRkIiwiUHJvZHVjdFNvdXJjZSI6IldFQkFQSSIsIkIyQyI6IlkiLCJ1c2VySWQiOiJTMDIwMSIsImV4cCI6OTE0NTIyODI2MCwiaWF0IjoxNjgwMjY4MjgwfQ.cYUvyWJj7D8LdT2Z-UVFRobhksFx5m0F4tJXWGV6jDI"
+            },
+            "STRATEGY_DETAILS": {
+                "QUASAR_5M_FUTURES": {
+                    "NIFTY": [
+                        0,
+                        3
+                    ],
+                    "BANKNIFTY": [
+                        0,
+                        3
+                    ]
+                }
+            }
+        },
         "AIRAN": {
             "USER_TYPE": "ODIN",
-            "PAPER_TRADE": true,
+            "PAPER_TRADE": false,
             "LOGIN_DETAILS": {
                 "CLIENT_CODE": "S0201",
                 "CLIENT_PASSWORD": "abc777",
@@ -92,7 +144,7 @@
         },
         "FINVANT_LIVE": {
             "USER_TYPE": "ZERODHA",
-            "PAPER_TRADE": true,
+            "PAPER_TRADE": false,
             "LOGIN_DETAILS": {
                 "API_KEY": "wd4rw474uonpvn94",
                 "API_SECRET": "8bsd661b6i29y064pei4riikj0lr3ede",
@@ -156,13 +208,21 @@
                     ]
                 },
                 "OPHIUCUS_HEDGED": {
-                    "OPHIUCUS_HEDGED_NIFTY_LONG": [
+                    "NIFTY|G|800|CE|WEEK|0": [
                         1,
                         0
                     ],
-                    "OPHIUCUS_HEDGED_NIFTY_SHORT": [
+                    "NIFTY|L|0|CE|WEEK|0": [
+                        0,
+                        1
+                    ],
+                    "NIFTY|L|800|PE|WEEK|0": [
                         1,
                         0
+                    ],
+                    "NIFTY|L|0|PE|WEEK|0": [
+                        0,
+                        1
                     ]
                 },
                 "OBERON": {
@@ -249,29 +309,6 @@
                 }
             }
         },
-        "YASH": {
-            "USER_TYPE": "ZERODHA",
-            "PAPER_TRADE": true,
-            "LOGIN_DETAILS": {
-                "API_KEY": "fdmrv1cgtea3oka5",
-                "API_SECRET": "gpawfmlvzvxzdarzwg1mh1izu7k3gqaj",
-                "ID": "OJ8428",
-                "PASSWORD": "YasH@2022",
-                "TOTP_PIN": "JBG73Q6AMJRMFDCSJDOJ6XSXSHFHQL7J"
-            },
-            "STRATEGY_DETAILS": {
-                "QUASAR_5M_FUTURES": {
-                    "NIFTY": [
-                        0,
-                        3
-                    ],
-                    "BANKNIFTY": [
-                        0,
-                        3
-                    ]
-                }
-            }
-        },
         "JASMI": {
             "USER_TYPE": "ZERODHA",
             "PAPER_TRADE": true,
@@ -291,6 +328,29 @@
                     "BANKNIFTY": [
                         0,
                         2
+                    ]
+                }
+            }
+        },
+        "MOHIT": {
+            "USER_TYPE": "ZERODHA",
+            "PAPER_TRADE": true,
+            "LOGIN_DETAILS": {
+                "API_KEY": "cjf6piyfv93bzlcj",
+                "API_SECRET": "67XJOVXVO36M773AAWLEIGBQMRLMSCGV",
+                "ID": "CJ4922",
+                "PASSWORD": "9712980450",
+                "TOTP_PIN": "FP7AHIISP6EHPPMTWPYL3D3B7C5LPTDM"
+            },
+            "STRATEGY_DETAILS": {
+                "QUASAR_5M_FUTURES": {
+                    "NIFTY": [
+                        0,
+                        3
+                    ],
+                    "BANKNIFTY": [
+                        0,
+                        3
                     ]
                 }
             }
@@ -426,12 +486,44 @@
                         0,
                         1
                     ]
+                },
+                "QUASAR_5M_FUTURES": {
+                    "NIFTY": [
+                        0,
+                        3
+                    ],
+                    "BANKNIFTY": [
+                        0,
+                        3
+                    ]
+                }
+            }
+        },
+        "BPWealth_AHO7763": {
+            "USER_TYPE": "BPWEALTH",
+            "PAPER_TRADE": true,
+            "LOGIN_DETAILS": {
+                "USERNAME": "AHO7763",
+                "PASSWORD": "qwer1234",
+                "GROUP_ID": "HO",
+                "PROD_CODE": "12"
+            },
+            "STRATEGY_DETAILS": {
+                "QUASAR_5M_FUTURES": {
+                    "NIFTY": [
+                        0,
+                        6
+                    ],
+                    "BANKNIFTY": [
+                        0,
+                        6
+                    ]
                 }
             }
         },
         "BPWealth_AHD083": {
             "USER_TYPE": "BPWEALTH",
-            "PAPER_TRADE": true,
+            "PAPER_TRADE": false,
             "LOGIN_DETAILS": {
                 "USERNAME": "AHD083",
                 "PASSWORD": "avanik222",
@@ -497,7 +589,7 @@
         },
         "BPWealth_AC66": {
             "USER_TYPE": "BPWEALTH",
-            "PAPER_TRADE": true,
+            "PAPER_TRADE": false,
             "LOGIN_DETAILS": {
                 "USERNAME": "AC66",
                 "PASSWORD": "abcd123",

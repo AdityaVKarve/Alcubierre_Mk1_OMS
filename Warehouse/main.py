@@ -397,7 +397,7 @@ def auto_login_zerodha(user_details: dict,  log_interface):
         traceback.print_exc()
 
 
-def get_candlestick_data_from_kite(to, kite):
+def get_candlestick_data_from_kite(to, kite, instrument_nomenclature):
     '''
     Get candlestick data from kite.
     
@@ -412,10 +412,12 @@ def get_candlestick_data_from_kite(to, kite):
     candlestick data {JSON} -- The candlestick data between two dates. 
     '''
     try:
+        if type(instrument_nomenclature) == str:
+            instrument_nomenclature = int(instrument_nomenclature)
         to = datetime.strptime(to, '%Y-%m-%d %H:%M:%S')
         print(to)
         candle = kite.historical_data(
-        8960770,
+        instrument_nomenclature,
         from_date = to - timedelta(minutes=5) ,
         to_date = to,
         interval = "5minute"
@@ -423,7 +425,7 @@ def get_candlestick_data_from_kite(to, kite):
 
         # from instrument_token get trading symbol from kite
 
-        print(candle)
+        # print(candle)
         print('CLOSE: ',candle[-1]['close'])
 
         response =  {"candle" : candle, "close" : candle[-1]['close']}
@@ -457,9 +459,12 @@ async def get_candlestick_data(history_list: list):
     Returns:
     candlestick data {JSON} -- The candlestick data between two dates. 
     '''
+    print(len(history_list))
     responses = []
     kite = auto_login_zerodha(user_details = {'API_KEY':'wd4rw474uonpvn94','API_SECRET':'8bsd661b6i29y064pei4riikj0lr3ede','ID':'WG5235','PASSWORD':'Finvant@Research1','TOTP_PIN':'BK4I753O24NO5BU5JLTO2JPT2TFT54CC'},log_interface = None)
+    print('Login complete')
     for history in history_list:
+        print(history)
         end_date = history['end_date']
         instrument_nomenclature = history['instrument_nomenclature']
         trading_symbol = history['trading_symbol']
@@ -468,7 +473,8 @@ async def get_candlestick_data(history_list: list):
 
         try:
             end_date = end_date.replace('_', ' ')
-            candlestick_data = get_candlestick_data_from_kite(end_date, kite)
+            candlestick_data = get_candlestick_data_from_kite(end_date, kite, instrument_nomenclature)
+            time.sleep(1)
             ## Add to sql database
             conn = sqlite3.connect('database.db')
             cur = conn.cursor()
@@ -487,9 +493,9 @@ async def get_candlestick_data(history_list: list):
 
             # Calculate slippage
             if position == 'CLOSE SHORT' or position == 'BUY':
-                slippage = int(candlestick_data['close']) - int(price)
+                slippage = float(candlestick_data['close']) - float(price)
             elif position == 'OPEN SHORT' or position == 'SELL':
-                slippage = int(price) - int(candlestick_data['close'])
+                slippage = float(price) - float(candlestick_data['close'])
 
             # Insert into table
             cur.execute("INSERT INTO slippage VALUES (?,?,?,?,?,?)", (end_date, trading_symbol, candlestick_data['close'], price, slippage, position))
