@@ -44,7 +44,7 @@ class Main:
                 self.RUNNING = True
             
             elif datetime.now().time() > self.SLEEP_TIME and self.RUNNING:
-                self.RUNNING = True
+                self.RUNNING = False
             
             else:
                 sleep(100)
