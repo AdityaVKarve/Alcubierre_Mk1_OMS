@@ -133,17 +133,19 @@ if __name__ == '__main__':
     kite = auto_login_zerodha(user_details = {'API_KEY':'wd4rw474uonpvn94','API_SECRET':'8bsd661b6i29y064pei4riikj0lr3ede','ID':'WG5235','PASSWORD':'Finvant@Research1','TOTP_PIN':'BK4I753O24NO5BU5JLTO2JPT2TFT54CC'},log_interface = None)
     print(kite)
 
+    # from_date is 1st May 2023
+    from_date = datetime(2023,5,1,0,0,0)
+    # to_date is 31st May 2023
+    to_date = datetime(2023,5,31,0,0,0)
+
     now = datetime.now()
 
     candle = kite.historical_data(
-    18849026,
-    from_date = now - timedelta(minutes=6),
-    to_date = now ,
+    12517890,
+    from_date = from_date,
+    to_date = to_date ,
     interval = "5minute"
     )
-
-    print(now - timedelta(minutes=1))
-    print(now)
 
     print(candle)
     print('CLOSE: ',candle[-1]['close'])

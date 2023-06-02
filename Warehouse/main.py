@@ -470,6 +470,8 @@ async def get_candlestick_data(history_list: list):
         trading_symbol = history['trading_symbol']
         price = history['price']
         position = history['position']
+        username = history['username']
+        brokerage = history['brokerage']
 
         try:
             end_date = end_date.replace('_', ' ')
@@ -488,6 +490,8 @@ async def get_candlestick_data(history_list: list):
                 'Close_5M integer NOT NULL,'\
                 'Entry_Exit integer NOT NULL,'\
                 'slippage integer NOT NULL,'\
+                'username text NOT NULL,'\
+                'brokerage text NOT NULL,'\
                 'position text NOT NULL'\
             ');')
 
@@ -498,7 +502,7 @@ async def get_candlestick_data(history_list: list):
                 slippage = float(price) - float(candlestick_data['close'])
 
             # Insert into table
-            cur.execute("INSERT INTO slippage VALUES (?,?,?,?,?,?)", (end_date, trading_symbol, candlestick_data['close'], price, slippage, position))
+            cur.execute("INSERT INTO slippage VALUES (?,?,?,?,?,?,?,?)", (end_date, trading_symbol, candlestick_data['close'], price, slippage, username, brokerage, position))
 
             # Commit changes
             conn.commit()
