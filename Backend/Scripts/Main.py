@@ -122,7 +122,7 @@ class Main:
                     Logs.logCritical(severity="CRITICAL",message='Failed to initialise Log server/ADS.',publish = 1, tag = 'OMSB_MAIN_1')
                 self.main_loop()
             else:
-                if now.time() > self.SLEEP_TIME and self.SLIPPAGE == True:
+                if (now.time() > self.SLEEP_TIME or now.time() < self.LOGIN_TIME) and self.SLIPPAGE:
                     # Logs.logInfo(severity='INFO',message='OMS Backend sleeping.', publish=0)
                     ## EOD : Slippage code 
                     self.slippage_report()

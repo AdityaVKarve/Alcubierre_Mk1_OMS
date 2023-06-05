@@ -416,19 +416,25 @@ def get_candlestick_data_from_kite(to, kite, instrument_nomenclature):
             instrument_nomenclature = int(instrument_nomenclature)
         to = datetime.strptime(to, '%Y-%m-%d %H:%M:%S')
         print(to)
+
+        # Roud off to nearest 5 minutes (down)
+        to = to - timedelta(minutes=to.minute % 5, seconds=to.second)
+        print('ROUNDED TO: ',to)
+
+        print(to)
         candle = kite.historical_data(
         instrument_nomenclature,
-        from_date = to - timedelta(minutes=5) ,
+        from_date = to - timedelta(minutes=10) ,
         to_date = to,
         interval = "5minute"
         )
 
         # from instrument_token get trading symbol from kite
 
-        # print(candle)
-        print('CLOSE: ',candle[-1]['close'])
+        print(candle)
+        print('CLOSE: ',candle[-2]['close'])
 
-        response =  {"candle" : candle, "close" : candle[-1]['close']}
+        response =  {"candle" : candle, "close" : candle[-2]['close']}
     
         return response
 
