@@ -1,5 +1,5 @@
 {
-    "LAST_UPDATED": 1685698518.340309,
+    "LAST_UPDATED": 1685952617.1799145,
     "USER_DATA": {
         "MASTER_TRUST": {
             "USER_TYPE": "XTS",
@@ -18,10 +18,18 @@
                         1
                     ]
                 },
-                "OPHIUCUS": {
+                "OPHIUCUS_HEDGED": {
+                    "NIFTY|G|800|CE|WEEK|0": [
+                        10,
+                        0
+                    ],
                     "NIFTY|L|0|CE|WEEK|0": [
                         0,
                         10
+                    ],
+                    "NIFTY|L|800|PE|WEEK|0": [
+                        10,
+                        0
                     ],
                     "NIFTY|L|0|PE|WEEK|0": [
                         0,
@@ -84,6 +92,16 @@
                     "NIFTY|L|0|PE|WEEK|0": [
                         0,
                         10
+                    ]
+                },
+                "OPHIUCUS": {
+                    "BANKNIFTY|L|0|CE|WEEK|0": [
+                        0,
+                        1
+                    ],
+                    "BANKNIFTY|L|0|PE|WEEK|0": [
+                        0,
+                        1
                     ]
                 }
             }
