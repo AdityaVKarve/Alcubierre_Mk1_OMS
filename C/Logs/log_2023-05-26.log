@@ -12793,3 +12793,1512 @@ root - INFO - 2023-06-02 15:22:22.609520 - Order placed for BPWealth_ACS1301 OPH
 root - INFO - 2023-06-02 15:22:22.677081 - Order placed for BPWealth_ACS1207 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
 root - INFO - 2023-06-02 15:22:22.805961 - Order placed for BPWealth_AC66 OPHIUCUS NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -2 0 0
 root - INFO - 2023-06-02 15:22:22.874437 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHD083', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1301', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_ACS1207', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AC66', 'strategy': 'OPHIUCUS', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/routing.py", line 747, in __call__
+    await self.default(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/routing.py", line 635, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 83, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/routing.py", line 747, in __call__
+    await self.default(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/routing.py", line 635, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 83, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 83, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'OPTIONS / RTSP/1.0')
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 83, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'\x05\x04\x00\x01\x02\x80\x05\x01\x00\x03')
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 82, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("no request line received")
+h11._util.RemoteProtocolError: no request line received
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 83, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'OPTIONS sip:nm SIP/2.0')
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/routing.py", line 747, in __call__
+    await self.default(scope, receive, send)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/starlette/routing.py", line 635, in not_found
+    raise HTTPException(status_code=404)
+starlette.exceptions.HTTPException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 83, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'SM')
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+root - INFO - 2023-06-05 11:15:12.533548 - Order placed for MASTER_TRUST OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-06-05 11:15:12.602015 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-06-05 11:15:12.670433 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-06-05 11:15:12.739356 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-06-05 11:15:13.720229 - Order placed for MASTER_TRUST OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 BUY 10 0 0
+root - INFO - 2023-06-05 11:15:13.852215 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 BUY 10 0 0
+root - INFO - 2023-06-05 11:15:13.921642 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 BUY 1 0 0
+root - INFO - 2023-06-05 11:15:13.989283 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 83, in maybe_read_from_IDLE_client
+    matches = validate(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 91, in validate
+    raise LocalProtocolError(msg)
+h11._util.RemoteProtocolError: illegal request line: bytearray(b'HELP')
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 79, in maybe_read_from_IDLE_client
+    raise LocalProtocolError("illegal request line")
+h11._util.RemoteProtocolError: illegal request line
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+root - INFO - 2023-06-05 15:05:16.144486 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:10:04.966822 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:10:16.121537 - Order placed for FINVANT_LIVE LUNA BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 2 0
+root - INFO - 2023-06-05 15:10:16.188497 - Order placed for AIRAN LUNA_FUTURES BANKNIFTY OPEN SHORT -3 0 2
+root - INFO - 2023-06-05 15:10:16.253895 - Order placed for BPWealth_AHO7706 LUNA_FUTURES BANKNIFTY OPEN SHORT -2 0 2
+root - INFO - 2023-06-05 15:10:16.321920 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'LUNA', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0, 'stoploss': 2, 'quantity': 1}, {'user_name': 'AIRAN', 'strategy': 'LUNA_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0, 'quantity': 3}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'LUNA_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 2, 'stoploss': 0, 'quantity': 2}]
+root - INFO - 2023-06-05 15:15:16.189804 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:20:11.349900 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:20:12.366681 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:20:13.840030 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:20:14.858073 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:20:16.722407 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:20:21.565586 - Order placed for MASTER_TRUST OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-06-05 15:20:21.634812 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-06-05 15:20:21.704163 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|0|PE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-06-05 15:20:21.771446 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|PE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-06-05 15:20:22.835539 - Order placed for MASTER_TRUST OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 SELL 10 0 0
+root - INFO - 2023-06-05 15:20:23.014664 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 SELL 10 0 0
+root - INFO - 2023-06-05 15:20:23.136012 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|800|PE|WEEK|0 SELL 1 0 0
+root - INFO - 2023-06-05 15:20:23.204808 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|800|PE|WEEK|0', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-06-05 15:20:24.281192 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:20:25.362104 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:25:05.593163 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:25:06.566483 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:25:08.051172 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:25:09.077463 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:25:17.744594 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:25:19.226409 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:25:20.258891 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:25:21.255950 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:25:22.258373 - Order placement successful for users: []
+root - INFO - 2023-06-05 15:30:16.054499 - Order placement successful for users: []
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF

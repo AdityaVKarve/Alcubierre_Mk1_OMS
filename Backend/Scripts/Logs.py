@@ -3,11 +3,12 @@ from datetime import  datetime
 import traceback
 import sys
 
-date = str(datetime.now().date())
+
 
 
 
 def logInfo(message):
+    date = str(datetime.now().date())
     logging.basicConfig(filename='../Logs/log_'+date+'.log', filemode='a', format='%(name)s - %(levelname)s - %(message)s',level=logging.INFO)
     '''
     A generic message, does not indicate any severity
@@ -17,6 +18,7 @@ def logInfo(message):
     logging.info(str(datetime.now())+" - "+str(message))
 
 def logWarning(message):
+    date = str(datetime.now().date())
     logging.basicConfig(filename='../Logs/log_'+date+'.log', filemode='a', format='%(name)s - %(levelname)s - %(message)s',level=logging.INFO)
     '''
     A warning message, of mild severity
@@ -25,6 +27,7 @@ def logWarning(message):
     logging.warning(str(datetime.now())+" - "+str(message))
 
 def logError(message):
+    date = str(datetime.now().date())
     logging.basicConfig(filename='../Logs/log_'+date+'.log', filemode='a', format='%(name)s - %(levelname)s - %(message)s',level=logging.INFO)
     '''
     A error message of high severity
@@ -33,6 +36,7 @@ def logError(message):
     logging.error(str(datetime.now())+" - "+str(message))
 
 def logCritical(message,exit = False):
+    date = str(datetime.now().date())
     logging.basicConfig(filename='../Logs/log_'+date+'.log', filemode='a', format='%(name)s - %(levelname)s - %(message)s',level=logging.INFO)
     '''
     A critical message, Hari Om
