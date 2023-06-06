@@ -1,0 +1,136 @@
+root - INFO - 2023-06-06 10:24:15.225827 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [176666]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fef3e279ed0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+root - INFO - 2023-06-06 10:30:15.987422 - Order placed for FINVANT_LIVE QUASAR_5M BANKNIFTY_SYNTHETIC_INTRADAY_SHORT BUY 1 0 0.5
+root - INFO - 2023-06-06 10:30:16.128193 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT BUY 2 0 0.5
+root - INFO - 2023-06-06 10:30:16.195418 - Order placed for AIRAN_PAPER_TEST QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:16.261920 - Order placed for TEJAS QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:16.328012 - Order placed for SOHAM QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:16.394023 - Order placed for JASMI QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -2 0 0.5
+root - INFO - 2023-06-06 10:30:16.461147 - Order placed for MOHIT QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:16.583089 - Order placed for HEMENDRA QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:16.713599 - Order placed for HIREN QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:16.779479 - Order placed for AMIT QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -1 0 0.5
+root - INFO - 2023-06-06 10:30:16.846491 - Order placed for BPWealth_AHO7706 QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:16.911340 - Order placed for BPWealth_AHO7763 QUASAR_5M_FUTURES BANKNIFTY OPEN SHORT -6 0 0.5
+root - INFO - 2023-06-06 10:30:16.977191 - Order placed for AIRAN_PAPER_TEST QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:17.042670 - Order placed for TEJAS QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:17.107848 - Order placed for SOHAM QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:17.174512 - Order placed for JASMI QUASAR_5M_FUTURES NIFTY OPEN SHORT -2 0 0.5
+root - INFO - 2023-06-06 10:30:17.239634 - Order placed for MOHIT QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:17.304690 - Order placed for HEMENDRA QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:17.371404 - Order placed for HIREN QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:17.436650 - Order placed for AMIT QUASAR_5M_FUTURES NIFTY OPEN SHORT -1 0 0.5
+root - INFO - 2023-06-06 10:30:17.502697 - Order placed for BPWealth_AHO7706 QUASAR_5M_FUTURES NIFTY OPEN SHORT -3 0 0.5
+root - INFO - 2023-06-06 10:30:17.569588 - Order placed for BPWealth_AHO7763 QUASAR_5M_FUTURES NIFTY OPEN SHORT -6 0 0.5
+root - INFO - 2023-06-06 10:30:17.638422 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 1}, {'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'BUY', 'target': 0.5, 'stoploss': 0, 'quantity': 2}, {'user_name': 'AIRAN_PAPER_TEST', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'TEJAS', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'SOHAM', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'JASMI', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 2}, {'user_name': 'MOHIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'HEMENDRA', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'HIREN', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'AMIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'BPWealth_AHO7763', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 6}, {'user_name': 'AIRAN_PAPER_TEST', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'TEJAS', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'SOHAM', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'JASMI', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 2}, {'user_name': 'MOHIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'HEMENDRA', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'HIREN', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'AMIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 1}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 3}, {'user_name': 'BPWealth_AHO7763', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'OPEN SHORT', 'target': 0.5, 'stoploss': 0, 'quantity': 6}]
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+root - INFO - 2023-06-06 10:55:12.639902 - Order placed for MASTER_TRUST OPHIUCUS_HEDGED NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-06-06 10:55:12.709070 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|0|CE|WEEK|0 OPEN SHORT -10 0 0
+root - INFO - 2023-06-06 10:55:12.778115 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|0|CE|WEEK|0 OPEN SHORT -1 0 0
+root - INFO - 2023-06-06 10:55:12.846709 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'OPEN SHORT', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-06-06 10:55:13.873433 - Order placed for MASTER_TRUST OPHIUCUS_HEDGED NIFTY|G|800|CE|WEEK|0 BUY 10 0 0
+root - INFO - 2023-06-06 10:55:13.942032 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|G|800|CE|WEEK|0 BUY 10 0 0
+root - INFO - 2023-06-06 10:55:14.065073 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|G|800|CE|WEEK|0 BUY 1 0 0
+root - INFO - 2023-06-06 10:55:14.135476 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|G|800|CE|WEEK|0', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|G|800|CE|WEEK|0', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 10}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|G|800|CE|WEEK|0', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-06-06 12:00:17.574098 - Order placement successful for users: []
+root - INFO - 2023-06-06 12:05:16.196522 - Order placement successful for users: []
+root - INFO - 2023-06-06 12:30:17.748208 - Order placement successful for users: []
+root - INFO - 2023-06-06 12:35:16.157194 - Order placement successful for users: []
+root - INFO - 2023-06-06 12:45:16.107415 - Order placement successful for users: []
+root - INFO - 2023-06-06 13:00:16.044067 - Order placement successful for users: []
+root - INFO - 2023-06-06 13:05:16.116447 - Order placement successful for users: []
+root - INFO - 2023-06-06 13:10:16.120465 - Order placement successful for users: []
+root - INFO - 2023-06-06 13:35:16.060797 - Order placement successful for users: []
+root - INFO - 2023-06-06 13:45:15.991407 - Order placement successful for users: []
+uvicorn.error - WARNING - Invalid HTTP request received.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/uvicorn/protocols/http/h11_impl.py", line 136, in handle_events
+    event = self.conn.next_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 487, in next_event
+    exc._reraise_as_remote_protocol_error()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_util.py", line 77, in _reraise_as_remote_protocol_error
+    raise self
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 469, in next_event
+    event = self._extract_next_receive_event()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_connection.py", line 411, in _extract_next_receive_event
+    event = self._reader(self._receive_buffer)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/h11/_readers.py", line 223, in expect_nothing
+    raise LocalProtocolError("Got data when expecting EOF")
+h11._util.RemoteProtocolError: Got data when expecting EOF
+root - INFO - 2023-06-06 13:50:16.052655 - Order placement successful for users: []
+root - INFO - 2023-06-06 13:55:16.144938 - Order placement successful for users: []
+root - INFO - 2023-06-06 14:05:16.141044 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:00:17.388142 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:05:16.215609 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:10:16.151736 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:15:05.002963 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:15:16.118183 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:20:05.938089 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:20:07.147678 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:20:08.811784 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:20:09.871903 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:20:16.049169 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:20:17.079106 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:20:18.083908 - Order placed for MASTER_TRUST OPHIUCUS_HEDGED NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-06-06 15:20:18.152269 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -10 0 0
+root - INFO - 2023-06-06 15:20:18.222073 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|L|0|CE|WEEK|0 CLOSE SHORT -1 0 0
+root - INFO - 2023-06-06 15:20:18.290353 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|L|0|CE|WEEK|0', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-06-06 15:20:19.317828 - Order placed for MASTER_TRUST OPHIUCUS_HEDGED NIFTY|G|800|CE|WEEK|0 SELL 10 0 0
+root - INFO - 2023-06-06 15:20:19.387665 - Order placed for ODIN_AKV2922 OPHIUCUS_HEDGED NIFTY|G|800|CE|WEEK|0 SELL 10 0 0
+root - INFO - 2023-06-06 15:20:19.510319 - Order placed for FINVANT_LIVE OPHIUCUS_HEDGED NIFTY|G|800|CE|WEEK|0 SELL 1 0 0
+root - INFO - 2023-06-06 15:20:19.583286 - Order placement successful for users: [{'user_name': 'MASTER_TRUST', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|G|800|CE|WEEK|0', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'ODIN_AKV2922', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|G|800|CE|WEEK|0', 'position': 'SELL', 'target': 0, 'stoploss': 0}, {'user_name': 'FINVANT_LIVE', 'strategy': 'OPHIUCUS_HEDGED', 'instrument_nomenclature': 'NIFTY|G|800|CE|WEEK|0', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-06-06 15:25:05.095819 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:25:06.121856 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:25:07.727755 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:25:08.748673 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:25:17.990721 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:25:19.475986 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:25:20.507295 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:25:21.575794 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:25:22.741329 - Order placement successful for users: []
+root - INFO - 2023-06-06 15:26:31.602458 - Order placed for FINVANT_LIVE QUASAR_5M BANKNIFTY_SYNTHETIC_INTRADAY_SHORT SELL 1 0 0
+root - INFO - 2023-06-06 15:26:31.671874 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-06-06 15:26:32.611756 - Order placed for FINVANT_LIVE QUASAR_5M NIFTY_SYNTHETIC_INTRADAY_SHORT SELL 2 0 0
+root - INFO - 2023-06-06 15:26:32.743755 - Order placement successful for users: [{'user_name': 'FINVANT_LIVE', 'strategy': 'QUASAR_5M', 'instrument_nomenclature': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-06-06 15:28:34.284663 - Order placed for AIRAN_PAPER_TEST QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:34.350398 - Order placed for TEJAS QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:34.470173 - Order placed for SOHAM QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:34.535998 - Order placed for JASMI QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -2 0 0
+root - INFO - 2023-06-06 15:28:34.600915 - Order placed for MOHIT QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:34.665745 - Order placed for HEMENDRA QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:34.733574 - Order placed for HIREN QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:34.798368 - Order placed for AMIT QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -1 0 0
+root - INFO - 2023-06-06 15:28:34.863061 - Order placed for BPWealth_AHO7706 QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:34.928461 - Order placed for BPWealth_AHO7763 QUASAR_5M_FUTURES BANKNIFTY CLOSE SHORT -6 0 0
+root - INFO - 2023-06-06 15:28:34.997281 - Order placement successful for users: [{'user_name': 'AIRAN_PAPER_TEST', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'TEJAS', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'SOHAM', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'JASMI', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'MOHIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'HEMENDRA', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'HIREN', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'AMIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7763', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'BANKNIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-06-06 15:28:36.155816 - Order placed for AIRAN_PAPER_TEST QUASAR_5M_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:36.221622 - Order placed for TEJAS QUASAR_5M_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:36.286661 - Order placed for SOHAM QUASAR_5M_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:36.351190 - Order placed for JASMI QUASAR_5M_FUTURES NIFTY CLOSE SHORT -2 0 0
+root - INFO - 2023-06-06 15:28:36.416714 - Order placed for MOHIT QUASAR_5M_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:36.481071 - Order placed for HEMENDRA QUASAR_5M_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:36.545806 - Order placed for HIREN QUASAR_5M_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:36.732738 - Order placed for AMIT QUASAR_5M_FUTURES NIFTY CLOSE SHORT -1 0 0
+root - INFO - 2023-06-06 15:28:36.853202 - Order placed for BPWealth_AHO7706 QUASAR_5M_FUTURES NIFTY CLOSE SHORT -3 0 0
+root - INFO - 2023-06-06 15:28:36.919239 - Order placed for BPWealth_AHO7763 QUASAR_5M_FUTURES NIFTY CLOSE SHORT -6 0 0
+root - INFO - 2023-06-06 15:28:37.108854 - Order placement successful for users: [{'user_name': 'AIRAN_PAPER_TEST', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'TEJAS', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'SOHAM', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'JASMI', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'MOHIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'HEMENDRA', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'HIREN', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'AMIT', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7706', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}, {'user_name': 'BPWealth_AHO7763', 'strategy': 'QUASAR_5M_FUTURES', 'instrument_nomenclature': 'NIFTY', 'position': 'CLOSE SHORT', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-06-06 15:30:16.026424 - Order placement successful for users: []
