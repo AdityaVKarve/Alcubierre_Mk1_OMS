@@ -10,6 +10,7 @@ from Log_Server_Interface import Log_Server_Interface
 import json
 import time
 from Logs import logInfo, logCritical
+import pymysql
 
 def addToOrderHistory(cur,order_id, brokerage_id, user_type,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_price, order_qty, lot_size, order_time, order_status=None):
     """ Adds an order to the order_history table in the database. """
@@ -25,7 +26,7 @@ def measure_performance(func):
   return wrapper
 
 def get_new_dbconnection():
-    con = sqlite3.connect('../../C/Data/OrderData.db')
+    con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com",user="admin",password="FinvantResearch")
     return con
 
 def gSF(stringToConvert: str):

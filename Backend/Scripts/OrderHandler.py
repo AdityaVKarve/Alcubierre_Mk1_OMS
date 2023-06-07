@@ -78,7 +78,7 @@ class OrderHandler:
             total_qty = p['total_qty']
             placed_qty = p['placed_qty']
             instrument_token = int(p['instrument_token'])
-            qty_to_place = min(abs(total_qty - placed_qty),1)
+            qty_to_place = min(abs(total_qty - placed_qty),4)
             qty_to_place*=(total_qty - placed_qty)/abs(total_qty - placed_qty)
             qty_to_place = int(qty_to_place)
             last_placement = p['last_placement']
