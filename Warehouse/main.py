@@ -63,7 +63,8 @@ origins = [
     "http://localhost:3000",
     "http://15.207.12.225:9021",
     "http://13.126.93.66:9021",
-    "http://13.127.242.54:9021"
+    "http://13.127.242.54:9021",
+    "http://13.233.26.147:8000"
 
 ]
 # Purpose: To allow cross origin requests from the above origins.
