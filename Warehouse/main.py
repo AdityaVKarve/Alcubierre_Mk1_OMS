@@ -33,6 +33,7 @@ from encryption_hybrid import EncryptionHybrid
 # Import jsonable_encoder to convert the pydantic object to a json serializable object
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import FileResponse, JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 
 
 
@@ -53,6 +54,26 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 app = FastAPI()
 
 
+#################### """ APP CONFIG """ ###############################
+# Add additional origins here if required. Addresses must be in the format: "http://localhost:8000" -> for applications accessing the API from this address.
+origins = [
+    "http://localhost",
+    "http://localhost:8000"
+    "http://localhost:8080",
+    "http://localhost:3000",
+    "http://15.207.12.225:9021",
+    "http://13.126.93.66:9021",
+    "http://13.127.242.54:9021"
+
+]
+# Purpose: To allow cross origin requests from the above origins.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 #################### """ APP CONFIG """ ###############################
 SECRET_KEY = (
     "3092325@$@(234#24@$(8finvantResearchCapitalSecretKeyApi208u39324935@$#(*3@#(989898"
@@ -442,12 +463,79 @@ def get_candlestick_data_from_kite(to, kite, instrument_nomenclature):
         print(e)
         traceback.print_exc()
         return -1
+    
+def getSlippage():
+    """ 
+    Fetch order book from ../Data/OrderData.db database.
+
+    Parameters:
+    None
+
+    Returns:
+    dict: Dictionary of order book
+
+    Keywork Arguments:
+    None
+    """
+
+    try:
+        con = sqlite3.connect('./database.db')
+        cur = con.cursor()
+        cur.execute('SELECT * FROM slippage')
+        res = cur.fetchall()
+
+        #############################
+        # Sample orderbook response #
+        # res = [
+        #     ('OPEN', 'user1', 'strategy1', 'NIFTY', 'BUY', 100, 10000, 0.5, 1, 2, 1000000, 'order1', 0, 'N'),
+        #     ('OPEN', 'user1', 'strategy1', 'NIFTY', 'SELL', 100, 10000, 0.5, 1, 2, 1000000, 'order2', 0, 'NIFTY'),
+        # ]
+        #############################
+
+        print("Slippage: ", res)
+        order_book = []
+        for order in res:
+            order_book.append({
+                'order_time': order[0],
+                'instrument_nomenclature': order[1],
+                'Close_5M': order[2],
+                'Entry_Exit': order[3],
+                'slippage': order[4],
+                'username': order[5],
+                'brokerage': order[6],
+                'position': order[7],
+            })
+        return order_book
+        
+    except sqlite3.Error as e:
+        print("Error while fetching data from slippage: ", e)
+        return False
 
 
 ## ROUTES FOR API USERS end ## 
 ################
 ################
 ## GET ROUTES ##
+# Get route to return the list of all the rows in slippage table
+@app.get("/slippage/")
+async def get_slippage_data():
+    '''
+    Get the list of all the rows in slippage table.
+    
+    Arguments:
+    None
+
+    Keyword Arguments:
+    None
+
+    Returns:
+    slippage data {JSON} -- The list of all the rows in slippage table. 
+    '''
+    try:
+        slippage = getSlippage()
+        return slippage
+    except Exception as e:
+        print(e)
 # Get route to return candlestick data between two dates
 @app.get("/candlestick/")
 async def get_candlestick_data(history_list: list):

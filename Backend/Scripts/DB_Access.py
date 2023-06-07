@@ -14,23 +14,35 @@ cursor.execute("use test") # This connects to the database named test
 # query = 'CREATE DATABASE IF NOT EXISTS orderbook'
 # cursor.execute(query)
 
-print(cursor.fetchall())
-query = "CREATE TABLE IF NOT EXISTS orderbook (id INT AUTO_INCREMENT PRIMARY KEY, tradingsymbol VARCHAR(255), exchange_token VARCHAR(255), lot_size INT, total_qty INT, placed_qty INT, instrument_token INT)"
+# print(cursor.fetchall())
+# query = "CREATE TABLE IF NOT EXISTS orderbook (id INT AUTO_INCREMENT PRIMARY KEY, tradingsymbol VARCHAR(255), exchange_token VARCHAR(255), lot_size INT, total_qty INT, placed_qty INT, instrument_token INT)"
+# cursor.execute(query)
+# print(cursor.fetchall())
+
+# query = "INSERT INTO orderbook (tradingsymbol, exchange_token, lot_size, total_qty, placed_qty, instrument_token) VALUES ('NIFTY21JUNFUT', 'NFO', 75, 75, 1, 0)"
+# cursor.execute(query)
+# print(cursor.fetchall())
+
+
+# query = 'select * from orderbook'
+# cursor.execute(query)
+# print(cursor.fetchall())
+
+# query = 'DROP TABLE orderbook'
+# cursor.execute(query)
+# print(cursor.fetchall()
+
+# show all tables
+query = 'show tables'
 cursor.execute(query)
 print(cursor.fetchall())
 
-query = "INSERT INTO orderbook (tradingsymbol, exchange_token, lot_size, total_qty, placed_qty, instrument_token) VALUES ('NIFTY21JUNFUT', 'NFO', 75, 75, 1, 0)"
+# show description of aLL tables
+query = 'describe position_reference'
 cursor.execute(query)
-print(cursor.fetchall())
-
-
-query = 'select * from orderbook'
-cursor.execute(query)
-print(cursor.fetchall())
-
-query = 'DROP TABLE orderbook'
-cursor.execute(query)
-print(cursor.fetchall())
+desc = (cursor.fetchall())
+for d in desc:
+    print(d)
 
 # commit the changes
 db.commit()
