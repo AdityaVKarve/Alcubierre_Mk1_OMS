@@ -482,7 +482,8 @@ def getSlippage():
     try:
         con = sqlite3.connect('./database.db')
         cur = con.cursor()
-        cur.execute('SELECT * FROM slippage')
+        query = "SELECT * FROM slippage WHERE position = 'OPEN SHORT' OR position = 'CLOSE SHORT'"
+        cur.execute(query)
         res = cur.fetchall()
 
         #############################
