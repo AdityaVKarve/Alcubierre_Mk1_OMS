@@ -38,11 +38,11 @@ cursor.execute(query)
 print(cursor.fetchall())
 
 # show description of aLL tables
-query = 'describe position_reference'
+query = 'select * from order_history'
 cursor.execute(query)
-desc = (cursor.fetchall())
-for d in desc:
-    print(d)
+res = cursor.fetchall()
+for r in res:
+    print(r)
 
 # commit the changes
 db.commit()

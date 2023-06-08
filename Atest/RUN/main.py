@@ -405,7 +405,7 @@ async def get_config(config_file: str, user: User_Pydantic = Depends(get_current
 
 ## Get route to check if passed date is a valid trading day
 @app.get("/get/trading_day")
-async def get_trading_day(date : str, user: User_Pydantic = Depends(get_current_user)):
+async def get_trading_day(date : str = None, user: User_Pydantic = Depends(get_current_user)):
     '''
     Route to get if passed date is a valid trading day which exists in trading_holidays_2023.csv.
 
@@ -427,32 +427,37 @@ async def get_trading_day(date : str, user: User_Pydantic = Depends(get_current_
     try:
         # date = datetime.datetime.now().strftime("%Y-%m-%d")
 
+        # If date is None, return current date
+        if date is None:
+            date = datetime.datetime.now().strftime("%Y-%m-%d")
+
         holiday_csv = pd.read_csv("../Data/trading_holidays_2023.csv")
         holiday_csv["Date"] = pd.to_datetime(holiday_csv["Date"])
         holiday_csv["Date"] = holiday_csv["Date"].dt.strftime("%Y-%m-%d")
         holiday_csv = holiday_csv["Date"].tolist()
         print(holiday_csv)
-        if date in holiday_csv:
-            response = {"message": True}
+        if date in holiday_csv or datetime.datetime.strptime(date, "%Y-%m-%d").weekday() in [5, 6]:
+            response = {"Trading_holiday": True}
         else:
-            response = {"message": False}
+            response = {"Trading_holiday": False}
 
-        encryption = EncryptionHybrid()
-        # Encrypt spread data
-        encrypted_key, encrypted_data = encryption.encrypt(str(response))
-        # convert to hex format
-        encrypted_key = encrypted_key.hex()
-        encrypted_data = encrypted_data.hex()
-        # Package encrypted key and encrypted user data into a dictionary
-        response = {
-            "encrypted_key": str(encrypted_key),
-            "encrypted_data": str(encrypted_data),
-        }
-        # Encode response to json serializable object for api return
-        json_compatible_item_data = jsonable_encoder(
-            response, custom_encoder={bytes: lambda v: v.decode("utf-8")}
-        )
-        return JSONResponse(content=json_compatible_item_data)
+        # encryption = EncryptionHybrid()
+        # # Encrypt spread data
+        # encrypted_key, encrypted_data = encryption.encrypt(str(response))
+        # # convert to hex format
+        # encrypted_key = encrypted_key.hex()
+        # encrypted_data = encrypted_data.hex()
+        # # Package encrypted key and encrypted user data into a dictionary
+        # response = {
+        #     "encrypted_key": str(encrypted_key),
+        #     "encrypted_data": str(encrypted_data),
+        # }
+        # # Encode response to json serializable object for api return
+        # json_compatible_item_data = jsonable_encoder(
+        #     response, custom_encoder={bytes: lambda v: v.decode("utf-8")}
+        # )
+        # return JSONResponse(content=json_compatible_item_data)
+        return response
     except Exception as e:
         print(e)
         traceback.print_exc()
