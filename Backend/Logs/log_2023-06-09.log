@@ -1,0 +1,720 @@
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:02:19.572170 - OMSB_ADSINT_1
+['Traceback (most recent call last):', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\connection.py", line 200, in _new_conn', '    sock = connection.create_connection(', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\util\\connection.py", line 85, in create_connection', '    raise err', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\util\\connection.py", line 73, in create_connection', '    sock.connect(sa)', 'ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it', '', 'The above exception was the direct cause of the following exception:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\connectionpool.py", line 790, in urlopen', '    response = self._make_request(', '               ^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\connectionpool.py", line 496, in _make_request', '    conn.request(', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\connection.py", line 388, in request', '    self.endheaders()', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\http\\client.py", line 1278, in endheaders', '    self._send_output(message_body, encode_chunked=encode_chunked)', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\http\\client.py", line 1038, in _send_output', '    self.send(msg)', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\http\\client.py", line 976, in send', '    self.connect()', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\connection.py", line 236, in connect', '    self.sock = self._new_conn()', '                ^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\connection.py", line 215, in _new_conn', '    raise NewConnectionError(', 'urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001B05EAEE210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it', '', 'The above exception was the direct cause of the following exception:', '', 'Traceback (most recent call last):', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\adapters.py", line 486, in send', '    resp = conn.urlopen(', '           ^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\connectionpool.py", line 844, in urlopen', '    retries = retries.increment(', '              ^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\urllib3\\util\\retry.py", line 515, in increment', '    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]', '    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', "urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='15.207.12.225', port=8000): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001B05EAEE210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\ADS_Interface.py", line 29, in authentification', "    response = requests.post(self.url + 'token', data=data)", '               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\api.py", line 115, in post', '    return request("post", url, data=data, json=json, **kwargs)', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\api.py", line 59, in request', '    return session.request(method=method, url=url, **kwargs)', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\sessions.py", line 589, in request', '    resp = self.send(prep, **send_kwargs)', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\sessions.py", line 703, in send', '    r = adapter.send(request, **kwargs)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\requests\\adapters.py", line 519, in send', '    raise ConnectionError(e, request=request)', "requests.exceptions.ConnectionError: HTTPConnectionPool(host='15.207.12.225', port=8000): Max retries exceeded with url: /token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001B05EAEE210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:04:47.967050 - Failed to get configs.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\Config.py", line 22, in refresh_config', "    self.ROLLOVER_TIME = config_data['ROLLOVER_TIME']", '                         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^', "KeyError: 'ROLLOVER_TIME'"]
+root - INFO - 2023-06-09 14:06:52.333390 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-09 14:06:52.485900 - OMS Backend mainloop started.
+root - INFO - 2023-06-09 14:06:53.060892 - User data obtained.
+root - INFO - 2023-06-09 14:06:54.203089 - Spreads obtained.
+root - INFO - 2023-06-09 14:06:54.340027 - Config file obtained.
+root - INFO - 2023-06-09 14:06:54.451802 - OMSB: Logging in for backend kite ticker.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+root - INFO - 2023-06-09 14:07:06.346975 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-09 14:07:06.486723 - Initialising LTP gather thread.
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:07:06.624171 - Failed to initialise LTP gather module.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\GatherLTP.py", line 31, in __init__', "    self.ROLLOVER_TIME = datetime.strptime(config.ROLLOVER_TIME,'%H:%M:%S').time()", '                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'TypeError: strptime() argument 1 must be str, not None']
+root - INFO - 2023-06-09 14:07:06.757013 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:07:20.981585 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\kiteconnect\\connect.py", line 259, in generate_session', '    h = hashlib.sha256(self.api_key.encode("utf-8") + request_token.encode("utf-8") + api_secret.encode("utf-8"))', '                                                      ^^^^^^^^^^^^^^^^^^^^', "AttributeError: 'int' object has no attribute 'encode'"]
+root - INFO - 2023-06-09 14:07:21.097283 - Order handler initialised.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:32.358690 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:32.518353 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:33.646412 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:33.791160 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:34.915986 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:35.045759 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:36.158460 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:36.324130 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:37.457740 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:37.640422 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:38.757218 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:38.924472 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:40.056871 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:40.204404 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:41.324543 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:41.468265 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:42.578902 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:42.736579 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:43.880765 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:44.025113 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:45.147238 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:45.292775 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:46.403168 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:46.546514 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:47.681092 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:47.852475 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:49.003943 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:49.148913 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:50.279949 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:50.400238 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:51.513431 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:51.660164 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:52.780550 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:52.925298 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:54.149298 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:54.303986 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:55.414506 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:55.581755 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:56.714440 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:56.869840 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:57.990864 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:58.135617 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:59.256996 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:08:59.458849 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:09:00.747348 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:09:01.002596 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:09:02.334931 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:09:02.480467 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:09:03.624937 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:09:03.769106 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:09:04.880573 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:09:05.024121 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:09:06.136925 - Failed to place Zerodha Kite futures order. User: fin_user_1. Tradingsymbol:NIFTY23JULFUT. QTY:50.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:09:06.278690 - Failed to clear pending orders.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 111, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'", '', 'During handling of the above exception, another exception occurred:', '', 'Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 59, in thread_function', '    self.place_pending_orders(username, spread_list= self.spread_list, cntr = thread_no)', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderHandler.py", line 91, in place_pending_orders', '    k = placeOrder(user_type=user_type,username=username,tradingsymbol=tradingsymbol,exchange_token=exchange_token,instrument_token=instrument_token,lot_size=lot_size,qty=qty_to_place,exchange=exchange, segment= segment,brokerage_object=brokerage_object,spread_list=spread_list,log_interface=self.log_interface, paper_trade=paper_trade, debug=self.DEBUG)', '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\OrderPlacement.py", line 118, in placeOrder', '    placed_price = LTP_Table[str(instrument_token)]', '                   ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^', "KeyError: '10930434'"]
+root - INFO - 2023-06-09 14:15:06.525355 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-09 14:15:06.729387 - OMS Backend mainloop started.
+root - INFO - 2023-06-09 14:15:07.327536 - User data obtained.
+root - INFO - 2023-06-09 14:15:08.457239 - Spreads obtained.
+root - INFO - 2023-06-09 14:15:08.596908 - Config file obtained.
+root - INFO - 2023-06-09 14:15:08.707622 - OMSB: Logging in for backend kite ticker.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+root - INFO - 2023-06-09 14:15:22.444308 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-09 14:15:22.631087 - Initialising LTP gather thread.
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:15:22.791105 - Failed to initialise LTP gather module.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\GatherLTP.py", line 31, in __init__', "    self.ROLLOVER_TIME = datetime.strptime(config.ROLLOVER_TIME,'%H:%M:%S').time()", '                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'TypeError: strptime() argument 1 must be str, not None']
+root - INFO - 2023-06-09 14:15:22.971650 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:15:38.015204 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\kiteconnect\\connect.py", line 259, in generate_session', '    h = hashlib.sha256(self.api_key.encode("utf-8") + request_token.encode("utf-8") + api_secret.encode("utf-8"))', '                                                      ^^^^^^^^^^^^^^^^^^^^', "AttributeError: 'int' object has no attribute 'encode'"]
+root - INFO - 2023-06-09 14:15:38.131389 - Order handler initialised.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - INFO - 2023-06-09 14:24:50.902882 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-09 14:24:51.112221 - OMS Backend mainloop started.
+root - INFO - 2023-06-09 14:24:51.733795 - User data obtained.
+root - INFO - 2023-06-09 14:24:52.880594 - Spreads obtained.
+root - INFO - 2023-06-09 14:24:53.012477 - Config file obtained.
+root - INFO - 2023-06-09 14:24:53.132508 - OMSB: Logging in for backend kite ticker.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+root - INFO - 2023-06-09 14:25:07.293681 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-09 14:25:07.489716 - Initialising LTP gather thread.
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:25:07.616196 - Failed to initialise LTP gather module.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\GatherLTP.py", line 31, in __init__', "    self.ROLLOVER_TIME = datetime.strptime(config.ROLLOVER_TIME,'%H:%M:%S').time()", '                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'TypeError: strptime() argument 1 must be str, not None']
+root - INFO - 2023-06-09 14:25:07.737528 - OMSB: Zerodha login for WG5235.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:25:22.784822 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=api_secret)', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\kiteconnect\\connect.py", line 259, in generate_session', '    h = hashlib.sha256(self.api_key.encode("utf-8") + request_token.encode("utf-8") + api_secret.encode("utf-8"))', '                                                      ^^^^^^^^^^^^^^^^^^^^', "AttributeError: 'int' object has no attribute 'encode'"]
+root - INFO - 2023-06-09 14:25:22.912187 - Order handler initialised.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - INFO - 2023-06-09 14:27:35.678824 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-09 14:27:35.928650 - OMS Backend mainloop started.
+root - INFO - 2023-06-09 14:27:36.812905 - User data obtained.
+root - INFO - 2023-06-09 14:27:38.056640 - Spreads obtained.
+root - INFO - 2023-06-09 14:27:38.207760 - Config file obtained.
+root - INFO - 2023-06-09 14:27:38.358681 - OMSB: Logging in for backend kite ticker.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+root - INFO - 2023-06-09 14:27:51.944554 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-09 14:27:52.082616 - Initialising LTP gather thread.
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:27:52.209611 - Failed to initialise LTP gather module.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\GatherLTP.py", line 31, in __init__', "    self.ROLLOVER_TIME = datetime.strptime(config.ROLLOVER_TIME,'%H:%M:%S').time()", '                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'TypeError: strptime() argument 1 must be str, not None']
+root - INFO - 2023-06-09 14:27:52.353106 - OMSB: Zerodha login for WG5235.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:28:06.584086 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=str(api_secret))', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\kiteconnect\\connect.py", line 259, in generate_session', '    h = hashlib.sha256(self.api_key.encode("utf-8") + request_token.encode("utf-8") + api_secret.encode("utf-8"))', '                                                      ^^^^^^^^^^^^^^^^^^^^', "AttributeError: 'int' object has no attribute 'encode'"]
+root - INFO - 2023-06-09 14:28:06.693643 - Order handler initialised.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - INFO - 2023-06-09 14:29:46.507397 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-09 14:29:46.629082 - OMS Backend mainloop started.
+root - INFO - 2023-06-09 14:29:47.226806 - User data obtained.
+root - INFO - 2023-06-09 14:29:48.365922 - Spreads obtained.
+root - INFO - 2023-06-09 14:29:48.496412 - Config file obtained.
+root - INFO - 2023-06-09 14:29:48.617493 - OMSB: Logging in for backend kite ticker.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+root - INFO - 2023-06-09 14:29:59.457645 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-09 14:29:59.608316 - Initialising LTP gather thread.
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:29:59.746949 - Failed to initialise LTP gather module.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\GatherLTP.py", line 31, in __init__', "    self.ROLLOVER_TIME = datetime.strptime(config.ROLLOVER_TIME,'%H:%M:%S').time()", '                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', 'TypeError: strptime() argument 1 must be str, not None']
+root - INFO - 2023-06-09 14:29:59.875412 - OMSB: Zerodha login for WG5235.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:30:14.861393 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    data = kite.generate_session(key, api_secret=str(api_secret).encode("utf-8"))', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\kiteconnect\\connect.py", line 259, in generate_session', '    h = hashlib.sha256(self.api_key.encode("utf-8") + request_token.encode("utf-8") + api_secret.encode("utf-8"))', '                                                      ^^^^^^^^^^^^^^^^^^^^', "AttributeError: 'int' object has no attribute 'encode'"]
+root - INFO - 2023-06-09 14:30:15.009218 - Order handler initialised.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - INFO - 2023-06-09 14:35:42.649206 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-09 14:35:42.836918 - OMS Backend mainloop started.
+root - INFO - 2023-06-09 14:35:43.454418 - User data obtained.
+root - INFO - 2023-06-09 14:35:44.625127 - Spreads obtained.
+root - INFO - 2023-06-09 14:35:44.761198 - Config file obtained.
+root - INFO - 2023-06-09 14:35:44.881685 - OMSB: Logging in for backend kite ticker.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+root - INFO - 2023-06-09 14:35:56.088362 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-09 14:35:56.244257 - Initialising LTP gather thread.
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:35:56.410151 - Failed to initialise LTP gather module.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\GatherLTP.py", line 31, in __init__', "    self.ROLLOVER_TIME = datetime.strptime(config.ROLLOVER_TIME,'%H:%M:%S').time()", '                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\_strptime.py", line 568, in _strptime_datetime', '    tt, fraction, gmtoff_fraction = _strptime(data_string, format)', '                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\_strptime.py", line 349, in _strptime', '    raise ValueError("time data %r does not match format %r" %', "ValueError: time data '' does not match format '%H:%M:%S'"]
+root - INFO - 2023-06-09 14:35:56.552993 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:36:11.540006 - OMSB: Failed auto login to kite for user:WG5235.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\AutoLoginZerodha.py", line 119, in auto_login_zerodha', '    # data = kite.generate_session(key, api_secret=str(api_secret).encode("utf-8"))', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Users\\nisar\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\kiteconnect\\connect.py", line 259, in generate_session', '    h = hashlib.sha256(self.api_key.encode("utf-8") + request_token.encode("utf-8") + api_secret.encode("utf-8"))', '                                                      ^^^^^^^^^^^^^^^^^^^^', "AttributeError: 'int' object has no attribute 'encode'"]
+root - INFO - 2023-06-09 14:36:11.683749 - Order handler initialised.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (I dropped the WebSocket TCP connection: 'GatherLTP' object has no attribute 'instrument_token_list')
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:39:20.289646 - Failed to get configs.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\Config.py", line 24, in refresh_config', "    self.ROLLOVER_TIME = config_data['ROLLOVER_TIME']", '                         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^', "KeyError: 'ROLLOVER_TIME'"]
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:40:13.620413 - Failed to get configs.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\Config.py", line 24, in refresh_config', "    self.ROLLOVER_TIME = config_data['ROLLOVER_TIME']", '                         ~~~~~~~~~~~^^^^^^^^^^^^^^^^^', "KeyError: 'ROLLOVER_TIME'"]
+root - INFO - 2023-06-09 14:41:09.576993 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-09 14:41:09.766782 - OMS Backend mainloop started.
+root - INFO - 2023-06-09 14:41:10.357333 - User data obtained.
+root - INFO - 2023-06-09 14:41:11.519512 - Spreads obtained.
+root - INFO - 2023-06-09 14:41:11.656880 - Config file obtained.
+root - INFO - 2023-06-09 14:41:11.802476 - OMSB: Logging in for backend kite ticker.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+root - INFO - 2023-06-09 14:41:22.721003 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-09 14:41:22.858363 - Initialising LTP gather thread.
+root - INFO - 2023-06-09 14:41:23.335921 - OMSB: Zerodha login for WG5235.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+root - INFO - 2023-06-09 14:41:34.058365 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-06-09 14:41:34.238190 - Order handler initialised.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-09 14:41:35.382231 - Placed Zerodha Kite futures order for:fin_user_1, instrument:NIFTY23JULFUT, qty:50, transaction type:BUY, placed price:18724.9, id:561.
+root - INFO - 2023-06-09 14:41:35.595009 - 1220.9720611572266
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - CRITICAL - CRITICAL ERROR:2023-06-09 14:47:19.231578 - Failed to refresh lookup table.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\GatherLTP.py", line 70, in refresh_lookup_table', '    self.lookup_table = json.load(f)', '                        ^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py", line 293, in load', '    return loads(fp.read(),', '           ^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py", line 346, in loads', '    return _default_decoder.decode(s)', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py", line 337, in decode', '    obj, end = self.raw_decode(s, idx=_w(s, 0).end())', '               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py", line 355, in raw_decode', '    raise JSONDecodeError("Expecting value", s, err.value) from None', 'json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)']
+root - INFO - 2023-06-09 14:47:19.926184 - Placed Zerodha Kite futures order for:fin_user_1, instrument:NIFTY23JULFUT, qty:-50, transaction type:SELL, placed price:18719.75, id:826.
+root - INFO - 2023-06-09 14:47:20.234658 - 311.4140033721924
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-09 15:00:33.475269 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-09 15:00:33.643840 - OMS Backend mainloop started.
+root - INFO - 2023-06-09 15:00:34.263627 - User data obtained.
+root - INFO - 2023-06-09 15:00:35.373820 - Spreads obtained.
+root - INFO - 2023-06-09 15:00:35.510442 - Config file obtained.
+root - INFO - 2023-06-09 15:00:35.621745 - OMSB: Logging in for backend kite ticker.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+root - INFO - 2023-06-09 15:00:46.516822 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-09 15:00:46.676452 - Initialising LTP gather thread.
+root - INFO - 2023-06-09 15:00:47.109884 - OMSB: Zerodha login for WG5235.
+selenium.webdriver.common.selenium_manager - INFO - Applicable driver not found; attempting to install with Selenium Manager (Beta)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-09 15:00:57.527521 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-06-09 15:00:57.688324 - Order handler initialised.
+root - INFO - 2023-06-09 15:00:57.994451 - Placed Zerodha Kite futures order for:fin_user_1, instrument:NIFTY23JULFUT, qty:50, transaction type:BUY, placed price:18716.2, id:213.
+root - INFO - 2023-06-09 15:00:58.789750 - 801.2025356292725
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - CRITICAL - CRITICAL ERROR:2023-06-09 15:01:25.719366 - Failed to refresh lookup table.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\GatherLTP.py", line 70, in refresh_lookup_table', '    self.lookup_table = json.load(f)', '                        ^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py", line 293, in load', '    return loads(fp.read(),', '           ^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py", line 346, in loads', '    return _default_decoder.decode(s)', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py", line 337, in decode', '    obj, end = self.raw_decode(s, idx=_w(s, 0).end())', '               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py", line 355, in raw_decode', '    raise JSONDecodeError("Expecting value", s, err.value) from None', 'json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)']
+root - INFO - 2023-06-09 15:01:26.240939 - Placed Zerodha Kite futures order for:fin_user_1, instrument:NIFTY23JULFUT, qty:-50, transaction type:SELL, placed price:18717.25, id:86.
+root - INFO - 2023-06-09 15:01:27.119973 - 880.0430297851562
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-09 15:12:42.283369 - Placed Zerodha Kite futures order for:fin_user_1, instrument:NIFTY23JULFUT, qty:50, transaction type:BUY, placed price:18722.4, id:33.
+root - INFO - 2023-06-09 15:12:43.081925 - 800.5621433258057
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - CRITICAL - CRITICAL ERROR:2023-06-09 15:13:06.552130 - Failed to refresh lookup table.
+['Traceback (most recent call last):', '  File "D:\\Finvant\\test\\Alcubierre_Mk1_OMS\\backend\\scripts\\GatherLTP.py", line 70, in refresh_lookup_table', '    self.lookup_table = json.load(f)', '                        ^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py", line 293, in load', '    return loads(fp.read(),', '           ^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py", line 346, in loads', '    return _default_decoder.decode(s)', '           ^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py", line 337, in decode', '    obj, end = self.raw_decode(s, idx=_w(s, 0).end())', '               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^', '  File "C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py", line 355, in raw_decode', '    raise JSONDecodeError("Expecting value", s, err.value) from None', 'json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)']
+root - INFO - 2023-06-09 15:13:07.445034 - Placed Zerodha Kite futures order for:fin_user_1, instrument:NIFTY23JULFUT, qty:-50, transaction type:SELL, placed price:18725.0, id:75.
+root - INFO - 2023-06-09 15:13:08.178618 - 734.5767021179199
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)

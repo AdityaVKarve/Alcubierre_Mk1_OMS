@@ -6,6 +6,7 @@ import json
 import time
 import traceback
 from typing import Optional
+import pymysql
 
 import sqlite3
 import jwt
@@ -44,7 +45,8 @@ origins = [
     "http://localhost:8080",
     "http://localhost:3000",
     "http://15.207.12.225:9021",
-    "http://13.126.93.66:9021"
+    "http://13.126.93.66:9021",
+    "http://13.127.242.54:9021"
 
 ]
 # Purpose: To allow cross origin requests from the above origins.
@@ -56,7 +58,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 #################### """ APP CONFIG """ ###############################
-con = sqlite3.connect('../Data/OrderData.db')
+# con = sqlite3.connect('../Data/OrderData.db')
+con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" ,db="test")
 cur = con.cursor()
 log = Log_Server_Interface(config=config)
 log.postLog(severity='INFO', message='OMS Server turned on.', publish=1)
@@ -343,7 +346,10 @@ def rollOverOrder():
             segment = list(o)[11]
             order_id = list(o)[12]
             cur.execute('SELECT instrument_nomenclature FROM orderbook WHERE order_id = {};'.format(order_id))
-            instrument_nomenclature_ob = cur.fetchall()[0][0]
+            # instrument_nomenclature_ob = cur.fetchall()[0][0]
+            result_set = cur.fetchall()
+            instrument_nomenclature_ob = result_set[0][0]
+
             cur.execute('SELECT username, net_stoploss_perc, net_target_perc, strategy_name, position, strategy_name from orderbook where order_id = {};'.format(order_id))
             position = cur.fetchall()
             username = list(position)[0][0]
@@ -351,7 +357,10 @@ def rollOverOrder():
             strategy_name = list(position)[0][5]
 
             cur.execute('SELECT position_type from ORDER_REFERENCE WHERE order_id = {} and tradingsymbol = {};'.format(order_id, gSF(held_tradingsymbol)))
-            position_type_or = cur.fetchall()[0][0]
+            # position_type_or = cur.fetchall()[0][0]
+            result_set = cur.fetchall()
+            position_type_or = result_set[0][0]
+
             # print(held_tradingsymbol)
 
             if instrument_nomenclature not in checked_instruments:
@@ -413,7 +422,7 @@ def rollOverOrder():
 
 def placeOrder(username,strategy_name,instrument_nomenclature,position,quantity,net_stoploss_perc,net_target_perc, nomenclature_to_details):
     '''This method places inputted order by
-    1. Adding it to the orderbook
+    1. Adding it to the orderbookw
     2. Adding it to the order reference table
     3. Adding it to the order buffer table
     4. Adding it to the position reference table
@@ -459,7 +468,11 @@ def placeOrder(username,strategy_name,instrument_nomenclature,position,quantity,
     elif position == 'SELL':
         try:
             cur.execute("SELECT * FROM orderbook WHERE username = {} and strategy_name = {} and instrument_nomenclature = {} and position = {}".format(gSF(username),gSF(strategy_name),gSF(instrument_nomenclature),gSF("BUY")))
-            d = list(cur.fetchall())[0]
+            # d = list(cur.fetchall())[0]
+            result_set = cur.fetchall()
+            result_list = list(result_set)
+            d = result_list[0]
+
             order_id = d[12]
             cur.execute('UPDATE orderbook SET order_status={} where username={} and strategy_name={} and instrument_nomenclature={} and position={}'.format(gSF('CLOSING'),gSF(username),gSF(strategy_name),gSF(instrument_nomenclature),gSF('BUY')))
         except sqlite3.Error as e:
@@ -470,7 +483,11 @@ def placeOrder(username,strategy_name,instrument_nomenclature,position,quantity,
         try:
             print("HIT")
             cur.execute("SELECT * FROM orderbook WHERE username = {} and strategy_name = {} and instrument_nomenclature = {} and position = {}".format(gSF(username),gSF(strategy_name),gSF(instrument_nomenclature),gSF("OPEN SHORT")))
-            d = list(cur.fetchall())[0]
+            # d = list(cur.fetchall())[0]
+            result_set = cur.fetchall()
+            result_list = list(result_set)
+            d = result_list[0]
+
             order_id = d[12]
             cur.execute('UPDATE orderbook SET order_status={} where username={} and strategy_name={} and instrument_nomenclature={} and position={}'.format(gSF('CLOSING'),gSF(username),gSF(strategy_name),gSF(instrument_nomenclature),gSF('OPEN SHORT')))
         except sqlite3.Error as e:
@@ -597,7 +614,10 @@ def addOrderToOrderReference(order_id,username,instrument_nomenclature,quantity,
             cur.execute("SELECT * FROM order_reference WHERE order_id = {};".format(order_id))
             instrument_data = nomenclature_to_details.process_order_nomenclature(instrument_nomenclature)[instrument_nomenclature]   #Get details on the instrument to be placed based on instrument nomenclature
             spread = instrument_data['SPREAD']
-            bought_instruments = list(cur.fetchall())
+            # bought_instruments = list(cur.fetchall())
+            result_set = cur.fetchall()
+            bought_instruments = list(result_set)
+
             cur.execute("UPDATE order_reference SET position_status={} WHERE order_id={};".format(gSF('CLOSING'),order_id))
         except sqlite3.Error as e:
             print("Error while fetching data from sqlite", e)
@@ -671,7 +691,9 @@ def addOrderToOrderBuffer(username, tradingsymbol, lot_size, exchange_token, qua
             return False  
     else:
         #Position already exists
-        position_id = list(res[0])[10]
+        position_id = list(res[0])[11]
+        # print(res)
+        print(position_id)
         try:
             cur.execute('UPDATE orderbuffer SET total_qty = total_qty + {} WHERE username = {} and tradingsymbol = {};'.format(quantity, gSF(username),gSF(tradingsymbol)))
         except sqlite3.Error as e:
@@ -698,6 +720,7 @@ def addOrderToPositionReference(position_id, strategy_name, instrument_nomenclat
     None
     """
     try:
+        # cur.execute("INSERT INTO position_reference VALUES (%s, %s, %s, %s, %s );",(position_id, gSF(strategy_name), gSF(instrument_nomenclature), gSF(position_type), gSF(username)))
         cur.execute('INSERT INTO position_reference values ({}, {}, {}, {}, {})'.format(position_id,gSF(strategy_name),gSF(instrument_nomenclature),gSF(position_type),gSF(username)))
         return True
     except sqlite3.Error as e:
@@ -1138,7 +1161,12 @@ async def create_order(data: dict, user: User_Pydantic = Depends(get_current_use
                 query = "SELECT quantity, position FROM orderbook WHERE username = '" + user_name + "' AND strategy_name = '" + strategy + "' AND instrument_nomenclature = '" + instrument_nomenclature + "' AND position = 'BUY'"
             elif position == "CLOSE SHORT":
                 query = "SELECT quantity, position FROM orderbook WHERE username = '" + user_name + "' AND strategy_name = '" + strategy + "' AND instrument_nomenclature = '" + instrument_nomenclature + "' AND position = 'OPEN SHORT'"
-            row = list(cur.execute(query).fetchall()[0])
+            # row = list(cur.execute(query).fetchall()[0])
+
+            cur.execute(query)
+            result_set = cur.fetchall()
+            row = list(result_set[0])
+
             quantity = int(row[0])
             position = row[1]
 

@@ -6,13 +6,13 @@
             "API_KEY": "wd4rw474uonpvn94",
             "API_SECRET": "8bsd661b6i29y064pei4riikj0lr3ede",
             "ID": "WG5235",
-            "PASSWORD": "Finvant@Research",
-            "TOTP_PIN": "TRRLO7QE5K5JYOBPT2C4GDO4KTN6TRKQ"
+            "PASSWORD": "Finvant@Research1",
+            "TOTP_PIN": "BK4I753O24NO5BU5JLTO2JPT2TFT54CC"
         },
         "STRATEGY_DETAILS": {
             "NOVA": {
                 "NIFTY": [
-                    0,
+                    1,
                     1
                 ],
                 "BANKNIFTY": [
