@@ -141,7 +141,7 @@ if __name__ == '__main__':
     now = datetime.now()
 
     candle = kite.historical_data(
-    12517890,
+    264969,
     from_date = from_date,
     to_date = to_date ,
     interval = "5minute"

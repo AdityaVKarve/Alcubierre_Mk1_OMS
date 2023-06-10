@@ -1,5 +1,6 @@
 """ MODULES IMPORT """
 import base64
+import calendar
 import csv
 from datetime import timedelta, datetime
 import datetime
@@ -443,9 +444,18 @@ def get_candlestick_data_from_kite(to, kite, instrument_nomenclature):
         to = to - timedelta(minutes=to.minute % 5, seconds=to.second)
         print('ROUNDED TO: ',to)
 
+        # Get candlestick data from kite
         print(to)
         candle = kite.historical_data(
         instrument_nomenclature,
+        from_date = to - timedelta(minutes=10) ,
+        to_date = to,
+        interval = "5minute"
+        )
+
+        # Get VIX data from kite
+        vix_candle = kite.historical_data(
+        264969,
         from_date = to - timedelta(minutes=10) ,
         to_date = to,
         interval = "5minute"
@@ -456,7 +466,10 @@ def get_candlestick_data_from_kite(to, kite, instrument_nomenclature):
         print(candle)
         print('CLOSE: ',candle[-2]['close'])
 
-        response =  {"candle" : candle, "close" : candle[-2]['close']}
+        print(vix_candle)
+        print('VIX CLOSE: ',vix_candle[-2]['close'])
+
+        response =  {"candle" : candle, "close" : candle[-2]['close'], "vix_candle" : vix_candle, "vix_close" : vix_candle[-2]['close']}
     
         return response
 
@@ -495,10 +508,25 @@ def getSlippage():
         #############################
 
         print("Slippage: ", res)
-        order_book = []
+        slippage_book = []
         for order in res:
-            order_book.append({
+            order_time = order[0]
+            # order_time format: 2020-07-01 09:15:00
+            month = order_time[5:7]
+            month = calendar.month_abbr[int(month)]
+            day = order_time[8:10]
+            year = order_time[0:4]
+            time = order_time[11:19]
+            try:
+                slippage_points_per = ((order[4] - order[2]) / order[2]) * 100
+            except:
+                slippage_points_per = 0
+            slippage_book.append({
                 'order_time': order[0],
+                'month': month,
+                'day': day,
+                'year': year,
+                'time': time,
                 'instrument_nomenclature': order[1],
                 'Close_5M': order[2],
                 'Entry_Exit': order[3],
@@ -506,8 +534,35 @@ def getSlippage():
                 'username': order[5],
                 'brokerage': order[6],
                 'position': order[7],
+                'vix': order[8],
+                'slippage_points': order[8],
+                'slippage_points_percentage': slippage_points_per,
             })
-        return order_book
+        monthly_data = []
+        for month in calendar.month_abbr[1:]:
+            # avg_slippage_points is the average of all the slippage points in that month
+            try:
+                average_slippage_points_per = sum([order['slippage_points_percentage'] for order in slippage_book if order['month'] == month]) / len([order['slippage_points_percentage'] for order in slippage_book if order['month'] == month])
+            except:
+                average_slippage_points_per = 0
+
+            # total_slippage_points is the sum of all the slippage points in that month
+            total_slippage_points = sum([order['slippage_points'] for order in slippage_book if order['month'] == month])
+            monthly_data.append({
+                'month': month,
+                'avg_slippage_points': average_slippage_points_per,
+                'total_slippage_points': total_slippage_points,
+            })
+        # remove rows where both slippage_points_percentage and slippage_points are 0
+        monthly_data = [order for order in monthly_data if order['avg_slippage_points'] != 0 or order['total_slippage_points'] != 0]
+
+        response = {
+            'slippage_book': slippage_book,
+            'monthly_data': monthly_data
+        }
+        print("Slippage response: ", response)
+
+        return response
         
     except sqlite3.Error as e:
         print("Error while fetching data from slippage: ", e)
@@ -588,7 +643,9 @@ async def get_candlestick_data(history_list: list):
                 'slippage integer NOT NULL,'\
                 'username text NOT NULL,'\
                 'brokerage text NOT NULL,'\
-                'position text NOT NULL'\
+                'position text NOT NULL,'\
+                'vix_close integer NOT NULL,'\
+                'slippage_points integer NOT NULL'\
             ');')
 
             # Calculate slippage
@@ -597,8 +654,16 @@ async def get_candlestick_data(history_list: list):
             elif position == 'OPEN SHORT' or position == 'SELL':
                 slippage = float(price) - float(candlestick_data['close'])
 
+
+            vix_close = candlestick_data['vix_close']
+
+            slippage_points = price - candlestick_data['close']
+            # Rouding off to 2 decimal places
+            slippage = round(slippage, 2)
+            slippage_points = round(slippage_points, 2)
+
             # Insert into table
-            cur.execute("INSERT INTO slippage VALUES (?,?,?,?,?,?,?,?)", (end_date, trading_symbol, candlestick_data['close'], price, slippage, username, brokerage, position))
+            cur.execute("INSERT INTO slippage VALUES (?,?,?,?,?,?,?,?,?,?)", (end_date, trading_symbol, candlestick_data['close'], price, slippage, username, brokerage, position, vix_close, slippage_points))
 
             # Commit changes
             conn.commit()
