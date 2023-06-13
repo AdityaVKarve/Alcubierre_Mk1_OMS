@@ -108,6 +108,11 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
                     if debug:
                         print('Placing PAPER order for user: {} for tradingsymbol: {} and qty: {}'.format(username, tradingsymbol, qty))
                     order_id = randint(1,1000)
+
+                    #if initially there is no instrument token in LTP_Table
+                    while(str(instrument_token) not in LTP_Table):
+                        sleep(1)
+                        continue
                     placed_price = LTP_Table[str(instrument_token)]
                 
                 log_interface.postLog(severity='INFO',message='Placed Zerodha Kite futures order for:{}, instrument:{}, qty:{}, transaction type:{}, placed price:{}, id:{}.'.format(username,tradingsymbol,qty*lot_size, transaction_type,placed_price, order_id), publish=1,tag='ORDER')
@@ -115,6 +120,11 @@ def placeOrder(user_type, username, tradingsymbol, exchange_token, instrument_to
             except:
                 log_interface.postLog(severity="CRITICAL",message='Failed to place Zerodha Kite futures order. User: {}. Tradingsymbol:{}. QTY:{}.'.format(username,tradingsymbol, qty*lot_size),publish = 1, tag = 'OMSB_OP_2')
                 order_id = -1
+
+                #if initially there is no instrument token in LTP_Table
+                while(str(instrument_token) not in LTP_Table):
+                    sleep(1)
+                    continue
                 placed_price = LTP_Table[str(instrument_token)]
 
         try:

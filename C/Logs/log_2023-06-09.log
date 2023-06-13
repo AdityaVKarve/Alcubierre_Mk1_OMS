@@ -1,0 +1,35 @@
+root - INFO - 2023-06-09 12:41:30.857623 - OMS Server turned on.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x00000262FF69C410>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+tortoise - INFO - Tortoise-ORM shutdown
+root - INFO - 2023-06-09 12:47:45.652903 - OMS Server turned on.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x000002FA26F46D50>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+tortoise - INFO - Tortoise-ORM shutdown
+root - INFO - 2023-06-09 14:00:57.903834 - OMS Server turned on.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x000002373A06BD10>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+tortoise - INFO - Tortoise-ORM shutdown
+root - INFO - 2023-06-09 14:04:38.440523 - OMS Server turned on.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x0000024A6331C410>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+root - INFO - 2023-06-09 14:08:32.025784 - Order placed for fin_user_1 NOVA NIFTY BUY 1 0 0
+root - INFO - 2023-06-09 14:08:32.171980 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-06-09 14:16:45.324359 - Order placement successful for users: []
+root - INFO - 2023-06-09 14:22:46.562641 - Order placed for fin_user_1 NOVA NIFTY BUY 1 0 0
+root - INFO - 2023-06-09 14:22:46.717421 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-06-09 14:47:19.219537 - Order placed for fin_user_1 NOVA NIFTY SELL 1 0 0
+root - INFO - 2023-06-09 14:47:19.543610 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+tortoise - INFO - Tortoise-ORM shutdown
+root - INFO - 2023-06-09 14:58:55.416747 - OMS Server turned on.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x000001E16ECC4550>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+root - INFO - 2023-06-09 14:59:53.655521 - Order placed for fin_user_1 NOVA NIFTY BUY 1 0 0
+root - INFO - 2023-06-09 14:59:53.813143 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-06-09 15:01:25.794078 - Order placed for fin_user_1 NOVA NIFTY SELL 1 0 0
+root - INFO - 2023-06-09 15:01:25.922614 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-06-09 15:12:42.091565 - Order placed for fin_user_1 NOVA NIFTY BUY 1 0 0
+root - INFO - 2023-06-09 15:12:42.229091 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-06-09 15:13:06.643284 - Order placed for fin_user_1 NOVA NIFTY SELL 1 0 0
+root - INFO - 2023-06-09 15:13:06.795008 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+tortoise - INFO - Tortoise-ORM shutdown
