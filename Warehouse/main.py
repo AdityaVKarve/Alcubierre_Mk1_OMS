@@ -518,7 +518,9 @@ def getSlippage():
             year = order_time[0:4]
             time = order_time[11:19]
             try:
-                slippage_points_per = ((order[4] - order[2]) / order[2]) * 100
+                # slippage_points_per = ((order[4] - order[2]) / order[2]) * 100
+                slippage_points_per = (order[9] / order[2]) * 100
+                slippage_points_per = round(slippage_points_per, 3)
             except:
                 slippage_points_per = 0
             slippage_book.append({
@@ -535,7 +537,7 @@ def getSlippage():
                 'brokerage': order[6],
                 'position': order[7],
                 'vix': order[8],
-                'slippage_points': order[8],
+                'slippage_points': order[9],
                 'slippage_points_percentage': slippage_points_per,
             })
         monthly_data = []
@@ -650,14 +652,20 @@ async def get_candlestick_data(history_list: list):
 
             # Calculate slippage
             if position == 'CLOSE SHORT' or position == 'BUY':
-                slippage = float(candlestick_data['close']) - float(price)
+                slippage = (float(candlestick_data['close']) - float(price))/float(candlestick_data['close'])*100
             elif position == 'OPEN SHORT' or position == 'SELL':
-                slippage = float(price) - float(candlestick_data['close'])
+                slippage = (float(price) - float(candlestick_data['close']))/float(candlestick_data['close'])*100
+            
+            # Calculate slippage_points
+            if position == 'OPEN SHORT' or position == 'BUY':
+                slippage_points = price - candlestick_data['close']
+            elif position == 'CLOSE SHORT' or position == 'SELL':
+                slippage_points = candlestick_data['close'] - price
 
 
             vix_close = candlestick_data['vix_close']
 
-            slippage_points = price - candlestick_data['close']
+            # slippage_points = price - candlestick_data['close']
             # Rouding off to 2 decimal places
             slippage = round(slippage, 2)
             slippage_points = round(slippage_points, 2)
