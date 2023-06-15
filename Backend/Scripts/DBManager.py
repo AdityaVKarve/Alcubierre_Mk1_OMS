@@ -10,10 +10,11 @@ from Log_Server_Interface import Log_Server_Interface
 import json
 import time
 from Logs import logInfo, logCritical
+import pymysql
 
 def addToOrderHistory(cur,order_id, brokerage_id, user_type,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_price, order_qty, lot_size, order_time, order_status=None):
     """ Adds an order to the order_history table in the database. """
-    cur.execute("INSERT INTO order_history (order_id, brokerage,brokerage_id,  username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_status, order_price, order_qty, order_time) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",(order_id,brokerage_id, user_type ,username, strategy_name, tradingsymbol, position, instrument_nomenclature, 'COMPLETE', order_price, order_qty*lot_size, order_time))
+    cur.execute("INSERT INTO order_history (order_id, brokerage, brokerage_id, username, strategy_name, tradingsymbol, position, instrument_nomenclature, order_status, order_price, order_qty, order_time) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", (order_id, '0', brokerage_id, username, strategy_name, tradingsymbol, position, instrument_nomenclature, 'COMPLETE', order_price, order_qty*lot_size, order_time))
 
 def measure_performance(func):
   def wrapper(*args, **kwargs):
@@ -25,7 +26,7 @@ def measure_performance(func):
   return wrapper
 
 def get_new_dbconnection():
-    con = sqlite3.connect('../../C/Data/OrderData.db')
+    con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" , db="test")
     return con
 
 def gSF(stringToConvert: str):
@@ -282,7 +283,7 @@ def get_pending_orders(username:str):
     """
     db_connection = get_new_dbconnection()
     cur = db_connection.cursor()
-    cur.execute('SELECT tradingsymbol, exchange_token, lot_size, total_qty, placed_qty, last_order_placement, exchange, segment, instrument_token from orderbuffer WHERE username = {} and (total_qty!=placed_qty or total_qty == 0);'.format(gSF(username)))
+    cur.execute('SELECT tradingsymbol, exchange_token, lot_size, total_qty, placed_qty, last_order_placement, exchange, segment, instrument_token from orderbuffer WHERE username = {} and (total_qty!=placed_qty or total_qty = 0);'.format(gSF(username)))
     orders = cur.fetchall()
     order_list = []
     for o in orders:
@@ -318,7 +319,8 @@ def update_orderbook_status(order_id:int,cur: Cursor, debug: bool = False):
     None
     """
 
-    position = cur.execute('SELECT position_status, position_entry_price, quantity, lot_size,position_type from order_reference WHERE order_id = {};'.format(order_id)).fetchall()
+    cur.execute('SELECT position_status, position_entry_price, quantity, lot_size,position_type from order_reference WHERE order_id = {};'.format(order_id))
+    position = cur.fetchall()
     #If it's a sell order and all legs/positions are sold
     if len(position) == 0:
         # Delete from orderbook table
@@ -328,8 +330,18 @@ def update_orderbook_status(order_id:int,cur: Cursor, debug: bool = False):
     order_placed = True
     net_position_value = 0
     net_lots = 0
-    index_peg = list(list(cur.execute("SELECT index_peg from orderbook WHERE order_id = {};".format(order_id)).fetchall())[0])[0]
+    # index_peg = list(list(cur.execute("SELECT index_peg from orderbook WHERE order_id = {};".format(order_id)).fetchall())[0])[0]
     
+    # Execute the query
+    cur.execute("SELECT index_peg FROM orderbook WHERE order_id = {};".format(order_id))
+
+    # Fetch the results
+    result = cur.fetchall()
+    index_peg = 'N'
+    # Extract the index_peg from the result
+    if result:
+        index_peg = result[0][0]
+
     for pos_tuple in position:
         position_status = list(pos_tuple)[0]
         if index_peg == 'N':
@@ -573,8 +585,20 @@ def update_order_reference(username: str, position_list: list, placed_price: flo
             traded_position = 'BUY'
 
         #Get order id from orderbook for order_reference
-        order_id = list(cur.execute('SELECT order_id FROM orderbook WHERE username={} AND strategy_name={} AND position={} AND instrument_nomenclature={};'.format(gSF(username),gSF(strategy_name),gSF(traded_position),gSF(instrument_nomenclature))).fetchall()[0])[0]
-        
+        # order_id = list(cur.execute('SELECT order_id FROM orderbook WHERE username={} AND strategy_name={} AND position={} AND instrument_nomenclature={};'.format(gSF(username),gSF(strategy_name),gSF(traded_position),gSF(instrument_nomenclature))).fetchall()[0])[0]
+
+        # order_id = list(cur.execute("SELECT order_id FROM orderbook WHERE username = %s AND strategy_name = %s AND position = %s AND instrument_nomenclature = %s;", (username,strategy_name,traded_position,instrument_nomenclature)).fetchall()[0])[0]
+
+        # Execute the query
+        cur.execute("SELECT order_id FROM orderbook WHERE username = %s AND strategy_name = %s AND position = %s AND instrument_nomenclature = %s;", (username, strategy_name, traded_position, instrument_nomenclature))
+
+        # Fetch the results
+        result = cur.fetchall()
+        order_id = 0
+        # Extract the order_id from the result
+        if result:
+            order_id = result[0][0]
+
         #Go to position within order reference
         #Update position target, stoploss and entry price
         #Get position target and SL percent
