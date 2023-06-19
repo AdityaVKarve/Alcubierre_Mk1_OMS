@@ -1,0 +1,79 @@
+root - INFO - 2023-06-17 11:06:47.311594 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-17 11:06:47.459243 - OMS Backend mainloop started.
+root - INFO - 2023-06-17 11:06:47.611419 - User data obtained.
+root - INFO - 2023-06-17 11:06:47.771448 - Spreads obtained.
+root - INFO - 2023-06-17 11:06:47.903357 - Config file obtained.
+root - INFO - 2023-06-17 11:06:48.031377 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-06-17 11:06:56.365688 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-17 11:06:56.504675 - Initialising LTP gather thread.
+root - INFO - 2023-06-17 11:06:56.882478 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-17 11:07:03.635722 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-06-17 11:07:03.764840 - Order handler initialised.
+root - INFO - 2023-06-17 11:07:03.896906 - Creating order handler sub threads.
+root - INFO - 2023-06-17 11:07:03.897077 - Starting order handler sub threads.
+root - INFO - 2023-06-17 11:07:04.080439 - Placed Zerodha Kite futures order for:fin_user_1, instrument:NIFTY23JULFUT, qty:50, transaction type:BUY, placed price:18970.05, id:282.
+root - INFO - 2023-06-17 11:07:04.921322 - 841.8769836425781
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-17 11:08:34.074805 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-17 11:08:34.219791 - OMS Backend mainloop started.
+root - INFO - 2023-06-17 11:08:34.373727 - User data obtained.
+root - INFO - 2023-06-17 11:08:34.520693 - Spreads obtained.
+root - INFO - 2023-06-17 11:08:34.663140 - Config file obtained.
+root - INFO - 2023-06-17 11:08:34.797705 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-06-17 11:08:41.757346 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-17 11:08:41.891355 - Initialising LTP gather thread.
+root - INFO - 2023-06-17 11:08:42.281776 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-17 11:08:49.117183 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-06-17 11:08:49.266323 - Order handler initialised.
+root - INFO - 2023-06-17 11:08:49.399093 - Creating order handler sub threads.
+root - INFO - 2023-06-17 11:08:49.399294 - Starting order handler sub threads.
+root - INFO - 2023-06-17 11:08:49.575317 - Placed Zerodha Kite futures order for:fin_user_1, instrument:NIFTY23JULFUT, qty:-50, transaction type:SELL, placed price:18970.05, id:428.
+root - INFO - 2023-06-17 11:08:50.374243 - 799.9820709228516
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-17 11:09:22.451205 - Finvant Alcubierre Mk1 OMS Backend turned on.
+root - INFO - 2023-06-17 11:09:22.587719 - OMS Backend mainloop started.
+root - INFO - 2023-06-17 11:09:22.747686 - User data obtained.
+root - INFO - 2023-06-17 11:09:22.896870 - Spreads obtained.
+root - INFO - 2023-06-17 11:09:23.030260 - Config file obtained.
+root - INFO - 2023-06-17 11:09:23.180403 - OMSB: Logging in for backend kite ticker.
+root - INFO - 2023-06-17 11:09:30.066285 - OMSB: Login succesful for backend kite ticker.
+root - INFO - 2023-06-17 11:09:30.215794 - Initialising LTP gather thread.
+root - INFO - 2023-06-17 11:09:30.653459 - OMSB: Zerodha login for WG5235.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-17 11:09:37.681119 - OMSB: Zerodha login succesful for WG5235.
+root - INFO - 2023-06-17 11:09:37.818601 - Order handler initialised.
+root - INFO - 2023-06-17 11:09:37.951538 - Creating order handler sub threads.
+root - INFO - 2023-06-17 11:09:37.951682 - Starting order handler sub threads.
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-17 11:10:04.172040 - Placed Zerodha Kite futures order for:fin_user_1, instrument:NIFTY23JULFUT, qty:50, transaction type:BUY, placed price:18970.05, id:581.
+root - INFO - 2023-06-17 11:10:05.042956 - 873.3489513397217
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+root - INFO - 2023-06-17 11:10:18.044082 - Placed Zerodha Kite futures order for:fin_user_1, instrument:NIFTY23JULFUT, qty:-50, transaction type:SELL, placed price:18970.05, id:418.
+root - INFO - 2023-06-17 11:10:18.874869 - 831.8860530853271
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection error: 1006 - connection was closed uncleanly (None)
+kiteconnect.ticker - ERROR - Connection closed: 1006 - connection was closed uncleanly (None)

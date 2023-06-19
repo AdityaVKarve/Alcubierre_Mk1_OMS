@@ -27,6 +27,7 @@ def measure_performance(func):
 
 def get_new_dbconnection():
     con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" , db="test")
+    # con = sqlite3.connect('../Data/OrderData.db')
     return con
 
 def gSF(stringToConvert: str):

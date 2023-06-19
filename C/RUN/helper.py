@@ -219,26 +219,26 @@ if __name__ == "__main__":
     conn = sqlite3.connect('../Data/OrderData.db')
     cur = conn.cursor()
 
-    today = datetime.now().date()
-    query = f"SELECT order_time,instrument_nomenclature, tradingsymbol, order_price, position  FROM order_history WHERE DATE(order_time) = '2023-05-09'" 
-    print(query)
-    cur.execute(query)
-    slippage_report = cur.fetchall()
-    print(slippage_report)
+    # today = datetime.now().date()
+    # query = f"SELECT order_time,instrument_nomenclature, tradingsymbol, order_price, position  FROM order_history WHERE DATE(order_time) = '2023-05-09'" 
+    # print(query)
+    # cur.execute(query)
+    # slippage_report = cur.fetchall()
+    # print(slippage_report)
 
-    data = []
+    # data = []
 
-    for row in slippage_report:
-        data.append({
-            'end_date': row[0],
-            'instrument_nomenclature': row[1],
-            'trading_symbol': row[2],
-            'price': row[3],
-            'position': row[4]
-        })
+    # for row in slippage_report:
+    #     data.append({
+    #         'end_date': row[0],
+    #         'instrument_nomenclature': row[1],
+    #         'trading_symbol': row[2],
+    #         'price': row[3],
+    #         'position': row[4]
+    #     })
     
-    # pretty print data
-    print(json.dumps(data, indent=4, sort_keys=True))
+    # # pretty print data
+    # print(json.dumps(data, indent=4, sort_keys=True))
 
 
     # Query for deleting all the tables (for testing) and reinitializing
@@ -350,10 +350,10 @@ if __name__ == "__main__":
     # SAMPLE VALUE (position_reference) : -6475757014321858749	NOVA	SPREAD123	BUY	FINVANT
 
     # Query for clearing all the tables (for testing) and reinitializing
-    # cur.execute("DELETE FROM order_reference;")
-    # cur.execute("DELETE FROM orderbook;")
-    # cur.execute("DELETE FROM orderbuffer;")
-    # cur.execute("DELETE FROM position_reference;")
+    cur.execute("DELETE FROM order_reference;")
+    cur.execute("DELETE FROM orderbook;")
+    cur.execute("DELETE FROM orderbuffer;")
+    cur.execute("DELETE FROM position_reference;")
     # cur.execute("DELETE FROM order_history;")
     # cur.execute("DELETE FROM strategy_history;")
 

@@ -54,7 +54,14 @@ print('order_history table :')
 query = 'select * from order_history'
 cursor.execute(query)
 rows = cursor.fetchall()
+for row in rows:
+    print(row)
 
+# cursor.execute('DELETE FROM order_history')
+# cursor.execute('DELETE FROM orderbook')
+# cursor.execute('DELETE FROM order_reference')
+# cursor.execute('DELETE FROM orderbuffer')
+# cursor.execute('DELETE FROM position_reference')
 # for row in rows:
 #     print(row)
 

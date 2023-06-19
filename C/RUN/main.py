@@ -60,6 +60,7 @@ app.add_middleware(
 #################### """ APP CONFIG """ ###############################
 # con = sqlite3.connect('../Data/OrderData.db')
 con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" ,db="test")
+# con = sqlite3.connect('../Data/OrderData.db')
 cur = con.cursor()
 log = Log_Server_Interface(config=config)
 log.postLog(severity='INFO', message='OMS Server turned on.', publish=1)
@@ -589,9 +590,15 @@ def addOrderToOrderReference(order_id,username,instrument_nomenclature,quantity,
                 if index_peg != 'N':
                     cur.execute('UPDATE orderbook SET index_peg = {} WHERE order_id = {};'.format(gSF(index_peg),order_id))
                 if position_spread == 'BUY':
+                    print('#'*100)
+                    print('INSERT INTO order_reference VALUES ({}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},{} ,{}, {})'.format(gSF(order_id),gSF("IN PROGRESS"),gSF(current_time),quantity,gSF(expiry),gSF(exchange),gSF(segment),exchange_token,gSF(tradingsymbol),instrument_token,lot_size,position_stoploss_percent,position_target_percent,0,0,0,0,gSF(position_spread),gSF(nomenclature)))
+                    print('#'*100)
                     cur.execute('INSERT INTO order_reference VALUES ({}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},{} ,{}, {})'.format(gSF(order_id),gSF("IN PROGRESS"),gSF(current_time),quantity,gSF(expiry),gSF(exchange),gSF(segment),exchange_token,gSF(tradingsymbol),instrument_token,lot_size,position_stoploss_percent,position_target_percent,0,0,0,0,gSF(position_spread),gSF(nomenclature)))
                     ret = addOrderToOrderBuffer(username = username, tradingsymbol=tradingsymbol,lot_size=lot_size,exchange_token=exchange_token,quantity=quantity, strategy_name=strategy, instrument_nomenclature=instrument_nomenclature, position = position_spread, exchange=exchange, segment=segment, instrument_token=instrument_token)
                 elif position_spread == 'OPEN SHORT':
+                    print('#'*100)
+                    print('INSERT INTO order_reference VALUES ({}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {})'.format(gSF(order_id), gSF("IN PROGRESS"),gSF(current_time),quantity*-1,gSF(expiry),gSF(exchange),gSF(segment),exchange_token,gSF(tradingsymbol),instrument_token,lot_size,position_stoploss_percent,position_target_percent,0,0,0,0,gSF(position_spread),gSF(nomenclature)))
+                    print('#'*100)
                     cur.execute('INSERT INTO order_reference VALUES ({}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {})'.format(gSF(order_id), gSF("IN PROGRESS"),gSF(current_time),quantity*-1,gSF(expiry),gSF(exchange),gSF(segment),exchange_token,gSF(tradingsymbol),instrument_token,lot_size,position_stoploss_percent,position_target_percent,0,0,0,0,gSF(position_spread),gSF(nomenclature)))
                     ret = addOrderToOrderBuffer(username = username, tradingsymbol=tradingsymbol,lot_size=lot_size,exchange_token=exchange_token,quantity=quantity*-1, strategy_name=strategy, instrument_nomenclature=instrument_nomenclature, position = position_spread, exchange=exchange, segment=segment, instrument_token=instrument_token)
                 
@@ -616,6 +623,9 @@ def addOrderToOrderReference(order_id,username,instrument_nomenclature,quantity,
             spread = instrument_data['SPREAD']
             # bought_instruments = list(cur.fetchall())
             result_set = cur.fetchall()
+            print('#'*100)
+            print(result_set)
+            print('#'*100)
             bought_instruments = list(result_set)
 
             cur.execute("UPDATE order_reference SET position_status={} WHERE order_id={};".format(gSF('CLOSING'),order_id))
@@ -627,6 +637,9 @@ def addOrderToOrderReference(order_id,username,instrument_nomenclature,quantity,
         #Iterate through instrument list
         for instrument in bought_instruments:
             instrument_data_list = list(instrument)
+            print('#'*100)
+            print(instrument_data_list)
+            print('#'*100)
             exchange_token = instrument_data_list[7]
             tradingsymbol = instrument_data_list[8]
             exchange = instrument_data_list[5]
@@ -638,11 +651,13 @@ def addOrderToOrderReference(order_id,username,instrument_nomenclature,quantity,
             lot_size = instrument_data_list[10]
             spread_position = instrument_data_list[17]
             if spread:
+                print('SPREAD : POSITION : ', spread_position)
                 if spread_position == 'BUY':
                     ret = addOrderToOrderBuffer(username = username, tradingsymbol=tradingsymbol,lot_size=lot_size,exchange_token=exchange_token,quantity=(quantity*(-1)), strategy_name=strategy, instrument_nomenclature=instrument_nomenclature, position = 'SELL', exchange=exchange, segment=segment, instrument_token=instrument_token)
                 if spread_position == 'OPEN SHORT':
                     ret = addOrderToOrderBuffer(username = username, tradingsymbol=tradingsymbol,lot_size=lot_size,exchange_token=exchange_token,quantity=quantity, strategy_name=strategy, instrument_nomenclature=instrument_nomenclature, position = 'CLOSE SHORT', exchange=exchange, segment=segment, instrument_token=instrument_token)
             else:
+                print('NOT SPREAD : POSITION : ', position)
                 if position == 'SELL':
                     #Add the position to orderbuffer for each instrument, if sell, qty*-1
                     ret = addOrderToOrderBuffer(username = username, tradingsymbol=tradingsymbol,lot_size=lot_size,exchange_token=exchange_token,quantity=(quantity*(-1)), strategy_name=strategy, instrument_nomenclature=instrument_nomenclature, position = position, exchange=exchange, segment=segment, instrument_token=instrument_token)
@@ -677,6 +692,9 @@ def addOrderToOrderBuffer(username, tradingsymbol, lot_size, exchange_token, qua
     try:
         cur.execute('SELECT * FROM orderbuffer WHERE username = {} and tradingsymbol = {}'.format(gSF(username),gSF((tradingsymbol))))
         res = cur.fetchall()
+        print('#'*100)
+        print(res)
+        print('#'*100)
     except sqlite3.Error as e:
         print("Error while fetching data from orderbuffer: ", e)
         return False

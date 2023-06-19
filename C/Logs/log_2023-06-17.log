@@ -1,0 +1,20 @@
+root - INFO - 2023-06-17 11:06:11.051916 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [5024]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7fba8f877dc0>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
+root - INFO - 2023-06-17 11:06:31.585547 - Order placed for fin_user_1 NOVA NIFTY BUY 1 0 0
+root - INFO - 2023-06-17 11:06:31.746185 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-06-17 11:08:14.496836 - Order placed for fin_user_1 NOVA NIFTY SELL 1 0 0
+root - INFO - 2023-06-17 11:08:14.655430 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+root - INFO - 2023-06-17 11:10:02.895056 - Order placed for fin_user_1 NOVA NIFTY BUY 1 0 0
+root - INFO - 2023-06-17 11:10:03.054131 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-06-17 11:10:17.424502 - Order placed for fin_user_1 NOVA NIFTY SELL 1 0 0
+root - INFO - 2023-06-17 11:10:17.590797 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'SELL', 'target': 0, 'stoploss': 0}]
+uvicorn.error - INFO - Shutting down
+uvicorn.error - INFO - Waiting for application shutdown.
+tortoise - INFO - Tortoise-ORM shutdown
+tortoise - INFO - Tortoise-ORM shutdown
+uvicorn.error - INFO - Application shutdown complete.
+uvicorn.error - INFO - Finished server process [5024]
