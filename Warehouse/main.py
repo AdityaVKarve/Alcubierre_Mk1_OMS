@@ -9,6 +9,7 @@ import sqlite3
 import traceback
 from typing import Optional
 import pandas as pd
+import pymysql
 
 import os
 import jwt
@@ -493,7 +494,10 @@ def getSlippage():
     """
 
     try:
-        con = sqlite3.connect('./database.db')
+        # con = sqlite3.connect('./database.db')
+        # cur = con.cursor()
+
+        con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com",user="admin",password="FinvantResearch" ,db="test")
         cur = con.cursor()
         query = "SELECT * FROM slippage WHERE position = 'OPEN SHORT' OR position = 'CLOSE SHORT'"
         cur.execute(query)
@@ -631,7 +635,11 @@ async def get_candlestick_data(history_list: list):
             candlestick_data = get_candlestick_data_from_kite(end_date, kite, instrument_nomenclature)
             time.sleep(1)
             ## Add to sql database
-            conn = sqlite3.connect('database.db')
+            # conn = sqlite3.connect('database.db')
+            # cur = conn.cursor()
+
+
+            conn = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com",user="admin",password="FinvantResearch" ,db="test")
             cur = conn.cursor()
 
             # Table headers : Date, Day, Time, Instrument, 5M Close Entry, Position Entry
@@ -671,7 +679,9 @@ async def get_candlestick_data(history_list: list):
             slippage_points = round(slippage_points, 2)
 
             # Insert into table
-            cur.execute("INSERT INTO slippage VALUES (?,?,?,?,?,?,?,?,?,?)", (end_date, trading_symbol, candlestick_data['close'], price, slippage, username, brokerage, position, vix_close, slippage_points))
+            print(f'INSERT INTO slippage VALUES ("{end_date}", "{trading_symbol}", {candlestick_data["close"]}, {price}, {slippage}, "{username}", "{brokerage}", "{position}", {vix_close}, {slippage_points});')
+            query = f'INSERT INTO slippage VALUES ("{end_date}", "{trading_symbol}", {candlestick_data["close"]}, {price}, {slippage}, "{username}", "{brokerage}", "{position}", {vix_close}, {slippage_points});'
+            cur.execute(query)
 
             # Commit changes
             conn.commit()

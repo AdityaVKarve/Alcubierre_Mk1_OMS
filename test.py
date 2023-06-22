@@ -7,6 +7,7 @@ cursor = db.cursor()
 # cursor.execute('DELETE FROM order_reference')
 # cursor.execute('DELETE FROM orderbuffer')
 # cursor.execute('DELETE FROM position_reference')
+# cursor.execute('DELETE FROM slippage')
 # for row in rows:
 #     print(row)
 
@@ -60,6 +61,13 @@ print('\n')
 
 print('order_history table :')
 query = 'select * from order_history'
+cursor.execute(query)
+rows = cursor.fetchall()
+# for row in rows:
+#     print(row)
+
+print('Slippage table :')
+query = 'select * from slippage'
 cursor.execute(query)
 rows = cursor.fetchall()
 for row in rows:

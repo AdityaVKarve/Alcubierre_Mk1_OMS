@@ -18,6 +18,8 @@ from Log_Server_Interface import Log_Server_Interface
 import sys
 import Logs
 import requests
+import pymysql
+from Slippage_helper import get_candlestick_data
 
 class Main:
     def __init__(self) -> None:
@@ -56,12 +58,15 @@ class Main:
         # The API will be called only if the day is a trading day
 
         # Get the slippage report from the DB : orerHistory table
-        conn = DBManager.get_new_dbconnection()
-        cur = conn.cursor()
+        # conn = DBManager.get_new_dbconnection()
+        # cur = conn.cursor()
+
+        db = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com",user="admin",password="FinvantResearch" ,db="test")
+        cur = db.cursor()
 
         # Get the slippage report from the DB : orderHistory table where order_time is today
         today = datetime.now().date()
-        query = f"SELECT order_time,instrument_nomenclature, tradingsymbol, order_price, position, username, brokerage_id FROM order_history WHERE DATE(order_time) = {today} AND username = 'MASTER_TRUST'" 
+        query = f"SELECT order_time, instrument_nomenclature, tradingsymbol, order_price, position, username, brokerage_id FROM order_history WHERE DATE(STR_TO_DATE(order_time, '%Y-%m-%d %H:%i:%s')) = '{today}' AND username = 'MASTER_TRUST';"
         print(query)
         cur.execute(query)
         slippage_report = cur.fetchall()
@@ -79,29 +84,9 @@ class Main:
                 'username': row[5],
                 'brokerage': row[6]
             })
-
-        # hit the API with the slippage report
-        # API call
-        headers = {
-            'Authorization': 'Bearer ' + ""
-        }
-        # url = 'http://13.233.26.147:9000/candlestick/'
-        url = 'http://127.0.0.1:9000/candlestick/'
-        try:
-            response = requests.get(url, headers=headers, json=data)
-            sleep(10)
-            if response.status_code == 200:
-                print('Slippage report sent successfully')
-                # self.log_interface.postLog(severity="INFO",message='Sent Slippage report',publish = 1)
-                return True
-            else:
-                print('Slippage report not sent')
-                # self.log_interface.postLog(severity="CRITICAL",message='Failed to sent Slippage report',publish = 1)
-                return False
-        except Exception as e:
-            print(e)
-            # self.log_interface.postLog(severity="CRITICAL",message=f'Failed to sent Slippage report: {e}',publish = 1)
-            return False
+        data = get_candlestick_data(data)
+        # print(data)
+        print("Slippage report generated.")
 
     def start(self):
         while True:
