@@ -332,18 +332,18 @@ if __name__ == '__main__':
 
     # Message to be sent to LOG as a payload
     # import datetime
-    log = {
-            "Section": "Test",
-            "Severity": "INFO",
-            "Message": "This is a test log via API",
-            "SendTime": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "Publish": 1,
-            "Tag" : "OMSMB"
-        }
+    # log = {
+    #         "Section": "Test",
+    #         "Severity": "INFO",
+    #         "Message": "This is a test log via API",
+    #         "SendTime": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    #         "Publish": 1,
+    #         "Tag" : "OMSMB"
+    #     }
     
     # URL of the LOG server
     # DEV
-    url = 'http://localhost:9092/'
+    # url = 'http://localhost:9092/'
     # PROD
     # url = 'http://15.207.12.225:9092/'
     
@@ -351,11 +351,11 @@ if __name__ == '__main__':
 
     
     # Initialize the LOG interface
-    interface = LOG_Interface(url)
+    # interface = LOG_Interface(url)
 
     # Uncomment the following lines to test the LOG POST requests
-    for i in range(10):
-        print(interface.post('post/log', str(log)))
+    # for i in range(20):
+    #     print(interface.post('post/log', str(log)))
     
     
     ### ARCHIVE
@@ -392,34 +392,34 @@ if __name__ == '__main__':
     #         }
     #     ]
     # }
-    # order_2 = {
-    #     "ORDERS":[
-    #         {
-    #             "STRATEGY": "NOVA",
-    #             "INSTRUMENT_NOMENCLATURE": "NIFTY",
-    #             "POSITION":"SELL",
-    #             "TARGET":0,
-    #             "STOPLOSS":0 
-    #         }
-    #     ]
-    # }
+    order_2 = {
+        "ORDERS":[
+            {
+                "STRATEGY": "NOVA",
+                "INSTRUMENT_NOMENCLATURE": "NIFTY",
+                "POSITION":"BUY",
+                "TARGET":0,
+                "STOPLOSS":0 
+            }
+        ]
+    }
 
     # order = {'ORDERS': [{'STRATEGY': 'QUASAR_5M', 'INSTRUMENT_NOMENCLATURE': 'BANKNIFTY_SYNTHETIC_INTRADAY_SHORT', 'POSITION': 'SELL', 'TARGET': 0, 'STOPLOSS': 0.5}]}
     # # order = {'ORDERS': [{'STRATEGY': 'QUASAR_5M', 'INSTRUMENT_NOMENCLATURE': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'POSITION': 'SELL', 'TARGET': 0, 'STOPLOSS': 0}]}
     # order = {'ORDERS': [{'STRATEGY': 'OPHIUCUS', 'INSTRUMENT_NOMENCLATURE': 'NIFTY|L|0|PE|WEEK|0', 'POSITION': 'OPEN SHORT', 'TARGET': 0, 'STOPLOSS': 0}, {'STRATEGY': 'QUASAR_5M', 'INSTRUMENT_NOMENCLATURE': 'NIFTY_SYNTHETIC_INTRADAY_SHORT', 'POSITION': 'BUY', 'TARGET': 0, 'STOPLOSS': 0.5}]}
     # # # URL of the LOG server
     # # # DEV
-    # url = 'http://localhost:9093/'
+    url = 'http://localhost:9093/'
     # # # # PROD
     # url = 'http://15.207.12.225:9093/'
     # url = 'http://13.127.242.54:9093/'
     # # # ########## OMS INTERFACE ##########
     # # # # Initialize the OMS interface
-    # interface = OMS_Interface(url)
-    # # # # # # Uncomment the following lines to test the OMS POST requests
-    # results = interface.post('orders/create', order_2)
-    # for result in results:
-    #     print(result, results[result])
+    interface = OMS_Interface(url)
+    # # # # # Uncomment the following lines to test the OMS POST requests
+    results = interface.post('orders/create', order_2)
+    for result in results:
+        print(result, results[result])
     # rollover_result = interface.post('orders/rollover', order)
     # print(rollover_result)
 

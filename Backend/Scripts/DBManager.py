@@ -26,9 +26,15 @@ def measure_performance(func):
   return wrapper
 
 def get_new_dbconnection():
-    con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" , db="test")
-    # con = sqlite3.connect('../Data/OrderData.db')
-    return con
+    try:
+        con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" , db="test")
+        # con = sqlite3.connect('../Data/OrderData.db')
+        return con
+    except Exception as e:
+        logCritical("Error while connecting to database: {} -- reconnecting...".format(e))
+        con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" , db="test")
+        # con = sqlite3.connect('../Data/OrderData.db')
+        return con
 
 def gSF(stringToConvert: str):
     '''
@@ -654,4 +660,5 @@ def update_order_placement(username:str, tradingsymbol: str, placed_qty: int, pl
         #Add order to order buffer
         update_orderbuffer(username=username,tradingsymbol=tradingsymbol,placed_qty=placed_qty,placed_price=placed_price,conn=db_connection,cur=cur, spread_list= spread_list, debug=debug, brokerage_name=brokerage_name, brokerage_id=brokerage_id)
         db_connection.commit()
+        db_connection.close()
 

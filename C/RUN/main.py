@@ -1094,6 +1094,13 @@ async def create_order(data: dict, user: User_Pydantic = Depends(get_current_use
     order success message {dict} -- The success message of the order.
     '''
 
+    ## Set global variables
+    global con 
+    con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" ,db="test")
+    # con = sqlite3.connect('../Data/OrderData.db')
+    global cur 
+    cur = con.cursor()
+
 
     # Decypting the orderIn
     # Get encrypted key and encrypted data from request

@@ -1,7 +1,7 @@
 {
   "LOG_SERVER_ADDRESS": "http://15.207.12.225:9092/",
-  "ADS_SERVER_ADDRESS": "http://13.127.242.54:8080/",
-  "OMS_SERVER_ADDRESS": "http://13.127.242.54:9093/",
+  "ADS_SERVER_ADDRESS": "http://127.0.0.1:8080/",
+  "OMS_SERVER_ADDRESS": "http://127.0.0.1:9093/",
   "SUBSYSTEMS": "OMS Server",
   "SUBSYSTEM": "OMS Server",
   "DEFAULT_API_KEY": "wd4rw474uonpvn94",
