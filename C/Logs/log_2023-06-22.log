@@ -6,3 +6,9 @@ tortoise - INFO - Tortoise-ORM generating schema
 uvicorn.error - INFO - Application startup complete.
 root - INFO - 2023-06-22 17:04:34.078115 - Order placed for fin_user_1 NOVA NIFTY BUY 1 0 0
 root - INFO - 2023-06-22 17:04:34.248888 - Order placement successful for users: [{'user_name': 'fin_user_1', 'strategy': 'NOVA', 'instrument_nomenclature': 'NIFTY', 'position': 'BUY', 'target': 0, 'stoploss': 0, 'quantity': 1}]
+root - INFO - 2023-06-22 17:13:59.188653 - OMS Server turned on.
+uvicorn.error - INFO - Started server process [23987]
+uvicorn.error - INFO - Waiting for application startup.
+tortoise - INFO - Tortoise-ORM started, {'default': <tortoise.backends.sqlite.client.SqliteClient object at 0x7f7fa08bf490>}, {'models': {'OptionSpread': <class 'models.OptionSpread'>, 'User': <class 'models.User'>, 'User_Finvant': <class 'models.User_Finvant'>}}
+tortoise - INFO - Tortoise-ORM generating schema
+uvicorn.error - INFO - Application startup complete.
