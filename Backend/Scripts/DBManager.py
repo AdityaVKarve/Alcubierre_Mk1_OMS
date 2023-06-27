@@ -27,8 +27,8 @@ def measure_performance(func):
 
 def get_new_dbconnection():
     try:
-        con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" , db="test")
-        # con = sqlite3.connect('../Data/OrderData.db')
+        # con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" , db="test")
+        con = sqlite3.connect('../Data/OrderData.db')
         return con
     except Exception as e:
         logCritical("Error while connecting to database: {} -- reconnecting...".format(e))
