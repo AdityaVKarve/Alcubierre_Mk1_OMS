@@ -60,6 +60,7 @@ app.add_middleware(
 #################### """ APP CONFIG """ ###############################
 global con 
 global cur 
+
 # con = sqlite3.connect('../Data/OrderData.db')
 con = pymysql.connect(host="database-1.cc8twgnxgsjl.ap-south-1.rds.amazonaws.com", user="admin", password="FinvantResearch" ,db="test")
 # con = sqlite3.connect('../Data/OrderData.db')
