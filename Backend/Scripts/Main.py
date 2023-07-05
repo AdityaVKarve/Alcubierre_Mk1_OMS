@@ -93,6 +93,7 @@ class Main:
             now = datetime.now()
             if now.time() > self.LOGIN_TIME and now.time() < self.SLEEP_TIME and isTradingDay(now):
                 try:
+                    print("Start loop")
                     self.SLIPPAGE = True
                     self.ads_interface = ADS_Interface()
                     if self.DEBUG == False:
@@ -176,4 +177,5 @@ class Main:
 
 if __name__ == '__main__':
     # cProfile.run('main()', filename='worker.prof')
+    print("Start")
     m = Main()
