@@ -1,6 +1,7 @@
 from kiteconnect import KiteTicker
 from datetime import datetime
 import time as t
+import Logs as logs
 import json
 
 class UpdateIndices:
@@ -15,11 +16,14 @@ class UpdateIndices:
         with open('../Data/Index.json','w') as f:
             json.dump(self.index, f,indent=2)
 
+    # def fetchData(self, kws_object: KiteTicker,start,end):
     def fetchData(self, kws_object: KiteTicker):
+        
         '''
         Call this as a runnable thread only, or you will freeze up your code!
         Saves output to a csv
         '''
+        logs.logInfo('inside fetch data function')
         self.kws = kws_object
         self.kws.on_ticks = self.on_ticks
         self.kws.on_connect = self.on_connect
@@ -29,13 +33,18 @@ class UpdateIndices:
         self.nifty_ltp = None
         self.banknifty_ltp = None
         count = 0
+                
         print("Fetching data")
         while True:
             count += 1
             if count%2 == 0:
                 t.sleep(0.5)
-            if datetime.now().time() >= datetime.strptime('15:30:00','%H:%M:%S').time():
-                return
+                # print(datetime.now().time())
+            if datetime.now().time() >= datetime.strptime('9:06:00','%H:%M:%S').time() and datetime.now().time() < datetime.strptime('9:10:00','%H:%M:%S').time():
+            # if datetime.now().time() >= start and datetime.now().time() < end:
+                logs.logInfo("closing a websocket connection")
+                self.kws.close()
+                break
 
     def on_ticks(self,ws, ticks):
         now = datetime.now()
@@ -80,4 +89,5 @@ class UpdateIndices:
         # On connection close stop the event loop.
         # Reconnection will not happen after executing `ws.stop()`
         print("In on_close function")
+        logs.logCritical(f"{code} , {reason}")
         pass

@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 import pandas as pd
 from kiteconnect import KiteConnect, KiteTicker
-#import Logs as logs
+import Logs as logs
 import pyotp
 from Config import Config
 
@@ -116,8 +116,6 @@ def auto_login(config: Config):
     kite = KiteConnect(api_key=api_key)
     data = kite.generate_session(key, api_secret=api_secret)
     kws = KiteTicker(api_key, data['access_token'])
-    #logs.logInfo('Sign in complete')
-    print ("login complete")
-    print (kite,kws)
+    logs.logInfo('Sign in complete')
     return [kite,kws]
     #return kws
