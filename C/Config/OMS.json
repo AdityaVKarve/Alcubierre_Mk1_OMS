@@ -1,6 +1,6 @@
 {
   "LOG_SERVER_ADDRESS": "http://15.207.12.225:9092/",
-  "ADS_SERVER_ADDRESS": "http://13.127.242.54:6060/",
+  "ADS_SERVER_ADDRESS": "http://15.207.12.225:6060/",
   "OMS_SERVER_ADDRESS": "http://13.127.242.54:9093/",
     "SUBSYSTEMS": "OMS Server",
     "SUBSYSTEM": "OMS Server",

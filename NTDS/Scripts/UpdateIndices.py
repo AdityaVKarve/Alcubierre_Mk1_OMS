@@ -29,7 +29,8 @@ class UpdateIndices:
         self.nifty_ltp = None
         self.banknifty_ltp = None
         count = 0
-        while True:  
+        print("Fetching data")
+        while True:
             count += 1
             if count%2 == 0:
                 t.sleep(0.5)
@@ -78,4 +79,5 @@ class UpdateIndices:
     def on_close(self,ws, code, reason):
         # On connection close stop the event loop.
         # Reconnection will not happen after executing `ws.stop()`
+        print("In on_close function")
         pass

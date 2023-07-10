@@ -1,4 +1,3 @@
-from encryption import Encryption
 from Logs import logCritical, logInfo
 from Config import Config
 import json
@@ -8,7 +7,7 @@ import sys
 # sys.path.append('..')
 import sys
 sys.path.insert(0, '../Security')
-
+from encryption import Encryption
 
 class ADS_Interface:
     def __init__(self):
