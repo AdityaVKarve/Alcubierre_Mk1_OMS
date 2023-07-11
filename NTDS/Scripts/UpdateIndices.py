@@ -4,6 +4,9 @@ import time as t
 import Logs as logs
 import json
 
+should_close = False
+
+
 class UpdateIndices:
     def __init__(self) -> None:
         with open('../Data/Index.json') as f:
@@ -28,23 +31,29 @@ class UpdateIndices:
         self.kws.on_ticks = self.on_ticks
         self.kws.on_connect = self.on_connect
         self.kws.on_close = self.on_close
-        self.kws.connect(threaded = True)
+        self.kws.connect(threaded=True)
         self.create_candle_time = None
         self.nifty_ltp = None
         self.banknifty_ltp = None
         count = 0
+      
                 
         print("Fetching data")
         while True:
             count += 1
+            # print(count)
             if count%2 == 0:
                 t.sleep(0.5)
                 # print(datetime.now().time())
             if datetime.now().time() >= datetime.strptime('9:06:00','%H:%M:%S').time() and datetime.now().time() < datetime.strptime('9:10:00','%H:%M:%S').time():
             # if datetime.now().time() >= start and datetime.now().time() < end:
                 logs.logInfo("closing a websocket connection")
+                global should_close
+                should_close = True
+                # self.kws.stop()
                 self.kws.close()
-                break
+                # break
+                return
 
     def on_ticks(self,ws, ticks):
         now = datetime.now()
@@ -85,9 +94,17 @@ class UpdateIndices:
         # Set RELIANCE to tick in `full` mode.
         ws.set_mode(ws.MODE_LTP, js["instrument_tokens"])
 
-    def on_close(self,ws, code, reason):
+    def on_close(self,ws,code,reason):
         # On connection close stop the event loop.
         # Reconnection will not happen after executing `ws.stop()`
         print("In on_close function")
         logs.logCritical(f"{code} , {reason}")
-        pass
+        
+        print(code,reason)
+        
+        if should_close:
+            print("here")
+            ws.stop()
+        else:
+            pass
+        
