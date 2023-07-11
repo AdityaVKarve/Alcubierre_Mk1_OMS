@@ -116,6 +116,9 @@ def auto_login(config: Config):
     kite = KiteConnect(api_key=api_key)
     data = kite.generate_session(key, api_secret=api_secret)
     kws = KiteTicker(api_key, data['access_token'])
+    # kws = {}
+    # kws['key'] = api_key
+    # kws['access_token'] = data['access_token']
     logs.logInfo('Sign in complete')
     return [kite,kws]
     #return kws
