@@ -34,7 +34,8 @@ class UpdateIndices:
         
         logs.logInfo('inside fetch data function')
         
-        self.running = 1        
+        self.running = 1   
+        self.should_close = 0     
         
         self.kws = kws_object
         self.kws.on_ticks = self.on_ticks
@@ -54,19 +55,19 @@ class UpdateIndices:
                 t.sleep(0.5)
             # print(datetime.now().time())
             # if datetime.now().time() >= datetime.strptime('9:06:00','%H:%M:%S').time() and datetime.now().time() < datetime.strptime('9:10:00','%H:%M:%S').time():
-            # if datetime.now().time() >= start and datetime.now().time() < end:
-            if datetime.now().time() > datetime.strptime('15:30:00','%H:%M:%S').time():
+            # if datetime.now().time() >= start and datetime.now().time() < end:             
+            if datetime.now().time() > datetime.strptime('09:10:00','%H:%M:%S').time() and datetime.now().time() <= datetime.strptime('15:30:00','%H:%M:%S').time():
+                if not self.running:
+                    self.reset_connection()
+            else:
                 if self.running:
                     logs.logInfo("closing a websocket connection")
-                    self.kws.close()
                     self.running = False
+                    should_close = 1
+                    self.kws.close()
                 else:
                     print("sleeping for 15 seconds")
                     t.sleep(15)
-                    
-            elif datetime.now().time() > datetime.strptime('09:10:00','%H:%M:%S').time() and datetime.now().time() <= datetime.strptime('15:30:00','%H:%M:%S').time():
-                if not self.running:
-                    self.reset_connection()
 
     def on_ticks(self,ws, ticks):
         now = datetime.now()
@@ -100,6 +101,7 @@ class UpdateIndices:
         #BANKNIFTY 260105
 
     def on_connect(self,ws, response):
+        print(self.kws.on_close)
         with open('../Data/Misc/instrument_tokens.json') as f:
             js = json.load(f)
         ws.subscribe(js["instrument_tokens"])
@@ -124,6 +126,8 @@ class UpdateIndices:
         kws = KiteTicker(api_key, data['access_token'])
         logs.logInfo('Sign in complete from on_close method')
         
+        global should_close
+        should_close = 1
         self.kws.close()
         
         logs.logInfo("Resetting the kws connection")
@@ -142,12 +146,8 @@ class UpdateIndices:
         print("In on_close function")
         logs.logCritical(f"{code} , {reason}")
         
-        match = re.search(r'\((\d+)\s-\sForbidden\)', reason)
-        if match:
-            http_code = match.group(1)
-            logs.logInfo("HTTP Status Code:", http_code)
-            
-            if http_code == '403':
-                self.reset_connection()
-        else:      
+        if should_close:
+            logs.logInfo("inside of should close")
+            self.kws.close()
+        else:
             pass
