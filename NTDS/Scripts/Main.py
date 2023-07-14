@@ -60,7 +60,7 @@ class Main:
             t1.start()
             t1.join()
             
-            logs.logInfo("successfully closed kws thread")
+            return
         except:
             self.log_server_object.postLog("CRITICAL",'Failed to start update thread: {}'.format(e),1,'')
             return

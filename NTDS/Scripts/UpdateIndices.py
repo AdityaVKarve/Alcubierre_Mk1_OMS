@@ -6,8 +6,6 @@ import time as t
 import Logs as logs
 import json
 
-should_close = False
-
 
 class UpdateIndices:
     def __init__(self) -> None:
@@ -28,10 +26,7 @@ class UpdateIndices:
         Call this as a runnable thread only, or you will freeze up your code!
         Saves output to a csv
         '''
-        
-        global should_close
-        should_close = False
-        
+
         logs.logInfo('inside fetch data function')
         
         self.running = 1   
@@ -53,21 +48,13 @@ class UpdateIndices:
             # print(count)
             if count%2 == 0:
                 t.sleep(0.5)
-            # print(datetime.now().time())
-            # if datetime.now().time() >= datetime.strptime('9:06:00','%H:%M:%S').time() and datetime.now().time() < datetime.strptime('9:10:00','%H:%M:%S').time():
+    
+            if datetime.now().time() > datetime.strptime('15:30:00','%H:%M:%S').time():
+                print("closing websocket and stopping the reactor")
+                self.kws.stop()
+                return
             # if datetime.now().time() >= start and datetime.now().time() < end:             
-            if datetime.now().time() > datetime.strptime('09:10:00','%H:%M:%S').time() and datetime.now().time() <= datetime.strptime('15:30:00','%H:%M:%S').time():
-                if not self.running:
-                    self.reset_connection()
-            else:
-                if self.running:
-                    logs.logInfo("closing a websocket connection")
-                    self.running = False
-                    should_close = 1
-                    self.kws.close()
-                else:
-                    print("sleeping for 15 seconds")
-                    t.sleep(15)
+            
 
     def on_ticks(self,ws, ticks):
         now = datetime.now()
@@ -108,37 +95,6 @@ class UpdateIndices:
 
         # Set RELIANCE to tick in `full` mode.
         ws.set_mode(ws.MODE_LTP, js["instrument_tokens"])
-        
-    def reset_connection(self):
-        
-        api_key = "wd4rw474uonpvn94"
-        api_secret = "8bsd661b6i29y064pei4riikj0lr3ede"
-        user_id = "WG5235"
-        password = "Finvant@Research1"
-        totp_pin = "BK4I753O24NO5BU5JLTO2JPT2TFT54CC"
-        
-        browser_url = "https://kite.trade/connect/login?api_key="+str(api_key)+"&v=3"
-        user_id = user_id
-        password = password
-        key = automate_login(browser_url, user_id, password, totp_pin)
-        kite = KiteConnect(api_key=api_key)
-        data = kite.generate_session(key, api_secret=api_secret)
-        kws = KiteTicker(api_key, data['access_token'])
-        logs.logInfo('Sign in complete from on_close method')
-        
-        global should_close
-        should_close = 1
-        self.kws.close()
-        
-        logs.logInfo("Resetting the kws connection")
-        
-        self.kws = kws
-        self.kws.on_ticks = self.on_ticks
-        self.kws.on_connect = self.on_connect
-        self.kws.on_close = self.on_close
-        self.running = 1
-        self.kws.connect(threaded = True)
-
 
     def on_close(self,ws,code,reason):
         # On connection close stop the event loop.
@@ -146,8 +102,4 @@ class UpdateIndices:
         print("In on_close function")
         logs.logCritical(f"{code} , {reason}")
         
-        if should_close:
-            logs.logInfo("inside of should close")
-            self.kws.close()
-        else:
-            pass
+        pass
